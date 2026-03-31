@@ -41,6 +41,11 @@
   .tab.active{background:var(--bg-secondary);color:var(--text-primary);border:0.5px solid var(--border-light)}
   .tab-pane{display:none}
   .tab-pane.active{display:block}
+  .subtabs{display:flex;gap:3px;margin-bottom:18px;background:var(--bg-secondary);border:0.5px solid var(--border-light);border-radius:var(--radius);padding:4px;width:fit-content}
+  .subtab{padding:6px 16px;border-radius:6px;font-size:12px;font-weight:500;cursor:pointer;border:none;background:transparent;color:var(--text-secondary);transition:all .15s}
+  .subtab.active{background:var(--bg-primary);color:var(--text-primary);border:0.5px solid var(--border-light)}
+  .subtab-pane{display:none}
+  .subtab-pane.active{display:block}
   /* SECTION LABEL */
   .sl{font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:.12em;color:var(--text-tertiary);margin:24px 0 12px;font-family:monospace}
   /* BANNER */
@@ -236,7 +241,6 @@
   <button class="tab" onclick="showTab('competitors')">Competitor Analysis</button>
   <button class="tab" onclick="showTab('seo')">SEO Roadmap</button>
   <button class="tab" onclick="showTab('events')">Events</button>
-  <button class="tab" onclick="showTab('social')">Social Content Analysis</button>
 </div>
 
 <!-- ============================================================ -->
@@ -644,6 +648,13 @@
 <!-- ============================================================ -->
 <div id="tab-competitors" class="tab-pane">
 
+  <div class="subtabs">
+    <button class="subtab active" onclick="showSubTab('swot', this)">Competitor SWOT</button>
+    <button class="subtab" onclick="showSubTab('social', this)">Social Content Analysis</button>
+  </div>
+
+  <div id="subtab-swot" class="subtab-pane active">
+
   <div class="banner banner-green">
     <strong>Active competitor count: 2.</strong> Treatwell, Booksy, and Planity are entirely absent from Croatia. The market is defined by one local startup (Zoyya) and one regional platform with Serbia as its primary market (SrediMe). Fresha has a token presence of 8–13 venues in Zagreb with no local marketing investment.
   </div>
@@ -863,7 +874,225 @@
     </table>
   </div>
 
-</div>
+  </div><!-- /subtab-swot -->
+
+  <div id="subtab-social" class="subtab-pane">
+
+  <div class="banner banner-blue">
+    <strong>Croatia has two analysable competitors for social content.</strong> Zoyya has 417 posts of documented content strategy. SrediMe has an established regional content playbook. Both have significant blind spots that Notino can own entirely. This analysis maps every pillar, identifies every gap, and specifies the exact content moves Notino should make.
+  </div>
+
+  <!-- ZOYYA SOCIAL -->
+  <div class="comp-card zoyya">
+    <div class="comp-header">
+      <div class="comp-name-block">
+        <div class="name">Zoyya — social content deep dive</div>
+        <div class="sub">@zoyyaapp · 1,914 IG followers · 1,600 FB followers · 417 posts · Croatian-primary</div>
+      </div>
+    </div>
+
+    <div class="sl" style="margin-top:0">Messaging pillars</div>
+    <div class="pillar-grid">
+      <div class="pillar p-blue">
+        <div class="pillar-title">Admin relief</div>
+        <div class="pillar-body">"Stop answering WhatsApp at midnight." Blog posts on no-shows, cancellations, client databases. Reels showing chaos of phone booking vs calm of digital calendar.</div>
+      </div>
+      <div class="pillar p-teal">
+        <div class="pillar-title">Partner success stories</div>
+        <div class="pillar-body">Named Zagreb salon case studies with specific metrics — "80% of bookings now online", "50% less admin time". Featured interviews: "Why successful salons use Zoyya?"</div>
+      </div>
+      <div class="pillar p-amber">
+        <div class="pillar-title">Education first</div>
+        <div class="pillar-body">Heavy blog: salon marketing guides, social media tips, staff management, how to get reviews, client database importance. Positions Zoyya as the smart owner's advisor.</div>
+      </div>
+      <div class="pillar p-coral">
+        <div class="pillar-title">"Support local" community</div>
+        <div class="pillar-body">Croatian startup identity, "first service marketplace in Croatia" pride, community-building. Tone of a local colleague, not a SaaS vendor. Very effective for trust.</div>
+      </div>
+      <div class="pillar p-gray">
+        <div class="pillar-title">Feature demos</div>
+        <div class="pillar-body">Reels demoing calendar view, Google Maps integration, booking links for WhatsApp and Instagram bio. Practical how-to content for tech-hesitant salon owners.</div>
+      </div>
+    </div>
+
+    <div class="tone-hook">
+      <div class="mini-card">
+        <div class="mini-label">Tone &amp; voice</div>
+        <div class="mini-body">Warm, locally grounded, educational. Croatian-language primary — feels genuinely local, not translated. Reads like a knowledgeable friend who happens to run a salon software company. Never corporate, never salesy. Uses real salon owner names and stories. The closest analogy: a trusted industry newsletter written by someone who actually knows Croatian salon culture.</div>
+      </div>
+      <div class="mini-card">
+        <div class="mini-label">Core hook</div>
+        <div class="mini-body"><strong>"Reclaim your time."</strong> Every pillar funnels back to this. No-show reduction, admin savings, client reminders — all positioned as time given back to the salon owner. The emotional anchor is relief and control, not growth or revenue. The implicit promise: you became a stylist, not a receptionist. Zoyya handles the receptionist part.</div>
+      </div>
+    </div>
+
+    <div class="sl">What Zoyya never talks about</div>
+    <div class="never-grid">
+      <div class="never-item">
+        <div class="never-title">Revenue generation</div>
+        <div class="never-body">Zoyya never frames itself as a money-making tool. Always operational savings, never "grow your income." Zero product upsell or retail commission angle.</div>
+      </div>
+      <div class="never-item">
+        <div class="never-title">Tourist clients</div>
+        <div class="never-body">Not one piece of content addresses the summer tourist opportunity. No "attract German visitors" angle, no multilingual UX mention, no coastal salon case study.</div>
+      </div>
+      <div class="never-item">
+        <div class="never-title">Honest pricing comparison</div>
+        <div class="never-body">Never compares their €23/month + payment fees to competitors. Avoids the total cost conversation entirely. The hidden €0.50 + 0.5% fee is never surfaced.</div>
+      </div>
+      <div class="never-item">
+        <div class="never-title">Salary-level income stories</div>
+        <div class="never-body">No "this salon owner earns €2k/month more because of Zoyya." Success metrics stay operational (bookings, admin time) not financial (income, revenue).</div>
+      </div>
+      <div class="never-item">
+        <div class="never-title">Seasonal content</div>
+        <div class="never-body">No summer tourist prep, no wedding season content, no off-season strategy for coastal owners. The Croatian beauty calendar is completely unaddressed.</div>
+      </div>
+    </div>
+
+    <div class="opening">
+      <div class="opening-label">Notino's opening vs Zoyya</div>
+      <div class="opening-body">Zoyya owns "admin relief" completely — don't fight it. Instead, own the revenue narrative they deliberately avoid. <strong>Every Zoyya post talks about saving time. Notino talks about making money.</strong> The attack surface: "Zoyya fills your calendar. Notino fills your calendar AND pays you 5% on every product your clients buy. And those German tourists who can't figure out Zoyya's Croatian interface? They find you on Notino." The tourist angle is entirely uncontested — 417 Zoyya posts and not one addresses the coastal tourism opportunity. Win with: Croatian salon owner testimonials focused on income not admin. Summer coastal campaign. English-language booking angle.</div>
+    </div>
+  </div>
+
+  <!-- SREDIME SOCIAL -->
+  <div class="comp-card sredime">
+    <div class="comp-header">
+      <div class="comp-name-block">
+        <div class="name">SrediMe — social content deep dive</div>
+        <div class="sub">@sredimesrbija · Serbia-primary · HR secondary · Active: Zagreb, Split, Rijeka, Dubrovnik</div>
+      </div>
+    </div>
+
+    <div class="sl" style="margin-top:0">Messaging pillars</div>
+    <div class="pillar-grid">
+      <div class="pillar p-purple">
+        <div class="pillar-title">Discovery &amp; inspiration</div>
+        <div class="pillar-body">Consumer-facing "find the best salons near you" narrative. Posts about discovering new salons, trying new services, browsing by city. Strong looker-to-booker conversion angle.</div>
+      </div>
+      <div class="pillar p-blue">
+        <div class="pillar-title">Verified trust</div>
+        <div class="pillar-body">100% verified reviews — only from users who actually booked. Most defensible asset. Positioned as "you can trust these reviews" vs general Google/Facebook ratings.</div>
+      </div>
+      <div class="pillar p-teal">
+        <div class="pillar-title">Regional reach</div>
+        <div class="pillar-body">City-launch campaigns (Sarajevo, Novi Sad, Zagreb expansion). Positions as the booking platform for the whole ex-YU region — useful for salons wanting visitors from neighbouring markets.</div>
+      </div>
+      <div class="pillar p-amber">
+        <div class="pillar-title">Salon showcase</div>
+        <div class="pillar-body">Promotional videos for partner salons, before/after service photos, "best salons in [city]" roundup posts. More visual and aspirational than Zoyya — Instagram-native aesthetic.</div>
+      </div>
+      <div class="pillar p-gray">
+        <div class="pillar-title">Choose your stylist</div>
+        <div class="pillar-body">Key feature USP consistently promoted: "Book the person, not just the salon." Specific staff member selection is uniquely surfaced — Zoyya focuses on salon level only.</div>
+      </div>
+    </div>
+
+    <div class="tone-hook">
+      <div class="mini-card">
+        <div class="mini-label">Tone &amp; voice</div>
+        <div class="mini-body">Consumer-aspirational, visually led. Instagram-native aesthetic — polished salon imagery, lifestyle photography. Less educational than Zoyya, more inspirational. Serbian-language primary: the branding (@sredimesrbija) signals where home base is. In Croatian cities feels like a visitor's platform rather than a local one. Discovery app energy, not colleague energy.</div>
+      </div>
+      <div class="mini-card">
+        <div class="mini-label">Core hook</div>
+        <div class="mini-body"><strong>"Find the best, book the best."</strong> Consumer-side discovery confidence. Verified reviews tie into this — you're not guessing, you're booking from real people's real experiences. For B2B, the implicit hook: "We bring you clients who already trust us." Less operational than Zoyya and more acquisition-focused — but still no revenue generation story.</div>
+      </div>
+    </div>
+
+    <div class="sl">What SrediMe never talks about</div>
+    <div class="never-grid">
+      <div class="never-item">
+        <div class="never-title">Revenue or income</div>
+        <div class="never-body">Purely a discovery/booking layer. No product commission, no retail tie-in, no income generation content for salon owners at all.</div>
+      </div>
+      <div class="never-item">
+        <div class="never-title">Western tourist market</div>
+        <div class="never-body">Positioned for ex-YU visitors (Serbian, Bosnian tourists). Zero content for German, Austrian, Slovenian, Italian visitors — Croatia's highest-spending tourist groups.</div>
+      </div>
+      <div class="never-item">
+        <div class="never-title">Salon management or ops</div>
+        <div class="never-body">No blog, no educational content, no case studies. Entirely consumer-facing. B2B salon owners get no value from SrediMe content beyond "we list you."</div>
+      </div>
+      <div class="never-item">
+        <div class="never-title">Loyalty or retention</div>
+        <div class="never-body">Strong on acquisition but zero on retention. No loyalty programme, no repeat-visit narrative, no re-engagement content. One-way pipeline only.</div>
+      </div>
+      <div class="never-item">
+        <div class="never-title">Pricing transparency</div>
+        <div class="never-body">Never publishes what salons pay to be listed. No pricing comparison, no cost-of-use breakdown for prospective partner salons.</div>
+      </div>
+    </div>
+
+    <div class="opening">
+      <div class="opening-label">Notino's opening vs SrediMe</div>
+      <div class="opening-body">SrediMe is a strong discovery layer but a thin partner proposition. <strong>The clearest attack is the tourist market split:</strong> SrediMe connects Croatian salons to Serbian and Bosnian visitors. Notino connects them to an established base of Croatian beauty shoppers PLUS the Germans, Austrians, and Slovenians who dominate Croatia's overnight tourism — a fundamentally different and higher-spending audience. Content plays: "Meet the clients SrediMe can't bring you." International tourist testimonials. "Why Notino brings you different clients" comparison content. Counter SrediMe's verified review moat with Notino loyalty reviews from existing e-shop customers who visit partner salons — a cross-channel review ecosystem SrediMe can't replicate.</div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- WHITE SPACE -->
+  <div class="sl">Combined white space — what neither competitor does</div>
+  <div class="ws-grid">
+    <div class="ws-card">
+      <div class="ws-title open">Revenue narrative</div>
+      <div class="ws-body">Neither competitor frames themselves as income generators. Zoyya saves time; SrediMe brings clients. Nobody says "here's how much more you earn." Notino's 5% product commission flips this completely.</div>
+      <div class="ws-post">"A Split salon earned €340 in product commissions last August — on top of normal service revenue. That's 17 Notino orders from clients they'd already seen in the chair."</div>
+    </div>
+    <div class="ws-card">
+      <div class="ws-title open">Tourist client acquisition</div>
+      <div class="ws-body">108.7M overnight stays, 90.7% foreign tourists, zero content targeting them. No coastal platform tells salon owners "here's how to attract German tourists in August." Notino's multilingual UX makes this a credible promise — not a claim.</div>
+      <div class="ws-post">"A Dubrovnik nail salon got 23 bookings from international tourists last July through Notino. They'd never had a tourist find them online before."</div>
+    </div>
+    <div class="ws-card">
+      <div class="ws-title open">Honest "what you're paying now" posts</div>
+      <div class="ws-body">Neither Zoyya nor SrediMe makes the cost-of-alternatives transparent. A simple breakdown — "Zoyya: €23/month + €0.50 per payment. Notino: €0 if you hit 20 bookings" — is uncontested territory and directly converts their unhappy users.</div>
+      <div class="ws-post">"What does your booking software actually cost you per month? We did the maths for Croatian salons — the answer surprised us."</div>
+    </div>
+    <div class="ws-card">
+      <div class="ws-title open">Croatian beauty seasonal calendar</div>
+      <div class="ws-body">No platform publishes Croatian beauty seasonal content — wedding season, summer prep, Christmas, shoulder season. Owning this calendar makes Notino the go-to voice for the Croatian beauty industry rhythm.</div>
+      <div class="ws-post">"May is Croatia's biggest wedding month. Are your bridal packages showing up where brides search? Here's how Notino Partner salons are filling May calendars right now."</div>
+    </div>
+    <div class="ws-card">
+      <div class="ws-title open">Coastal owner testimonials</div>
+      <div class="ws-body">Zoyya does Zagreb case studies. SrediMe does urban discovery. Zero content speaks specifically to the Split/Dubrovnik/Poreč salon owner's reality — massive summer, dead winter, desperate for tourist clients.</div>
+      <div class="ws-post">"Ivana runs a nail salon in Split. In July she's fully booked. In January she counts the days. Notino Partner changed her off-season in ways she didn't expect."</div>
+    </div>
+    <div class="ws-card">
+      <div class="ws-title open">Loyalty cross-sell story</div>
+      <div class="ws-body">Neither player connects booking to repeat customer revenue. Notino's loyalty loop is a closed circle: client books, gets points, shops on Notino, sees salon products, books again. Nobody is telling this story.</div>
+      <div class="ws-post">"Your client leaves your salon. She opens Notino, orders the mask you recommended, earns points, and books her next appointment — without you doing anything."</div>
+    </div>
+  </div>
+
+  <!-- SUMMARY TABLE -->
+  <div class="sl">Head-to-head content positioning</div>
+  <div class="summary-wrap">
+    <table>
+      <thead><tr>
+        <th>Content dimension</th><th>Zoyya</th><th>SrediMe</th><th>Notino's move</th>
+      </tr></thead>
+      <tbody>
+        <tr><td>Primary audience</td><td>Croatian salon owners (B2B)</td><td>Croatian consumers (B2C)</td><td>Both — B2B with B2C traffic proof</td></tr>
+        <tr><td>Core message</td><td>Save time, reduce admin</td><td>Discover &amp; book the best</td><td>Earn more, reach new clients</td></tr>
+        <tr><td>Revenue narrative</td><td><span class="tag-no">Never</span></td><td><span class="tag-no">Never</span></td><td><span class="tag-yes">Own it entirely</span></td></tr>
+        <tr><td>Tourist client angle</td><td><span class="tag-no">Never</span></td><td><span class="tag-part">ex-YU only</span></td><td><span class="tag-yes">Western EU tourists — unique</span></td></tr>
+        <tr><td>Pricing transparency</td><td><span class="tag-no">Avoids it</span></td><td><span class="tag-no">Avoids it</span></td><td><span class="tag-yes">"Here's what you're paying now"</span></td></tr>
+        <tr><td>Coastal city content</td><td><span class="tag-no">Zagreb-centric</span></td><td><span class="tag-part">Mentions Split/Dubrovnik</span></td><td><span class="tag-yes">Dedicated coastal season content</span></td></tr>
+        <tr><td>Product / retail cross-sell</td><td><span class="tag-no">None</span></td><td><span class="tag-no">None</span></td><td><span class="tag-yes">5% commission — entirely new</span></td></tr>
+        <tr><td>Multilingual UX content</td><td><span class="tag-no">Croatian only</span></td><td><span class="tag-part">ex-YU languages</span></td><td><span class="tag-yes">HR + EN + DE + IT — unique</span></td></tr>
+        <tr><td>Loyalty / retention</td><td><span class="tag-no">None</span></td><td><span class="tag-no">None</span></td><td><span class="tag-yes">Notino loyalty loop story</span></td></tr>
+        <tr><td>Verified reviews</td><td><span class="tag-part">Basic ratings</span></td><td><span class="tag-yes">Strongest asset</span></td><td>Cross-channel Notino reviews — build fast</td></tr>
+        <tr><td>Educational blog / SEO</td><td><span class="tag-yes">Strong</span></td><td><span class="tag-no">None</span></td><td>Target coastal SEO gaps Zoyya misses</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  </div><!-- /subtab-social -->
+
+</div><!-- /tab-competitors -->
 
 <!-- ============================================================ -->
 <!-- TAB 4: SEO ROADMAP -->
@@ -1127,225 +1356,6 @@
 
 </div>
 
-<!-- ============================================================ -->
-<!-- TAB 6: SOCIAL CONTENT ANALYSIS -->
-<!-- ============================================================ -->
-<div id="tab-social" class="tab-pane">
-
-  <div class="banner banner-blue">
-    <strong>Croatia has two analysable competitors for social content.</strong> Zoyya has 417 posts of documented content strategy. SrediMe has an established regional content playbook. Both have significant blind spots that Notino can own entirely. This analysis maps every pillar, identifies every gap, and specifies the exact content moves Notino should make.
-  </div>
-
-  <!-- ZOYYA SOCIAL -->
-  <div class="comp-card zoyya">
-    <div class="comp-header">
-      <div class="comp-name-block">
-        <div class="name">Zoyya — social content deep dive</div>
-        <div class="sub">@zoyyaapp · 1,914 IG followers · 1,600 FB followers · 417 posts · Croatian-primary</div>
-      </div>
-    </div>
-
-    <div class="sl" style="margin-top:0">Messaging pillars</div>
-    <div class="pillar-grid">
-      <div class="pillar p-blue">
-        <div class="pillar-title">Admin relief</div>
-        <div class="pillar-body">"Stop answering WhatsApp at midnight." Blog posts on no-shows, cancellations, client databases. Reels showing chaos of phone booking vs calm of digital calendar.</div>
-      </div>
-      <div class="pillar p-teal">
-        <div class="pillar-title">Partner success stories</div>
-        <div class="pillar-body">Named Zagreb salon case studies with specific metrics — "80% of bookings now online", "50% less admin time". Featured interviews: "Why successful salons use Zoyya?"</div>
-      </div>
-      <div class="pillar p-amber">
-        <div class="pillar-title">Education first</div>
-        <div class="pillar-body">Heavy blog: salon marketing guides, social media tips, staff management, how to get reviews, client database importance. Positions Zoyya as the smart owner's advisor.</div>
-      </div>
-      <div class="pillar p-coral">
-        <div class="pillar-title">"Support local" community</div>
-        <div class="pillar-body">Croatian startup identity, "first service marketplace in Croatia" pride, community-building. Tone of a local colleague, not a SaaS vendor. Very effective for trust.</div>
-      </div>
-      <div class="pillar p-gray">
-        <div class="pillar-title">Feature demos</div>
-        <div class="pillar-body">Reels demoing calendar view, Google Maps integration, booking links for WhatsApp and Instagram bio. Practical how-to content for tech-hesitant salon owners.</div>
-      </div>
-    </div>
-
-    <div class="tone-hook">
-      <div class="mini-card">
-        <div class="mini-label">Tone &amp; voice</div>
-        <div class="mini-body">Warm, locally grounded, educational. Croatian-language primary — feels genuinely local, not translated. Reads like a knowledgeable friend who happens to run a salon software company. Never corporate, never salesy. Uses real salon owner names and stories. The closest analogy: a trusted industry newsletter written by someone who actually knows Croatian salon culture.</div>
-      </div>
-      <div class="mini-card">
-        <div class="mini-label">Core hook</div>
-        <div class="mini-body"><strong>"Reclaim your time."</strong> Every pillar funnels back to this. No-show reduction, admin savings, client reminders — all positioned as time given back to the salon owner. The emotional anchor is relief and control, not growth or revenue. The implicit promise: you became a stylist, not a receptionist. Zoyya handles the receptionist part.</div>
-      </div>
-    </div>
-
-    <div class="sl">What Zoyya never talks about</div>
-    <div class="never-grid">
-      <div class="never-item">
-        <div class="never-title">Revenue generation</div>
-        <div class="never-body">Zoyya never frames itself as a money-making tool. Always operational savings, never "grow your income." Zero product upsell or retail commission angle.</div>
-      </div>
-      <div class="never-item">
-        <div class="never-title">Tourist clients</div>
-        <div class="never-body">Not one piece of content addresses the summer tourist opportunity. No "attract German visitors" angle, no multilingual UX mention, no coastal salon case study.</div>
-      </div>
-      <div class="never-item">
-        <div class="never-title">Honest pricing comparison</div>
-        <div class="never-body">Never compares their €23/month + payment fees to competitors. Avoids the total cost conversation entirely. The hidden €0.50 + 0.5% fee is never surfaced.</div>
-      </div>
-      <div class="never-item">
-        <div class="never-title">Salary-level income stories</div>
-        <div class="never-body">No "this salon owner earns €2k/month more because of Zoyya." Success metrics stay operational (bookings, admin time) not financial (income, revenue).</div>
-      </div>
-      <div class="never-item">
-        <div class="never-title">Seasonal content</div>
-        <div class="never-body">No summer tourist prep, no wedding season content, no off-season strategy for coastal owners. The Croatian beauty calendar is completely unaddressed.</div>
-      </div>
-    </div>
-
-    <div class="opening">
-      <div class="opening-label">Notino's opening vs Zoyya</div>
-      <div class="opening-body">Zoyya owns "admin relief" completely — don't fight it. Instead, own the revenue narrative they deliberately avoid. <strong>Every Zoyya post talks about saving time. Notino talks about making money.</strong> The attack surface: "Zoyya fills your calendar. Notino fills your calendar AND pays you 5% on every product your clients buy. And those German tourists who can't figure out Zoyya's Croatian interface? They find you on Notino." The tourist angle is entirely uncontested — 417 Zoyya posts and not one addresses the coastal tourism opportunity. Win with: Croatian salon owner testimonials focused on income not admin. Summer coastal campaign. English-language booking angle.</div>
-    </div>
-  </div>
-
-  <!-- SREDIME SOCIAL -->
-  <div class="comp-card sredime">
-    <div class="comp-header">
-      <div class="comp-name-block">
-        <div class="name">SrediMe — social content deep dive</div>
-        <div class="sub">@sredimesrbija · Serbia-primary · HR secondary · Active: Zagreb, Split, Rijeka, Dubrovnik</div>
-      </div>
-    </div>
-
-    <div class="sl" style="margin-top:0">Messaging pillars</div>
-    <div class="pillar-grid">
-      <div class="pillar p-purple">
-        <div class="pillar-title">Discovery &amp; inspiration</div>
-        <div class="pillar-body">Consumer-facing "find the best salons near you" narrative. Posts about discovering new salons, trying new services, browsing by city. Strong looker-to-booker conversion angle.</div>
-      </div>
-      <div class="pillar p-blue">
-        <div class="pillar-title">Verified trust</div>
-        <div class="pillar-body">100% verified reviews — only from users who actually booked. Most defensible asset. Positioned as "you can trust these reviews" vs general Google/Facebook ratings.</div>
-      </div>
-      <div class="pillar p-teal">
-        <div class="pillar-title">Regional reach</div>
-        <div class="pillar-body">City-launch campaigns (Sarajevo, Novi Sad, Zagreb expansion). Positions as the booking platform for the whole ex-YU region — useful for salons wanting visitors from neighbouring markets.</div>
-      </div>
-      <div class="pillar p-amber">
-        <div class="pillar-title">Salon showcase</div>
-        <div class="pillar-body">Promotional videos for partner salons, before/after service photos, "best salons in [city]" roundup posts. More visual and aspirational than Zoyya — Instagram-native aesthetic.</div>
-      </div>
-      <div class="pillar p-gray">
-        <div class="pillar-title">Choose your stylist</div>
-        <div class="pillar-body">Key feature USP consistently promoted: "Book the person, not just the salon." Specific staff member selection is uniquely surfaced — Zoyya focuses on salon level only.</div>
-      </div>
-    </div>
-
-    <div class="tone-hook">
-      <div class="mini-card">
-        <div class="mini-label">Tone &amp; voice</div>
-        <div class="mini-body">Consumer-aspirational, visually led. Instagram-native aesthetic — polished salon imagery, lifestyle photography. Less educational than Zoyya, more inspirational. Serbian-language primary: the branding (@sredimesrbija) signals where home base is. In Croatian cities feels like a visitor's platform rather than a local one. Discovery app energy, not colleague energy.</div>
-      </div>
-      <div class="mini-card">
-        <div class="mini-label">Core hook</div>
-        <div class="mini-body"><strong>"Find the best, book the best."</strong> Consumer-side discovery confidence. Verified reviews tie into this — you're not guessing, you're booking from real people's real experiences. For B2B, the implicit hook: "We bring you clients who already trust us." Less operational than Zoyya and more acquisition-focused — but still no revenue generation story.</div>
-      </div>
-    </div>
-
-    <div class="sl">What SrediMe never talks about</div>
-    <div class="never-grid">
-      <div class="never-item">
-        <div class="never-title">Revenue or income</div>
-        <div class="never-body">Purely a discovery/booking layer. No product commission, no retail tie-in, no income generation content for salon owners at all.</div>
-      </div>
-      <div class="never-item">
-        <div class="never-title">Western tourist market</div>
-        <div class="never-body">Positioned for ex-YU visitors (Serbian, Bosnian tourists). Zero content for German, Austrian, Slovenian, Italian visitors — Croatia's highest-spending tourist groups.</div>
-      </div>
-      <div class="never-item">
-        <div class="never-title">Salon management or ops</div>
-        <div class="never-body">No blog, no educational content, no case studies. Entirely consumer-facing. B2B salon owners get no value from SrediMe content beyond "we list you."</div>
-      </div>
-      <div class="never-item">
-        <div class="never-title">Loyalty or retention</div>
-        <div class="never-body">Strong on acquisition but zero on retention. No loyalty programme, no repeat-visit narrative, no re-engagement content. One-way pipeline only.</div>
-      </div>
-      <div class="never-item">
-        <div class="never-title">Pricing transparency</div>
-        <div class="never-body">Never publishes what salons pay to be listed. No pricing comparison, no cost-of-use breakdown for prospective partner salons.</div>
-      </div>
-    </div>
-
-    <div class="opening">
-      <div class="opening-label">Notino's opening vs SrediMe</div>
-      <div class="opening-body">SrediMe is a strong discovery layer but a thin partner proposition. <strong>The clearest attack is the tourist market split:</strong> SrediMe connects Croatian salons to Serbian and Bosnian visitors. Notino connects them to an established base of Croatian beauty shoppers PLUS the Germans, Austrians, and Slovenians who dominate Croatia's overnight tourism — a fundamentally different and higher-spending audience. Content plays: "Meet the clients SrediMe can't bring you." International tourist testimonials. "Why Notino brings you different clients" comparison content. Counter SrediMe's verified review moat with Notino loyalty reviews from existing e-shop customers who visit partner salons — a cross-channel review ecosystem SrediMe can't replicate.</div>
-    </div>
-  </div>
-
-  <div class="divider"></div>
-
-  <!-- WHITE SPACE -->
-  <div class="sl">Combined white space — what neither competitor does</div>
-  <div class="ws-grid">
-    <div class="ws-card">
-      <div class="ws-title open">Revenue narrative</div>
-      <div class="ws-body">Neither competitor frames themselves as income generators. Zoyya saves time; SrediMe brings clients. Nobody says "here's how much more you earn." Notino's 5% product commission flips this completely.</div>
-      <div class="ws-post">"A Split salon earned €340 in product commissions last August — on top of normal service revenue. That's 17 Notino orders from clients they'd already seen in the chair."</div>
-    </div>
-    <div class="ws-card">
-      <div class="ws-title open">Tourist client acquisition</div>
-      <div class="ws-body">108.7M overnight stays, 90.7% foreign tourists, zero content targeting them. No coastal platform tells salon owners "here's how to attract German tourists in August." Notino's multilingual UX makes this a credible promise — not a claim.</div>
-      <div class="ws-post">"A Dubrovnik nail salon got 23 bookings from international tourists last July through Notino. They'd never had a tourist find them online before."</div>
-    </div>
-    <div class="ws-card">
-      <div class="ws-title open">Honest "what you're paying now" posts</div>
-      <div class="ws-body">Neither Zoyya nor SrediMe makes the cost-of-alternatives transparent. A simple breakdown — "Zoyya: €23/month + €0.50 per payment. Notino: €0 if you hit 20 bookings" — is uncontested territory and directly converts their unhappy users.</div>
-      <div class="ws-post">"What does your booking software actually cost you per month? We did the maths for Croatian salons — the answer surprised us."</div>
-    </div>
-    <div class="ws-card">
-      <div class="ws-title open">Croatian beauty seasonal calendar</div>
-      <div class="ws-body">No platform publishes Croatian beauty seasonal content — wedding season, summer prep, Christmas, shoulder season. Owning this calendar makes Notino the go-to voice for the Croatian beauty industry rhythm.</div>
-      <div class="ws-post">"May is Croatia's biggest wedding month. Are your bridal packages showing up where brides search? Here's how Notino Partner salons are filling May calendars right now."</div>
-    </div>
-    <div class="ws-card">
-      <div class="ws-title open">Coastal owner testimonials</div>
-      <div class="ws-body">Zoyya does Zagreb case studies. SrediMe does urban discovery. Zero content speaks specifically to the Split/Dubrovnik/Poreč salon owner's reality — massive summer, dead winter, desperate for tourist clients.</div>
-      <div class="ws-post">"Ivana runs a nail salon in Split. In July she's fully booked. In January she counts the days. Notino Partner changed her off-season in ways she didn't expect."</div>
-    </div>
-    <div class="ws-card">
-      <div class="ws-title open">Loyalty cross-sell story</div>
-      <div class="ws-body">Neither player connects booking to repeat customer revenue. Notino's loyalty loop is a closed circle: client books, gets points, shops on Notino, sees salon products, books again. Nobody is telling this story.</div>
-      <div class="ws-post">"Your client leaves your salon. She opens Notino, orders the mask you recommended, earns points, and books her next appointment — without you doing anything."</div>
-    </div>
-  </div>
-
-  <!-- SUMMARY TABLE -->
-  <div class="sl">Head-to-head content positioning</div>
-  <div class="summary-wrap">
-    <table>
-      <thead><tr>
-        <th>Content dimension</th><th>Zoyya</th><th>SrediMe</th><th>Notino's move</th>
-      </tr></thead>
-      <tbody>
-        <tr><td>Primary audience</td><td>Croatian salon owners (B2B)</td><td>Croatian consumers (B2C)</td><td>Both — B2B with B2C traffic proof</td></tr>
-        <tr><td>Core message</td><td>Save time, reduce admin</td><td>Discover &amp; book the best</td><td>Earn more, reach new clients</td></tr>
-        <tr><td>Revenue narrative</td><td><span class="tag-no">Never</span></td><td><span class="tag-no">Never</span></td><td><span class="tag-yes">Own it entirely</span></td></tr>
-        <tr><td>Tourist client angle</td><td><span class="tag-no">Never</span></td><td><span class="tag-part">ex-YU only</span></td><td><span class="tag-yes">Western EU tourists — unique</span></td></tr>
-        <tr><td>Pricing transparency</td><td><span class="tag-no">Avoids it</span></td><td><span class="tag-no">Avoids it</span></td><td><span class="tag-yes">"Here's what you're paying now"</span></td></tr>
-        <tr><td>Coastal city content</td><td><span class="tag-no">Zagreb-centric</span></td><td><span class="tag-part">Mentions Split/Dubrovnik</span></td><td><span class="tag-yes">Dedicated coastal season content</span></td></tr>
-        <tr><td>Product / retail cross-sell</td><td><span class="tag-no">None</span></td><td><span class="tag-no">None</span></td><td><span class="tag-yes">5% commission — entirely new</span></td></tr>
-        <tr><td>Multilingual UX content</td><td><span class="tag-no">Croatian only</span></td><td><span class="tag-part">ex-YU languages</span></td><td><span class="tag-yes">HR + EN + DE + IT — unique</span></td></tr>
-        <tr><td>Loyalty / retention</td><td><span class="tag-no">None</span></td><td><span class="tag-no">None</span></td><td><span class="tag-yes">Notino loyalty loop story</span></td></tr>
-        <tr><td>Verified reviews</td><td><span class="tag-part">Basic ratings</span></td><td><span class="tag-yes">Strongest asset</span></td><td>Cross-channel Notino reviews — build fast</td></tr>
-        <tr><td>Educational blog / SEO</td><td><span class="tag-yes">Strong</span></td><td><span class="tag-no">None</span></td><td>Target coastal SEO gaps Zoyya misses</td></tr>
-      </tbody>
-    </table>
-  </div>
-
-</div>
-
 <div class="footer">Notino Partner · Croatia Competitive Intelligence · March 2026 · Out of Spacetime</div>
 
 </div>
@@ -1356,6 +1366,13 @@ function showTab(id) {
   document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
   document.getElementById('tab-' + id).classList.add('active');
   event.target.classList.add('active');
+}
+
+function showSubTab(id, btn) {
+  document.querySelectorAll('.subtab-pane').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.subtab').forEach(t => t.classList.remove('active'));
+  document.getElementById('subtab-' + id).classList.add('active');
+  btn.classList.add('active');
 }
 
 function toggleCollapsible(btn) {
