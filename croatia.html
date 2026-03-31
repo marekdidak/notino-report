@@ -106,6 +106,13 @@
   .comp-card.sredime{border-top:3px solid #384679}
   .comp-card.fresha{border-top:3px solid var(--gray-200);opacity:.88}
   .comp-card.buker{border-top:3px solid #CA5932}
+  .ch-table{width:100%;border-collapse:collapse;margin-bottom:14px}
+  .ch-table th{font-size:10px;font-weight:600;text-align:left;padding:8px 12px;border-bottom:1px solid var(--border-mid);color:var(--text-tertiary);text-transform:uppercase;letter-spacing:.06em;background:var(--bg-secondary)}
+  .ch-table td{font-size:11px;padding:7px 12px;border-bottom:0.5px solid var(--border-light);color:var(--text-secondary);vertical-align:top;line-height:1.5}
+  .ch-table tr:last-child td{border-bottom:none}
+  .ch-cat{font-weight:600;color:var(--text-primary);white-space:nowrap}
+  .notino-opening{border-left:3px solid var(--green-600);padding:10px 14px;background:var(--green-50);border-radius:0 var(--radius) var(--radius) 0;font-size:12px;color:var(--green-800);line-height:1.6;margin-top:10px}
+  .notino-opening strong{font-weight:600}
   .comp-header{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:14px}
   .comp-name-block .name{font-size:17px;font-weight:600}
   .comp-name-block .sub{font-size:12px;color:var(--text-tertiary);margin-top:2px}
@@ -704,6 +711,7 @@
   <div class="subtabs">
     <button class="subtab active" onclick="showSubTab('swot', this)">Competitor SWOT</button>
     <button class="subtab" onclick="showSubTab('social', this)">Social Content Analysis</button>
+    <button class="subtab" onclick="showSubTab('channelmix', this)">Channel Mix</button>
   </div>
 
   <div id="subtab-swot" class="subtab-pane active">
@@ -1201,6 +1209,124 @@
   </div>
 
   </div><!-- /subtab-social -->
+
+  <div id="subtab-channelmix" class="subtab-pane">
+
+  <div class="banner banner-blue">
+    <strong>Channel mix mapping:</strong> Which channels each Croatian competitor uses across website/marketplace, mobile apps, social media, and B2B-specific channels. Croatia's competitive set is smaller but Zoyya has built the most complete full-funnel stack in the region.
+  </div>
+
+  <!-- Zoyya Channel Mix -->
+  <div class="comp-card zoyya">
+    <div class="comp-header">
+      <div class="comp-name-block">
+        <div class="name">Zoyya</div>
+        <div class="sub">Most complete full-funnel content stack of any Croatian competitor</div>
+      </div>
+      <span class="threat-badge t-med">Threat: medium</span>
+    </div>
+    <div class="summary-wrap">
+      <table class="ch-table">
+        <thead><tr><th>Channel</th><th>Activity</th><th>Reach / data</th></tr></thead>
+        <tbody>
+          <tr><td class="ch-cat">Website / Marketplace</td><td>zoyya.com — consumer booking marketplace with city/category pages, salon profiles, real-time availability</td><td>Croatian market leader</td></tr>
+          <tr><td class="ch-cat">Partner / Pro pages</td><td>Dedicated B2B pages + blog with SEO and lifecycle education (e.g. "Maximize the potential of online bookings with the Zoyya app")</td><td>Strong Croatian SEO</td></tr>
+          <tr><td class="ch-cat">Mobile Apps (B2C)</td><td>iOS + Android client booking app — central to consumer experience</td><td>App store presence</td></tr>
+          <tr><td class="ch-cat">Mobile Apps (B2B)</td><td>Zoyya Business app — salon management, calendar, client comms</td><td>Dedicated B2B app</td></tr>
+          <tr><td class="ch-cat">Instagram</td><td>@zoyyaapp — partner testimonials, feature Reels, co-branded posts with salon partners</td><td>1,914 followers, 419 posts</td></tr>
+          <tr><td class="ch-cat">Facebook</td><td>Zoyya Zagreb — B2B/B2C mix, salon spotlights, feature announcements, community building</td><td>1,600 followers</td></tr>
+          <tr><td class="ch-cat">TikTok</td><td>@zoyyaapp — lifestyle/problem-solution videos, gift card promos, user testimonials ("Zoyya saves my business")</td><td>614 followers, 6,065 likes</td></tr>
+          <tr><td class="ch-cat">YouTube</td><td>@zoyyaApp — explainer videos, tutorial on reviews, time-management stories (stewardess using Zoyya)</td><td>Educational content</td></tr>
+          <tr><td class="ch-cat">SaaS Directories</td><td>GetApp listings + partner salons amplify via their own IG/FB profiles</td><td>Indirect amplification</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="notino-opening"><strong>Notino's opening:</strong> Zoyya has the widest channel spread in Croatia but modest reach on each. Their 614 TikTok followers and 1,914 IG followers are beatable. Notino can match Zoyya's channel breadth while leading with a story Zoyya never tells: revenue generation. Zoyya's content is 100% admin-relief — Notino owns the "earn more" narrative across every channel.</div>
+  </div>
+
+  <!-- SrediMe Channel Mix -->
+  <div class="comp-card sredime">
+    <div class="comp-header">
+      <div class="comp-name-block">
+        <div class="name">SrediMe</div>
+        <div class="sub">App-centric with strong regional branding across ex-YU</div>
+      </div>
+      <span class="threat-badge t-med">Threat: medium</span>
+    </div>
+    <div class="summary-wrap">
+      <table class="ch-table">
+        <thead><tr><th>Channel</th><th>Activity</th><th>Reach / data</th></tr></thead>
+        <tbody>
+          <tr><td class="ch-cat">Website</td><td>sredime.com / sredime.hr — multi-country site, city listings, real-time booking UX</td><td>Regional (HR, RS, BA)</td></tr>
+          <tr><td class="ch-cat">Mobile Apps</td><td>iOS + Android — app store descriptions as marketing, central to brand identity</td><td>Core distribution channel</td></tr>
+          <tr><td class="ch-cat">Instagram</td><td>@sredi_mee + @sredimesrbija — "najveća beauty platforma u regiji", contests, "find and book" CTAs</td><td>3.5k followers, 899 posts (Serbia-primary)</td></tr>
+          <tr><td class="ch-cat">Facebook</td><td>Country pages (SrediMe Ba / Srbija) — city launch announcements, educational posts</td><td>Multi-country pages</td></tr>
+          <tr><td class="ch-cat">TikTok</td><td>@sredime + branded audio ("SrediMe – original sound") + influencer content (travel/essential apps videos)</td><td>Active with branded audio</td></tr>
+          <tr><td class="ch-cat">YouTube</td><td>Launch videos, ad creatives ("Nova SrediMe iOS i Android aplikacija"), horizontal and square ad formats</td><td>Ad-focused content</td></tr>
+          <tr><td class="ch-cat">App Discovery</td><td>Softonic + MWM app discovery listings — app store SEO and third-party discoverability</td><td>Secondary distribution</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="notino-opening"><strong>Notino's opening:</strong> SrediMe's channel strategy is Serbia-first — Croatian presence is secondary across all channels. Their Instagram is @sredimesrbija, their content defaults to Serbian context. Notino can be the definitively Croatian-first platform. Additionally, SrediMe connects salons to ex-YU visitors; Notino connects them to Western EU tourists (German, Austrian, Slovenian) — a higher-spending audience no competitor reaches.</div>
+  </div>
+
+  <!-- Buker Channel Mix -->
+  <div class="comp-card buker">
+    <div class="comp-header">
+      <div class="comp-name-block">
+        <div class="name">Buker</div>
+        <div class="sub">Website + apps + YouTube B2B — TikTok presence via creators, not brand</div>
+      </div>
+      <span class="threat-badge t-low">Threat: low</span>
+    </div>
+    <div class="summary-wrap">
+      <table class="ch-table">
+        <thead><tr><th>Channel</th><th>Activity</th><th>Reach / data</th></tr></thead>
+        <tbody>
+          <tr><td class="ch-cat">Website</td><td>buker.hr — B2C discovery, individual salon profiles, service listings</td><td>Croatian market</td></tr>
+          <tr><td class="ch-cat">Mobile Apps</td><td>Android + iOS apps + Chrome extension ("Book Salon Appointments Nearby Fast")</td><td>Multi-platform presence</td></tr>
+          <tr><td class="ch-cat">YouTube</td><td>@buker6937 — B2B explainer "Buker – aplikacija za upravljanje salonima ljepote"</td><td>Small B2B channel</td></tr>
+          <tr><td class="ch-cat">TikTok</td><td>No central brand account; presence via creator hashtag #buker (barbers and salons demonstrating bookings, "essential apps" lists)</td><td>16.1k posts under #buker</td></tr>
+          <tr><td class="ch-cat">Instagram / Facebook</td><td>No central brand accounts; partner salons amplify by linking to Buker profiles from their own social</td><td>Indirect only</td></tr>
+          <tr><td class="ch-cat">LinkedIn</td><td colspan="2"><span class="tag-no">No presence</span></td></tr>
+          <tr><td class="ch-cat">TV / OOH</td><td colspan="2"><span class="tag-no">None</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="notino-opening"><strong>Notino's opening:</strong> Buker has no owned social presence — their TikTok visibility comes entirely from creators using #buker organically. This is both a strength (authentic) and a weakness (uncontrollable). Notino can build an intentional creator strategy that captures Buker's organic energy while adding the revenue narrative: "Buker helps you manage bookings. Notino helps you manage bookings AND earn 5% on products."</div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- Synthesis -->
+  <div class="sl">Strategic synthesis — channel gaps Notino can own</div>
+  <div class="ws-grid">
+    <div class="ws-card"><div class="ws-title open">Full-funnel channel leadership</div><div class="ws-body">Zoyya has the most complete full-funnel stack (website, blog, apps, IG, FB, TikTok, YouTube) but with modest reach on each channel. Notino can match the breadth while bringing dramatically larger consumer reach via the existing e-shop and app base.</div></div>
+    <div class="ws-card"><div class="ws-title open">Croatian-first positioning</div><div class="ws-body">SrediMe is Serbia-first across all channels. Buker has no owned social. Zoyya is the only truly Croatian-first platform. Notino can be the second — and the only one with an integrated product commerce story.</div></div>
+    <div class="ws-card"><div class="ws-title open">Revenue narrative across channels</div><div class="ws-body">Zero competitors use any channel to talk about salon revenue generation. Every channel — IG, TikTok, YouTube, blog — can carry Notino's unique "earn 5% on products" story. This is a content monopoly waiting to be claimed.</div></div>
+    <div class="ws-card"><div class="ws-title open">Western tourist audience</div><div class="ws-body">No competitor's channel mix targets German, Austrian, Slovenian, or Italian tourists — Croatia's highest-spending visitor segments. Notino's multilingual UX and existing EU user base make this a credible channel narrative competitors can't replicate.</div></div>
+    <div class="ws-card"><div class="ws-title open">Creator / influencer gap</div><div class="ws-body">Buker's #buker hashtag (16.1k posts) proves Croatian beauty creators will organically promote booking platforms. Notino can build an intentional creator programme that captures this energy with structured partnerships and revenue-share storytelling.</div></div>
+    <div class="ws-card"><div class="ws-title risk">Risk: Zoyya's first-mover depth</div><div class="ws-body">Zoyya has 419 Instagram posts and a mature blog/SEO presence. While reach is modest, their content library creates an SEO moat that takes time to match. Notino should prioritise video (TikTok, Reels, YouTube) where Zoyya's lead is smallest.</div></div>
+  </div>
+
+  <div class="summary-wrap">
+    <table>
+      <thead><tr><th>Channel</th><th>Zoyya</th><th>SrediMe</th><th>Buker</th><th>Notino opportunity</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Website / Marketplace</strong></td><td><span class="tag-yes">Full marketplace</span></td><td><span class="tag-yes">Regional listings</span></td><td><span class="tag-part">Basic profiles</span></td><td><span class="tag-yes">E-shop traffic + booking</span></td></tr>
+        <tr><td><strong>Mobile Apps</strong></td><td><span class="tag-yes">B2C + B2B apps</span></td><td><span class="tag-yes">Core channel</span></td><td><span class="tag-yes">Apps + Chrome ext.</span></td><td><span class="tag-yes">Existing Notino app base</span></td></tr>
+        <tr><td><strong>Instagram</strong></td><td><span class="tag-part">1.9k followers</span></td><td><span class="tag-part">3.5k (Serbia-led)</span></td><td><span class="tag-no">No brand account</span></td><td><span class="tag-yes">HR salon owner voice — open</span></td></tr>
+        <tr><td><strong>TikTok</strong></td><td><span class="tag-part">614 followers</span></td><td><span class="tag-part">Active + branded audio</span></td><td><span class="tag-part">Creator-driven only</span></td><td><span class="tag-yes">Revenue-story content — unclaimed</span></td></tr>
+        <tr><td><strong>YouTube</strong></td><td><span class="tag-part">Explainers</span></td><td><span class="tag-part">Ad creatives</span></td><td><span class="tag-part">1 B2B video</span></td><td><span class="tag-yes">Salon success stories</span></td></tr>
+        <tr><td><strong>Facebook</strong></td><td><span class="tag-part">1.6k followers</span></td><td><span class="tag-part">Country pages</span></td><td><span class="tag-no">No brand page</span></td><td><span class="tag-yes">B2B community building</span></td></tr>
+        <tr><td><strong>Blog / SEO</strong></td><td><span class="tag-yes">Strong</span></td><td><span class="tag-no">None</span></td><td><span class="tag-no">None</span></td><td><span class="tag-yes">Coastal + tourist SEO gaps</span></td></tr>
+        <tr><td><strong>Tourist audience</strong></td><td><span class="tag-no">Never</span></td><td><span class="tag-part">ex-YU only</span></td><td><span class="tag-no">Never</span></td><td><span class="tag-yes">Western EU — unique position</span></td></tr>
+        <tr><td><strong>Product revenue share</strong></td><td><span class="tag-no">None</span></td><td><span class="tag-no">None</span></td><td><span class="tag-no">None</span></td><td><span class="tag-yes">5% commission — unique</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  </div><!-- /subtab-channelmix -->
 
 </div><!-- /tab-competitors -->
 
