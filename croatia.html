@@ -36,7 +36,7 @@
   .report-meta .date{font-size:12px;color:var(--text-tertiary);margin-bottom:6px}
   .notino-badge{background:linear-gradient(135deg,#1e3a8a,#3b82f6);color:#fff;font-size:13px;font-weight:600;padding:6px 14px;border-radius:999px;letter-spacing:.2px}
   /* TABS */
-  .tabs{display:flex;gap:4px;margin-bottom:20px;background:var(--bg-primary);border:0.5px solid var(--border-light);border-radius:var(--radius-lg);padding:6px}
+  .tabs{display:flex;gap:4px;margin-bottom:20px;background:var(--bg-primary);border:0.5px solid var(--border-light);border-radius:var(--radius-lg);padding:6px;flex-wrap:wrap}
   .tab{padding:8px 18px;border-radius:var(--radius);font-size:13px;font-weight:500;cursor:pointer;border:none;background:transparent;color:var(--text-secondary);transition:all .15s}
   .tab.active{background:var(--bg-secondary);color:var(--text-primary);border:0.5px solid var(--border-light)}
   .tab-pane{display:none}
@@ -47,6 +47,8 @@
   .banner{border-radius:var(--radius);padding:14px 18px;margin-bottom:20px;font-size:13px;line-height:1.6}
   .banner-green{background:var(--green-50);border:0.5px solid var(--green-200);color:var(--green-800)}
   .banner-blue{background:var(--blue-50);border:0.5px solid var(--blue-100);color:var(--blue-800)}
+  .banner-amber{background:var(--amber-50);border:0.5px solid var(--amber-600);color:var(--amber-800)}
+  .banner-purple{background:var(--purple-50);border:0.5px solid var(--purple-600);color:var(--purple-800)}
   /* METRICS */
   .metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:20px}
   .metric{background:var(--bg-primary);border:0.5px solid var(--border-light);border-radius:var(--radius);padding:16px 18px}
@@ -170,9 +172,39 @@
   .divider{height:0.5px;background:var(--border-light);margin:24px 0}
   /* FOOTER */
   .footer{text-align:center;padding:24px 0;font-size:11px;color:var(--text-tertiary)}
+  /* COLLAPSIBLE */
+  .collapsible{background:var(--bg-primary);border:0.5px solid var(--border-light);border-radius:var(--radius-lg);margin-bottom:14px;overflow:hidden}
+  .collapsible-toggle{width:100%;text-align:left;padding:14px 18px;font-size:13px;font-weight:600;border:none;background:transparent;cursor:pointer;display:flex;align-items:center;justify-content:space-between;color:var(--text-primary)}
+  .collapsible-toggle::after{content:"▾";font-size:12px;color:var(--text-tertiary);transition:transform .2s}
+  .collapsible-toggle.open::after{transform:rotate(180deg)}
+  .collapsible-content{display:none;padding:0 18px 18px}
+  .collapsible-content.open{display:block}
+  /* CTA BUTTON */
+  .cta-btn{display:inline-flex;align-items:center;gap:8px;background:linear-gradient(135deg,#1e3a8a,#3b82f6);color:#fff;font-size:14px;font-weight:600;padding:12px 24px;border-radius:999px;text-decoration:none;transition:transform .15s,box-shadow .15s;letter-spacing:.2px}
+  .cta-btn:hover{transform:translateY(-1px);box-shadow:0 4px 12px rgba(30,58,138,.3)}
+  /* IFRAME WRAP */
+  .iframe-wrap{border-radius:var(--radius-lg);overflow:hidden;border:0.5px solid var(--border-light);margin-bottom:20px;background:var(--bg-primary)}
+  .iframe-wrap iframe{width:100%;height:600px;border:none}
+  /* PRIORITY BADGES */
+  .pri-high{background:#FCEBEB;color:#A32D2D;font-size:10px;font-weight:600;padding:2px 8px;border-radius:999px;display:inline-block}
+  .pri-med{background:#FAEEDA;color:#854F0B;font-size:10px;font-weight:600;padding:2px 8px;border-radius:999px;display:inline-block}
+  .pri-low{background:#FAEEDA;color:#7A6B0A;font-size:10px;font-weight:600;padding:2px 8px;border-radius:999px;display:inline-block}
+  /* EVENT CARD */
+  .event-card{background:var(--bg-primary);border:0.5px solid var(--border-light);border-radius:var(--radius-lg);padding:20px 22px;margin-bottom:16px}
+  .event-header{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:12px}
+  .event-name{font-size:16px;font-weight:600;color:var(--text-primary)}
+  .event-date{font-size:12px;font-weight:600;padding:4px 12px;border-radius:999px;background:var(--blue-50);color:var(--blue-800);white-space:nowrap}
+  .event-meta{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:14px}
+  .event-meta-item{background:var(--bg-secondary);border-radius:var(--radius);padding:10px 12px}
+  .em-label{font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:var(--text-tertiary);margin-bottom:3px}
+  .em-value{font-size:12px;color:var(--text-primary);font-weight:500}
+  /* KEYWORD TAG */
+  .kw-list{display:flex;flex-wrap:wrap;gap:5px;margin:8px 0 12px}
+  .kw{font-size:11px;padding:3px 9px;border-radius:999px;background:var(--bg-secondary);color:var(--text-secondary);border:0.5px solid var(--border-light);font-family:monospace}
   @media(max-width:900px){
-    .metrics,.season-grid,.cluster-grid,.persona-grid,.pos-grid,.pillar-grid,.never-grid{grid-template-columns:1fr 1fr}
+    .metrics,.season-grid,.cluster-grid,.persona-grid,.pos-grid,.pillar-grid,.never-grid,.event-meta{grid-template-columns:1fr 1fr}
     .card-grid-2,.card-grid-3,.ws-grid,.tone-hook,.swot{grid-template-columns:1fr}
+    .tabs{flex-wrap:wrap}
   }
 </style>
 </head>
@@ -200,11 +232,16 @@
 <!-- TABS -->
 <div class="tabs">
   <button class="tab active" onclick="showTab('market')">Market Overview</button>
-  <button class="tab" onclick="showTab('competitors')">Competitor SWOT</button>
+  <button class="tab" onclick="showTab('salons')">Salons &amp; Supply</button>
+  <button class="tab" onclick="showTab('competitors')">Competitor Analysis</button>
+  <button class="tab" onclick="showTab('seo')">SEO Roadmap</button>
+  <button class="tab" onclick="showTab('events')">Events</button>
   <button class="tab" onclick="showTab('social')">Social Content Analysis</button>
 </div>
 
+<!-- ============================================================ -->
 <!-- TAB 1: MARKET OVERVIEW -->
+<!-- ============================================================ -->
 <div id="tab-market" class="tab-pane active">
 
   <div class="banner banner-green">
@@ -247,6 +284,17 @@
     </div>
   </div>
 
+  <!-- ENRICHED: Tourism macro drivers -->
+  <div class="sl">Tourism macro drivers — Croatia's structural advantage</div>
+  <div class="card" style="margin-bottom:20px">
+    <div class="card-body">
+      <strong>20.2 million tourist arrivals and 93.7 million overnight stays in commercial accommodation in 2024</strong> (DZS data), a 3.9% and 1.4% increase vs 2023. When nautical charters and non-commercial stays are added (eVisitor/eCrew), the Ministry of Tourism summarises 2024 at <strong>21.3 million arrivals and 108.7 million overnight stays</strong>, roughly 86% of nights in the Adriatic region and about 2.6 million nights in Zagreb.<br><br>
+      <strong>Istria alone:</strong> 4.9 million arrivals and 27.9 million tourist nights (~24% and 30% of national totals). Dubrovnik: 4.2 million tourist nights (highest single destination).<br><br>
+      <strong>Tourist origins:</strong> Germans (414,400 arrivals, 1.6M nights early in year, +23.6% and +16.5%), Slovenians (341,100 arrivals, 1M nights, +8.4%), followed by Austria, Poland, Czechia, Italy. Health tourism visitors from Western Europe (Germany, UK, Scandinavia).<br><br>
+      <strong>Implication:</strong> Croatia's beauty-services demand is structurally elevated relative to its resident population (3.87M) because of inbound tourism, especially along the coast and in Zagreb. No current platform is capitalising on this for either salon B2B acquisition or tourist consumer booking.
+    </div>
+  </div>
+
   <div class="sl">Tourism seasonality — Croatia's unique dynamic</div>
   <div class="card">
     <div class="card-body" style="margin-bottom:12px"><strong>90.7% of overnight stays are from foreign tourists.</strong> Coastal cities serve millions of international visitors in summer — beauty services (nails, waxing, hair, aesthetics) are peak demand for tourists and locals alike. Dubrovnik alone: 4.2M tourist nights. Istria: 27.9M. No current platform is capitalising on this for either salon B2B acquisition or tourist consumer booking.</div>
@@ -271,46 +319,51 @@
     <div class="card-body" style="margin-top:10px"><strong>Notino implication:</strong> Acquire coastal salons (Split, Dubrovnik, Zadar, Poreč, Rovinj) before summer 2026. Position Notino as the platform that connects international tourists to Croatian salons. English + German + Italian UX is a direct differentiator — tourists cannot use Zoyya (Croatian-primary) or SrediMe (Serbian-primary) effectively.</div>
   </div>
 
-  <div class="sl">Regional clusters — 8,390 venues mapped (Google DB, Feb 2026)</div>
-  <div class="cluster-grid">
-    <div class="cluster">
-      <div class="cl-name">Greater Zagreb</div>
-      <div class="cl-count">~2,700</div>
-      <div class="cl-share">26.8% of national total</div>
-      <div class="cl-detail">~800 Notino-relevant. Zagreb city: 1,077. Year-round, highest absolute concentration. Primary launch anchor.</div>
+  <!-- ENRICHED: Digital booking behaviour -->
+  <div class="sl">Digital booking behaviour</div>
+  <div class="card-grid-2">
+    <div class="card">
+      <div class="card-title" style="color:var(--blue-800)">Zoyya case data</div>
+      <div class="card-body">
+        Partners see up to <strong>80% of reservations booked online</strong> once fully onboarded. Up to <strong>30% more arrivals per customer</strong> after adopting online booking. Substantial shares of appointments booked outside working hours (evening/night scheduling). Up to <strong>50% less admin time</strong>. Integration with Google Search and Maps ("Book now" button) drives passive discovery.
+      </div>
     </div>
-    <div class="cluster">
-      <div class="cl-name">Dalmatian Coast</div>
-      <div class="cl-count">~2,380</div>
-      <div class="cl-share">23.6% of national total</div>
-      <div class="cl-detail">~707 Notino-relevant. Split (466), Zadar (303), Dubrovnik (155). Highest density per capita. Tourism-supercharged.</div>
-    </div>
-    <div class="cluster">
-      <div class="cl-name">Kvarner &amp; Istria</div>
-      <div class="cl-count">~1,630</div>
-      <div class="cl-share">16.2% of national total</div>
-      <div class="cl-detail">~486 Notino-relevant. Rijeka (405), Pula (261), Poreč (106). 27.9M tourist nights in Istria alone.</div>
-    </div>
-    <div class="cluster">
-      <div class="cl-name">Eastern Slavonia</div>
-      <div class="cl-count">~1,370</div>
-      <div class="cl-share">15.7% of national total</div>
-      <div class="cl-detail">~468 Notino-relevant. Osijek (280). Lower digital penetration. Less competition. Field sales recommended.</div>
-    </div>
-    <div class="cluster">
-      <div class="cl-name">North Croatia</div>
-      <div class="cl-count">~1,800</div>
-      <div class="cl-share">~18% of national total</div>
-      <div class="cl-detail">~548 Notino-relevant. Varaždin (216), Karlovac (157). Inland spa and wellness hubs. Year-round health tourism.</div>
+    <div class="card">
+      <div class="card-title" style="color:var(--green-600)">Market readiness</div>
+      <div class="card-body">
+        SrediMe offers 24/7 real-time booking across multiple channels. Croatian consumers already expect on-demand, instant booking regardless of season. <strong>Lower digital booking maturity than Austria</strong> — phone/WhatsApp still dominates. More per-salon education needed. But adoption accelerates once onboarded (Zoyya data). The gap is awareness, not willingness.
+      </div>
     </div>
   </div>
 
-  <div class="sl">12-month acquisition target allocation — 610 partner salons</div>
-  <div class="chart-wrap">
-    <div class="chart-legend">
-      <span><span class="ld" style="background:#378ADD"></span>Target salons by region</span>
+  <!-- ENRICHED: Consumer behaviour -->
+  <div class="sl">Consumer behaviour insights</div>
+  <div class="card-grid-2">
+    <div class="card">
+      <div class="card-title" style="color:var(--amber-600)">Price sensitivity — tourist vs local dynamics</div>
+      <div class="card-body">
+        <strong>Locals:</strong> Very sensitive to explicit booking fees and harsh no-show penalties. Avoid visible booking surcharges. Monetise through product commission and B2B fees instead.<br><br>
+        <strong>Tourists</strong> (especially in 4-5* hotels and high-end coastal salons): Will tolerate <strong>20–50% higher price points</strong> than inland locals for convenience, quality, last-minute or Sunday appointments.<br><br>
+        <strong>Foreign patients/spa guests:</strong> Come to Croatia for good value-for-money vs Western Europe but are willing to pay premium relative to local price levels.
+      </div>
     </div>
-    <div style="position:relative;height:220px"><canvas id="regionChart"></canvas></div>
+    <div class="card">
+      <div class="card-title" style="color:var(--teal-600)">No-show patterns &amp; management</div>
+      <div class="card-body">
+        Zoyya and SrediMe both highlight automatic reminders (email/SMS) and simple rescheduling as core features to reduce no-shows. Zoyya charges per SMS and offers prepayment features through payment-gateway partners. Some salons already experimenting with deposits and pre-paid bookings.<br><br>
+        <strong>Strategy:</strong> Reminder-driven no-show reduction combined with optional deposits, rather than punitive cancellation fees. Focus on reminders and optional deposits — punitive fees land badly in this price-sensitive market.
+      </div>
+    </div>
+  </div>
+
+  <!-- ENRICHED: Linguistic/cultural specifics -->
+  <div class="sl">Linguistic &amp; cultural specifics</div>
+  <div class="card" style="margin-bottom:20px">
+    <div class="card-body">
+      <strong>Language expectations by audience:</strong> In tourist hubs, English is the main lingua franca; German and Italian widely spoken. Croatian (HR) and English (EN) as default languages for B2C app and salon dashboard. German (DE) and Italian (IT) as priority for coastal and Istrian/Kvarner salons. Optional regional languages (Slovene, Polish) via translation of key static pages.<br><br>
+      <strong>Cultural norms:</strong> Strong culture of regular hairdressing, nail care and spa visits, particularly among women in urban and coastal areas. Wellness services integral to both domestic leisure and inbound health-tourism trips. Beauty services not purely discretionary luxuries — embedded in social and tourism routines.<br><br>
+      <strong>Salon brand profile:</strong> 28.8% Croatian-named salons, 21.5% English-branded, 8.2% Balkan, 7.7% International, 5.6% South Slavic — reflecting a mix of local identity and international aspiration.
+    </div>
   </div>
 
   <div class="sl">Target personas</div>
@@ -388,7 +441,207 @@
 
 </div>
 
-<!-- TAB 2: COMPETITOR SWOT -->
+<!-- ============================================================ -->
+<!-- TAB 2: SALONS & SUPPLY -->
+<!-- ============================================================ -->
+<div id="tab-salons" class="tab-pane">
+
+  <div class="banner banner-blue">
+    <strong>8,390 beauty-service venues mapped across Croatia</strong> (proprietary Google Places DB, Feb 2026). ~3,000 are Notino-relevant. The Croatian Ministry of Economy Craft Register lists 10,796 active beauty-related crafts (Jan 2026, +10.5% YoY). This tab provides the full county-level breakdown, city rankings, density analysis, and macro-cluster strategy.
+  </div>
+
+  <div class="sl">Total addressable market</div>
+  <div class="metrics">
+    <div class="metric">
+      <div class="m-label">Google Places DB</div>
+      <div class="m-value">8,390</div>
+      <div class="m-sub">Beauty-service venues · Feb 2026</div>
+    </div>
+    <div class="metric">
+      <div class="m-label">Ministry craft register</div>
+      <div class="m-value">10,796</div>
+      <div class="m-sub">Active beauty-related crafts · Jan 2026 · +10.5% YoY</div>
+    </div>
+    <div class="metric">
+      <div class="m-label">Notino-relevant salons</div>
+      <div class="m-value">~3,000</div>
+      <div class="m-sub">Hair, nails, cosmetics, spa · estimated from DB</div>
+    </div>
+    <div class="metric">
+      <div class="m-label">12-month target</div>
+      <div class="m-value">610</div>
+      <div class="m-sub">Partner salons across all regions</div>
+    </div>
+  </div>
+
+  <div class="sl">Regional clusters — 8,390 venues mapped</div>
+  <div class="cluster-grid">
+    <div class="cluster">
+      <div class="cl-name">Greater Zagreb</div>
+      <div class="cl-count">~2,700</div>
+      <div class="cl-share">26.8% of national total</div>
+      <div class="cl-detail">~800 Notino-relevant. Zagreb city: 1,077. Velika Gorica: 189. Samobor: 114. Dugo Selo: 105. Zapresic: 96. Sesvete: 170. Year-round, highest absolute concentration. Primary launch anchor.</div>
+    </div>
+    <div class="cluster">
+      <div class="cl-name">Dalmatian Coast</div>
+      <div class="cl-count">~2,380</div>
+      <div class="cl-share">23.6% of national total</div>
+      <div class="cl-detail">~707 Notino-relevant. Split: 466. Zadar: 303. Sibenik: 169. Dubrovnik: 155. Makarska: 102. Solin: 99. Trogir: 83. Highest density per capita. Tourism-supercharged.</div>
+    </div>
+    <div class="cluster">
+      <div class="cl-name">Kvarner &amp; Istria</div>
+      <div class="cl-count">~1,630</div>
+      <div class="cl-share">16.2% of national total</div>
+      <div class="cl-detail">~486 Notino-relevant. Rijeka: 405. Pula: 261. Porec: 106. Opatija: 95. Rovinj: 84. 27.9M tourist nights in Istria alone. Highest salon density range (34.5–34.7 per 10k).</div>
+    </div>
+    <div class="cluster">
+      <div class="cl-name">Eastern Slavonia</div>
+      <div class="cl-count">~1,370</div>
+      <div class="cl-share">15.7% of national total</div>
+      <div class="cl-detail">~468 Notino-relevant. Osijek: 280. Slavonski Brod: 183. Vinkovci: 136. Dakovo: 94. Virovitica: 83. Lower digital penetration. Less competition. Field sales recommended.</div>
+    </div>
+    <div class="cluster">
+      <div class="cl-name">North Croatia</div>
+      <div class="cl-count">~1,800</div>
+      <div class="cl-share">~18% of national total</div>
+      <div class="cl-detail">~548 Notino-relevant. Varazdin: 216. Karlovac: 157. Sisak: 144. Cakovec: 140. Koprivnica: 140. Bjelovar: 133. Inland spa and wellness hubs. Year-round health tourism.</div>
+    </div>
+  </div>
+
+  <div class="sl">12-month acquisition target allocation — 610 partner salons</div>
+  <div class="chart-wrap">
+    <div class="chart-legend">
+      <span><span class="ld" style="background:#378ADD"></span>Target salons by region</span>
+    </div>
+    <div style="position:relative;height:220px"><canvas id="regionChart"></canvas></div>
+  </div>
+
+  <!-- County-level table -->
+  <div class="sl">County-level distribution — all 21 counties</div>
+  <div class="summary-wrap">
+    <table>
+      <thead><tr>
+        <th>County</th><th>Population</th><th>Share %</th><th>Est. Total Salons</th><th>Notino-Relevant</th><th>Salons/10k Pop</th><th>DB Count (Feb 26)</th><th>Priority</th>
+      </tr></thead>
+      <tbody>
+        <tr><td><strong>City of Zagreb</strong></td><td>777,359</td><td>20.1%</td><td>~2,030</td><td>~603</td><td>26.1</td><td>1,077 (12.84%)</td><td><span class="pri-high">Tier 1</span></td></tr>
+        <tr><td><strong>Split-Dalmatia</strong></td><td>430,526</td><td>12.7%</td><td>~1,280</td><td>~380</td><td>29.7</td><td>466 (5.55%)</td><td><span class="pri-high">Tier 1</span></td></tr>
+        <tr><td><strong>Primorje-Gorski kotar</strong></td><td>265,990</td><td>9.2%</td><td>~920</td><td>~275</td><td>34.7</td><td>405 (4.83%)</td><td><span class="pri-high">Tier 1</span></td></tr>
+        <tr><td><strong>Istria</strong></td><td>204,709</td><td>7.0%</td><td>~710</td><td>~211</td><td>34.5</td><td>261 (3.11%)</td><td><span class="pri-high">Tier 1</span></td></tr>
+        <tr><td><strong>Osijek-Baranja</strong></td><td>249,734</td><td>6.8%</td><td>~680</td><td>~202</td><td>27.2</td><td>280 (3.34%)</td><td><span class="pri-high">Tier 1</span></td></tr>
+        <tr><td><strong>Zagreb County</strong></td><td>309,964</td><td>6.7%</td><td>~670</td><td>~200</td><td>21.6</td><td>~574 (6.84%)</td><td><span class="pri-high">Tier 1</span></td></tr>
+        <tr><td>Zadar</td><td>165,766</td><td>4.7%</td><td>~470</td><td>~141</td><td>28.5</td><td>303 (3.61%)</td><td><span class="pri-med">Tier 2</span></td></tr>
+        <tr><td>Varazdin</td><td>158,860</td><td>3.9%</td><td>~390</td><td>~116</td><td>24.4</td><td>216 (2.57%)</td><td><span class="pri-med">Tier 2</span></td></tr>
+        <tr><td>Sibenik-Knin</td><td>95,898</td><td>3.5%</td><td>~350</td><td>~104</td><td>36.4</td><td>169 (2.01%)</td><td><span class="pri-med">Tier 2</span></td></tr>
+        <tr><td>Slavonski Brod-Posavina</td><td>125,978</td><td>3.2%</td><td>~325</td><td>~97</td><td>25.8</td><td>183 (2.18%)</td><td><span class="pri-med">Tier 2</span></td></tr>
+        <tr><td>Vukovar-Srijem</td><td>136,797</td><td>2.9%</td><td>~295</td><td>~88</td><td>21.6</td><td>136 (1.62%)</td><td><span class="pri-med">Tier 2</span></td></tr>
+        <tr><td>Krapina-Zagorje</td><td>119,320</td><td>2.9%</td><td>~290</td><td>~87</td><td>24.4</td><td>~140</td><td><span class="pri-med">Tier 2</span></td></tr>
+        <tr><td>Sisak-Moslavina</td><td>134,008</td><td>2.8%</td><td>~280</td><td>~84</td><td>21.0</td><td>144 (1.72%)</td><td><span class="pri-med">Tier 2</span></td></tr>
+        <tr><td>Dubrovnik-Neretva</td><td>116,393</td><td>2.7%</td><td>~280</td><td>~82</td><td>23.7</td><td>155 (1.85%)</td><td><span class="pri-med">Tier 2</span></td></tr>
+        <tr><td>Karlovac</td><td>109,561</td><td>2.4%</td><td>~240</td><td>~71</td><td>21.9</td><td>157 (1.87%)</td><td><span class="pri-low">Tier 3</span></td></tr>
+        <tr><td>Koprivnica-Krizevci</td><td>99,203</td><td>2.0%</td><td>~200</td><td>~60</td><td>20.5</td><td>140 (1.67%)</td><td><span class="pri-low">Tier 3</span></td></tr>
+        <tr><td>Bjelovar-Bilogora</td><td>98,266</td><td>1.6%</td><td>~160</td><td>~47</td><td>16.2</td><td>133 (1.59%)</td><td><span class="pri-low">Tier 3</span></td></tr>
+        <tr><td>Medimurje</td><td>105,003</td><td>1.5%</td><td>~155</td><td>~46</td><td>14.7</td><td>140 (1.67%)</td><td><span class="pri-low">Tier 3</span></td></tr>
+        <tr><td>Virovitica-Podravina</td><td>67,221</td><td>1.4%</td><td>~140</td><td>~42</td><td>21.1</td><td>83 (0.99%)</td><td><span class="pri-low">Tier 3</span></td></tr>
+        <tr><td>Pozega-Slavonia</td><td>60,594</td><td>1.3%</td><td>~130</td><td>~39</td><td>21.6</td><td>94 (1.12%)</td><td><span class="pri-low">Tier 3</span></td></tr>
+        <tr><td>Lika-Senj</td><td>43,200</td><td>0.8%</td><td>~85</td><td>~26</td><td>19.9</td><td>~50</td><td><span class="pri-low">Tier 3</span></td></tr>
+        <tr style="background:var(--bg-secondary);font-weight:600"><td><strong>TOTAL</strong></td><td><strong>3,873,350</strong></td><td><strong>100.0%</strong></td><td><strong>~10,080</strong></td><td><strong>~3,000</strong></td><td><strong>26.0 avg</strong></td><td><strong>8,390</strong></td><td></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Top cities -->
+  <div class="sl">Top cities by salon count (Google Places DB)</div>
+  <div class="summary-wrap">
+    <table>
+      <thead><tr><th>#</th><th>City</th><th>Salon Count</th><th>% of Total</th><th>Cluster</th></tr></thead>
+      <tbody>
+        <tr><td>1</td><td><strong>Zagreb</strong></td><td>1,077</td><td>12.84%</td><td>Greater Zagreb</td></tr>
+        <tr><td>2</td><td><strong>Split</strong></td><td>466</td><td>5.55%</td><td>Dalmatian Coast</td></tr>
+        <tr><td>3</td><td><strong>Rijeka</strong></td><td>405</td><td>4.83%</td><td>Kvarner</td></tr>
+        <tr><td>4</td><td><strong>Zadar</strong></td><td>303</td><td>3.61%</td><td>Dalmatian Coast</td></tr>
+        <tr><td>5</td><td><strong>Osijek</strong></td><td>280</td><td>3.34%</td><td>Eastern Slavonia</td></tr>
+        <tr><td>6</td><td><strong>Pula</strong></td><td>261</td><td>3.11%</td><td>Istria</td></tr>
+        <tr><td>7</td><td><strong>Varazdin</strong></td><td>216</td><td>2.57%</td><td>North Croatia</td></tr>
+        <tr><td>8</td><td>Velika Gorica</td><td>189</td><td>2.25%</td><td>Greater Zagreb</td></tr>
+        <tr><td>9</td><td>Slavonski Brod</td><td>183</td><td>2.18%</td><td>Eastern Slavonia</td></tr>
+        <tr><td>10</td><td>Sesvete</td><td>170</td><td>2.03%</td><td>Greater Zagreb</td></tr>
+        <tr><td>11</td><td>Sibenik</td><td>169</td><td>2.01%</td><td>Dalmatian Coast</td></tr>
+        <tr><td>12</td><td>Karlovac</td><td>157</td><td>1.87%</td><td>North Croatia</td></tr>
+        <tr><td>13</td><td>Dubrovnik</td><td>155</td><td>1.85%</td><td>Dalmatian Coast</td></tr>
+        <tr><td>14</td><td>Sisak</td><td>144</td><td>1.72%</td><td>North Croatia</td></tr>
+        <tr><td>15</td><td>Cakovec</td><td>140</td><td>1.67%</td><td>North Croatia</td></tr>
+        <tr><td>16</td><td>Koprivnica</td><td>140</td><td>1.67%</td><td>North Croatia</td></tr>
+        <tr><td>17</td><td>Vinkovci</td><td>136</td><td>1.62%</td><td>Eastern Slavonia</td></tr>
+        <tr><td>18</td><td>Bjelovar</td><td>133</td><td>1.59%</td><td>North Croatia</td></tr>
+        <tr><td>19</td><td>Samobor</td><td>114</td><td>1.36%</td><td>Greater Zagreb</td></tr>
+        <tr><td>20</td><td>Porec</td><td>106</td><td>1.26%</td><td>Istria</td></tr>
+        <tr><td>21</td><td>Dugo Selo</td><td>105</td><td>1.25%</td><td>Greater Zagreb</td></tr>
+        <tr><td>22</td><td>Makarska</td><td>102</td><td>1.22%</td><td>Dalmatian Coast</td></tr>
+        <tr><td>23</td><td>Solin</td><td>99</td><td>1.18%</td><td>Dalmatian Coast</td></tr>
+        <tr><td>24</td><td>Zapresic</td><td>96</td><td>1.14%</td><td>Greater Zagreb</td></tr>
+        <tr><td>25</td><td>Opatija</td><td>95</td><td>1.13%</td><td>Kvarner</td></tr>
+        <tr><td>26</td><td>Dakovo</td><td>94</td><td>1.12%</td><td>Eastern Slavonia</td></tr>
+        <tr><td>27</td><td>Rovinj</td><td>84</td><td>1.00%</td><td>Istria</td></tr>
+        <tr><td>28</td><td>Trogir</td><td>83</td><td>0.99%</td><td>Dalmatian Coast</td></tr>
+        <tr><td>29</td><td>Virovitica</td><td>83</td><td>0.99%</td><td>Eastern Slavonia</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Salon density -->
+  <div class="sl">Salon density analysis</div>
+  <div class="card-grid-3">
+    <div class="card">
+      <div class="card-title" style="color:var(--red-600)">Highest density (&gt;30/10k)</div>
+      <div class="card-body">
+        <strong>Sibenik-Knin: 36.4</strong><br>
+        Primorje-Gorski kotar: 34.7<br>
+        Istria: 34.5<br><br>
+        All coastal/tourism-driven. High competition but also high demand. Tourism inflates service volumes beyond resident population.
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title" style="color:var(--amber-600)">Above average (25–30)</div>
+      <div class="card-body">
+        Split-Dalmatia: 29.7<br>
+        Zadar: 28.5<br>
+        Osijek-Baranja: 27.2<br>
+        City of Zagreb: 26.1<br>
+        Slavonski Brod-Posavina: 25.8<br><br>
+        Healthy market density; good adoption potential.
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title" style="color:var(--text-tertiary)">Below average (&lt;20)</div>
+      <div class="card-body">
+        Lika-Senj: 19.9<br>
+        Bjelovar-Bilogora: 16.2<br>
+        Medimurje: 14.7<br><br>
+        Rural markets; digital acquisition may be slower. Lower priority for initial launch.
+      </div>
+    </div>
+  </div>
+
+  <!-- Interactive map embed -->
+  <div class="sl">Salon map — interactive (Looker Studio)</div>
+  <div class="iframe-wrap">
+    <iframe src="https://lookerstudio.google.com/embed/reporting/930efd03-51fb-4a0e-88eb-b8bfb613b9ed/page/p_upihoe5n1d?s=rPtL0UqacsQ" allowfullscreen loading="lazy"></iframe>
+  </div>
+
+  <!-- CTA Button -->
+  <div style="text-align:center;margin:28px 0 20px">
+    <a class="cta-btn" href="https://docs.google.com/spreadsheets/d/1v516i7CZVwRh9mSZARfDLyd2K0_EaHBrU7FFPriTTjo/edit" target="_blank" rel="noopener">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+      Open Full Salon Database (Google Sheets)
+    </a>
+  </div>
+
+</div>
+
+<!-- ============================================================ -->
+<!-- TAB 3: COMPETITOR ANALYSIS -->
+<!-- ============================================================ -->
 <div id="tab-competitors" class="tab-pane">
 
   <div class="banner banner-green">
@@ -423,9 +676,10 @@
       <span class="pill">1,914 IG followers</span>
     </div>
     <div class="bt">
-      <strong>Web:</strong> Consumer-facing marketplace by city/category across Croatia. Active in Zagreb, Split, Rijeka, Osijek, Zadar, Pula, Poreč, and coastal towns. Claims "first online service marketplace in Croatia." Google Maps + Search integration ("Book now" button). Case studies cite 80% of reservations online, 50% admin reduction, 30% more client visits.<br><br>
-      <strong>Social:</strong> Instagram @zoyyaapp — 1,914 followers, 417 posts. Facebook — 1,600 followers. Content: partner testimonials, Reels ("Why successful salons use Zoyya?"), educational blog (salon marketing, no-shows, client databases). Croatian-language primary. Warm, community-driven "support local" tone.<br><br>
-      <strong>Pricing:</strong> Free tier for micro-providers. Paid tiers from €23/month for 10–20+ staff. Hidden cost: €0.50 + 0.5% per online payment even on free tier. SMS charged per message.
+      <strong>Positioning:</strong> Croatian-founded booking platform and salon-management software, marketed as "#1 booking app." Online booking 24/7, real-time calendar, staff scheduling, SMS reminders, reports/analytics, Google integration (Book now in Maps and Search), marketplace listing, mini-website for each salon.<br><br>
+      <strong>Economics/Pricing:</strong> Free plan for micro-providers. Paid tiers (Business, Advanced) scaling with employee counts (10–20 employees). SMS priced per message. Payment-gateway fees of <strong>€0.50 + 0.5% per online payment</strong> even on free tier.<br><br>
+      <strong>Impact claims:</strong> 80% of reservations booked online. 50% reduction in administration. Up to 30% more visits per customer. (Marketing figures, not audited.)<br><br>
+      <strong>Social:</strong> Instagram @zoyyaapp — 1,914 followers, 417 posts. Facebook — 1,600 followers. Content: partner testimonials, Reels ("Why successful salons use Zoyya?"), educational blog. Croatian-language primary. Warm, community-driven "support local" tone.
     </div>
     <div class="swot">
       <div class="sq sq-s"><div class="sq-label">Strengths</div><ul>
@@ -474,9 +728,9 @@
       <span class="pill">Verified reviews only from booked users</span>
     </div>
     <div class="bt">
-      <strong>Web/app:</strong> Real-time 24/7 booking across ex-YU. Country selector: Bosnia &amp; Herzegovina, Croatia, Montenegro, Serbia. City listings include Zagreb, Split, Rijeka, Dubrovnik alongside Belgrade, Sarajevo. Users can choose salon, date, time AND specific staff member. All reviews 100% verified from users who actually booked — the strongest trust signal in the market.<br><br>
-      <strong>Social:</strong> Instagram @sredimesrbija — Serbia-primary branding. Posts: discovering/booking salons, city-launch campaigns (Sarajevo), salon promo videos. Croatian salons actively link to SrediMe booking pages from their own social profiles — showing consumer-side adoption already exists.<br><br>
-      <strong>Model:</strong> 0% commission on widget (embedded) bookings. Marketplace terms for "new client" bookings not publicly disclosed. Subscription likely for salons. Free consumer app.
+      <strong>Positioning:</strong> Regional booking app for beauty salons, hairdressers, spa centres and massages in Serbia, Bosnia &amp; Herzegovina, Croatia and Montenegro. Real-time 24/7 booking; choice of salon, date, time, specific staff; detailed profiles with photos, service descriptions, prices and durations; verified reviews only from clients who booked through platform.<br><br>
+      <strong>Merchant offer:</strong> Salons receive listing on SrediMe marketplace AND private booking page (widget) embeddable on site/social profiles. Bookings via private page are <strong>commission-free</strong>. SrediMe monetises through subscription or marketplace services.<br><br>
+      <strong>Social:</strong> Instagram @sredimesrbija — Serbia-primary branding. Posts: discovering/booking salons, city-launch campaigns, salon promo videos. Croatian salons actively link to SrediMe booking pages from their own social profiles.
     </div>
     <div class="swot">
       <div class="sq sq-s"><div class="sq-label">Strengths</div><ul>
@@ -545,7 +799,50 @@
     <div class="note">Strategic note: Not an active threat. Any Fresha-listed Croatian salon is low-hanging switch fruit. Monitor but do not prioritise resources against Fresha.</div>
   </div>
 
+  <!-- ENRICHED: Competitive positioning table from section 8.3 -->
   <div class="sl">Competitive positioning matrix</div>
+  <div class="summary-wrap">
+    <table>
+      <thead><tr>
+        <th>Dimension</th><th>Zoyya</th><th>SrediMe</th><th>Notino Partner (target)</th>
+      </tr></thead>
+      <tbody>
+        <tr><td><strong>Core product</strong></td><td>Booking + salon-management SaaS</td><td>Regional marketplace + booking + widget</td><td>Booking + light SaaS + integrated e-commerce</td></tr>
+        <tr><td><strong>Booking commission</strong></td><td><span class="tag-yes">0%</span> (except payment-gateway fees)</td><td><span class="tag-yes">0%</span> on widget bookings; marketplace terms NA</td><td><span class="tag-yes">0%</span> on bookings (assumed)</td></tr>
+        <tr><td><strong>Fixed fees</strong></td><td>Free tier; paid tiers for 10–20 staff</td><td>Likely subscription for salons</td><td>Freemium; low effective cost for active use</td></tr>
+        <tr><td><strong>Geography</strong></td><td>Croatia-centric, expanding regionally</td><td>Serbia, BiH, Croatia, Montenegro</td><td>Pan-European Notino customer base</td></tr>
+        <tr><td><strong>Consumer brand</strong></td><td>Growing, local</td><td>Regional niche</td><td>Strong beauty-retail brand in Croatia/EU</td></tr>
+        <tr><td><strong>Product sales integration</strong></td><td><span class="tag-no">None</span></td><td><span class="tag-no">None</span></td><td><span class="tag-yes">Full Notino e-shop + 5% product commission</span></td></tr>
+        <tr><td><strong>Multilingual UX</strong></td><td>HR primary; UX simple and icon-driven</td><td>Regional languages (SR/HR/BH/ME)</td><td>HR + EN + DE/IT for coastal tourists</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- ENRICHED: Strategic plays from section 8.4 -->
+  <div class="sl">Strategic plays — how to compete</div>
+  <div class="card-grid-3">
+    <div class="card" style="border-top:3px solid #378ADD">
+      <div class="card-title" style="color:var(--blue-800)">Against Zoyya</div>
+      <div class="card-body">
+        Emphasise incremental revenue: Notino brings beauty-product sales and loyalty points on top of bookings, while Zoyya focuses on bookings only. Offer migration support and co-branding ("Book via Notino" + "We are on Notino Partner") to reduce perceived switching cost.
+      </div>
+    </div>
+    <div class="card" style="border-top:3px solid #534AB7">
+      <div class="card-title" style="color:var(--purple-800)">Against SrediMe</div>
+      <div class="card-body">
+        Position Notino as the leading choice for international tourists and expats, leveraging English/German/Italian UX and Notino's EU customer base, while SrediMe remains more regionally focused on ex-YU markets.
+      </div>
+    </div>
+    <div class="card" style="border-top:3px solid var(--gray-200)">
+      <div class="card-title" style="color:var(--gray-600)">Pre-empting Fresha / Treatwell / Planity</div>
+      <div class="card-body">
+        Prioritise acquisition of high-value salons in Zagreb and key coastal cities before these platforms invest heavily. Stress total cost of ownership and brand independence: no heavy commissions, ownership of customer relationships, access to Notino's large beauty assortment and marketing engine.
+      </div>
+    </div>
+  </div>
+
+  <!-- Full competitive positioning table (original) -->
+  <div class="sl">Full competitive comparison</div>
   <div class="summary-wrap">
     <table>
       <thead><tr>
@@ -568,7 +865,271 @@
 
 </div>
 
-<!-- TAB 3: SOCIAL CONTENT ANALYSIS -->
+<!-- ============================================================ -->
+<!-- TAB 4: SEO ROADMAP -->
+<!-- ============================================================ -->
+<div id="tab-seo" class="tab-pane">
+
+  <div class="banner banner-purple">
+    <strong>SEO roadmap for partner.notino.hr — B2B salon acquisition via organic search.</strong> Five objectives, five keyword clusters, technical foundations, on-page optimisation, and competitive positioning. All keywords are in Croatian targeting salon owners evaluating booking software.
+  </div>
+
+  <div class="sl">Objectives</div>
+  <div class="card" style="margin-bottom:20px">
+    <div class="card-body">
+      <strong>1.</strong> Own B2B booking-software intent in Croatian: rank for "rezervacijski sustav za salone", "softver za salone ljepote" and adjacent queries where salon owners evaluate tools.<br>
+      <strong>2.</strong> Protect &amp; clarify brand queries — separate Notino Partner (salons/booking) from Notino affiliate (publishers) to avoid traffic bleed.<br>
+      <strong>3.</strong> Establish technical foundations — correct canonical/hreflang setup, schema markup and Core Web Vitals pass for partner.notino.hr before content scaling.<br>
+      <strong>4.</strong> Differentiate via ecosystem narrative — frame Notino Partner as a booking + marketing + loyalty ecosystem (not just another booking app like Fresha/Zoyya).<br>
+      <strong>5.</strong> Generate 2–3 evergreen B2B content assets targeting Croatian salon owners and linking back to product landing pages.
+    </div>
+  </div>
+
+  <!-- Keyword Clusters -->
+  <div class="sl">Keyword clusters</div>
+
+  <div class="collapsible">
+    <button class="collapsible-toggle" onclick="toggleCollapsible(this)">Cluster 1: B2B Booking / Software</button>
+    <div class="collapsible-content">
+      <div class="kw-list">
+        <span class="kw">rezervacijski sustav za frizerski salon</span>
+        <span class="kw">softver za salone ljepote</span>
+        <span class="kw">online rezervacije salon ljepote</span>
+        <span class="kw">booking sustav za salone</span>
+        <span class="kw">besplatan rezervacijski sustav za salone</span>
+        <span class="kw">najbolji softver za salone ljepote</span>
+        <span class="kw">softver za frizerske salone cijena</span>
+        <span class="kw">usporedba booking sustava za salone</span>
+        <span class="kw">uvodenje online rezervacija u frizerski salon</span>
+        <span class="kw">kako preci s telefonskog narucivanja na online booking</span>
+      </div>
+      <div class="attack" style="margin-top:8px"><strong>Quick content action:</strong> Optimise product landing page; add FAQ schema ("Koliko kosta?", "Kako funkcionira?"). Comparison landing "Najbolji softver za salone" vs Zoyya/SrediMe; how-to guide za migraciju.</div>
+    </div>
+  </div>
+
+  <div class="collapsible">
+    <button class="collapsible-toggle" onclick="toggleCollapsible(this)">Cluster 2: B2B Marketing / Acquisition</button>
+    <div class="collapsible-content">
+      <div class="kw-list">
+        <span class="kw">marketing za salone ljepote</span>
+        <span class="kw">kako privuci klijente u salon ljepote</span>
+        <span class="kw">aplikacija za narucivanje klijenata frizerski salon</span>
+        <span class="kw">program za vodenje salona ljepote</span>
+      </div>
+      <div class="attack" style="margin-top:8px"><strong>Quick content action:</strong> Create evergreen guide: "Kako digitalizirati frizerski salon u Zagrebu"</div>
+    </div>
+  </div>
+
+  <div class="collapsible">
+    <button class="collapsible-toggle" onclick="toggleCollapsible(this)">Cluster 3: Local Discovery (hair &amp; barber)</button>
+    <div class="collapsible-content">
+      <div class="kw-list">
+        <span class="kw">frizerski salon zagreb</span>
+        <span class="kw">frizer zagreb</span>
+        <span class="kw">barbershop zagreb</span>
+        <span class="kw">frizerski salon split</span>
+        <span class="kw">muski frizer zagreb</span>
+        <span class="kw">booking sustav za salone split</span>
+        <span class="kw">online rezervacijski sustav za frizerski salon rijeka</span>
+        <span class="kw">softver za salone ljepote osijek online rezervacije</span>
+      </div>
+      <div class="attack" style="margin-top:8px"><strong>Quick content action:</strong> City/category marketplace pages; salon listing schema (HairSalon). City B2B landings (Split/Rijeka/Osijek) templated from Zagreb; localise CTA za salon vlasnike.</div>
+    </div>
+  </div>
+
+  <div class="collapsible">
+    <button class="collapsible-toggle" onclick="toggleCollapsible(this)">Cluster 4: Brand &amp; Hybrid Intent</button>
+    <div class="collapsible-content">
+      <div class="kw-list">
+        <span class="kw">Notino Partner</span>
+        <span class="kw">Notino Partner Hrvatska</span>
+        <span class="kw">Notino Partner rezervacije</span>
+        <span class="kw">Notino partner program za salone</span>
+        <span class="kw">Notino program za salone</span>
+        <span class="kw">Notino Partner prijava salona</span>
+        <span class="kw">alternativa Zoyya za salone</span>
+        <span class="kw">zamjena za SrediMe/Buker</span>
+        <span class="kw">zamjena za Zoyya</span>
+      </div>
+      <div class="attack" style="margin-top:8px"><strong>Quick content action:</strong> Homepage copy clarifies B2B salon vs. affiliate; internal links from notino.hr. B2B brand landing + FAQ za migraciju od Zoyya/SrediMe; prijava salona koraci.</div>
+    </div>
+  </div>
+
+  <div class="collapsible">
+    <button class="collapsible-toggle" onclick="toggleCollapsible(this)">Cluster 5: Local Beauty &amp; Wellness (Seasonal)</button>
+    <div class="collapsible-content">
+      <div class="kw-list">
+        <span class="kw">upravljanje online rezervacijama za sezonski salon split</span>
+        <span class="kw">softver za salone ljepote u turistickoj sezoni rijeka</span>
+      </div>
+      <div class="attack" style="margin-top:8px"><strong>Quick content action:</strong> Seasonal guide za coastal salons (travanj–svibanj): sezonska upravljanje terminima + turisti.</div>
+    </div>
+  </div>
+
+  <!-- Technical priorities -->
+  <div class="sl">Technical priorities</div>
+  <div class="summary-wrap">
+    <table>
+      <thead><tr>
+        <th>Element</th><th>Status</th><th>Action</th><th>Priority</th>
+      </tr></thead>
+      <tbody>
+        <tr><td><strong>Self-referencing canonicals</strong></td><td>Verify existing</td><td>Confirm partner.notino.hr pages carry self-ref canonical (not cross-lang to .sk/.cz)</td><td><span class="pri-high">🔴 High</span></td></tr>
+        <tr><td><strong>hreflang tags</strong></td><td>Implement</td><td>Add bidirectional hr-HR ↔ sk-SK / cs-CZ hreflang on all Notino Partner market URLs</td><td><span class="pri-high">🔴 High</span></td></tr>
+        <tr><td><strong>Google Search Console</strong></td><td>Verify existing</td><td>Confirm property set up; check indexation, coverage errors, sitemap status</td><td><span class="pri-high">🔴 High</span></td></tr>
+        <tr><td><strong>Core Web Vitals</strong> (LCP ≤ 2.5s, INP ≤ 200ms, CLS ≤ 0.1)</td><td>Verify existing</td><td>Run PageSpeed Insights on homepage + software landing page; fix hero image weight &amp; layout shifts</td><td><span class="pri-med">🟠 Medium</span></td></tr>
+        <tr><td><strong>Organization + WebSite schema</strong></td><td>Implement</td><td>Add Organization + WebSite (with SearchAction) on partner.notino.hr homepage</td><td><span class="pri-med">🟠 Medium</span></td></tr>
+        <tr><td><strong>BeautySalon / HairSalon schema</strong></td><td>Implement</td><td>Add ItemList of BeautySalon/HairSalon on any city/category listing pages</td><td><span class="pri-low">🟡 Low</span></td></tr>
+        <tr><td><strong>FAQ schema on B2B landing</strong></td><td>Implement</td><td>Mark up 3–5 Q&amp;As on software landing page for potential FAQ rich results</td><td><span class="pri-low">🟡 Low</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- On-page meta -->
+  <div class="sl">On-page / meta actions</div>
+  <div class="summary-wrap">
+    <table>
+      <thead><tr>
+        <th>Page</th><th>Suggested Title</th><th>Suggested Description</th>
+      </tr></thead>
+      <tbody>
+        <tr><td><strong>Homepage</strong><br>(partner.notino.hr)</td><td>Notino Partner Hrvatska — Besplatan online rezervacijski sustav za frizerske i beauty salone</td><td>Digitalizirajte svoj frizerski, barber ili beauty salon uz Notino Partner. Besplatan sustav, profesionalni profil na Notinu, marketing podrska i popusti na proizvode.</td></tr>
+        <tr><td><strong>Software / Booking landing</strong></td><td>Online rezervacijski sustav i softver za salone ljepote — Notino Partner</td><td>Trazite jednostavan softver za vodenje salona ljepote? Notino Partner nudi online rezervacije 24/7, upravljanje klijentima, podsjetnike i statistiku — bez naknada za aktivne salone.</td></tr>
+        <tr><td><strong>City marketplace (Zagreb)</strong></td><td>Frizerski i beauty saloni Zagreb — rezervirajte online preko Notino Partnera</td><td>Otkrijte provjerene frizerske, kozmeticke i wellness salone u Zagrebu. Usporedite recenzije, cijene i termine te rezervirajte online kroz Notino aplikaciju.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Competitor SEO positioning -->
+  <div class="sl">Competitor SEO positioning — what to learn</div>
+  <div class="summary-wrap">
+    <table>
+      <thead><tr>
+        <th>Competitor</th><th>What to Copy</th><th>What NOT to Copy</th><th>Notino Edge</th><th>Next Action</th>
+      </tr></thead>
+      <tbody>
+        <tr>
+          <td><strong>Zoyya</strong></td>
+          <td>City-level marketplace pages; clear feature breakdown (24/7, podsjetnike, statistiku); local #1 positioning</td>
+          <td>Over-reliance on "Croatian #1" claim (unverifiable); broad SaaS pricing without freemium hook</td>
+          <td>Ecosystem: Notino product discounts + loyalty rewards on top of booking</td>
+          <td>Mirror Zoyya's city page IA; create /hr/frizerski-saloni-zagreb</td>
+        </tr>
+        <tr>
+          <td><strong>SrediMe</strong></td>
+          <td>Regional multi-country social proof; fixed monthly marketing-package framing; partner reviews</td>
+          <td>Complex multi-tier pricing on first touch; split B2B/B2C messaging</td>
+          <td>Pan-European Notino brand trust + millions of existing Notino users in HR</td>
+          <td>Add testimonials from partner salons in Zagreb/Split on landing page</td>
+        </tr>
+        <tr>
+          <td><strong>Fresha</strong></td>
+          <td>Free software positioning; volume of salon reviews; clean onboarding flow</td>
+          <td>Heavy payment-processing revenue model messaging (scares SMB owners)</td>
+          <td>No transaction fees for active salons; loyalty/commission upside for salons</td>
+          <td>Match Fresha's "free software" headline; add "bez naknada" prominently in H1</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</div>
+
+<!-- ============================================================ -->
+<!-- TAB 5: EVENTS -->
+<!-- ============================================================ -->
+<div id="tab-events" class="tab-pane">
+
+  <div class="banner banner-amber">
+    <strong>3 relevant beauty industry events in Croatia</strong> for B2B prospecting and brand visibility. These are the key opportunities for face-to-face salon owner engagement, product demos, and partnership announcements.
+  </div>
+
+  <!-- Event 1 -->
+  <div class="event-card" style="border-top:3px solid var(--blue-600)">
+    <div class="event-header">
+      <div class="event-name">Beauty &amp; Hair Expo Zagreb</div>
+      <div class="event-date">31 Jan – 1 Feb 2026</div>
+    </div>
+    <div class="event-meta">
+      <div class="event-meta-item">
+        <div class="em-label">City / Venue</div>
+        <div class="em-value">Zagreb — Zagreb Fair</div>
+      </div>
+      <div class="event-meta-item">
+        <div class="em-label">Core Focus</div>
+        <div class="em-value">Regional trade fair for cosmetics, hairdressing, nail design, devices; includes B2B conference</div>
+      </div>
+      <div class="event-meta-item">
+        <div class="em-label">Primary Audience</div>
+        <div class="em-value">Hairdressers, beauticians, nail techs, salon owners, distributors, beauty buyers</div>
+      </div>
+      <div class="event-meta-item">
+        <div class="em-label">Status</div>
+        <div class="em-value">Completed</div>
+      </div>
+    </div>
+    <div class="attack"><strong>Notino Partner strategy:</strong> The largest Croatian beauty B2B event. Ideal for booth presence showcasing the booking platform demo, distributing "We are on Notino Partner" co-branding materials, collecting salon owner leads, and running live onboarding sessions. The B2B conference track provides speaking opportunities to position Notino as a thought leader in salon digitalisation. Target: collect 100+ qualified salon owner contacts for follow-up.</div>
+  </div>
+
+  <!-- Event 2 -->
+  <div class="event-card" style="border-top:3px solid var(--green-600)">
+    <div class="event-header">
+      <div class="event-name">Sajam ljepote i zdravlja Osijek</div>
+      <div class="event-date">21 – 22 Mar 2026</div>
+    </div>
+    <div class="event-meta">
+      <div class="event-meta-item">
+        <div class="em-label">City / Venue</div>
+        <div class="em-value">Osijek — Gospodarski centar OBZ</div>
+      </div>
+      <div class="event-meta-item">
+        <div class="em-label">Core Focus</div>
+        <div class="em-value">Regional beauty &amp; health fair (care, wellness, aesthetics, start-ups)</div>
+      </div>
+      <div class="event-meta-item">
+        <div class="em-label">Primary Audience</div>
+        <div class="em-value">Salon, spa and clinic owners, wellness providers and consumers</div>
+      </div>
+      <div class="event-meta-item">
+        <div class="em-label">Status</div>
+        <div class="em-value">Upcoming</div>
+      </div>
+    </div>
+    <div class="attack"><strong>Notino Partner strategy:</strong> Eastern Slavonia's key beauty event. Lower digital penetration in this region means face-to-face is the optimal acquisition channel. Focus on hands-on platform demos for tech-hesitant owners, emphasise the "zero cost" and product commission model. Osijek has 280 salons in the DB — this event is the fastest route to that cluster. Partner with local distributors already attending to extend reach. Target: 40+ qualified leads from Slavonia region.</div>
+  </div>
+
+  <!-- Event 3 -->
+  <div class="event-card" style="border-top:3px solid var(--purple-600)">
+    <div class="event-header">
+      <div class="event-name">Beauty &amp; Hair Expo Zagreb 2027</div>
+      <div class="event-date">Jan 2027 (TBC)</div>
+    </div>
+    <div class="event-meta">
+      <div class="event-meta-item">
+        <div class="em-label">City / Venue</div>
+        <div class="em-value">Zagreb — Zagreb Fair</div>
+      </div>
+      <div class="event-meta-item">
+        <div class="em-label">Core Focus</div>
+        <div class="em-value">Annual regional beauty trade fair (same concept as 2026 edition)</div>
+      </div>
+      <div class="event-meta-item">
+        <div class="em-label">Primary Audience</div>
+        <div class="em-value">Hairdressers, beauticians, nail techs, salon owners, distributors, beauty buyers</div>
+      </div>
+      <div class="event-meta-item">
+        <div class="em-label">Status</div>
+        <div class="em-value">Planning phase</div>
+      </div>
+    </div>
+    <div class="attack"><strong>Notino Partner strategy:</strong> By Jan 2027, Notino Partner should have 6–9 months of Croatian market presence. Use this event to showcase success stories from early-adopter partner salons, announce new features, and run a "partner referral" campaign where existing partners bring salon owner contacts. The 2027 edition is about scaling from early traction to market leadership. Target: anchor sponsor or keynote position to maximise visibility.</div>
+  </div>
+
+</div>
+
+<!-- ============================================================ -->
+<!-- TAB 6: SOCIAL CONTENT ANALYSIS -->
+<!-- ============================================================ -->
 <div id="tab-social" class="tab-pane">
 
   <div class="banner banner-blue">
@@ -795,6 +1356,12 @@ function showTab(id) {
   document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
   document.getElementById('tab-' + id).classList.add('active');
   event.target.classList.add('active');
+}
+
+function toggleCollapsible(btn) {
+  btn.classList.toggle('open');
+  const content = btn.nextElementSibling;
+  content.classList.toggle('open');
 }
 
 // Region chart
