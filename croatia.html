@@ -7,20 +7,28 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
 <style>
   :root {
-    --blue-50:#E6F1FB;--blue-100:#B5D4F4;--blue-800:#0C447C;--blue-600:#185FA5;
-    --green-50:#EAF3DE;--green-600:#3B6D11;--green-800:#27500A;--green-200:#97C459;
-    --amber-50:#FAEEDA;--amber-600:#854F0B;--amber-800:#633806;
-    --red-50:#FCEBEB;--red-600:#A32D2D;--red-800:#791F1F;
-    --purple-50:#EEEDFE;--purple-600:#534AB7;--purple-800:#3C3489;
-    --teal-50:#E1F5EE;--teal-600:#0F6E56;--teal-800:#085041;
-    --coral-50:#FAECE7;--coral-600:#993C1D;--coral-800:#4A1B0C;
-    --gray-50:#F1EFE8;--gray-200:#B4B2A9;--gray-600:#5F5E5A;--gray-800:#444441;
-    --text-primary:#1a1a18;--text-secondary:#5a5a56;--text-tertiary:#9e9b93;
-    --bg-primary:#ffffff;--bg-secondary:#f8f7f4;--border-light:rgba(0,0,0,0.08);
-    --border-mid:rgba(0,0,0,0.14);--radius:10px;--radius-lg:14px;
+    /* ── Notino brand colors ── */
+    --color-strong-pink:#DC0069;--color-sky-blue:#8695CA;--color-black:#000000;--color-nude:#E6BCAA;--color-white:#FFFFFF;
+    --color-pink-100:#f8cce1;--color-pink-200:#f199c3;--color-pink-300:#ea66a5;--color-pink-400:#e33387;--color-pink-600:#b00054;--color-pink-700:#84003f;
+    --color-blue-100:#e7eaf4;--color-blue-200:#cfd5ea;--color-blue-300:#b6bfdf;--color-blue-400:#9eaad5;--color-blue-600:#5a6aa2;--color-blue-700:#384679;--color-blue-800:#1d2851;
+    --color-nude-100:#faf2ee;--color-nude-200:#f5e4dd;--color-nude-300:#f0d7cc;--color-nude-400:#ebc9bb;--color-nude-600:#b89688;
+    --color-silver-100:#e6e6e6;--color-silver-200:#cccccc;--color-silver-300:#b3b3b3;--color-silver-400:#999999;--color-silver-500:#808080;--color-silver-600:#666666;--color-silver-700:#4d4d4d;--color-silver-800:#333333;--color-silver-900:#1a1a1a;
+    /* ── Semantic aliases → Notino palette ── */
+    --blue-50:#e7eaf4;--blue-100:#cfd5ea;--blue-600:#5a6aa2;--blue-800:#1d2851;
+    --green-50:#faf2ee;--green-200:#f0d7cc;--green-600:#DC0069;--green-800:#84003f;
+    --amber-50:#f5e4dd;--amber-600:#CA5932;--amber-800:#7a3520;
+    --red-50:#e6e6e6;--red-600:#DC0069;--red-800:#333333;
+    --purple-50:#e7eaf4;--purple-600:#5a6aa2;--purple-800:#1d2851;
+    --teal-50:#e7eaf4;--teal-600:#384679;--teal-800:#1d2851;
+    --coral-50:#f5e4dd;--coral-600:#CA5932;--coral-800:#7a3520;
+    --gray-50:#e6e6e6;--gray-200:#b3b3b3;--gray-600:#666666;--gray-800:#333333;
+    --text-primary:#1a1a1a;--text-secondary:#4d4d4d;--text-tertiary:#808080;
+    --bg-primary:#ffffff;--bg-secondary:#faf2ee;
+    --border-light:rgba(0,0,0,0.08);--border-mid:rgba(0,0,0,0.14);
+    --radius:10px;--radius-lg:14px;
   }
   *{box-sizing:border-box;margin:0;padding:0}
-  body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#f4f3ef;color:var(--text-primary);font-size:14px;line-height:1.6}
+  body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#ffffff;color:var(--text-primary);font-size:14px;line-height:1.6}
   .shell{max-width:1200px;margin:0 auto;padding:32px 24px}
   /* HEADER */
   .header{background:var(--bg-primary);border-radius:var(--radius-lg);border:0.5px solid var(--border-light);padding:28px 32px;margin-bottom:20px;display:flex;align-items:flex-start;justify-content:space-between;gap:20px}
@@ -34,7 +42,7 @@
   .hb-purple{background:var(--purple-50);color:var(--purple-600)}
   .report-meta{text-align:right;flex-shrink:0}
   .report-meta .date{font-size:12px;color:var(--text-tertiary);margin-bottom:6px}
-  .notino-badge{background:linear-gradient(135deg,#1e3a8a,#3b82f6);color:#fff;font-size:13px;font-weight:600;padding:6px 14px;border-radius:999px;letter-spacing:.2px}
+  .notino-badge{background:linear-gradient(90deg,#8695CA,#DC0069);color:#fff;font-size:13px;font-weight:600;padding:6px 14px;border-radius:999px;letter-spacing:.2px}
   /* TABS */
   .tabs{display:flex;gap:4px;margin-bottom:20px;background:var(--bg-primary);border:0.5px solid var(--border-light);border-radius:var(--radius-lg);padding:6px;flex-wrap:wrap}
   .tab{padding:8px 18px;border-radius:var(--radius);font-size:13px;font-weight:500;cursor:pointer;border:none;background:transparent;color:var(--text-secondary);transition:all .15s}
@@ -72,8 +80,8 @@
   .season-item{border-radius:var(--radius);padding:12px 14px;text-align:center}
   .si-label{font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:.07em;margin-bottom:4px}
   .si-val{font-size:12px;line-height:1.45}
-  .s-peak{background:#FDECEA;color:#7B2020}.s-high{background:#FEF3E2;color:#7A4A0A}
-  .s-med{background:#EAF3DE;color:#2C5F0E}.s-low{background:#F1EFE8;color:#5F5E5A}
+  .s-peak{background:#f8cce1;color:#84003f}.s-high{background:#f5e4dd;color:#CA5932}
+  .s-med{background:#faf2ee;color:#DC0069}.s-low{background:#e6e6e6;color:#666666}
   /* CLUSTERS */
   .cluster-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-bottom:20px}
   .cluster{background:var(--bg-primary);border:0.5px solid var(--border-light);border-radius:var(--radius);padding:14px 15px}
@@ -94,10 +102,10 @@
   .eu-card{background:var(--blue-50);border:0.5px solid var(--blue-100);border-radius:var(--radius);padding:14px 18px;margin-bottom:20px;font-size:12px;color:var(--blue-800);line-height:1.6}
   /* COMPETITORS */
   .comp-card{background:var(--bg-primary);border:0.5px solid var(--border-light);border-radius:var(--radius-lg);padding:20px 22px;margin-bottom:16px}
-  .comp-card.zoyya{border-top:3px solid #378ADD}
-  .comp-card.sredime{border-top:3px solid #534AB7}
+  .comp-card.zoyya{border-top:3px solid #5a6aa2}
+  .comp-card.sredime{border-top:3px solid #384679}
   .comp-card.fresha{border-top:3px solid var(--gray-200);opacity:.88}
-  .comp-card.buker{border-top:3px solid #E55A2B}
+  .comp-card.buker{border-top:3px solid #CA5932}
   .comp-header{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:14px}
   .comp-name-block .name{font-size:17px;font-weight:600}
   .comp-name-block .sub{font-size:12px;color:var(--text-tertiary);margin-top:2px}
@@ -186,15 +194,15 @@
   .collapsible-content{display:none;padding:0 18px 18px}
   .collapsible-content.open{display:block}
   /* CTA BUTTON */
-  .cta-btn{display:inline-flex;align-items:center;gap:8px;background:linear-gradient(135deg,#1e3a8a,#3b82f6);color:#fff;font-size:14px;font-weight:600;padding:12px 24px;border-radius:999px;text-decoration:none;transition:transform .15s,box-shadow .15s;letter-spacing:.2px}
-  .cta-btn:hover{transform:translateY(-1px);box-shadow:0 4px 12px rgba(30,58,138,.3)}
+  .cta-btn{display:inline-flex;align-items:center;gap:8px;background:linear-gradient(90deg,#8695CA,#DC0069);color:#fff;font-size:14px;font-weight:600;padding:12px 24px;border-radius:999px;text-decoration:none;transition:transform .15s,box-shadow .15s;letter-spacing:.2px}
+  .cta-btn:hover{transform:translateY(-1px);box-shadow:0 4px 12px rgba(220,0,105,.35)}
   /* IFRAME WRAP */
   .iframe-wrap{border-radius:var(--radius-lg);overflow:hidden;border:0.5px solid var(--border-light);margin-bottom:20px;background:var(--bg-primary)}
   .iframe-wrap iframe{width:100%;height:600px;border:none}
   /* PRIORITY BADGES */
-  .pri-high{background:#FCEBEB;color:#A32D2D;font-size:10px;font-weight:600;padding:2px 8px;border-radius:999px;display:inline-block}
-  .pri-med{background:#FAEEDA;color:#854F0B;font-size:10px;font-weight:600;padding:2px 8px;border-radius:999px;display:inline-block}
-  .pri-low{background:#FAEEDA;color:#7A6B0A;font-size:10px;font-weight:600;padding:2px 8px;border-radius:999px;display:inline-block}
+  .pri-high{background:#DC0069;color:#ffffff;font-size:10px;font-weight:600;padding:2px 8px;border-radius:999px;display:inline-block}
+  .pri-med{background:#CA5932;color:#ffffff;font-size:10px;font-weight:600;padding:2px 8px;border-radius:999px;display:inline-block}
+  .pri-low{background:#F9E483;color:#1a1a1a;font-size:10px;font-weight:600;padding:2px 8px;border-radius:999px;display:inline-block}
   /* EVENT CARD */
   .event-card{background:var(--bg-primary);border:0.5px solid var(--border-light);border-radius:var(--radius-lg);padding:20px 22px;margin-bottom:16px}
   .event-header{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:12px}
@@ -212,6 +220,45 @@
     .card-grid-2,.card-grid-3,.ws-grid,.tone-hook,.swot{grid-template-columns:1fr}
     .tabs{flex-wrap:wrap}
   }
+
+  /* ── Notino brand overrides ── */
+  body{background:#ffffff}
+  .header{background:#000000;border:none}
+  .header-left h1{color:#ffffff}
+  .header-left p{color:#b3b3b3}
+  .report-meta .date{color:#808080}
+  .hb-green{background:rgba(220,0,105,.18);color:#f8cce1}
+  .hb-blue{background:rgba(134,149,202,.25);color:#cfd5ea}
+  .hb-amber{background:rgba(202,89,50,.22);color:#f0d7cc}
+  .hb-purple{background:rgba(134,149,202,.25);color:#cfd5ea}
+  .hb-red{background:rgba(220,0,105,.25);color:#f8cce1}
+  .tabs{background:#e6e6e6;border:none}
+  .tab.active{background:#ffffff;color:#DC0069;border:0.5px solid rgba(220,0,105,.25);font-weight:600}
+  th{background:#1d2851;color:#ffffff;border-bottom:none}
+  tr:nth-child(even) td{background:#e7eaf4}
+  .tag-yes{background:#faf2ee;color:#DC0069}
+  .tag-no{background:#f8cce1;color:#84003f}
+  .t-high{background:#DC0069;color:#ffffff}
+  .t-med{background:#f5e4dd;color:#CA5932}
+  .t-low{background:#faf2ee;color:#DC0069}
+  .banner-red{background:#f8cce1;border:0.5px solid rgba(220,0,105,.3);color:#84003f}
+  .ws-title.open{color:#DC0069}
+  .ws-title.risk{color:#CA5932}
+  .s-peak{background:#f8cce1;color:#84003f}
+  .s-high{background:#f5e4dd;color:#CA5932}
+  .s-med{background:#faf2ee;color:#DC0069}
+  .s-low{background:#e6e6e6;color:#666666}
+  .pri-high{background:#DC0069;color:#ffffff}
+  .pri-med{background:#CA5932;color:#ffffff}
+  .pri-low{background:#F9E483;color:#1a1a1a}
+  .warn-row td{background:#fef9e7}
+  .warn-badge{background:#F9E483;color:#333333}
+  .iframe-wrap{background:#e7eaf4;border:0.5px solid #5a6aa2}
+  .footer{background:#000000;color:#808080;margin:20px -24px -32px;padding:20px 24px}
+  .cta-btn{background:#DC0069}
+  .cta-btn:hover{box-shadow:0 4px 12px rgba(220,0,105,.35)}
+  .notino-badge{background:linear-gradient(90deg,#8695CA,#DC0069)}
+  .pos-card{border:2px solid #f0d7cc}
 </style>
 </head>
 <body>
@@ -220,6 +267,7 @@
 <!-- HEADER -->
 <div class="header">
   <div class="header-left">
+    <img src="https://brand.notino.com/content/1_logotypes-and-claim/3_logotype-notino-partner/notino-partner-logotype-1.svg" alt="Notino Partner" width="160" style="display:block;margin-bottom:18px">
     <h1>Notino Partner — Croatia Competitive Analysis</h1>
     <p>Full competitor landscape, market sizing, regional clusters, persona mapping, social content deep dive, and strategic white space. Covers all active booking platforms in the Croatian market.</p>
     <div class="header-badges">
@@ -231,7 +279,7 @@
   </div>
   <div class="report-meta">
     <div class="date">March 2026</div>
-    <div class="notino-badge">Notino Partner</div>
+    <img src="https://brand.notino.com/content/1_logotypes-and-claim/3_logotype-notino-partner/notino-partner-logotype-1.svg" alt="Notino Partner" width="180" style="display:block;margin-top:8px">
   </div>
 </div>
 
@@ -521,7 +569,7 @@
   <div class="sl">12-month acquisition target allocation — 610 partner salons</div>
   <div class="chart-wrap">
     <div class="chart-legend">
-      <span><span class="ld" style="background:#378ADD"></span>Target salons by region</span>
+      <span><span class="ld" style="background:#5a6aa2"></span>Target salons by region</span>
     </div>
     <div style="position:relative;height:220px"><canvas id="regionChart"></canvas></div>
   </div>
@@ -668,9 +716,9 @@
   <div class="sl">Pricing comparison — active platforms</div>
   <div class="chart-wrap">
     <div class="chart-legend">
-      <span><span class="ld" style="background:#2d6a4f"></span>Monthly fixed fee (€)</span>
-      <span><span class="ld" style="background:#8b2020"></span>New client commission (%)</span>
-      <span><span class="ld" style="background:#378ADD"></span>Payment / gateway fee (%)</span>
+      <span><span class="ld" style="background:#1d2851"></span>Monthly fixed fee (€)</span>
+      <span><span class="ld" style="background:#DC0069"></span>New client commission (%)</span>
+      <span><span class="ld" style="background:#5a6aa2"></span>Payment / gateway fee (%)</span>
     </div>
     <div style="position:relative;height:200px"><canvas id="priceChart"></canvas></div>
   </div>
@@ -889,13 +937,13 @@
   <!-- ENRICHED: Strategic plays from section 8.4 -->
   <div class="sl">Strategic plays — how to compete</div>
   <div class="card-grid-3">
-    <div class="card" style="border-top:3px solid #378ADD">
+    <div class="card" style="border-top:3px solid #5a6aa2">
       <div class="card-title" style="color:var(--blue-800)">Against Zoyya</div>
       <div class="card-body">
         Emphasise incremental revenue: Notino brings beauty-product sales and loyalty points on top of bookings, while Zoyya focuses on bookings only. Offer migration support and co-branding ("Book via Notino" + "We are on Notino Partner") to reduce perceived switching cost.
       </div>
     </div>
-    <div class="card" style="border-top:3px solid #534AB7">
+    <div class="card" style="border-top:3px solid #384679">
       <div class="card-title" style="color:var(--purple-800)">Against SrediMe</div>
       <div class="card-body">
         Position Notino as the leading choice for international tourists and expats, leveraging English/German/Italian UX and Notino's EU customer base, while SrediMe remains more regionally focused on ex-YU markets.
@@ -1595,7 +1643,7 @@ new Chart(document.getElementById('regionChart'), {
     datasets: [{
       label: 'Target partner salons',
       data: [165, 150, 100, 95, 100],
-      backgroundColor: ['#378ADD','#185FA5','#639922','#3B6D11','#0F6E56'],
+      backgroundColor: ['#1d2851','#384679','#5a6aa2','#8695CA','#DC0069'],
       borderRadius: 6
     }]
   },
@@ -1603,8 +1651,8 @@ new Chart(document.getElementById('regionChart'), {
     responsive: true, maintainAspectRatio: false, indexAxis: 'y',
     plugins: { legend: { display: false } },
     scales: {
-      x: { ticks: { color: '#9e9b93', font: { size: 11 } }, grid: { color: 'rgba(128,128,128,.08)' }, title: { display: true, text: '12-month target (salons)', color: '#9e9b93', font: { size: 11 } } },
-      y: { ticks: { color: '#9e9b93', font: { size: 11 } } }
+      x: { ticks: { color: '#808080', font: { size: 11 } }, grid: { color: 'rgba(128,128,128,.08)' }, title: { display: true, text: '12-month target (salons)', color: '#808080', font: { size: 11 } } },
+      y: { ticks: { color: '#808080', font: { size: 11 } } }
     }
   }
 });
@@ -1615,8 +1663,8 @@ new Chart(document.getElementById('priceChart'), {
   data: {
     labels: ['Zoyya', 'SrediMe', 'Fresha', 'Notino Partner'],
     datasets: [
-      { label: 'Monthly fee (€)', data: [23, 0, 15, 0], backgroundColor: '#2d6a4f', stack: 'a' },
-      { label: 'New client commission (%)', data: [0, 0, 20, 0], backgroundColor: '#8b2020', stack: 'a' },
+      { label: 'Monthly fee (€)', data: [23, 0, 15, 0], backgroundColor: '#1d2851', stack: 'a' },
+      { label: 'New client commission (%)', data: [0, 0, 20, 0], backgroundColor: '#DC0069', stack: 'a' },
       { label: 'Payment/gateway (%)', data: [0.5, 0, 2.79, 0], backgroundColor: '#378ADD', stack: 'a' }
     ]
   },
@@ -1624,8 +1672,8 @@ new Chart(document.getElementById('priceChart'), {
     responsive: true, maintainAspectRatio: false,
     plugins: { legend: { display: false } },
     scales: {
-      x: { stacked: true, ticks: { color: '#9e9b93', font: { size: 12 } } },
-      y: { stacked: true, ticks: { color: '#9e9b93', font: { size: 11 } }, grid: { color: 'rgba(128,128,128,.08)' }, title: { display: true, text: 'Combined cost score', color: '#9e9b93', font: { size: 11 } } }
+      x: { stacked: true, ticks: { color: '#808080', font: { size: 12 } } },
+      y: { stacked: true, ticks: { color: '#808080', font: { size: 11 } }, grid: { color: 'rgba(128,128,128,.08)' }, title: { display: true, text: 'Combined cost score', color: '#808080', font: { size: 11 } } }
     }
   }
 });
