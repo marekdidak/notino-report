@@ -154,6 +154,33 @@
   .empty-state{text-align:center;padding:80px 40px;color:var(--text-tertiary)}
   .empty-state h3{font-size:18px;font-weight:600;color:var(--text-secondary);margin-bottom:8px}
   .empty-state p{font-size:13px;max-width:400px;margin:0 auto}
+  /* SOCIAL ANALYSIS */
+  .social-block{background:var(--bg-primary);border:0.5px solid var(--border-light);border-radius:var(--radius-lg);padding:20px 22px;margin-bottom:16px}
+  .social-header{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:6px}
+  .social-name{font-size:15px;font-weight:600;color:var(--text-primary)}
+  .social-channels{font-size:11px;color:var(--text-tertiary);margin-bottom:12px}
+  .ptag{font-size:10px;font-weight:600;padding:2px 8px;border-radius:999px}
+  .pt-b2c{background:var(--blue-50);color:var(--blue-800)}
+  .pt-b2b{background:var(--green-50);color:var(--green-600)}
+  .pt-both{background:var(--purple-50);color:var(--purple-600)}
+  .pt-weak{background:var(--bg-secondary);color:var(--text-tertiary);border:0.5px solid var(--border-light)}
+  .quote{border-left:2px solid var(--border-mid);padding:8px 14px;font-size:12px;font-style:italic;color:var(--text-secondary);margin-bottom:14px;line-height:1.55;border-radius:0 6px 6px 0;background:var(--bg-secondary)}
+  .pillars-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:7px;margin-bottom:14px}
+  .pillar{border-radius:8px;padding:10px 12px}
+  .p-label{font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;margin-bottom:4px}
+  .p-body{font-size:11px;line-height:1.5}
+  .p1{background:var(--blue-50)}.p1 .p-label{color:var(--blue-800)}.p1 .p-body{color:#1e4d7a}
+  .p2{background:var(--green-50)}.p2 .p-label{color:var(--green-600)}.p2 .p-body{color:var(--green-600)}
+  .p3{background:var(--amber-50)}.p3 .p-label{color:var(--amber-600)}.p3 .p-body{color:var(--amber-600)}
+  .p4{background:var(--purple-50)}.p4 .p-label{color:var(--purple-600)}.p4 .p-body{color:var(--purple-600)}
+  .p5{background:var(--red-50)}.p5 .p-label{color:var(--red-600)}.p5 .p-body{color:var(--red-600)}
+  .detail-row{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:10px}
+  .d-box{border-radius:8px;padding:10px 12px;font-size:12px;line-height:1.55}
+  .d-label{font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;margin-bottom:4px}
+  .d-tone{background:var(--bg-secondary);color:var(--text-primary)}
+  .d-hook{background:var(--green-50);color:var(--green-800)}
+  .d-gap{background:var(--red-50);color:var(--red-800)}
+  .d-notino{background:var(--purple-50);color:var(--purple-800)}
   @media(max-width:900px){
     .metrics,.season-grid,.persona-grid,.pos-grid,.event-meta{grid-template-columns:1fr 1fr}
     .card-grid-2,.card-grid-3,.ws-grid,.swot{grid-template-columns:1fr}
@@ -1076,12 +1103,126 @@
 <!-- ============================================================ -->
 <div id="tab-social" class="tab-pane">
 
-  <div class="empty-state">
-    <h3>Social Content Analysis — Coming Soon</h3>
-    <p>Austrian competitor social content analysis is in preparation. This tab will include detailed messaging pillar breakdowns, tone &amp; voice analysis, content gap identification, and Notino's social content strategy for the Austrian market.</p>
-    <div style="margin-top:20px">
-      <span class="hbadge hb-blue" style="font-size:12px;padding:6px 14px">Analysis in progress</span>
+  <div class="banner banner-blue">
+    <strong>Beyond follower counts</strong> — this maps each competitor's real messaging pillars, tone, hooks, and the content gaps Notino Partner can own in Austria.
+  </div>
+
+  <div class="sl">1. Treatwell</div>
+  <div class="social-block">
+    <div class="social-header"><div class="social-name">Treatwell</div><div style="display:flex;gap:5px"><span class="ptag pt-b2c">B2C dominant</span><span class="ptag pt-weak">B2B weak</span></div></div>
+    <div class="social-channels">Channels: Instagram @treatwell_dach (DACH) · Facebook 213k fans @treatwelldach · App-store presence · In-house performance marketing team</div>
+    <div class="quote">"Der schönste Weg, um Friseur-, Beauty- und Wellness-Termine zu buchen." / "Treat yourself well. It's a non-negotiable." — bio lines across DACH channels</div>
+    <div class="pillars-grid">
+      <div class="pillar p1"><div class="p-label">Pillar 1</div><div class="p-body">Self-care as identity — beauty isn't a luxury, it's self-respect. Emotional permission to book.</div></div>
+      <div class="pillar p2"><div class="p-label">Pillar 2</div><div class="p-body">"Top Rated" awards — seasonal salon highlights, 5-year winners, credibility stacking.</div></div>
+      <div class="pillar p3"><div class="p-label">Pillar 3</div><div class="p-body">Discovery / inspiration — trending beauty looks, seasonal themes (Christmas, weddings, summer). Drives impulse bookings.</div></div>
+      <div class="pillar p4"><div class="p-label">Pillar 4</div><div class="p-body">Social proof loops — "real review" carousels, before/after UGC, salon spotlights to build trust for new bookers.</div></div>
+      <div class="pillar p5"><div class="p-label">Pillar 5 (ads)</div><div class="p-body">Facebook App Install Ads + retargeting. "Book now" CTA. Seasonal promotions. No mention of salon economics.</div></div>
     </div>
+    <div class="detail-row">
+      <div class="d-box d-tone"><div class="d-label">Tone</div>Warm, aspirational, slightly playful. Talks to the consumer as someone who deserves care. Never talks money or commissions publicly.</div>
+      <div class="d-box d-hook"><div class="d-label">Core hook</div>"The easiest way to find and book beauty." Convenience + discovery + credibility. "Europe's #1" used constantly as a trust shortcut.</div>
+    </div>
+    <div class="detail-row">
+      <div class="d-box d-gap"><div class="d-label">What they never say</div>The 35% commission, marketplace dependency, or that salons' regular clients also go through Treatwell's system at cost. B2B content is minimal and defensive.</div>
+      <div class="d-box d-notino"><div class="d-label">Notino's opening</div>Treatwell's B2B social silence is a real gap. Salon owners on social hear Treatwell only as a consumer brand — not as a business partner. Notino can own the "salon owner voice" channel entirely in AT.</div>
+    </div>
+  </div>
+
+  <div class="sl">2. Fresha</div>
+  <div class="social-block">
+    <div class="social-header"><div class="social-name">Fresha</div><div style="display:flex;gap:5px"><span class="ptag pt-both">B2C + B2B</span></div></div>
+    <div class="social-channels">Channels: Instagram 73k (@fresha) · LinkedIn (active, case studies) · TikTok · YouTube · Blog. Global English-first.</div>
+    <div class="quote">"Connecting the world to beauty and wellness." / "Supercharge your business with the world's top booking platform." — consistent cross-channel taglines</div>
+    <div class="pillars-grid">
+      <div class="pillar p1"><div class="p-label">Pillar 1</div><div class="p-body">Salon owner empowerment — "Meet the Partner" video series. Real business owners, real revenue uplift. Emotional + aspirational.</div></div>
+      <div class="pillar p2"><div class="p-label">Pillar 2</div><div class="p-body">"Free software" narrative — historically dominant. Now quietly shifting to "affordable" and "value" as pricing changed.</div></div>
+      <div class="pillar p3"><div class="p-label">Pillar 3</div><div class="p-body">Product feature drops — 2026 roadmap (AI receptionist, two-way messaging, bundles) heavily promoted. Innovation posture.</div></div>
+      <div class="pillar p4"><div class="p-label">Pillar 4</div><div class="p-body">Social media as booking lever — heavily pushes "Book Now" on Instagram/Facebook/Google as direct conversion. 80% bookings via Instagram CTA cited.</div></div>
+      <div class="pillar p5"><div class="p-label">Pillar 5</div><div class="p-body">Industry event presence (HairCon) — booth, panels, "Your Brand" social stage. Positions Fresha as industry advocate.</div></div>
+    </div>
+    <div class="detail-row">
+      <div class="d-box d-tone"><div class="d-label">Tone</div>Energetic, global, feature-first. Talks to salon owners as entrepreneurs and creatives. Avoids anything that sounds like "platform fees." Heavy use of stats and percentages to signal legitimacy.</div>
+      <div class="d-box d-hook"><div class="d-label">Core hook</div>"World's #1 booking platform" repeated constantly. Aspirational scale + accessibility. LinkedIn = growth narrative for salon professionals. Instagram = B2C inspiration + booking conversion.</div>
+    </div>
+    <div class="detail-row">
+      <div class="d-box d-gap"><div class="d-label">What they never say</div>The "free forever" reversal. The 20% new client fee charged on own-sourced clients. No acknowledgment of the trust crisis in reviews. Social channels are entirely upbeat — the gap between public messaging and actual user experience is the widest of any competitor.</div>
+      <div class="d-box d-notino"><div class="d-label">Notino's opening</div>Fresha's social-to-reality gap is exploitable. Run honest "we don't do that" content — transparent pricing breakdowns, no-hidden-fee narratives. Where Fresha talks scale, Notino talks trust. Real salon owner testimonials with specific €/month savings comparisons.</div>
+    </div>
+  </div>
+
+  <div class="sl">3. Salonkee</div>
+  <div class="social-block">
+    <div class="social-header"><div class="social-name">Salonkee</div><div style="display:flex;gap:5px"><span class="ptag pt-b2b">B2B only</span></div></div>
+    <div class="social-channels">Channels: Instagram @salonkee.de.at (4.4k, active Reels) · LinkedIn · Localised salonkee.at site</div>
+    <div class="quote">"Stop wasting hours on admin. Join thousands of salons across Europe using Salonkee to save time and grow faster."</div>
+    <div class="pillars-grid">
+      <div class="pillar p1"><div class="p-label">Pillar 1</div><div class="p-body">Time savings / admin relief — "your calendar fills itself", "stop chasing no-shows." Pain-first messaging that resonates immediately.</div></div>
+      <div class="pillar p2"><div class="p-label">Pillar 2</div><div class="p-body">Feature education via Reels — short demos of specific features (waitlists, deposits, staff management). Shows rather than tells.</div></div>
+      <div class="pillar p3"><div class="p-label">Pillar 3</div><div class="p-body">Customer success stories — named businesses, before/after revenue or efficiency metrics. Trustpilot integration in content.</div></div>
+      <div class="pillar p4"><div class="p-label">Pillar 4</div><div class="p-body">0% commission messaging — regularly reinforces no hidden fees. Direct counter to Treatwell and Fresha. Fixed monthly fee framed as predictability.</div></div>
+    </div>
+    <div class="detail-row">
+      <div class="d-box d-tone"><div class="d-label">Tone</div>Professional, warm, helpful. Talks to salon owners as business operators who deserve good tools. German primary. Feels like a knowledgeable local colleague, not a global tech platform. Support-first culture bleeds into content.</div>
+      <div class="d-box d-hook"><div class="d-label">Core hook</div>"All-in-one ops platform, 0% commission, built for European salons." The hook is reliability + completeness. Not cheap — dependable. Biggest differentiator: predictable costs, full control.</div>
+    </div>
+    <div class="detail-row">
+      <div class="d-box d-gap"><div class="d-label">What they never say</div>Anything about revenue generation for salons — it's purely an efficiency/cost framing. Never talks about bringing new customers. Never mentions product sales or upsell economics. The salon owner is always paying Salonkee, never earning through it.</div>
+      <div class="d-box d-notino"><div class="d-label">Notino's opening</div>Salonkee frames software as a cost of doing business. Notino can flip this: "we don't just save you time, we generate revenue you didn't have." The product commission narrative is completely absent from Salonkee's content — Notino owns this space. Ask: "Where does Salonkee send you new clients?"</div>
+    </div>
+  </div>
+
+  <div class="sl">4. Planity</div>
+  <div class="social-block">
+    <div class="social-header"><div class="social-name">Planity</div><div style="display:flex;gap:5px"><span class="ptag pt-b2b">B2B dominant</span><span class="ptag pt-weak">AT: zero today</span></div></div>
+    <div class="social-channels">Channels: LinkedIn (corporate + CEO-led) · press/media heavy · French-primary. German Capterra listings pre-seeded for AT. No AT social presence yet.</div>
+    <div class="quote">"After securing a leadership position in France and quickly establishing presence in Germany and Belgium, we will strive to replicate our national success." — CEO, Series C announcement</div>
+    <div class="pillars-grid">
+      <div class="pillar p1"><div class="p-label">Pillar 1</div><div class="p-body">Funding / traction narrative — €50M raise, 50k salons, #1 France. Every piece of external content leads with scale and momentum.</div></div>
+      <div class="pillar p2"><div class="p-label">Pillar 2</div><div class="p-body">0% commission as a moral argument — frames commission models as structurally unfair to salons. Not just cheaper — ethically correct.</div></div>
+      <div class="pillar p3"><div class="p-label">Pillar 3</div><div class="p-body">Doctolib comparison — explicitly positions as "the Doctolib of beauty." Anchors to a unicorn success story that proves the playbook works.</div></div>
+      <div class="pillar p4"><div class="p-label">Pillar 4</div><div class="p-body">AI roadmap — conversational AI for phone booking, payment automation. Positions Planity as forward-looking tech vs older SaaS players.</div></div>
+    </div>
+    <div class="detail-row">
+      <div class="d-box d-tone"><div class="d-label">Tone</div>Confident, founder-led, slightly evangelical. CEO Antoine Puymirat is the face — personal LinkedIn and press interviews drive more content than corporate channels. Very French startup energy: principled, design-conscious, anti-commission as a values statement.</div>
+      <div class="d-box d-hook"><div class="d-label">Core hook</div>"0% commission SaaS for beauty. No marketplace dependency. Salons keep their clients." In France/Germany/Belgium this resonated quickly because it directly attacked the Treatwell model. In AT it hasn't landed yet — but will.</div>
+    </div>
+    <div class="detail-row">
+      <div class="d-box d-gap"><div class="d-label">What they never say</div>Anything about revenue generation or product upsell for salons. No e-commerce integration, no loyalty ecosystem, no product commission. Content is entirely about booking management and cost savings — not salon revenue growth. No local AT voices or German-speaking salon stories.</div>
+      <div class="d-box d-notino"><div class="d-label">Notino's opening</div>When Planity launches in AT it will own the "0% commission + marketplace" message. Notino must pre-empt NOW: "we've been here for years, we already have Austrian users, and we pay you 5% on products." Planity's content is about what salons don't pay — Notino's can be about what salons earn.</div>
+    </div>
+  </div>
+
+  <div class="sl">5. studiobookr / studiolution</div>
+  <div class="social-block">
+    <div class="social-header"><div class="social-name">studiobookr / studiolution</div><div style="display:flex;gap:5px"><span class="ptag pt-b2b">B2B only</span><span class="ptag pt-weak">AT: weak</span></div></div>
+    <div class="social-channels">Channels: Instagram, TikTok, Facebook, YouTube (Germany-primary). studiobookr Facebook: 275 followers. AT social footprint minimal.</div>
+    <div class="quote">"Du arbeitest nicht auf einer fremden Plattform. Das bedeutet: keine Werbung, keine Empfehlungen für andere Salons in deiner Umgebung und keine Buchungsgebühren. Deine Kundendaten gehören dir." — studiobookr.de</div>
+    <div class="pillars-grid">
+      <div class="pillar p1"><div class="p-label">Pillar 1</div><div class="p-body">Data sovereignty / independence — "your client data belongs to you." Strong anti-marketplace, anti-advertising message. Fear of platform dependency.</div></div>
+      <div class="pillar p2"><div class="p-label">Pillar 2</div><div class="p-body">Simplicity — the digital equivalent of the paper appointment book, always on. Not overwhelming, not complex. Made for hairdressers.</div></div>
+      <div class="pillar p3"><div class="p-label">Pillar 3</div><div class="p-body">No commissions, no hidden costs — repeated constantly. Pricing is the brand. The monthly fee is freedom from percentage-based surprises.</div></div>
+      <div class="pillar p4"><div class="p-label">Pillar 4</div><div class="p-body">Industry credibility — founding member of IGZTK, GoBD/KassenSichV compliance. Speaks to German regulatory fluency. Trust via association.</div></div>
+    </div>
+    <div class="detail-row">
+      <div class="d-box d-tone"><div class="d-label">Tone</div>Calm, no-nonsense, craft-respecting. Addresses Friseure directly — not generic "beauty professionals." Avoids startup energy. Sounds like people who understand the trade, not just tech. TikTok is more playful (behind-the-scenes of the software team).</div>
+      <div class="d-box d-hook"><div class="d-label">Core hook</div>"Your own booking system, not a foreign platform." The anti-Treatwell pitch framed around autonomy and data control — not just cost. Resonates with privacy-conscious German-speaking owners.</div>
+    </div>
+    <div class="detail-row">
+      <div class="d-box d-gap"><div class="d-label">What they never say</div>Anything about bringing new customers, product sales, or revenue growth. The framing is entirely defensive (protect what you have, keep your data, avoid fees). No forward-looking revenue narrative. Very Germany-focused — AT content near zero.</div>
+      <div class="d-box d-notino"><div class="d-label">Notino's opening</div>studiobookr's message is about protection from harm. Notino's should be about opportunity. Address the same privacy concern: "your client data is yours" — but add: "and we bring you new clients through Notino users, plus 5% on every product they buy."</div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+  <div class="sl">What nobody is saying — Notino's content white space</div>
+  <div class="ws-grid">
+    <div class="ws-card"><div class="ws-title open">Revenue growth narrative</div><div class="ws-body">Every competitor talks about costs, commissions, or admin. Zero competitors talk about making salons meaningfully more money. The 5% product commission story is completely unclaimed in the Austrian market. Notino should own: "Your clients already buy cosmetics online. Why not earn from it?"</div></div>
+    <div class="ws-card"><div class="ws-title open">The honest comparison post</div><div class="ws-body">No competitor publishes a transparent side-by-side cost breakdown. Treatwell and Fresha actively obscure their true costs. A clean "what you actually pay on each platform" carousel — with specific Austrian examples — would be both high-engagement and impossible for competitors to rebut.</div></div>
+    <div class="ws-card"><div class="ws-title open">Austrian salon owner voice</div><div class="ws-body">Salonkee and studiobookr publish DACH testimonials, but few Austrian ones. Planity has none. A content strategy built around named Viennese, Graz, and Salzburg salon owners would be locally unique and credible.</div></div>
+    <div class="ws-card"><div class="ws-title open">The "Fresha refugee" content</div><div class="ws-body">The trust collapse at Fresha is widely documented in public forums. A Notino "Switch from Fresha" campaign — specific, sympathetic, honest — could capture high-intent salon owners right now on Facebook salon owner groups where the complaints are loudest.</div></div>
+    <div class="ws-card"><div class="ws-title risk">Risk: Planity will close some gaps</div><div class="ws-body">When Planity launches in AT, they will claim the 0% commission moral high ground and the "anti-Treatwell" voice. Notino needs to establish these narratives before that happens — the window is 6–12 months, which means content investment starts now.</div></div>
+    <div class="ws-card"><div class="ws-title risk">Risk: zero B2B brand awareness</div><div class="ws-body">Notino is trusted by Austrian consumers as a cosmetics shop. Salon owners don't yet know Notino as a business partner. The content strategy must introduce the B2B brand AND make the economic case simultaneously — harder than building on an existing B2B reputation.</div></div>
   </div>
 
 </div>
