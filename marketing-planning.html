@@ -74,7 +74,7 @@
     <div class="header-badges">
       <span class="hbadge hb-blue">Austria + Croatia</span>
       <span class="hbadge hb-purple">B2B only</span>
-      <span class="hbadge hb-amber">10 open questions</span>
+      <span class="hbadge hb-amber">13 open questions</span>
       <span class="hbadge hb-green">Pre-strategy session</span>
     </div>
   </div>
@@ -84,6 +84,21 @@
 </div>
 
 <a class="back-link" href="index.html">← Back to reports</a>
+
+<!-- SESSION INPUTS -->
+<div class="q-card" style="border:1px solid var(--border-mid);margin-bottom:24px">
+  <div style="font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:.12em;color:var(--text-tertiary);margin-bottom:14px;font-family:monospace">Session inputs — fill in before starting</div>
+  <div style="display:flex;gap:16px;flex-wrap:wrap">
+    <div style="flex:1;min-width:200px">
+      <div style="font-size:12px;font-weight:600;color:var(--text-primary);margin-bottom:6px">🇦🇹 Austria — monthly B2B budget</div>
+      <textarea class="q-notes budget-field" placeholder="€ / month" style="min-height:44px"></textarea>
+    </div>
+    <div style="flex:1;min-width:200px">
+      <div style="font-size:12px;font-weight:600;color:var(--text-primary);margin-bottom:6px">🇭🇷 Croatia — monthly B2B budget</div>
+      <textarea class="q-notes budget-field" placeholder="€ / month" style="min-height:44px"></textarea>
+    </div>
+  </div>
+</div>
 
 <!-- Q1 -->
 <div class="q-card">
@@ -177,10 +192,10 @@
 <div class="q-card">
   <div class="q-header">
     <span class="q-badge">Q9</span>
-    <div class="q-title">How will Notino generate and publish proof — and how fast?</div>
+    <div class="q-title">What is the monthly budget available for B2B acquisition — per market?</div>
   </div>
-  <div class="q-context"><strong>Key context:</strong> All [TO BE FILLED] placeholders in the reports are currently the pitch's weakest point.</div>
-  <div class="q-unlocks">What it unlocks: Pilot programme design · Case study pipeline · Social proof strategy</div>
+  <div class="q-context"><strong>Key context:</strong> Budget determines whether the acquisition motion is field sales, paid media, content, or all three.</div>
+  <div class="q-unlocks">What it unlocks: Channel mix · CAC ceiling · Hire vs outsource decision</div>
   <textarea class="q-notes" placeholder="Notes from session..."></textarea>
 </div>
 
@@ -188,10 +203,43 @@
 <div class="q-card">
   <div class="q-header">
     <span class="q-badge">Q10</span>
-    <div class="q-title">What is the 90-day pivot trigger — and who decides?</div>
+    <div class="q-title">What acquisition channels has Notino already tested — and what happened?</div>
   </div>
-  <div class="q-context"><strong>Key context:</strong> Pre-agreeing failure criteria before launch prevents slow drift and sunk-cost traps.</div>
-  <div class="q-unlocks">What it unlocks: Review cadence · Escalation path · Pivot criteria</div>
+  <div class="q-context"><strong>Key context:</strong> Any prior outreach, even informal, contains signal about what messaging and channels work.</div>
+  <div class="q-unlocks">What it unlocks: Channel shortlist · Avoid repeating failures · Faster iteration</div>
+  <textarea class="q-notes" placeholder="Notes from session..."></textarea>
+</div>
+
+<!-- Q11 -->
+<div class="q-card">
+  <div class="q-header">
+    <span class="q-badge">Q11</span>
+    <div class="q-title">Who owns B2B acquisition — and what is their capacity?</div>
+  </div>
+  <div class="q-context"><strong>Key context:</strong> Strategy without an executor is a document. Founder-led, dedicated sales, or agency changes everything.</div>
+  <div class="q-unlocks">What it unlocks: Realistic target-setting · Execution plan · Outsourcing decisions</div>
+  <textarea class="q-notes" placeholder="Notes from session..."></textarea>
+</div>
+
+<!-- Q12 -->
+<div class="q-card">
+  <div class="q-header">
+    <span class="q-badge">Q12</span>
+    <div class="q-title">What does the onboarding journey look like today — and where does it break?</div>
+  </div>
+  <div class="q-context"><strong>Key context:</strong> Marketing can only hand off a warm lead; if onboarding leaks, pipeline volume won't fix it.</div>
+  <div class="q-unlocks">What it unlocks: Funnel design · Drop-off diagnosis · Activation rate baseline</div>
+  <textarea class="q-notes" placeholder="Notes from session..."></textarea>
+</div>
+
+<!-- Q13 -->
+<div class="q-card">
+  <div class="q-header">
+    <span class="q-badge">Q13</span>
+    <div class="q-title">Are there any partnership, distribution, or co-marketing channels available?</div>
+  </div>
+  <div class="q-context"><strong>Key context:</strong> WKO (Austria) and craft associations (Croatia) can unlock dozens of salons per conversation.</div>
+  <div class="q-unlocks">What it unlocks: Partner channel strategy · CAC reduction · Trust shortcuts</div>
   <textarea class="q-notes" placeholder="Notes from session..."></textarea>
 </div>
 
@@ -207,6 +255,7 @@
 </div>
 <script>
 function downloadNotes() {
+  const budgetFields = document.querySelectorAll('.budget-field');
   const questions = [
     'What is the single primary goal for year one — salon count or revenue?',
     "What is Notino's risk appetite on the Planity clock?",
@@ -216,14 +265,21 @@ function downloadNotes() {
     'What is the acquisition motion — outbound push or inbound pull?',
     'What launch incentive can Notino offer — and for how long?',
     'Is there a referral or community strategy, or purely direct acquisition?',
-    'How will Notino generate and publish proof — and how fast?',
-    'What is the 90-day pivot trigger — and who decides?'
+    'What is the monthly budget available for B2B acquisition — per market?',
+    'What acquisition channels has Notino already tested — and what happened?',
+    'Who owns B2B acquisition — and what is their capacity?',
+    'What does the onboarding journey look like today — and where does it break?',
+    'Are there any partnership, distribution, or co-marketing channels available?'
   ];
-  const textareas = document.querySelectorAll('.q-notes');
+  const textareas = document.querySelectorAll('.q-notes:not(.budget-field)');
   const date = new Date().toISOString().split('T')[0];
   let out = 'NOTINO PARTNER — MARKETING PLANNING SESSION\n';
   out += 'Date: ' + date + '\n';
   out += '='.repeat(50) + '\n\n';
+  out += 'BUDGET INPUTS\n';
+  out += '-'.repeat(40) + '\n';
+  out += 'Austria monthly B2B budget: ' + (budgetFields[0].value.trim() || '(not set)') + '\n';
+  out += 'Croatia monthly B2B budget: ' + (budgetFields[1].value.trim() || '(not set)') + '\n\n';
   textareas.forEach((ta, i) => {
     out += 'Q' + (i + 1) + ': ' + questions[i] + '\n';
     out += '-'.repeat(40) + '\n';
