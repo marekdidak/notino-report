@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Notino Partner — Marketing Planning Session</title>
+<style>
+  :root {
+    --color-strong-pink:#DC0069;--color-sky-blue:#8695CA;--color-black:#000000;--color-white:#FFFFFF;
+    --color-pink-100:#f8cce1;--color-pink-600:#b00054;--color-pink-700:#84003f;
+    --color-blue-100:#e7eaf4;--color-blue-200:#cfd5ea;--color-blue-600:#5a6aa2;--color-blue-800:#1d2851;
+    --color-nude-100:#faf2ee;--color-nude-200:#f5e4dd;--color-nude-600:#b89688;
+    --color-silver-500:#808080;--color-silver-700:#4d4d4d;--color-silver-900:#1a1a1a;
+    --blue-50:#e7eaf4;--blue-100:#cfd5ea;--blue-600:#5a6aa2;--blue-800:#1d2851;
+    --green-50:#faf2ee;--green-200:#f0d7cc;--green-600:#DC0069;--green-800:#84003f;
+    --amber-50:#f5e4dd;--amber-600:#CA5932;--amber-800:#7a3520;
+    --red-50:#e6e6e6;--red-600:#DC0069;--red-800:#333333;
+    --purple-50:#e7eaf4;--purple-600:#5a6aa2;--purple-800:#1d2851;
+    --text-primary:#1a1a1a;--text-secondary:#4d4d4d;--text-tertiary:#808080;
+    --bg-primary:#ffffff;--bg-secondary:#faf2ee;
+    --border-light:rgba(0,0,0,0.08);--border-mid:rgba(0,0,0,0.14);
+    --radius:10px;--radius-lg:14px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#ffffff;color:var(--text-primary);font-size:14px;line-height:1.6}
+  .shell{max-width:1200px;margin:0 auto;padding:32px 24px}
+  .header{background:var(--bg-primary);border-radius:var(--radius-lg);border:0.5px solid var(--border-light);padding:28px 32px;margin-bottom:20px;display:flex;align-items:flex-start;justify-content:space-between;gap:20px}
+  .header-left h1{font-size:22px;font-weight:600;letter-spacing:-.3px;margin-bottom:4px}
+  .header-left p{font-size:13px;color:var(--text-secondary);line-height:1.5;max-width:600px}
+  .header-badges{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+  .hbadge{font-size:11px;font-weight:500;padding:3px 10px;border-radius:999px}
+  .hb-green{background:rgba(220,0,105,.18);color:#f8cce1}
+  .hb-blue{background:rgba(134,149,202,.25);color:#cfd5ea}
+  .hb-amber{background:rgba(202,89,50,.22);color:#f0d7cc}
+  .hb-purple{background:rgba(134,149,202,.25);color:#cfd5ea}
+  .report-meta{text-align:right;flex-shrink:0}
+  .report-meta .date{font-size:12px;color:#808080;margin-bottom:6px}
+  .back-link{display:inline-block;font-size:13px;color:var(--text-tertiary);text-decoration:none;margin-bottom:20px;transition:color .15s}
+  .back-link:hover{color:var(--text-primary)}
+  .q-card{background:var(--bg-primary);border:0.5px solid var(--border-light);border-radius:var(--radius-lg);padding:22px 24px;margin-bottom:16px}
+  .q-header{display:flex;align-items:flex-start;gap:14px;margin-bottom:12px}
+  .q-badge{font-size:11px;font-weight:600;padding:4px 12px;border-radius:999px;white-space:nowrap;background:#DC0069;color:#ffffff;flex-shrink:0;margin-top:2px}
+  .q-title{font-size:16px;font-weight:600;color:var(--text-primary);line-height:1.4}
+  .q-context{font-size:12px;color:var(--text-secondary);line-height:1.6;margin-bottom:8px}
+  .q-context strong{font-weight:600;color:var(--text-primary)}
+  .q-unlocks{font-size:11px;color:var(--text-tertiary);margin-bottom:14px}
+  .q-notes{background:var(--bg-secondary);border:0.5px solid var(--border-light);border-radius:var(--radius);padding:14px 16px;min-height:60px;font-size:12px;color:var(--text-tertiary);font-style:italic}
+  .footer{text-align:center;padding:24px 0;font-size:11px;color:var(--text-tertiary)}
+
+  /* ── Notino brand overrides ── */
+  body{background:#ffffff}
+  .header{background:#000000;border:none}
+  .header-left h1{color:#ffffff}
+  .header-left p{color:#b3b3b3}
+  .footer{background:#000000;color:#808080;margin:20px -24px -32px;padding:20px 24px}
+
+  @media(max-width:700px){
+    .header{flex-direction:column}
+    .report-meta{text-align:left}
+  }
+</style>
+</head>
+<body>
+<div class="shell">
+
+<!-- HEADER -->
+<div class="header">
+  <div class="header-left">
+    <img src="https://brand.notino.com/content/1_logotypes-and-claim/3_logotype-notino-partner/notino-partner-logotype-1.svg" alt="Notino Partner" width="160" style="display:block;margin-bottom:18px">
+    <h1>Marketing Planning Session</h1>
+    <p>10 strategic questions to answer before building the B2B marketing strategy. Covers both Austria and Croatia.</p>
+    <div class="header-badges">
+      <span class="hbadge hb-blue">Austria + Croatia</span>
+      <span class="hbadge hb-purple">B2B only</span>
+      <span class="hbadge hb-amber">10 open questions</span>
+      <span class="hbadge hb-green">Pre-strategy session</span>
+    </div>
+  </div>
+  <div class="report-meta">
+    <div class="date">March 2026</div>
+  </div>
+</div>
+
+<a class="back-link" href="index.html">← Back to reports</a>
+
+<!-- Q1 -->
+<div class="q-card">
+  <div class="q-header">
+    <span class="q-badge">Q1</span>
+    <div class="q-title">What is the single primary goal for year one — salon count or revenue?</div>
+  </div>
+  <div class="q-context"><strong>Key context:</strong> Volume vs quality optimisation require completely different strategies and incentive structures.</div>
+  <div class="q-unlocks">What it unlocks: KPI framework · Campaign optimisation signal</div>
+  <div class="q-notes">Notes from session...</div>
+</div>
+
+<!-- Q2 -->
+<div class="q-card">
+  <div class="q-header">
+    <span class="q-badge">Q2</span>
+    <div class="q-title">What is Notino's risk appetite on the Planity clock?</div>
+  </div>
+  <div class="q-context"><strong>Key context:</strong> Planity lands in Austria in 6–12 months with €46M and a 0%-commission model.</div>
+  <div class="q-unlocks">What it unlocks: Go-to-market urgency · Budget phasing · AT vs HR priority</div>
+  <div class="q-notes">Notes from session...</div>
+</div>
+
+<!-- Q3 -->
+<div class="q-card">
+  <div class="q-header">
+    <span class="q-badge">Q3</span>
+    <div class="q-title">What is the actual value of a Notino consumer to a salon partner?</div>
+  </div>
+  <div class="q-context"><strong>Key context:</strong> "Access to Notino shoppers" needs a number — without it, it's a promise not a proof.</div>
+  <div class="q-unlocks">What it unlocks: Commission calculator · Pitch credibility · [TO BE FILLED] metrics</div>
+  <div class="q-notes">Notes from session...</div>
+</div>
+
+<!-- Q4 -->
+<div class="q-card">
+  <div class="q-header">
+    <span class="q-badge">Q4</span>
+    <div class="q-title">Will Notino invest in dedicated B2B brand building, or ride the consumer brand?</div>
+  </div>
+  <div class="q-context"><strong>Key context:</strong> Salon owners currently see Notino as a cosmetics shop, not a business partner.</div>
+  <div class="q-unlocks">What it unlocks: Content strategy · Social channel architecture · Budget split</div>
+  <div class="q-notes">Notes from session...</div>
+</div>
+
+<!-- Q5 -->
+<div class="q-card">
+  <div class="q-header">
+    <span class="q-badge">Q5</span>
+    <div class="q-title">Which market gets prioritised first — Austria or Croatia?</div>
+  </div>
+  <div class="q-context"><strong>Key context:</strong> Half-effort in both risks winning neither; each has a different urgency driver.</div>
+  <div class="q-unlocks">What it unlocks: Resource allocation · Hiring plan · Campaign calendar Q2–Q4 2026</div>
+  <div class="q-notes">Notes from session...</div>
+</div>
+
+<!-- Q6 -->
+<div class="q-card">
+  <div class="q-header">
+    <span class="q-badge">Q6</span>
+    <div class="q-title">What is the acquisition motion — outbound push or inbound pull?</div>
+  </div>
+  <div class="q-context"><strong>Key context:</strong> SEO and events take 6–18 months; Planity arrives in 6–12.</div>
+  <div class="q-unlocks">What it unlocks: Channel mix · Team structure · 90-day vs 12-month horizon</div>
+  <div class="q-notes">Notes from session...</div>
+</div>
+
+<!-- Q7 -->
+<div class="q-card">
+  <div class="q-header">
+    <span class="q-badge">Q7</span>
+    <div class="q-title">What launch incentive can Notino offer — and for how long?</div>
+  </div>
+  <div class="q-context"><strong>Key context:</strong> Undigitised salons start at zero bookings — the free tier threshold is a barrier.</div>
+  <div class="q-unlocks">What it unlocks: Onboarding offer design · Activation rate · Campaign hook</div>
+  <div class="q-notes">Notes from session...</div>
+</div>
+
+<!-- Q8 -->
+<div class="q-card">
+  <div class="q-header">
+    <span class="q-badge">Q8</span>
+    <div class="q-title">Is there a referral or community strategy, or purely direct acquisition?</div>
+  </div>
+  <div class="q-context"><strong>Key context:</strong> One well-connected salon owner in Vienna or Zagreb unlocks dozens at near-zero CAC.</div>
+  <div class="q-unlocks">What it unlocks: Ambassador programme · Referral mechanic · Event activation</div>
+  <div class="q-notes">Notes from session...</div>
+</div>
+
+<!-- Q9 -->
+<div class="q-card">
+  <div class="q-header">
+    <span class="q-badge">Q9</span>
+    <div class="q-title">How will Notino generate and publish proof — and how fast?</div>
+  </div>
+  <div class="q-context"><strong>Key context:</strong> All [TO BE FILLED] placeholders in the reports are currently the pitch's weakest point.</div>
+  <div class="q-unlocks">What it unlocks: Pilot programme design · Case study pipeline · Social proof strategy</div>
+  <div class="q-notes">Notes from session...</div>
+</div>
+
+<!-- Q10 -->
+<div class="q-card">
+  <div class="q-header">
+    <span class="q-badge">Q10</span>
+    <div class="q-title">What is the 90-day pivot trigger — and who decides?</div>
+  </div>
+  <div class="q-context"><strong>Key context:</strong> Pre-agreeing failure criteria before launch prevents slow drift and sunk-cost traps.</div>
+  <div class="q-unlocks">What it unlocks: Review cadence · Escalation path · Pivot criteria</div>
+  <div class="q-notes">Notes from session...</div>
+</div>
+
+<div class="footer">Notino Partner · Marketing Planning Session · March 2026 · .out of spacetime</div>
+
+</div>
+</body>
+</html>
