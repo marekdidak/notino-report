@@ -195,8 +195,49 @@
   <textarea class="q-notes" placeholder="Notes from session..."></textarea>
 </div>
 
+<div style="text-align:center;margin:32px 0 20px">
+  <button onclick="downloadNotes()" style="display:inline-flex;align-items:center;gap:8px;background:#DC0069;color:#fff;font-size:14px;font-weight:600;padding:12px 28px;border-radius:999px;border:none;cursor:pointer;transition:transform .15s,box-shadow .15s;letter-spacing:.2px">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+    Download session notes
+  </button>
+</div>
+
 <div class="footer">Notino Partner · Marketing Planning Session · March 2026 · .out of spacetime</div>
 
 </div>
+<script>
+function downloadNotes() {
+  const questions = [
+    'What is the single primary goal for year one — salon count or revenue?',
+    "What is Notino's risk appetite on the Planity clock?",
+    'What is the actual value of a Notino consumer to a salon partner?',
+    'Will Notino invest in dedicated B2B brand building, or ride the consumer brand?',
+    'Which market gets prioritised first — Austria or Croatia?',
+    'What is the acquisition motion — outbound push or inbound pull?',
+    'What launch incentive can Notino offer — and for how long?',
+    'Is there a referral or community strategy, or purely direct acquisition?',
+    'How will Notino generate and publish proof — and how fast?',
+    'What is the 90-day pivot trigger — and who decides?'
+  ];
+  const textareas = document.querySelectorAll('.q-notes');
+  const date = new Date().toISOString().split('T')[0];
+  let out = 'NOTINO PARTNER — MARKETING PLANNING SESSION\n';
+  out += 'Date: ' + date + '\n';
+  out += '='.repeat(50) + '\n\n';
+  textareas.forEach((ta, i) => {
+    out += 'Q' + (i + 1) + ': ' + questions[i] + '\n';
+    out += '-'.repeat(40) + '\n';
+    out += (ta.value.trim() || '(no notes)') + '\n\n';
+  });
+  out += '='.repeat(50) + '\n';
+  out += 'Notino Partner · Marketing Planning Session · ' + date + '\n';
+  const blob = new Blob([out], { type: 'text/plain' });
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'notino-planning-session-' + date + '.txt';
+  a.click();
+  URL.revokeObjectURL(a.href);
+}
+</script>
 </body>
 </html>
