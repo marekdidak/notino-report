@@ -246,6 +246,122 @@
   .cta-btn:hover{box-shadow:0 4px 12px rgba(220,0,105,.35)}
   .notino-badge{background:linear-gradient(90deg,#8695CA,#DC0069)}
   .pos-card{border:2px solid #f0d7cc}
+
+  /* ── GTM Strategy tab styles ── */
+  .gtm-section{margin-bottom:32px}
+  .gtm-section-label{font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:.12em;color:var(--color-strong-pink);margin-bottom:6px;font-family:monospace}
+  .gtm-section-title{font-size:20px;font-weight:700;margin-bottom:6px;color:var(--text-primary);letter-spacing:-.3px}
+  .gtm-section-intro{font-size:13px;color:var(--text-secondary);line-height:1.65;max-width:800px;margin-bottom:20px}
+  .gtm-hero-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:20px}
+  .gtm-hero-stat{background:var(--bg-primary);border:0.5px solid var(--border-light);border-radius:var(--radius);padding:16px 18px;text-align:center}
+  .gtm-hero-stat .val{font-size:24px;font-weight:700;color:var(--color-strong-pink);letter-spacing:-.5px}
+  .gtm-hero-stat .lbl{font-size:11px;color:var(--text-tertiary);margin-top:3px;text-transform:uppercase;letter-spacing:.06em}
+  .gtm-policy{background:#1d2851;border-radius:var(--radius-lg);padding:24px 28px;border-left:4px solid var(--color-strong-pink);margin-bottom:20px}
+  .gtm-policy p{font-size:15px;color:#ffffff;line-height:1.55;font-style:italic}
+  .gtm-policy em{color:var(--color-strong-pink);font-style:normal;font-weight:600}
+  .gtm-pos-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:20px}
+  .gtm-pos-card{background:var(--bg-primary);border:0.5px solid var(--border-light);border-radius:var(--radius-lg);padding:18px 20px}
+  .gtm-pos-card .icon{width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:14px;margin-bottom:10px}
+  .gtm-pos-card h4{font-size:13px;font-weight:600;margin-bottom:6px}
+  .gtm-pos-card p{font-size:12px;color:var(--text-secondary);line-height:1.6}
+  .gtm-icon-pink{background:var(--color-pink-100)}
+  .gtm-icon-blue{background:var(--color-blue-100)}
+  .gtm-icon-nude{background:var(--color-nude-100)}
+  .gtm-tier-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:20px}
+  .gtm-tier{border-radius:var(--radius-lg);padding:18px 20px;border:0.5px solid var(--border-light)}
+  .gtm-tier-1a{background:var(--color-pink-100);border-color:var(--color-pink-200)}
+  .gtm-tier-1b{background:var(--color-blue-100);border-color:var(--color-blue-200)}
+  .gtm-tier-2{background:var(--bg-secondary);border-color:var(--border-light)}
+  .gtm-tier-badge{display:inline-block;font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:3px 10px;border-radius:999px;margin-bottom:10px}
+  .gtm-badge-1a{background:var(--color-strong-pink);color:#fff}
+  .gtm-badge-1b{background:var(--color-sky-blue);color:#fff}
+  .gtm-badge-2{background:var(--gray-800);color:#fff}
+  .gtm-tier h4{font-size:13px;font-weight:600;margin-bottom:6px}
+  .gtm-tier p{font-size:12px;color:var(--text-secondary);line-height:1.6}
+  .gtm-tier ul{margin-top:8px;padding-left:16px}
+  .gtm-tier li{font-size:12px;color:var(--text-secondary);line-height:1.6}
+  .gtm-comp-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:20px}
+  .gtm-comp{background:var(--bg-primary);border:0.5px solid var(--border-light);border-radius:var(--radius);padding:14px 16px}
+  .gtm-comp h5{font-size:13px;font-weight:600;margin-bottom:4px}
+  .gtm-comp .threat{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px;display:block}
+  .gtm-comp p{font-size:11px;color:var(--text-secondary);line-height:1.55}
+  .gtm-budget-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border-light);border:0.5px solid var(--border-light);border-radius:var(--radius-lg);overflow:hidden;margin-bottom:20px}
+  .gtm-budget-cell{background:var(--bg-primary);padding:20px 18px}
+  .gtm-budget-cell .phase{font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--text-tertiary);margin-bottom:4px}
+  .gtm-budget-cell .amount{font-size:24px;font-weight:700;color:var(--text-primary);letter-spacing:-.5px}
+  .gtm-budget-cell .pct{font-size:12px;color:var(--color-strong-pink);margin-top:2px;font-weight:600}
+  .gtm-budget-cell .desc{font-size:12px;color:var(--text-secondary);margin-top:8px;line-height:1.55}
+  .gtm-channel-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-bottom:20px}
+  .gtm-channel{background:var(--bg-primary);border:0.5px solid var(--border-light);border-radius:var(--radius);padding:14px 16px}
+  .gtm-ch-tag{display:inline-block;font-size:10px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;padding:2px 8px;border-radius:999px;margin-bottom:8px}
+  .gtm-ch-perf{background:var(--color-blue-100);color:var(--color-blue-700)}
+  .gtm-ch-aware{background:var(--color-pink-100);color:var(--color-pink-700)}
+  .gtm-ch-brand{background:var(--color-nude-100);color:var(--color-nude-600)}
+  .gtm-ch-act{background:var(--color-blue-100);color:var(--color-blue-800)}
+  .gtm-channel h5{font-size:13px;font-weight:600;margin-bottom:4px}
+  .gtm-channel .ch-amount{font-size:20px;font-weight:700;color:var(--color-strong-pink)}
+  .gtm-channel .ch-pct{font-size:11px;color:var(--text-tertiary)}
+  .gtm-channel .ch-desc{font-size:11px;color:var(--text-secondary);margin-top:6px;line-height:1.55}
+  .gtm-inf-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;margin-bottom:20px}
+  .gtm-inf{background:var(--bg-primary);border:0.5px solid var(--border-light);border-radius:var(--radius);padding:14px 16px;transition:border-color .15s}
+  .gtm-inf:hover{border-color:var(--color-strong-pink)}
+  .gtm-inf .tier{font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;margin-bottom:6px;display:block}
+  .gtm-inf .t1{color:var(--color-strong-pink)}
+  .gtm-inf .t2{color:var(--color-sky-blue)}
+  .gtm-inf .t3{color:var(--color-nude-600)}
+  .gtm-inf h5{font-size:13px;font-weight:600;margin-bottom:2px}
+  .gtm-inf .handle{font-size:11px;color:var(--color-sky-blue);margin-bottom:4px}
+  .gtm-inf .followers{font-size:11px;font-weight:500;color:var(--text-tertiary);margin-bottom:6px}
+  .gtm-inf .role{font-size:11px;color:var(--text-secondary);line-height:1.55}
+  .gtm-district-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:20px}
+  .gtm-district{background:var(--bg-secondary);border:0.5px solid var(--border-light);border-radius:var(--radius);padding:14px 16px}
+  .gtm-district .num{font-size:24px;font-weight:700;color:var(--color-strong-pink);line-height:1}
+  .gtm-district h5{font-size:13px;font-weight:600;margin:4px 0 6px}
+  .gtm-district p{font-size:11px;color:var(--text-secondary);line-height:1.55}
+  .gtm-ooh-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:20px}
+  .gtm-ooh{background:var(--bg-secondary);border:0.5px solid var(--border-light);border-radius:var(--radius-lg);padding:18px 20px}
+  .gtm-ooh h5{font-size:14px;font-weight:600;margin-bottom:8px}
+  .gtm-ooh p{font-size:12px;color:var(--text-secondary);line-height:1.6}
+  .gtm-copy-block{background:#1d2851;border-radius:var(--radius);padding:14px 18px;margin-top:12px;border-left:3px solid var(--color-strong-pink)}
+  .gtm-copy-block p{font-size:13px;color:#ffffff;line-height:1.5;font-style:italic}
+  .gtm-copy-block .sub{font-size:11px;color:var(--color-silver-400);font-style:normal;margin-top:6px}
+  .gtm-lm-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:20px}
+  .gtm-lm{background:var(--bg-primary);border:0.5px solid var(--border-light);border-radius:var(--radius-lg);padding:18px 20px}
+  .gtm-lm .num{font-size:28px;font-weight:700;color:var(--color-pink-100);line-height:1;margin-bottom:6px}
+  .gtm-lm h4{font-size:13px;font-weight:600;margin-bottom:6px}
+  .gtm-lm p{font-size:12px;color:var(--text-secondary);line-height:1.6}
+  .gtm-lm .cta{font-size:11px;font-weight:600;color:var(--color-strong-pink);margin-top:10px}
+  .gtm-timeline{margin-bottom:20px}
+  .gtm-week{display:grid;grid-template-columns:100px 1fr;gap:16px;align-items:start;padding:14px 0;border-bottom:0.5px solid var(--border-light)}
+  .gtm-week:last-child{border-bottom:none}
+  .gtm-week-label{font-size:11px;font-weight:700;color:var(--color-strong-pink);text-transform:uppercase;letter-spacing:.06em;padding-top:2px}
+  .gtm-week h5{font-size:13px;font-weight:600;margin-bottom:4px}
+  .gtm-week p{font-size:12px;color:var(--text-secondary);line-height:1.6}
+  .gtm-ad{background:var(--bg-secondary);border:0.5px solid var(--border-light);border-radius:var(--radius);padding:14px 16px;margin-bottom:10px}
+  .gtm-ad .label{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--text-tertiary);margin-bottom:6px}
+  .gtm-ad .copy{font-size:12px;color:var(--text-secondary);line-height:1.6;font-style:italic}
+  .gtm-brand-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-bottom:20px}
+  .gtm-brand-card{background:var(--bg-secondary);border:0.5px solid var(--border-light);border-radius:var(--radius);padding:16px 18px}
+  .gtm-brand-card h5{font-size:13px;font-weight:600;margin-bottom:6px}
+  .gtm-brand-card p{font-size:12px;color:var(--text-secondary);line-height:1.6}
+  .gtm-two-col{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:20px}
+  .gtm-two-col h4{font-size:13px;font-weight:600;margin-bottom:10px}
+  .gtm-list{list-style:none;display:flex;flex-direction:column;gap:8px}
+  .gtm-list li{font-size:12px;color:var(--text-secondary);padding-left:12px;border-left:2px solid var(--color-strong-pink);line-height:1.6}
+  .gtm-list-blue li{border-left-color:var(--color-sky-blue)}
+  .gtm-groups-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:20px}
+  .gtm-group{background:var(--bg-primary);border:0.5px solid var(--border-light);border-radius:var(--radius);padding:14px 16px}
+  .gtm-group .platform{font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--text-tertiary);margin-bottom:6px}
+  .gtm-group h5{font-size:12px;font-weight:600;margin-bottom:4px}
+  .gtm-group p{font-size:11px;color:var(--text-secondary);line-height:1.55}
+  .gtm-webinar-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:20px}
+  .gtm-webinar{background:var(--bg-secondary);border:0.5px solid var(--border-light);border-radius:var(--radius);padding:16px 18px}
+  .gtm-webinar h5{font-size:13px;font-weight:600;margin-bottom:6px}
+  .gtm-webinar p{font-size:12px;color:var(--text-secondary);line-height:1.6}
+  @media(max-width:900px){
+    .gtm-hero-stats,.gtm-pos-grid,.gtm-tier-grid,.gtm-comp-grid,.gtm-district-grid,.gtm-groups-grid{grid-template-columns:1fr 1fr}
+    .gtm-ooh-grid,.gtm-two-col,.gtm-brand-grid,.gtm-lm-grid,.gtm-webinar-grid,.gtm-budget-grid{grid-template-columns:1fr}
+  }
 </style>
 </head>
 <body>
@@ -277,7 +393,7 @@
   <button class="tab" onclick="showTab('seo')">SEO Roadmap</button>
   <button class="tab" onclick="showTab('events')">Events</button>
   <button class="tab" onclick="showTab('icp')">ICP</button>
-  <button class="tab" onclick="window.location.href='gtm-strategy.html'">GTM Strategy</button>
+  <button class="tab" onclick="showTab('gtm')">GTM Strategy</button>
 </div>
 
 <!-- ============================================================ -->
@@ -1926,6 +2042,463 @@
       <li style="padding:4px 0">&#10007; Salons signing with Planity post-DACH launch — contractual lock-in risk</li>
       <li style="padding:4px 0">&#10007; Purely medical aesthetics clinics — different regulatory context</li>
     </ul>
+  </div>
+
+</div>
+
+<!-- ============================================================ -->
+<!-- TAB 7: GTM STRATEGY -->
+<!-- ============================================================ -->
+<div id="tab-gtm" class="tab-pane">
+
+  <div class="banner banner-green">
+    <strong>B2B Market Entry Strategy — Austria 2025.</strong> A full-funnel GTM playbook. €150k budget. June 2025 launch. Target: 500–800 partner salons in year one.
+  </div>
+
+  <div class="gtm-hero-stats">
+    <div class="gtm-hero-stat"><div class="val">~25,000</div><div class="lbl">Total salons in Austria</div></div>
+    <div class="gtm-hero-stat"><div class="val">~93%</div><div class="lbl">Undigitised — primary target</div></div>
+    <div class="gtm-hero-stat"><div class="val">5%</div><div class="lbl">Commission on Notino e-shop</div></div>
+    <div class="gtm-hero-stat"><div class="val">€150k</div><div class="lbl">Annual budget</div></div>
+  </div>
+
+  <!-- SUBTABS for GTM sections -->
+  <div class="subtabs" style="width:100%;flex-wrap:wrap;">
+    <button class="subtab active" onclick="showSubTab('gtm-strategy', this)">Strategy</button>
+    <button class="subtab" onclick="showSubTab('gtm-funnel', this)">Funnel</button>
+    <button class="subtab" onclick="showSubTab('gtm-budget', this)">Budget</button>
+    <button class="subtab" onclick="showSubTab('gtm-influencers', this)">Influencers</button>
+    <button class="subtab" onclick="showSubTab('gtm-multi', this)">Multicultural</button>
+    <button class="subtab" onclick="showSubTab('gtm-ooh', this)">OOH</button>
+    <button class="subtab" onclick="showSubTab('gtm-leads', this)">Lead Magnets</button>
+    <button class="subtab" onclick="showSubTab('gtm-activation', this)">Activation</button>
+    <button class="subtab" onclick="showSubTab('gtm-creative', this)">Creative</button>
+    <button class="subtab" onclick="showSubTab('gtm-team', this)">Team</button>
+  </div>
+
+  <!-- GTM SUB: STRATEGY -->
+  <div id="subtab-gtm-strategy" class="subtab-pane active">
+    <div class="gtm-section">
+      <div class="gtm-section-label">01 — Strategic core</div>
+      <div class="gtm-section-title">Own the undigitised majority</div>
+      <div class="gtm-section-intro">Austria's real opportunity is not in fighting for the 7% of salons already on a booking platform. It is in the 93% that have never adopted one — and who don't yet realise that their existing clients are already active Notino shoppers generating revenue that could be flowing back to them.</div>
+
+      <div class="gtm-policy">
+        <p>"We are not a booking tool. We are the only platform that pays your salon <em>every time your client buys a product online</em> — from a customer base they already have."</p>
+      </div>
+
+      <p style="font-size:12px;color:var(--text-tertiary);margin-bottom:20px;font-style:italic;">Key assumption: Notino's B2C brand recognition in Austria cannot be relied upon to accelerate B2B adoption. All spend is planned as if entering a completely unknown market.</p>
+
+      <div class="sl">Positioning</div>
+      <div class="gtm-pos-grid">
+        <div class="gtm-pos-card">
+          <div class="icon gtm-icon-pink">💰</div>
+          <h4>Revenue Growth Partner — not booking software</h4>
+          <p>Lead with passive income, not operational efficiency. The 5% commission on Notino e-shop purchases is a differentiator no competitor can match. Every piece of creative anchors on incremental revenue the salon is already leaving on the table.</p>
+        </div>
+        <div class="gtm-pos-card">
+          <div class="icon gtm-icon-blue">🆓</div>
+          <h4>Genuinely free — no hidden conditions</h4>
+          <p>Fresha's "free forever" collapsed under a 20% marketplace fee. Treatwell charges 35% on the first client. Notino Partner is free with no commission on existing clients. Communicate this plainly and repeatedly.</p>
+        </div>
+        <div class="gtm-pos-card">
+          <div class="icon gtm-icon-nude">🎯</div>
+          <h4>Attack pain without naming competitors</h4>
+          <p>The feel-good brand guideline prohibits direct attacks. The message is affirmative: "Join for free. No commission on your first clients." Any salon that has dealt with Treatwell or Fresha will understand the implication.</p>
+        </div>
+      </div>
+
+      <div class="sl">ICP Tiers — who to chase first</div>
+      <div class="gtm-tier-grid">
+        <div class="gtm-tier gtm-tier-1a">
+          <span class="gtm-tier-badge gtm-badge-1a">Tier 1A — Primary</span>
+          <h4>Undigitised salons, no competitor exposure</h4>
+          <p>The ~93% majority. No booking software, taking appointments by phone or walk-in. Vienna anchor, then Graz, Linz, Salzburg.</p>
+          <ul>
+            <li>15–20+ appointments per month</li>
+            <li>Active on Instagram even without a booking link</li>
+            <li>No existing digital booking tool</li>
+          </ul>
+        </div>
+        <div class="gtm-tier gtm-tier-1b">
+          <span class="gtm-tier-badge gtm-badge-1b">Tier 1B — Competitor defectors</span>
+          <h4>Dissatisfied Treatwell / Fresha users</h4>
+          <p>Treatwell's 35% first-client commission and Fresha's hidden fees create a steady stream of frustrated salon owners already digitised and proven.</p>
+          <ul>
+            <li>Search: "Treatwell Alternative Österreich"</li>
+            <li>Negative review monitoring on Treatwell/Fresha</li>
+            <li>Direct outreach from the country specialist</li>
+          </ul>
+        </div>
+        <div class="gtm-tier gtm-tier-2">
+          <span class="gtm-tier-badge gtm-badge-2">Tier 2 — Later stage</span>
+          <h4>Multi-location and premium operators</h4>
+          <p>Chains, training academies, premium studios. Higher value but require a personal sales touchpoint. Target from month 5+.</p>
+          <ul>
+            <li>Personalised event invites</li>
+            <li>Direct outreach from country specialist</li>
+            <li>Industry association contacts (WKO)</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="sl">Competitive landscape</div>
+      <div class="gtm-comp-grid">
+        <div class="gtm-comp">
+          <h5>Treatwell</h5>
+          <span class="threat" style="color:var(--color-strong-pink);">High threat — current leader</span>
+          <p>~7% market share, ~1,750 salons. Strong loyalty but severe pricing pain: 35% commission on first client.</p>
+        </div>
+        <div class="gtm-comp">
+          <h5>Fresha</h5>
+          <span class="threat" style="color:var(--amber-600);">Medium — trust damage</span>
+          <p>Communicated "free forever" then added 20% marketplace fee plus €2.79 per transaction. High volume of negative reviews.</p>
+        </div>
+        <div class="gtm-comp">
+          <h5>Studio Book / Salonkee</h5>
+          <span class="threat" style="color:var(--color-sky-blue);">Low — niche players</span>
+          <p>Small local players with limited marketing budgets and low brand recognition.</p>
+        </div>
+        <div class="gtm-comp">
+          <h5>Time Globe</h5>
+          <span class="threat" style="color:var(--color-sky-blue);">Low — minimal reach</span>
+          <p>Known among a small number of salons. No significant marketing presence or growth trajectory.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- GTM SUB: FUNNEL -->
+  <div id="subtab-gtm-funnel" class="subtab-pane">
+    <div class="gtm-section">
+      <div class="gtm-section-label">02 — Full-funnel architecture</div>
+      <div class="gtm-section-title">All layers live from month one</div>
+      <div class="gtm-section-intro">The funnel runs concurrently — not in sequence. Awareness spend creates a pool of salon owners who have seen Notino Partner. Performance channels must be running the same week to capture that pool before inertia sets in.</div>
+
+      <div class="note"><strong>Core principle:</strong> Awareness spend without a running conversion funnel is wasted. Google Search and Meta go live on day one. Retargeting begins at month 2 once the pixel has sufficient data.</div>
+
+      <div style="overflow-x:auto;margin-bottom:16px;">
+      <table>
+        <thead>
+          <tr>
+            <th>Stage</th>
+            <th>Channel / Activity</th>
+            <th>M1–2</th>
+            <th>M3–4</th>
+            <th>M5–6</th>
+            <th>M7–8</th>
+            <th>M9–10</th>
+            <th>M11–12</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td rowspan="3" style="font-weight:600;color:var(--color-strong-pink);">AWARENESS</td><td>OOH Vienna</td><td colspan="2" style="background:var(--color-pink-100);color:var(--color-pink-700);font-size:11px;">OOH — transit stops, salon districts</td><td colspan="4" style="color:var(--text-tertiary);font-size:11px;">— tapers off</td></tr>
+          <tr><td>B2B influencers</td><td colspan="6" style="background:var(--color-pink-100);color:var(--color-pink-700);font-size:11px;">Always-on organic &amp; paid amplification</td></tr>
+          <tr><td>Instagram organic</td><td colspan="6" style="background:var(--color-pink-100);color:var(--color-pink-700);font-size:11px;">Non-follower reels, salon owner content</td></tr>
+          <tr><td rowspan="3" style="font-weight:600;color:var(--color-sky-blue);">CONSIDERATION</td><td>Google Search</td><td colspan="6" style="background:var(--color-blue-100);color:var(--color-blue-700);font-size:11px;">Always-on · free software, Treatwell alt, Terminbuchung</td></tr>
+          <tr><td>Meta Ads</td><td colspan="6" style="background:var(--color-blue-100);color:var(--color-blue-700);font-size:11px;">Always-on · Vienna geo → expand · revenue creative</td></tr>
+          <tr><td>Lead magnets</td><td style="color:var(--text-tertiary);font-size:11px;text-align:center;">—</td><td colspan="5" style="background:var(--color-blue-100);color:var(--color-blue-700);font-size:11px;">Revenue Calculator · quiz · group calls</td></tr>
+          <tr><td rowspan="3" style="font-weight:600;color:var(--color-nude-600);">CONVERSION</td><td>Self-registration</td><td colspan="6" style="background:var(--color-nude-100);color:var(--color-nude-600);font-size:11px;">Landing page · always-on · all channels point here</td></tr>
+          <tr><td>Retargeting</td><td style="color:var(--text-tertiary);font-size:11px;text-align:center;">—</td><td colspan="5" style="background:var(--color-nude-100);color:var(--color-nude-600);font-size:11px;">Visited but not registered · 3-touch sequence</td></tr>
+          <tr><td>Event + outreach</td><td colspan="2" style="background:var(--color-nude-100);color:var(--color-nude-600);font-size:11px;">Vienna launch event + multicultural outreach</td><td colspan="4" style="color:var(--text-tertiary);font-size:11px;">—</td></tr>
+          <tr><td rowspan="2" style="font-weight:600;color:var(--amber-600);">ACTIVATION</td><td>Onboarding sequence</td><td colspan="6" style="background:var(--amber-50);color:var(--amber-800);font-size:11px;">Weekly emails · profile completion · commission education</td></tr>
+          <tr><td>Community + webinars</td><td colspan="6" style="background:var(--amber-50);color:var(--amber-800);font-size:11px;">WhatsApp Early Access · monthly webinars · peer calls</td></tr>
+          <tr><td style="font-weight:600;color:var(--gray-600);">REFERRAL</td><td>Partner referral</td><td colspan="2" style="color:var(--text-tertiary);font-size:11px;text-align:center;">— building base</td><td colspan="4" style="background:var(--bg-secondary);color:var(--text-secondary);font-size:11px;">€50 referral programme · partner-led growth from M5</td></tr>
+        </tbody>
+      </table>
+      </div>
+
+      <p style="font-size:11px;color:var(--text-tertiary);">B2C booking goes live ~September 2025 (month 4). Activation and referral mechanics are critical to retain registered salons during the pre-booking gap.</p>
+    </div>
+  </div>
+
+  <!-- GTM SUB: BUDGET -->
+  <div id="subtab-gtm-budget" class="subtab-pane">
+    <div class="gtm-section">
+      <div class="gtm-section-label">03 — Budget allocation</div>
+      <div class="gtm-section-title">€150,000 across the full year</div>
+      <div class="gtm-section-intro">Budget intensity is heaviest in months 1–4 to establish mental availability while the market is open. If the budget grows, scale proportionally; if it's cut, cut OOH first and protect performance channels.</div>
+
+      <div class="gtm-budget-grid">
+        <div class="gtm-budget-cell">
+          <div class="phase">Phase 1 · M1–4 · Heavy</div>
+          <div class="amount">~€82k</div>
+          <div class="pct">~55% of total budget</div>
+          <div class="desc">OOH Vienna, B2B influencers, launch event, Google + Meta launch, multicultural outreach. Full funnel activated from day one.</div>
+        </div>
+        <div class="gtm-budget-cell">
+          <div class="phase">Phase 2 · M5–8 · Sustain</div>
+          <div class="amount">~€45k</div>
+          <div class="pct">~30% of total budget</div>
+          <div class="desc">Always-on Google + Meta, retargeting, webinar series, engagement campaigns. Expand to Graz, Linz, Salzburg.</div>
+        </div>
+        <div class="gtm-budget-cell">
+          <div class="phase">Phase 3 · M9–12 · Reminder</div>
+          <div class="amount">~€23k</div>
+          <div class="pct">~15% of total budget</div>
+          <div class="desc">Autumn back-to-business push, retargeting lapsed visitors, referral programme amplification, beauty calendar tie-ins.</div>
+        </div>
+      </div>
+
+      <div class="sl">Channel-level breakdown</div>
+      <div class="gtm-channel-grid">
+        <div class="gtm-channel"><span class="gtm-ch-tag gtm-ch-perf">Performance</span><h5>Google Search + Pmax</h5><div class="ch-amount">~€30k</div><span class="ch-pct">~20%</span><p class="ch-desc">Always-on. Three clusters: free salon software, Treatwell alternative, Terminbuchung.</p></div>
+        <div class="gtm-channel"><span class="gtm-ch-tag gtm-ch-perf">Performance</span><h5>Meta Ads</h5><div class="ch-amount">~€28k</div><span class="ch-pct">~19%</span><p class="ch-desc">Always-on. Vienna geo-target M1–4, expand nationally M5+. Revenue creative angle. Retargeting from M2.</p></div>
+        <div class="gtm-channel"><span class="gtm-ch-tag gtm-ch-aware">Awareness</span><h5>OOH Vienna</h5><div class="ch-amount">~€18k</div><span class="ch-pct">~12%</span><p class="ch-desc">M1–4 only. Gewista Brand Area at U3 Zieglergasse + Neubaugasse. Megaboard Mariahilfer Straße.</p></div>
+        <div class="gtm-channel"><span class="gtm-ch-tag gtm-ch-brand">Brand</span><h5>B2B influencers</h5><div class="ch-amount">~€22k</div><span class="ch-pct">~15%</span><p class="ch-desc">Full year. Mix of Tier 1 (authority), Tier 2 (Vienna salon owners), Tier 3 (multicultural micro-creators).</p></div>
+        <div class="gtm-channel"><span class="gtm-ch-tag gtm-ch-brand">Brand</span><h5>Vienna launch event</h5><div class="ch-amount">~€12k</div><span class="ch-pct">~8%</span><p class="ch-desc">M2. Invite-only, premium venue. Key Tier 1A and 1B salons. Content for months of organic posts.</p></div>
+        <div class="gtm-channel"><span class="gtm-ch-tag gtm-ch-act">Activation</span><h5>Lead magnets + webinars</h5><div class="ch-amount">~€10k</div><span class="ch-pct">~7%</span><p class="ch-desc">M2 onwards. Revenue Calculator tool build, monthly group calls, quiz hosting.</p></div>
+        <div class="gtm-channel"><span class="gtm-ch-tag gtm-ch-aware">Awareness</span><h5>Multicultural outreach</h5><div class="ch-amount">~€8k</div><span class="ch-pct">~5%</span><p class="ch-desc">M1–6. Walking outreach in Favoriten, Ottakring, Rudolfsheim-Fünfhaus.</p></div>
+        <div class="gtm-channel"><span class="gtm-ch-tag gtm-ch-act">Activation</span><h5>Reserve / optimisation</h5><div class="ch-amount">~€22k</div><span class="ch-pct">~14%</span><p class="ch-desc">Held for reallocation after M1–2 performance data. Move to best-performing channel.</p></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- GTM SUB: INFLUENCERS -->
+  <div id="subtab-gtm-influencers" class="subtab-pane">
+    <div class="gtm-section">
+      <div class="gtm-section-label">04 — Influencer strategy</div>
+      <div class="gtm-section-title">Three tiers, one consistent message</div>
+      <div class="gtm-section-intro">The influencer stack is about credibility at each level of the funnel. Tier 1 establishes authority. Tier 2 creates aspiration through peer salon owners. Tier 3 reaches the underserved multicultural segment.</div>
+
+      <div class="note"><strong>Core content format:</strong> 1–2 Reels: "My clients already shop at Notino — now I earn even when they buy from home." + 1 Story sequence: walk-through of the Notino Partner commission dashboard with swipe-up to self-registration.</div>
+
+      <div class="sl">Tier 1 — National authority · awareness &amp; webinar co-hosting</div>
+      <div class="gtm-inf-grid">
+        <div class="gtm-inf"><span class="tier t1">Tier 1 · National</span><h5>Kitti Dalma</h5><div class="handle">@dalmalaluna</div><div class="followers">~370,000 followers · Hair niche</div><p class="role">Curly-hair creator based in Austria. Authority Reels: "how salons really make money from product retailing." Webinar co-host.</p></div>
+        <div class="gtm-inf"><span class="tier t1">Tier 1 · National</span><h5>Marie Schnoell</h5><div class="handle">@marieschnoell</div><div class="followers">~117,000 followers · Hair niche</div><p class="role">"Curly hair bestie." Strong storytelling format for the 5% commission concept.</p></div>
+      </div>
+
+      <div class="sl">Tier 2 — Vienna salon owners · conversion &amp; trust</div>
+      <div class="gtm-inf-grid">
+        <div class="gtm-inf"><span class="tier t2">Tier 2 · Vienna</span><h5>Hair by Ulli</h5><div class="handle">@hair_by_ulli</div><div class="followers">Salon · Zieglergasse 17, 1070 Wien</div><p class="role">Master of Color Expert, blond specialist. Located in Neubau on the Mariahilfer axis — ideal overlap with OOH placements.</p></div>
+        <div class="gtm-inf"><span class="tier t2">Tier 2 · Vienna</span><h5>Murat Demir</h5><div class="handle">@trendstylebymuratvienna</div><div class="followers">~31,000 followers · Barber</div><p class="role">"Barber hero" for male-grooming messaging. Bridges Tier 2 and Tier 3. Co-host for Favoriten-focused group call.</p></div>
+        <div class="gtm-inf"><span class="tier t2">Tier 2 · Vienna</span><h5>Alexander Izhak</h5><div class="handle">@made_by_alexander</div><div class="followers">~34,000 followers · Hair artist</div><p class="role">High-end hair artist. Premium-angle content targeting Tier 2 multi-location and premium operator segment.</p></div>
+        <div class="gtm-inf"><span class="tier t2">Tier 2 · Vienna</span><h5>Luxury Hair Salon</h5><div class="handle">@luxury1_hair_salon</div><div class="followers">~31,000 followers · Salon</div><p class="role">Content around "how to productise premium services and retail with Notino." Visual aesthetic aligned with Notino brand.</p></div>
+      </div>
+
+      <div class="sl">Tier 3 — Multicultural micro-creators · undigitised districts</div>
+      <div class="gtm-inf-grid">
+        <div class="gtm-inf"><span class="tier t3">Tier 3 · Multicultural</span><h5>Minja Milic</h5><div class="handle">@hairstylebyminja</div><div class="followers">~12,000 followers · Stylist</div><p class="role">Serbian-origin stylist. Balkan-community messaging in German with visible Balkan identity.</p></div>
+        <div class="gtm-inf"><span class="tier t3">Tier 3 · Multicultural</span><h5>Biljana Nikolic</h5><div class="handle">@authentic_hair_b</div><div class="followers">Micro · Albertgasse 21, 1080</div><p class="role">Master of Blond and Color. Small but highly targeted Balkan-roots audience. Micro-ambassador for Early Access WhatsApp.</p></div>
+        <div class="gtm-inf"><span class="tier t3">Tier 3 · Multicultural</span><h5>MAD7 Barberclub</h5><div class="handle">Große Mohrengasse 38, 1020</div><div class="followers">Viral barbershop content · Leopoldstadt</div><p class="role">Active viral-style barber content. Natural partner for Leopoldstadt district stories.</p></div>
+        <div class="gtm-inf"><span class="tier t3">Tier 3 · Multicultural</span><h5>Tsirulnik Barbershop</h5><div class="handle">@tsirulnik.barbershop.wien</div><div class="followers">Barbershop · 1200 Wien</div><p class="role">Posts Reels with #barbervienna and #favoriten hashtags. Strong fit for 20th district outreach.</p></div>
+        <div class="gtm-inf"><span class="tier t3">Tier 3 · Multicultural</span><h5>ALTHAMEEN Barbershop</h5><div class="handle">Active on #wien #favoriten</div><div class="followers">Instagram Reels · Favoriten focus</div><p class="role">Natural partner for Favoriten pilot content. Key for walking outreach in the most salon-dense multicultural district.</p></div>
+        <div class="gtm-inf"><span class="tier t3">Tier 3 · Multicultural</span><h5>Saman Hesadi</h5><div class="handle">@sam_master_64</div><div class="followers">~900 followers · Micro-creator</div><p class="role">Hyper-local Reels: "a day in the life with Notino Partner." Very low cost, very high authenticity.</p></div>
+      </div>
+
+      <div class="note"><strong>Tool recommendation:</strong> Daytonn Steroid (active in SK/CZ market) can produce a vetted shortlist for AT. Use before committing paid collaborations beyond Tier 1.</div>
+    </div>
+  </div>
+
+  <!-- GTM SUB: MULTICULTURAL -->
+  <div id="subtab-gtm-multi" class="subtab-pane">
+    <div class="gtm-section">
+      <div class="gtm-section-label">05 — Multicultural lever</div>
+      <div class="gtm-section-title">The 46% opportunity competitors ignore</div>
+      <div class="gtm-section-intro">46.3% of Vienna's population has a migration background. Salon owners from Turkish and Balkan communities run a significant share of Vienna's undigitised barbershops and salons — systematically under-reached by every competitor's digital campaigns.</div>
+
+      <div class="note"><strong>Key insight:</strong> The overwhelming majority of these salon owners speak German fluently. The opportunity is not in language — it is in channel, creative representation, and physical presence in the right districts.</div>
+
+      <div class="sl">Priority districts — walking outreach M1–6</div>
+      <div class="gtm-district-grid">
+        <div class="gtm-district"><div class="num">10.</div><h5>Favoriten</h5><p>Highest concentration of Turkish-origin salon and barbershop owners. Walking outreach priority #1.</p></div>
+        <div class="gtm-district"><div class="num">16.</div><h5>Ottakring</h5><p>Mixed Turkish and Balkan community. Personal visit and referral from a known peer is the primary conversion mechanism.</p></div>
+        <div class="gtm-district"><div class="num">15.</div><h5>Rudolfsheim-Fünfhaus</h5><p>High Balkan-origin population. Several barbershops and nail studios with no booking software.</p></div>
+        <div class="gtm-district"><div class="num">02.</div><h5>Leopoldstadt</h5><p>MAD7 Barberclub territory. High-traffic area with barbershops producing viral content.</p></div>
+      </div>
+
+      <div class="sl">Outreach playbook</div>
+      <div class="gtm-two-col">
+        <div>
+          <h4>Digital</h4>
+          <ul class="gtm-list">
+            <li>Systematic DMs to salons using #friseurwien, #barbervienna, #favoriten, #ottakring — always from the country specialist account</li>
+            <li>Paid amplification of Tier 3 creator content targeted to Turkish barber community accounts and Balkan beauty groups</li>
+            <li>Seed Revenue Calculator and group call promotions in Facebook communities</li>
+            <li>Look-alike audience: followers of Murat Demir + Turkish barber accounts + Vienna location</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Physical</h4>
+          <ul class="gtm-list gtm-list-blue">
+            <li>Country specialist does walking visits in Favoriten, Ottakring, Rudolfsheim-Fünfhaus — in person only</li>
+            <li>Tier 3 micro-creators invited to Vienna launch event — creates visible community diversity in event content</li>
+            <li>Dedicated group call: "Vom Barbershop zum Brand" — co-hosted by Murat Demir</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="sl">Facebook &amp; Instagram communities to seed</div>
+      <div class="gtm-groups-grid">
+        <div class="gtm-group"><div class="platform">Facebook Group</div><h5>Friseure Wien-Österreich</h5><p>Primary seeding ground for Revenue Calculator and group call promotions.</p></div>
+        <div class="gtm-group"><div class="platform">Facebook Group</div><h5>Beauty Gruppe_Austria</h5><p>Cross-vertical Austrian beauty group. Good for booking setup quiz and multi-category webinars.</p></div>
+        <div class="gtm-group"><div class="platform">Facebook Group</div><h5>Haarmodelle Wien</h5><p>Connects Vienna hairdressers with hair model volunteers. Recruit models for content shoots.</p></div>
+        <div class="gtm-group"><div class="platform">Facebook Group</div><h5>Beauty Österreich</h5><p>Consumer beauty group. Soft-launch "your favourite salons will soon be bookable on Notino."</p></div>
+      </div>
+
+      <p style="font-size:12px;color:var(--text-tertiary);">Instagram hashtags to monitor: <span class="pill">#friseurwien</span> <span class="pill">#friseursalonwien</span> <span class="pill">#barbervienna</span> <span class="pill">#wienfriseur</span> <span class="pill">#favoriten</span> <span class="pill">#ottakring</span></p>
+    </div>
+  </div>
+
+  <!-- GTM SUB: OOH -->
+  <div id="subtab-gtm-ooh" class="subtab-pane">
+    <div class="gtm-section">
+      <div class="gtm-section-label">06 — Out-of-home</div>
+      <div class="gtm-section-title">Vienna transit — inside the performance funnel</div>
+      <div class="gtm-section-intro">OOH is front-loaded to months 1–4 and treated as a performance channel. Every placement drives to notino.at/partner-wien with UTM parameters. If it doesn't contribute to the self-registration pipeline, it doesn't run.</div>
+
+      <div class="gtm-ooh-grid">
+        <div class="gtm-ooh">
+          <h5>U3 Zieglergasse — Gewista Brand Area</h5>
+          <p>Located beneath Mariahilfer Straße at the boundary of the 6th and 7th districts. Direct access point to the most salon-dense streets in Vienna.</p>
+          <div class="gtm-copy-block">
+            <p>"Ihre Kunden kaufen schon bei Notino. Jetzt verdienen auch Sie daran."</p>
+            <div class="sub">Sub-line: "Jetzt kostenlos Notino Partner werden – ohne Einstiegsgebühr, ohne Erstbuchungs-Provision." QR → notino.at/partner-wien</div>
+          </div>
+        </div>
+        <div class="gtm-ooh">
+          <h5>U3 Neubaugasse — Gewista + Megaboard</h5>
+          <p>Central Mariahilfer Straße node. Megaboard 126m² façade with ~1M contact chances. Hair by Ulli salon is a three-minute walk.</p>
+          <div class="gtm-copy-block">
+            <p>"Ihr Salon. Ihre Kunden. Ihr Verdienst — auch online."</p>
+            <div class="sub">Megaboard format: giant serif type, full-bleed. QR → notino.at/partner-wien. Providers: Megaboard.at, Stadtwerbung.at / Gewista.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="note"><strong>OOH as content generator:</strong> Every placement is photographed and filmed on installation day. The country specialist and at least one Tier 2 creator visit for a "Look what's happening in Vienna" Reel. The outdoor spend doubles as organic content.</div>
+
+      <div class="note" style="margin-top:12px;"><strong>OOH + walking outreach:</strong> Neubaugasse and Zieglergasse are within 10 minutes of Rudolfsheim-Fünfhaus. Salon owners who see the poster and then get a visit convert at a significantly higher rate than either touchpoint alone.</div>
+    </div>
+  </div>
+
+  <!-- GTM SUB: LEAD MAGNETS -->
+  <div id="subtab-gtm-leads" class="subtab-pane">
+    <div class="gtm-section">
+      <div class="gtm-section-label">07 — Lead magnets</div>
+      <div class="gtm-section-title">Surface intent, don't educate</div>
+      <div class="gtm-section-intro">Every lead magnet answers a question the salon is already asking and makes Notino the logical conclusion. The magnet must surface buying intent and collect a contact — not simply inform.</div>
+
+      <div class="gtm-lm-grid">
+        <div class="gtm-lm">
+          <div class="num">01</div>
+          <h4>Salon Revenue Calculator</h4>
+          <p>Mobile-first web tool. Three inputs: monthly clients, product recommendation rate, average basket value. Output: estimated monthly Notino commission in euros.</p>
+          <p style="margin-top:8px;font-size:12px;color:var(--text-secondary);">"If 20% of your regulars buy via Notino, your salon earns ~€X extra per month."</p>
+          <div class="cta">Distribution: pinned in influencer bios, seeded in Facebook groups, linked in every webinar.</div>
+        </div>
+        <div class="gtm-lm">
+          <div class="num">02</div>
+          <h4>Booking Setup Benchmark Quiz</h4>
+          <p>5-question flow. Questions: how clients currently book, current commission rate, whether they earn from online product purchases, monthly software cost, priority.</p>
+          <p style="margin-top:8px;font-size:12px;color:var(--text-secondary);">Result: "Sie lassen schätzungsweise €X pro Monat liegen."</p>
+          <div class="cta">Primary channel: Meta lead ads targeting salon owner interests.</div>
+        </div>
+        <div class="gtm-lm">
+          <div class="num">03</div>
+          <h4>Monthly 30-Minute Group Calls</h4>
+          <p>Zoom/Meet. Monthly. Hosted by Austrian country specialist + one featured salon partner. 10 min intro, 10 min live demo, 10 min Q&amp;A.</p>
+          <p style="margin-top:8px;font-size:12px;color:var(--text-secondary);">"Wie Wiener Salons 2025 mehr verdienen (ohne mehr zu arbeiten)"</p>
+          <div class="cta">Promoted in all Facebook groups, cross-posted via creator stories.</div>
+        </div>
+      </div>
+
+      <div class="gtm-webinar-grid">
+        <div class="gtm-webinar"><h5>Ongoing webinar topics (M4+)</h5><p>Social media for salons · Pricing psychology · Client retention without discounting · How to earn more from existing clients · Tax-efficient structures for Austrian solo operators</p></div>
+        <div class="gtm-webinar"><h5>Guest host sourcing</h5><p>Kitti Dalma and Marie Schnoell for hair-niche content. Murat Demir for barbershop audience. Minja Milic for Balkan community session. Tier 2 salon owners for case-study slots.</p></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- GTM SUB: ACTIVATION -->
+  <div id="subtab-gtm-activation" class="subtab-pane">
+    <div class="gtm-section">
+      <div class="gtm-section-label">08 — Activation &amp; the 2-month gap</div>
+      <div class="gtm-section-title">Keep registered salons engaged before B2C goes live</div>
+      <div class="gtm-section-intro">The gap between B2B registration (June) and B2C booking going live (September) is the most dangerous window. Salons that register and see zero booking activity for two months will churn. The activation programme makes them feel like insiders.</div>
+
+      <div class="gtm-timeline">
+        <div class="gtm-week"><div class="gtm-week-label">Week 1</div><div><h5>White-glove onboarding call</h5><p>Personal call from the country specialist — not automated. Focuses on profile completeness, photo quality, and setting expectations for the September launch.</p></div></div>
+        <div class="gtm-week"><div class="gtm-week-label">Weeks 2–8</div><div><h5>Weekly email sequence — one action per email</h5><p>Each email delivers one practical insight and one action: optimise your product page / set up referral link / check commission tracker / invite a peer.</p></div></div>
+        <div class="gtm-week"><div class="gtm-week-label">M1–ongoing</div><div><h5>WhatsApp Early Access community</h5><p>"Notino Partner Österreich Early Access" — entry only via post-registration Danke page and personal invite. Weekly prompt, monthly live voice note. Intentionally diverse community.</p></div></div>
+        <div class="gtm-week"><div class="gtm-week-label">Month 5</div><div><h5>Referral programme activation</h5><p>Launch €50 partner referral only once a base of satisfied early partners exists. By month 5, weekly emails and community engagement create a cohort ready to advocate.</p></div></div>
+        <div class="gtm-week"><div class="gtm-week-label">September</div><div><h5>B2C booking goes live — insider moment</h5><p>Communicate launch to registered partners before it goes public. "As an early partner, your profile is live before the general announcement." First-mover visibility is real.</p></div></div>
+      </div>
+
+      <div class="note"><strong>What not to do:</strong> Do not offer financial incentives (free credits, bonus commissions) to drive early registrations. Buying signups creates a cohort that registered for the incentive, not the product — they churn before launch.</div>
+    </div>
+  </div>
+
+  <!-- GTM SUB: CREATIVE -->
+  <div id="subtab-gtm-creative" class="subtab-pane">
+    <div class="gtm-section">
+      <div class="gtm-section-label">09 — Creative direction</div>
+      <div class="gtm-section-title">Revenue-first, feel-good always</div>
+      <div class="gtm-section-intro">All creative leads with incremental revenue. The feel-good brand guideline applies throughout — no competitor naming, no aggressive comparisons. Master message: <em>"Your clients already shop at Notino. Now you get paid for it."</em></div>
+
+      <div class="sl">Ad formats and copy direction</div>
+      <div class="gtm-ad"><div class="label">Meta video · 15 seconds</div><div class="copy">A salon owner checks her phone. A notification: a client just bought her recommended shampoo on Notino. A counter ticks up. No voiceover. Caption: "Ihre Kunden kaufen schon bei Notino. Jetzt verdienen auch Sie daran."</div></div>
+      <div class="gtm-ad"><div class="label">Google Display · static</div><div class="copy">Headline: "Ihre Kunden kaufen bei Notino — Sie auch schon verdient?" Simple split layout: left, a Notino shopping bag; right, a salon commission counter. Sub-headline: "Kostenlos. Ohne Überraschungen."</div></div>
+      <div class="gtm-ad"><div class="label">Instagram Reel · organic · non-follower format</div><div class="copy">Country specialist walks into a Vienna barbershop, asks the owner: "Wie viel verdienen Sie, wenn Ihre Kunden online einkaufen?" Owner: "Gar nichts." Cut to: dashboard showing commission total. Text overlay: "Das können wir ändern."</div></div>
+      <div class="gtm-ad"><div class="label">Google Search · Treatwell defector cluster</div><div class="copy">Headline: "Salon-Software ohne Provision | Notino Partner kostenlos". Description: "Keine Erstbuchungsprovision. Keine versteckten Gebühren. Und Ihre Kunden verdienen für Sie weiter."</div></div>
+      <div class="gtm-ad"><div class="label">OOH headline · large format</div><div class="copy">"Ihre Kunden kaufen schon bei Notino. Jetzt verdienen auch Sie daran." — large serif type. QR → notino.at/partner-wien with UTM tracking.</div></div>
+
+      <div class="divider"></div>
+
+      <div class="sl">Distinctive B2B brand assets</div>
+      <div class="gtm-brand-grid">
+        <div class="gtm-brand-card"><h5>Master message — all channels</h5><p>"Your clients already shop at Notino. Now you get paid for it." In German: "Ihre Kunden kaufen schon bei Notino. Jetzt verdienen auch Sie daran." Used across OOH, digital ads, influencer content, and the landing page.</p></div>
+        <div class="gtm-brand-card"><h5>Visual differentiation from B2C</h5><p>B2B creative uses a structured layout — more businesslike, less lifestyle. All social content features real Austrian salon owners on location, not stock imagery.</p></div>
+        <div class="gtm-brand-card"><h5>Diverse representation</h5><p>Creative assets show a mix: Austrian-origin stylists, Turkish barbers, Balkan-origin salon owners. An accurate reflection of who actually runs Vienna's salons.</p></div>
+        <div class="gtm-brand-card"><h5>The commission dashboard as hero asset</h5><p>The single most persuasive piece of content is a real salon owner showing their actual Notino commission tracker. No produced animation beats real numbers on a real screen.</p></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- GTM SUB: TEAM -->
+  <div id="subtab-gtm-team" class="subtab-pane">
+    <div class="gtm-section">
+      <div class="gtm-section-label">10 — Team &amp; execution model</div>
+      <div class="gtm-section-title">Clear lanes, minimal overhead</div>
+      <div class="gtm-section-intro">The strategy avoids anything that requires heavy coordination overhead — every channel either runs autonomously (paid media) or is owned by one person end-to-end.</div>
+
+      <div class="gtm-two-col">
+        <div>
+          <h4>Central team (Brno)</h4>
+          <ul class="gtm-list">
+            <li>Google + Meta campaign setup, optimisation, and budget management</li>
+            <li>Creative production and graphic design</li>
+            <li>Email onboarding sequence copy and automation</li>
+            <li>Analytics, tracking setup, and performance reporting</li>
+            <li>Revenue Calculator tool build (one-off, M1–2)</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Austrian country specialist</h4>
+          <ul class="gtm-list gtm-list-blue">
+            <li>Face of Notino Partner in Austria — all in-person touchpoints</li>
+            <li>Walking outreach in multicultural districts</li>
+            <li>Influencer relationship management and content briefing</li>
+            <li>Monthly group call hosting and WhatsApp community management</li>
+            <li>Vienna launch event coordination (with local event agency)</li>
+            <li>Week-1 onboarding call for every new registered salon</li>
+          </ul>
+        </div>
+      </div>
+
+      <div style="margin-top:16px;">
+        <div class="sl">What to outsource</div>
+        <p style="font-size:12px;color:var(--text-secondary);line-height:1.6;margin-bottom:10px;">Three activities require local agency support. A single all-in-one local agency handling all three is ideal:</p>
+        <div class="pills">
+          <span class="pill">Vienna launch event organisation</span>
+          <span class="pill">OOH media buying and installation</span>
+          <span class="pill">PR outreach to Austrian beauty trade media</span>
+        </div>
+      </div>
+
+      <div class="note" style="margin-top:16px;"><strong>Sales / marketing split:</strong> 50% of salon acquisition target is owned by marketing (self-registrations from digital channels). 50% is owned by the sales / country specialist. Every self-registration still receives a personal follow-up.</div>
+    </div>
   </div>
 
 </div>
