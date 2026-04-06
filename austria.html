@@ -2073,7 +2073,7 @@
     <button class="subtab" onclick="showSubTab('gtm-leads', this)">Lead Magnets</button>
     <button class="subtab" onclick="showSubTab('gtm-activation', this)">Activation</button>
     <button class="subtab" onclick="showSubTab('gtm-creative', this)">Creative</button>
-    <button class="subtab" onclick="showSubTab('gtm-team', this)">Team</button>
+    <button class="subtab" onclick="showSubTab('gtm-digital', this)">Digital Targeting</button>
   </div>
 
   <!-- GTM SUB: STRATEGY -->
@@ -2456,48 +2456,120 @@
     </div>
   </div>
 
-  <!-- GTM SUB: TEAM -->
-  <div id="subtab-gtm-team" class="subtab-pane">
+  <!-- GTM SUB: DIGITAL TARGETING -->
+  <div id="subtab-gtm-digital" class="subtab-pane">
     <div class="gtm-section">
-      <div class="gtm-section-label">10 — Team &amp; execution model</div>
-      <div class="gtm-section-title">Clear lanes, minimal overhead</div>
-      <div class="gtm-section-intro">The strategy avoids anything that requires heavy coordination overhead — every channel either runs autonomously (paid media) or is owned by one person end-to-end.</div>
+      <div class="gtm-section-label">10 — Digital targeting</div>
+      <div class="gtm-section-title">How to reach them in-platform</div>
+      <div class="gtm-section-intro">Concrete audience configurations, keyword clusters, and retargeting rules. Copy–paste-ready for Meta Business Suite and Google Ads.</div>
 
-      <div class="gtm-two-col">
-        <div>
-          <h4>Central team (Brno)</h4>
-          <ul class="gtm-list">
-            <li>Google + Meta campaign setup, optimisation, and budget management</li>
-            <li>Creative production and graphic design</li>
-            <li>Email onboarding sequence copy and automation</li>
-            <li>Analytics, tracking setup, and performance reporting</li>
-            <li>Revenue Calculator tool build (one-off, M1–2)</li>
-          </ul>
+      <div class="sl">Meta Ads — audience architecture</div>
+      <div style="overflow-x:auto;margin-bottom:16px;">
+      <table>
+        <thead>
+          <tr><th>Temperature</th><th>Audience name</th><th>Targeting</th><th>Objective</th><th>Ad format</th></tr>
+        </thead>
+        <tbody>
+          <tr><td style="font-weight:600;color:var(--color-strong-pink);">Cold</td><td style="font-weight:600;">AT — Salon owners broad</td><td style="font-size:11px;">Interest: Friseursalon, Kosmetikstudio, Salonmanagement · Age 25-55 · Austria · German language</td><td style="font-size:11px;">Traffic → landing page</td><td style="font-size:11px;">Single image / short video testimonial</td></tr>
+          <tr><td style="font-weight:600;color:var(--color-strong-pink);">Cold</td><td style="font-weight:600;">AT — Turkish/Balkan salon owners</td><td style="font-size:11px;">Interest: Friseursalon OR Kosmetik · Geo: 1010-1200 Vienna · Behaviour: Turkish or Bosnian language users</td><td style="font-size:11px;">Traffic → multilingual LP</td><td style="font-size:11px;">Carousel: Turkish/German bilingual</td></tr>
+          <tr><td style="font-weight:600;color:var(--color-sky-blue);">Warm</td><td style="font-weight:600;">AT — Lookalike 1%</td><td style="font-size:11px;">1% LAL of registered salons (seed from CRM) · Austria</td><td style="font-size:11px;">Lead gen → in-app form</td><td style="font-size:11px;">Lead form with "Kostenlos testen" CTA</td></tr>
+          <tr><td style="font-weight:600;color:var(--color-nude-600);">Hot</td><td style="font-weight:600;">AT — Retarget visitors</td><td style="font-size:11px;">Custom audience: website visitors 30 d, excl. registered</td><td style="font-size:11px;">Conversions → registration</td><td style="font-size:11px;">Dynamic creative with social-proof counter</td></tr>
+          <tr><td style="font-weight:600;color:var(--color-nude-600);">Hot</td><td style="font-weight:600;">AT — Retarget leads</td><td style="font-size:11px;">Custom audience: form-started not completed · 14 d</td><td style="font-size:11px;">Conversions → registration</td><td style="font-size:11px;">Single image reminder + urgency offer</td></tr>
+        </tbody>
+      </table>
+      </div>
+
+      <div class="sl">Geo-targeting &amp; creative notes</div>
+      <div class="gtm-pos-grid" style="margin-bottom:16px;">
+        <div class="gtm-pos-card">
+          <div class="pos-icon">📍</div>
+          <h4>Vienna — always-on</h4>
+          <p>Largest salon density. Year-round campaigns. Multicultural district overlay for Turkish/Balkan ad sets in 1010-1200 postcodes.</p>
         </div>
-        <div>
-          <h4>Austrian country specialist</h4>
-          <ul class="gtm-list gtm-list-blue">
-            <li>Face of Notino Partner in Austria — all in-person touchpoints</li>
-            <li>Walking outreach in multicultural districts</li>
-            <li>Influencer relationship management and content briefing</li>
-            <li>Monthly group call hosting and WhatsApp community management</li>
-            <li>Vienna launch event coordination (with local event agency)</li>
-            <li>Week-1 onboarding call for every new registered salon</li>
-          </ul>
+        <div class="gtm-pos-card">
+          <div class="pos-icon">🏙️</div>
+          <h4>Graz, Linz, Salzburg — M3+</h4>
+          <p>Expand after Vienna proof-of-concept. German-language only. Same creative, adjusted geo-targeting. Lower budget allocation.</p>
         </div>
       </div>
 
-      <div style="margin-top:16px;">
-        <div class="sl">What to outsource</div>
-        <p style="font-size:12px;color:var(--text-secondary);line-height:1.6;margin-bottom:10px;">Three activities require local agency support. A single all-in-one local agency handling all three is ideal:</p>
-        <div class="pills">
-          <span class="pill">Vienna launch event organisation</span>
-          <span class="pill">OOH media buying and installation</span>
-          <span class="pill">PR outreach to Austrian beauty trade media</span>
+      <div class="sl">Google Search — keyword clusters</div>
+      <div class="gtm-tier-grid">
+        <div class="gtm-tier gtm-tier-1a">
+          <div class="gtm-tier-badge" style="background:var(--color-pink-700);color:white;">Cluster A — Direct intent</div>
+          <h4>Booking system for salons</h4>
+          <ul>
+            <li>kostenlose terminbuchung salon</li>
+            <li>online buchungssystem friseur</li>
+            <li>salon software kostenlos</li>
+            <li>terminplaner kosmetikstudio</li>
+            <li>buchungstool nagelstudio</li>
+          </ul>
+          <p style="margin-top:8px;font-size:11px;color:var(--text-tertiary);">Bid: aggressive · Match: phrase + exact</p>
+        </div>
+        <div class="gtm-tier gtm-tier-1b">
+          <div class="gtm-tier-badge" style="background:var(--color-blue-700);color:white;">Cluster B — Competitor</div>
+          <h4>Alternative queries</h4>
+          <ul>
+            <li>treatwell alternative</li>
+            <li>fresha erfahrungen</li>
+            <li>shore software vergleich</li>
+            <li>planity deutschland alternative</li>
+            <li>bestes buchungssystem salon</li>
+          </ul>
+          <p style="margin-top:8px;font-size:11px;color:var(--text-tertiary);">Bid: moderate · Match: phrase + broad modified</p>
+        </div>
+        <div class="gtm-tier gtm-tier-2">
+          <div class="gtm-tier-badge" style="background:var(--gray-600);color:white;">Cluster C — Problem-aware</div>
+          <h4>Pain-point searches</h4>
+          <ul>
+            <li>no-show reduzieren salon</li>
+            <li>mehr kunden friseur</li>
+            <li>salon bewertungen verbessern</li>
+            <li>automatische terminerinnerung</li>
+            <li>salon umsatz steigern</li>
+          </ul>
+          <p style="margin-top:8px;font-size:11px;color:var(--text-tertiary);">Bid: conservative · Match: broad · Neg: DIY, free template</p>
         </div>
       </div>
 
-      <div class="note" style="margin-top:16px;"><strong>Sales / marketing split:</strong> 50% of salon acquisition target is owned by marketing (self-registrations from digital channels). 50% is owned by the sales / country specialist. Every self-registration still receives a personal follow-up.</div>
+      <div class="sl">Retargeting — priority matrix</div>
+      <div style="overflow-x:auto;margin-bottom:16px;">
+      <table>
+        <thead>
+          <tr><th>Priority</th><th>Audience</th><th>Window</th><th>Channel</th><th>Frequency cap</th></tr>
+        </thead>
+        <tbody>
+          <tr><td style="font-weight:600;color:var(--color-strong-pink);">P0</td><td>Form started, not completed</td><td>0–14 days</td><td>Meta + Google Display</td><td>1×/day</td></tr>
+          <tr><td style="font-weight:600;color:var(--color-strong-pink);">P1</td><td>Pricing page visitors</td><td>0–30 days</td><td>Meta + Google Display</td><td>1×/day</td></tr>
+          <tr><td style="font-weight:600;">P2</td><td>Blog / resource readers</td><td>0–60 days</td><td>Meta only</td><td>3×/week</td></tr>
+          <tr><td style="font-weight:600;">P3</td><td>Homepage bouncers</td><td>0–30 days</td><td>Google Display only</td><td>2×/week</td></tr>
+        </tbody>
+      </table>
+      </div>
+
+      <div class="note"><strong>Frequency guardrail:</strong> Total cross-channel exposure capped at 12 impressions per user per week. Creative rotation every 14 days to combat fatigue.</div>
+
+      <div class="sl" style="margin-top:16px;">Paid media budget split</div>
+      <div class="gtm-budget-grid">
+        <div class="gtm-budget-cell">
+          <div class="phase">Meta Ads</div>
+          <div class="amount">55%</div>
+          <div class="desc">Primary acquisition engine. Cold + warm + retargeting. Multicultural overlay in Vienna districts.</div>
+        </div>
+        <div class="gtm-budget-cell">
+          <div class="phase">Google Search</div>
+          <div class="amount">30%</div>
+          <div class="desc">Captures active intent. Clusters A + B always-on; Cluster C broad capture with tight negatives.</div>
+        </div>
+        <div class="gtm-budget-cell">
+          <div class="phase">Google Display / Retargeting</div>
+          <div class="amount">15%</div>
+          <div class="desc">Retargeting pool across P0–P3 audiences. Creative synced with Meta to reinforce messaging.</div>
+        </div>
+      </div>
+
+      <div class="note"><strong>Optimisation cadence:</strong> Weekly spend review, bi-weekly creative refresh, monthly channel rebalance. Shift budget from Display → Search if CPA drops below target on high-intent clusters.</div>
     </div>
   </div>
 
