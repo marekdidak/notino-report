@@ -1,0 +1,1147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Notino Partner Croatia — GTM Strategy 2025</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap" rel="stylesheet">
+<style>
+:root {
+  --ink: #1a1814;
+  --ink-2: #3d3a34;
+  --ink-3: #7a756b;
+  --ink-4: #b5b0a6;
+  --paper: #faf8f4;
+  --paper-2: #f2efe9;
+  --paper-3: #e8e4dc;
+  --gold: #c4973a;
+  --gold-light: #f0deb0;
+  --gold-pale: #fdf6e8;
+  --teal: #1d6b62;
+  --teal-light: #e4f2f0;
+  --red: #9e2b25;
+  --red-light: #fce8e7;
+  --purple: #4a3580;
+  --purple-light: #ede9f8;
+  --blue: #1a4d8f;
+  --blue-light: #e8f0fb;
+  --radius: 6px;
+  --serif: 'DM Serif Display', Georgia, serif;
+  --sans: 'DM Sans', system-ui, sans-serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: var(--sans);
+  background: var(--paper);
+  color: var(--ink);
+  font-size: 15px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* NAV */
+.nav {
+  position: sticky; top: 0; z-index: 100;
+  background: var(--ink);
+  padding: 0 32px;
+  display: flex; align-items: center; justify-content: space-between;
+  height: 52px;
+  border-bottom: 2px solid var(--gold);
+}
+.nav-brand { font-family: var(--serif); font-size: 18px; color: var(--paper); letter-spacing: 0.01em; }
+.nav-brand span { color: var(--gold); }
+.nav-links { display: flex; gap: 24px; }
+.nav-links a { font-size: 12px; font-weight: 500; color: var(--ink-4); text-decoration: none; letter-spacing: 0.06em; text-transform: uppercase; transition: color 0.2s; }
+.nav-links a:hover { color: var(--gold); }
+
+/* HERO */
+.hero {
+  background: var(--ink);
+  padding: 72px 32px 64px;
+  position: relative;
+  overflow: hidden;
+}
+.hero::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: repeating-linear-gradient(90deg, transparent, transparent 79px, rgba(255,255,255,0.03) 79px, rgba(255,255,255,0.03) 80px);
+  pointer-events: none;
+}
+.hero-label {
+  display: inline-flex; align-items: center; gap: 8px;
+  font-size: 11px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 20px;
+}
+.hero-label::before { content: ''; display: block; width: 24px; height: 1px; background: var(--gold); }
+.hero h1 {
+  font-family: var(--serif);
+  font-size: clamp(36px, 5vw, 56px);
+  color: var(--paper);
+  line-height: 1.1;
+  max-width: 700px;
+  margin-bottom: 20px;
+}
+.hero h1 em { color: var(--gold); font-style: normal; }
+.hero-sub { font-size: 16px; color: var(--ink-4); max-width: 580px; line-height: 1.6; margin-bottom: 40px; }
+.hero-stats { display: flex; flex-wrap: wrap; gap: 32px; }
+.hero-stat-num { font-family: var(--serif); font-size: 32px; color: var(--gold); line-height: 1; }
+.hero-stat-label { font-size: 12px; color: var(--ink-4); margin-top: 4px; text-transform: uppercase; letter-spacing: 0.06em; }
+
+.key-message-bar {
+  margin-top: 40px;
+  display: inline-flex; align-items: center; gap: 12px;
+  background: rgba(196,151,58,0.12);
+  border: 1px solid rgba(196,151,58,0.4);
+  border-radius: var(--radius);
+  padding: 14px 20px;
+  font-size: 15px; color: var(--gold-light);
+  font-family: var(--serif);
+  font-style: italic;
+}
+.key-message-bar strong { color: var(--gold); font-style: normal; font-size: 11px; font-family: var(--sans); letter-spacing: 0.08em; text-transform: uppercase; display: block; margin-bottom: 4px; }
+
+.greenfield-badge {
+  margin-top: 16px;
+  display: inline-flex; align-items: center; gap: 10px;
+  background: rgba(29,107,98,0.15);
+  border: 1px solid rgba(29,107,98,0.4);
+  border-radius: var(--radius);
+  padding: 10px 18px;
+  font-size: 13px; color: #a8d8d3;
+}
+.greenfield-badge strong { color: #a8d8d3; font-weight: 600; }
+.green-dot { width: 8px; height: 8px; border-radius: 50%; background: #2dcfb8; flex-shrink: 0; }
+
+/* LAYOUT */
+.container { max-width: 980px; margin: 0 auto; padding: 0 32px; }
+.section { padding: 64px 0; border-bottom: 1px solid var(--paper-3); }
+.section:last-child { border-bottom: none; }
+
+.section-label {
+  font-size: 11px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase;
+  color: var(--gold); margin-bottom: 8px;
+  display: flex; align-items: center; gap: 8px;
+}
+.section-label::before { content: ''; display: block; width: 20px; height: 1px; background: var(--gold); }
+.section-title { font-family: var(--serif); font-size: clamp(24px, 3vw, 34px); line-height: 1.2; margin-bottom: 16px; color: var(--ink); }
+.section-intro { font-size: 16px; color: var(--ink-2); max-width: 680px; line-height: 1.7; margin-bottom: 40px; }
+
+/* POLICY BOX */
+.policy-box {
+  background: var(--ink); border-radius: var(--radius);
+  padding: 36px 40px; border-left: 4px solid var(--gold); margin-bottom: 40px;
+}
+.policy-box p { font-family: var(--serif); font-size: 22px; color: var(--paper); line-height: 1.45; font-style: italic; }
+.policy-box p em { color: var(--gold); font-style: normal; }
+
+/* CARDS */
+.position-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; margin-bottom: 40px; }
+.position-card { background: var(--paper-2); border: 1px solid var(--paper-3); border-radius: var(--radius); padding: 24px; }
+.position-card .icon { width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 16px; margin-bottom: 14px; }
+.position-card h4 { font-weight: 600; font-size: 14px; margin-bottom: 8px; }
+.position-card p { font-size: 13px; color: var(--ink-2); line-height: 1.6; }
+.icon-gold { background: var(--gold-pale); }
+.icon-teal { background: var(--teal-light); }
+.icon-blue { background: var(--blue-light); }
+.icon-red { background: var(--red-light); }
+
+/* FUNNEL TABLE */
+.funnel-table { width: 100%; border-collapse: collapse; }
+.funnel-table th { font-size: 11px; font-weight: 600; letter-spacing: 0.07em; text-transform: uppercase; color: var(--ink-3); padding: 8px 12px; text-align: left; border-bottom: 1px solid var(--paper-3); white-space: nowrap; }
+.funnel-table td { padding: 6px 12px; vertical-align: middle; }
+.funnel-stage-label { font-size: 11px; font-weight: 600; letter-spacing: 0.07em; text-transform: uppercase; color: var(--ink-3); white-space: nowrap; border-right: 1px solid var(--paper-3); padding-right: 16px; }
+.funnel-row { border-bottom: 1px solid var(--paper-3); }
+.funnel-row:last-child { border-bottom: none; }
+.funnel-bar-wrap { padding: 5px 0; }
+.funnel-bar { height: 26px; border-radius: 4px; display: flex; align-items: center; padding: 0 10px; font-size: 12px; font-weight: 500; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.bar-awareness { background: var(--gold-pale); color: #7a5c1a; border: 1px solid var(--gold-light); }
+.bar-performance { background: var(--teal-light); color: var(--teal); border: 1px solid #b8ddd9; }
+.bar-brand { background: var(--purple-light); color: var(--purple); border: 1px solid #cfc9f0; }
+.bar-activation { background: #fde8f0; color: #7a2050; border: 1px solid #f5c0d8; }
+.bar-referral { background: var(--paper-2); color: var(--ink-2); border: 1px solid var(--paper-3); }
+.bar-tourist { background: var(--blue-light); color: var(--blue); border: 1px solid #b8ccef; }
+
+/* BUDGET */
+.budget-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--paper-3); border: 1px solid var(--paper-3); border-radius: var(--radius); overflow: hidden; margin-bottom: 32px; }
+.budget-cell { background: var(--paper); padding: 24px 20px; }
+.budget-cell-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: var(--ink-3); margin-bottom: 4px; }
+.budget-cell-amount { font-family: var(--serif); font-size: 28px; color: var(--ink); line-height: 1; }
+.budget-cell-pct { font-size: 13px; color: var(--ink-3); margin-top: 4px; }
+.budget-cell-desc { font-size: 13px; color: var(--ink-2); margin-top: 10px; line-height: 1.5; }
+
+.channel-budget-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; margin-bottom: 32px; }
+.channel-budget-card { border: 1px solid var(--paper-3); border-radius: var(--radius); padding: 16px 18px; background: var(--paper); }
+.channel-budget-card h5 { font-size: 13px; font-weight: 600; margin-bottom: 4px; }
+.channel-budget-card .amount { font-family: var(--serif); font-size: 22px; color: var(--gold); }
+.channel-budget-card .pct { font-size: 12px; color: var(--ink-3); }
+.channel-budget-card .desc { font-size: 12px; color: var(--ink-2); margin-top: 6px; line-height: 1.5; }
+.ch-tag { display: inline-block; font-size: 10px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; padding: 2px 8px; border-radius: 20px; margin-bottom: 8px; }
+.ch-awareness { background: var(--gold-pale); color: #7a5c1a; }
+.ch-performance { background: var(--teal-light); color: var(--teal); }
+.ch-brand { background: var(--purple-light); color: var(--purple); }
+.ch-activation { background: #fde8f0; color: #7a2050; }
+.ch-tourist { background: var(--blue-light); color: var(--blue); }
+
+/* ICP TIERS */
+.tier-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; margin-bottom: 32px; }
+.tier-card { border-radius: var(--radius); padding: 24px; border: 1px solid; }
+.tier-1a { background: var(--gold-pale); border-color: var(--gold-light); }
+.tier-1b { background: var(--teal-light); border-color: #b8ddd9; }
+.tier-1c { background: var(--blue-light); border-color: #b8ccef; }
+.tier-2 { background: var(--paper-2); border-color: var(--paper-3); }
+.tier-badge { display: inline-block; font-size: 10px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 3px 10px; border-radius: 20px; margin-bottom: 12px; }
+.badge-1a { background: var(--gold); color: white; }
+.badge-1b { background: var(--teal); color: white; }
+.badge-1c { background: var(--blue); color: white; }
+.badge-2 { background: var(--ink-2); color: white; }
+.tier-card h4 { font-weight: 600; font-size: 15px; margin-bottom: 6px; }
+.tier-card p { font-size: 13px; color: var(--ink-2); line-height: 1.6; }
+.tier-card ul { margin-top: 10px; padding-left: 16px; }
+.tier-card li { font-size: 13px; color: var(--ink-2); line-height: 1.6; }
+
+/* SEASONAL */
+.season-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 32px; }
+.season-card { border-radius: var(--radius); padding: 18px 16px; border: 1px solid; }
+.season-peak { background: var(--gold-pale); border-color: var(--gold-light); }
+.season-acquisition { background: var(--teal-light); border-color: #b8ddd9; }
+.season-sustain { background: var(--paper-2); border-color: var(--paper-3); }
+.season-card h5 { font-size: 13px; font-weight: 600; margin-bottom: 6px; }
+.season-card .months { font-family: var(--serif); font-size: 18px; color: var(--gold); line-height: 1; margin-bottom: 6px; }
+.season-card p { font-size: 12px; color: var(--ink-2); line-height: 1.5; }
+
+/* COMPETITIVE */
+.comp-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; margin-bottom: 32px; }
+.comp-card { border: 1px solid var(--paper-3); border-radius: var(--radius); padding: 16px; background: var(--paper); }
+.comp-card h5 { font-size: 14px; font-weight: 600; margin-bottom: 4px; }
+.comp-card .comp-threat { font-size: 11px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; margin-bottom: 8px; }
+.threat-primary { color: var(--gold); }
+.threat-secondary { color: var(--teal); }
+.threat-absent { color: var(--ink-3); }
+.comp-card p { font-size: 12px; color: var(--ink-2); line-height: 1.5; }
+
+/* LEAD MAGNETS */
+.lm-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; margin-bottom: 32px; }
+.lm-card { border: 1px solid var(--paper-3); border-radius: var(--radius); padding: 24px; background: var(--paper); }
+.lm-num { font-family: var(--serif); font-size: 36px; color: var(--gold-light); line-height: 1; margin-bottom: 8px; }
+.lm-card h4 { font-size: 14px; font-weight: 600; margin-bottom: 8px; }
+.lm-card p { font-size: 13px; color: var(--ink-2); line-height: 1.6; }
+.lm-card .lm-cta { font-size: 12px; font-weight: 600; color: var(--teal); margin-top: 12px; }
+.lm-placeholder { border: 2px dashed var(--gold-light); background: var(--gold-pale); }
+.lm-placeholder h4 { color: var(--gold); }
+.lm-placeholder p { color: #7a5c1a; }
+
+/* GAP TIMELINE */
+.gap-timeline { margin-bottom: 32px; }
+.gap-week { display: grid; grid-template-columns: 120px 1fr; gap: 16px; align-items: start; padding: 16px 0; border-bottom: 1px solid var(--paper-3); }
+.gap-week:last-child { border-bottom: none; }
+.gap-week-label { font-size: 12px; font-weight: 600; color: var(--gold); text-transform: uppercase; letter-spacing: 0.06em; padding-top: 2px; }
+.gap-week-content h5 { font-size: 14px; font-weight: 600; margin-bottom: 4px; }
+.gap-week-content p { font-size: 13px; color: var(--ink-2); line-height: 1.6; }
+
+/* OOH */
+.ooh-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; margin-bottom: 32px; }
+.ooh-card { background: var(--paper-2); border: 1px solid var(--paper-3); border-radius: var(--radius); padding: 20px; }
+.ooh-card h5 { font-size: 14px; font-weight: 600; margin-bottom: 8px; }
+.ooh-card p { font-size: 13px; color: var(--ink-2); line-height: 1.6; }
+.copy-block { background: var(--ink); border-radius: var(--radius); padding: 20px 24px; margin-top: 16px; border-left: 3px solid var(--gold); }
+.copy-block p { font-family: var(--serif); font-size: 15px; color: var(--paper); line-height: 1.5; font-style: italic; }
+.copy-block .copy-sub { font-family: var(--sans); font-size: 12px; color: var(--ink-4); font-style: normal; margin-top: 8px; }
+
+/* BRAND ASSETS */
+.brand-asset-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; margin-bottom: 32px; }
+.brand-asset-card { background: var(--paper-2); border: 1px solid var(--paper-3); border-radius: var(--radius); padding: 20px; }
+.brand-asset-card h5 { font-size: 14px; font-weight: 600; margin-bottom: 8px; }
+.brand-asset-card p { font-size: 13px; color: var(--ink-2); line-height: 1.6; }
+
+/* AD EXAMPLES */
+.ad-example { background: var(--paper-2); border: 1px solid var(--paper-3); border-radius: var(--radius); padding: 16px 20px; margin-bottom: 12px; }
+.ad-example .ad-label { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--ink-3); margin-bottom: 6px; }
+.ad-example .ad-copy { font-size: 13px; color: var(--ink-2); line-height: 1.6; font-style: italic; }
+
+/* UTILITY */
+.divider { border: none; border-top: 1px solid var(--paper-3); margin: 32px 0; }
+.tag { display: inline-block; font-size: 11px; font-weight: 500; padding: 3px 10px; border-radius: 20px; background: var(--paper-3); color: var(--ink-2); margin: 2px; }
+.note { background: var(--gold-pale); border-left: 3px solid var(--gold); border-radius: 0 var(--radius) var(--radius) 0; padding: 12px 16px; font-size: 13px; color: var(--ink-2); margin: 16px 0; line-height: 1.6; }
+.note strong { color: var(--ink); }
+.note-blue { background: var(--blue-light); border-left: 3px solid var(--blue); border-radius: 0 var(--radius) var(--radius) 0; padding: 12px 16px; font-size: 13px; color: var(--ink-2); margin: 16px 0; line-height: 1.6; }
+.note-blue strong { color: var(--blue); }
+.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+.disclaimer { background: var(--paper-2); border-top: 1px solid var(--paper-3); padding: 24px 32px; text-align: center; font-size: 12px; color: var(--ink-3); }
+
+@media(max-width:640px) { .two-col { grid-template-columns: 1fr; } .budget-grid { grid-template-columns: 1fr; } .season-grid { grid-template-columns: repeat(2,1fr); } }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-brand">Notino <span>Partner</span> — Croatia GTM 2025</div>
+  <div class="nav-links">
+    <a href="#strategy">Strategy</a>
+    <a href="#seasonal">Seasonal</a>
+    <a href="#funnel">Funnel</a>
+    <a href="#budget">Budget</a>
+    <a href="#tourist">Tourist moat</a>
+    <a href="#ooh">OOH</a>
+    <a href="#activation">Activation</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-label">B2B Market Entry Strategy — Croatia 2025</div>
+    <h1>Your clients already<br>shop at Notino.<br><em>Now you get paid for it.</em></h1>
+    <p class="hero-sub">A full-funnel GTM playbook built for Croatia's unique market: a love brand in a greenfield competitive landscape, a summer tourism moat no competitor can cross, and a self-registration model that works around the community culture. €150k budget. June 2025 launch.</p>
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <div class="hero-stat-num">~8,400</div>
+        <div class="hero-stat-label">Estimated salons in Croatia</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-num">90.7%</div>
+        <div class="hero-stat-label">Overnight stays are foreign tourists</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-num">5%</div>
+        <div class="hero-stat-label">Commission on Notino e-shop purchases</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-num">€150k</div>
+        <div class="hero-stat-label">Annual budget</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-num">€170M</div>
+        <div class="hero-stat-label">EU sustainable tourism fund available</div>
+      </div>
+    </div>
+    <div class="key-message-bar">
+      <strong>Key message</strong>
+      "Your clients already shop at Notino. Now you get paid for it."
+    </div>
+    <div class="greenfield-badge">
+      <div class="green-dot"></div>
+      <div><strong>Greenfield market:</strong> Treatwell, Booksy, and Planity are absent. Only two regional players — Zoyya and SrediMe. Notino is already a love brand in Croatia. This is a land-grab opportunity.</div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 1: STRATEGIC CORE -->
+<section class="section" id="strategy">
+  <div class="container">
+    <div class="section-label">01 — Strategic core</div>
+    <h2 class="section-title">Define the category before anyone else does</h2>
+    <p class="section-intro">Croatia is not a market to enter cautiously — it is a market to define. No global booking platform is present. Notino already has strong brand love among Croatian consumers. The challenge is not awareness or competition: it is converting a culturally walk-in-first, community-oriented salon market into one that sees digital booking as an income tool, not an administrative burden. The strategy is to own that narrative now, before global players arrive with bigger budgets.</p>
+
+    <div class="policy-box">
+      <p>"We are not another booking platform. We are the first platform that <em>pays Croatian salons</em> for the client relationships they already have — through the commissions their clients generate on Notino every day."</p>
+    </div>
+
+    <p style="font-size:14px;color:var(--ink-3);margin-bottom:24px;font-style:italic;">Key advantage: Notino is a recognised love brand in Croatia from B2C. Unlike Austria, this brand recognition can and should be leveraged — the B2B message bridges from "you already know us" to "now we pay you back."</p>
+
+    <div class="position-grid">
+      <div class="position-card">
+        <div class="icon icon-gold">💰</div>
+        <h4>Income Generator — not Admin Relief</h4>
+        <p>Zoyya's core positioning is operational: accounting integration, fiscal cash register compliance, admin automation. Notino's positioning is the opposite end of the value chain — passive income. "We pay you" is a message Zoyya cannot credibly make. Lead with it in every channel.</p>
+      </div>
+      <div class="position-card">
+        <div class="icon icon-blue">🌍</div>
+        <h4>The only bridge to Western EU tourists</h4>
+        <p>90.7% of overnight stays in Croatia are foreign tourists — German, Austrian, Italian — who currently have no effective way to book local salons in their language. Notino's multilingual platform is the only product that solves this. No Croatian competitor can match it.</p>
+      </div>
+      <div class="position-card">
+        <div class="icon icon-teal">🆓</div>
+        <h4>Free, with no Zoyya-style dependency</h4>
+        <p>Zoyya's stickiness comes from fiscal register integration — salons feel locked in. Notino Partner is free to join and adds revenue on top of whatever system they already use. Frame it as additive, not disruptive. Lowering the switching barrier is the fastest path to adoption.</p>
+      </div>
+      <div class="position-card">
+        <div class="icon icon-red">🏖️</div>
+        <h4>April–May acquisition window is non-negotiable</h4>
+        <p>Coastal salons enter their peak in June. Any salon that isn't registered before the summer season starts will not join mid-season. The entire acquisition push for coastal markets must land in April and May. Missing this window means waiting until September.</p>
+      </div>
+    </div>
+
+    <h3 style="font-weight:600;font-size:16px;margin-bottom:16px;">The single biggest hurdle</h3>
+    <div class="note"><strong>Walk-in culture and the fear of lost flexibility.</strong> Field research reveals that a significant portion of Zagreb salons — particularly outside the city centre — operate on a walk-in or informal phone basis. The objection to online booking is not technical: it is existential. "What if I'm full and a walk-in comes?" is the most common concern. The strategy must reframe online booking not as a replacement for walk-ins but as an additional income layer that works alongside existing habits. The self-onboarding journey and all content must address this friction directly and early.</div>
+
+    <h3 style="font-weight:600;font-size:16px;margin-bottom:16px;">ICP tiers — who to chase first</h3>
+    <div class="tier-grid">
+      <div class="tier-card tier-1a">
+        <span class="tier-badge badge-1a">Tier 1A — Primary Zagreb</span>
+        <h4>Undigitised urban salons, no booking software</h4>
+        <p>The largest segment by volume. Zagreb-first, then Rijeka and Osijek. Salons operating on phone and walk-in, active on Instagram, no existing platform commitment. Lowest acquisition cost, highest long-term value. Reach through Meta, Google, and direct outreach.</p>
+        <ul>
+          <li>15–20+ appointments per month minimum</li>
+          <li>Active Instagram presence, no booking link</li>
+          <li>Open to adding income, resistant to "switching"</li>
+        </ul>
+      </div>
+      <div class="tier-card tier-1b">
+        <span class="tier-badge badge-1b">Tier 1B — Coastal tourist-facing</span>
+        <h4>Split, Dubrovnik, Rovinj, Hvar — tourist pipeline</h4>
+        <p>Coastal salons with summer tourist clientele who currently lose those bookings because tourists can't find them or communicate in Croatian. Notino solves this. Acquisition window: April–May. Premium operators are also eligible for EU HBOR/ERDF sustainable tourism funding — lean into this angle for higher-end salons.</p>
+        <ul>
+          <li>Strong tourist footfall, June–September peak</li>
+          <li>German, Austrian, Italian guest demographic</li>
+          <li>EU funding eligibility as additional hook</li>
+        </ul>
+      </div>
+      <div class="tier-card tier-1c">
+        <span class="tier-badge badge-1c">Tier 1C — Zoyya defectors</span>
+        <h4>Dissatisfied Zoyya users — income angle</h4>
+        <p>Zoyya users who are loyal to the accounting feature but feel the platform gives them nothing in return commercially. The "we pay you" message hits hardest here. Notino Partner is not a replacement — it is an additional income layer on top of their existing setup.</p>
+        <ul>
+          <li>Already digitised — no onboarding education needed</li>
+          <li>Motivated by revenue, not software features</li>
+          <li>Referral programme works well in this segment</li>
+        </ul>
+      </div>
+      <div class="tier-card tier-2">
+        <span class="tier-badge badge-2">Tier 2 — Premium &amp; multi-location</span>
+        <h4>Chains, academies, premium coastal operators</h4>
+        <p>Higher deal value, longer sales cycle. Target from month 5+ once the Zagreb base is established. EU sustainable tourism loan programme is a strong hook for coastal premium operators investing in upgrades — position Notino as part of their digitalisation investment.</p>
+        <ul>
+          <li>Personal outreach from country manager</li>
+          <li>EU funding angle (HBOR/ERDF) for premium coastal</li>
+          <li>Beauty and Hair Expo Zagreb (January) for pipeline</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3 style="font-weight:600;font-size:16px;margin-bottom:16px;">Competitive landscape</h3>
+    <div class="comp-grid">
+      <div class="comp-card">
+        <h5>Zoyya</h5>
+        <div class="comp-threat threat-primary">Primary competitor — local leader</div>
+        <p>Croatian startup, market leader. Core loyalty driver is fiscal cash register integration — salons use it primarily for accounting compliance, not bookings. Strong positive reviews and brand loyalty. Notino's angle: additive income layer, not a replacement. Do not attack Zoyya directly — position alongside.</p>
+      </div>
+      <div class="comp-card">
+        <h5>SrediMe</h5>
+        <div class="comp-threat threat-secondary">Secondary — Serbia-primary</div>
+        <p>Regional platform with roots in Serbia. Present in Croatia but with limited penetration and lower brand recognition. Not a strategic priority — salons that use SrediMe are already digitised and the switching case is similar to Zoyya defectors.</p>
+      </div>
+      <div class="comp-card">
+        <h5>Fresha</h5>
+        <div class="comp-threat threat-secondary">Low — limited presence</div>
+        <p>Active in Croatia but weakly. The "free forever" trust damage from their hidden fee model is well known in the market. Notino's genuinely free positioning is a strong counter-narrative if Fresha is mentioned by prospects.</p>
+      </div>
+      <div class="comp-card">
+        <h5>Treatwell / Booksy / Planity</h5>
+        <div class="comp-threat threat-absent">Absent from Croatian market</div>
+        <p>None of the major global players are active in Croatia. This is the greenfield window. Act now to establish mental availability before their budgets and brand recognition follow their eventual entry.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 2: SEASONAL CALENDAR -->
+<section class="section" id="seasonal">
+  <div class="container">
+    <div class="section-label">02 — Seasonal acquisition calendar</div>
+    <h2 class="section-title">Croatia runs on a different clock than Austria</h2>
+    <p class="section-intro">Croatia's salon market is shaped by tourism seasonality in a way Austria's is not. Coastal salons are at capacity June through August — they will not evaluate new platforms mid-season. Zagreb and inland markets are relatively stable year-round. The acquisition strategy must respect this rhythm entirely.</p>
+
+    <div class="season-grid">
+      <div class="season-card season-acquisition">
+        <div class="months">Apr–May</div>
+        <h5>Coastal acquisition window</h5>
+        <p>Critical. Every coastal salon that will join in 2025 must be acquired before June. Heavy push on Split, Dubrovnik, Hvar, Rovinj. OOH goes live. Tourist pipeline messaging front and centre.</p>
+      </div>
+      <div class="season-card season-acquisition">
+        <div class="months">Jun–Aug</div>
+        <h5>Zagreb acquisition + coastal hold</h5>
+        <p>Peak tourist season. Coastal salons are busy — maintain brand presence but do not push hard acquisition. Double down on Zagreb and inland markets. Registered coastal salons begin generating B2C bookings from foreign tourists.</p>
+      </div>
+      <div class="season-card season-peak">
+        <div class="months">Sep–Oct</div>
+        <h5>Back-to-business reminder wave</h5>
+        <p>Season ends on the coast. Coastal salons re-engage with business decisions. Second acquisition push with summer results as social proof: "Here's what salons earned this summer on Notino." Referral programme amplification.</p>
+      </div>
+      <div class="season-card season-sustain">
+        <div class="months">Nov–Mar</div>
+        <h5>Zagreb sustain + event seeding</h5>
+        <p>Always-on performance channels. Beauty and Hair Expo Zagreb (January) for Tier 2 pipeline. Webinar series. Engagement campaigns for registered salons. Content production for next summer's push.</p>
+      </div>
+    </div>
+
+    <div class="note"><strong>The April–May window is the most important decision in the entire Croatia plan.</strong> A salon that misses the June start will not see meaningful B2C tourist bookings until the following summer. If budget must be cut, cut autumn spend before cutting the April–May coastal push.</div>
+  </div>
+</section>
+
+<!-- SECTION 3: FULL FUNNEL -->
+<section class="section" id="funnel">
+  <div class="container">
+    <div class="section-label">03 — Full-funnel architecture</div>
+    <h2 class="section-title">All layers live from month one</h2>
+    <p class="section-intro">The funnel runs concurrently from launch. Awareness creates the pool; performance channels convert it immediately. The seasonal calendar shapes budget intensity, not channel activation. Google and Meta run from day one at whatever spend level is available.</p>
+
+    <div class="note"><strong>Croatia-specific funnel note:</strong> Croatian salon owners are significantly more conversational than Austrian counterparts — field research confirms they will answer phone calls at 10–11pm and speak at length. This is an asset: the country manager can cover more ground per conversation than in any other market. Use this for direct outreach at scale in a way that would not work in Austria.</div>
+
+    <div style="overflow-x:auto;margin-bottom:16px;">
+    <table class="funnel-table">
+      <thead>
+        <tr>
+          <th style="min-width:110px;">Stage</th>
+          <th style="min-width:90px;">Channel / activity</th>
+          <th style="width:75px;text-align:center;">M1–2<br><span style="font-weight:400;font-size:10px;">Apr–May</span></th>
+          <th style="width:75px;text-align:center;">M3–4<br><span style="font-weight:400;font-size:10px;">Jun–Jul</span></th>
+          <th style="width:75px;text-align:center;">M5–6<br><span style="font-weight:400;font-size:10px;">Aug–Sep</span></th>
+          <th style="width:75px;text-align:center;">M7–8<br><span style="font-weight:400;font-size:10px;">Oct–Nov</span></th>
+          <th style="width:75px;text-align:center;">M9–10<br><span style="font-weight:400;font-size:10px;">Dec–Jan</span></th>
+          <th style="width:75px;text-align:center;">M11–12<br><span style="font-weight:400;font-size:10px;">Feb–Mar</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="funnel-row">
+          <td class="funnel-stage-label" rowspan="3" style="vertical-align:middle;">AWARENESS</td>
+          <td style="font-size:12px;color:var(--ink-2);white-space:nowrap;padding:4px 12px;">OOH coastal cities</td>
+          <td colspan="2"><div class="funnel-bar-wrap"><div class="funnel-bar bar-awareness">OOH Split, Dubrovnik, Hvar — tourist pipeline messaging</div></div></td>
+          <td colspan="4" style="color:var(--ink-4);font-size:12px;padding:4px 12px;">— tapers off</td>
+        </tr>
+        <tr class="funnel-row">
+          <td style="font-size:12px;color:var(--ink-2);white-space:nowrap;padding:4px 12px;">B2B influencers</td>
+          <td colspan="6"><div class="funnel-bar-wrap"><div class="funnel-bar bar-awareness">Croatian salon creators — always-on organic &amp; paid amplification</div></div></td>
+        </tr>
+        <tr class="funnel-row">
+          <td style="font-size:12px;color:var(--ink-2);white-space:nowrap;padding:4px 12px;">Instagram organic</td>
+          <td colspan="6"><div class="funnel-bar-wrap"><div class="funnel-bar bar-awareness">Instagram organic — non-follower Reels, real salon partner stories</div></div></td>
+        </tr>
+        <tr class="funnel-row">
+          <td class="funnel-stage-label" rowspan="4" style="vertical-align:middle;">CONSIDERATION</td>
+          <td style="font-size:12px;color:var(--ink-2);white-space:nowrap;padding:4px 12px;">Google Search</td>
+          <td colspan="6"><div class="funnel-bar-wrap"><div class="funnel-bar bar-performance">Google Search always-on · booking software HR, Zoyya alternative, free salon app</div></div></td>
+        </tr>
+        <tr class="funnel-row">
+          <td style="font-size:12px;color:var(--ink-2);white-space:nowrap;padding:4px 12px;">Meta Ads</td>
+          <td colspan="6"><div class="funnel-bar-wrap"><div class="funnel-bar bar-performance">Meta Ads always-on · Zagreb + coastal geo-target · income creative angle</div></div></td>
+        </tr>
+        <tr class="funnel-row">
+          <td style="font-size:12px;color:var(--ink-2);white-space:nowrap;padding:4px 12px;">Tourist pipeline ads</td>
+          <td colspan="2"><div class="funnel-bar-wrap"><div class="funnel-bar bar-tourist">Tourist demand angle — "German &amp; Austrian tourists can't find you"</div></div></td>
+          <td colspan="4" style="color:var(--ink-4);font-size:12px;padding:4px 12px;">— sustain at low spend</td>
+        </tr>
+        <tr class="funnel-row">
+          <td style="font-size:12px;color:var(--ink-2);white-space:nowrap;padding:4px 12px;">Lead magnets</td>
+          <td style="color:var(--ink-4);font-size:12px;padding:4px 12px;text-align:center;">—</td>
+          <td colspan="5"><div class="funnel-bar-wrap"><div class="funnel-bar bar-performance">Summer Tourist Demand Estimator · revenue quiz · monthly group calls</div></div></td>
+        </tr>
+        <tr class="funnel-row">
+          <td class="funnel-stage-label" rowspan="3" style="vertical-align:middle;">CONVERSION</td>
+          <td style="font-size:12px;color:var(--ink-2);white-space:nowrap;padding:4px 12px;">Self-registration</td>
+          <td colspan="6"><div class="funnel-bar-wrap"><div class="funnel-bar bar-brand">Self-registration landing page · always-on · walk-in objection handled in-flow</div></div></td>
+        </tr>
+        <tr class="funnel-row">
+          <td style="font-size:12px;color:var(--ink-2);white-space:nowrap;padding:4px 12px;">Retargeting</td>
+          <td style="color:var(--ink-4);font-size:12px;padding:4px 12px;text-align:center;">—</td>
+          <td colspan="5"><div class="funnel-bar-wrap"><div class="funnel-bar bar-brand">Retargeting · visited but not registered · 3-touch sequence</div></div></td>
+        </tr>
+        <tr class="funnel-row">
+          <td style="font-size:12px;color:var(--ink-2);white-space:nowrap;padding:4px 12px;">Direct phone outreach</td>
+          <td colspan="4"><div class="funnel-bar-wrap"><div class="funnel-bar bar-brand">Country manager direct calls · evening availability · high conversion rate</div></div></td>
+          <td colspan="2" style="color:var(--ink-4);font-size:12px;padding:4px 12px;">— sustain</td>
+        </tr>
+        <tr class="funnel-row">
+          <td class="funnel-stage-label" rowspan="2" style="vertical-align:middle;">ACTIVATION</td>
+          <td style="font-size:12px;color:var(--ink-2);white-space:nowrap;padding:4px 12px;">Onboarding sequence</td>
+          <td colspan="6"><div class="funnel-bar-wrap"><div class="funnel-bar bar-activation">Weekly onboarding · profile, commission education, tourist booking setup</div></div></td>
+        </tr>
+        <tr class="funnel-row">
+          <td style="font-size:12px;color:var(--ink-2);white-space:nowrap;padding:4px 12px;">Community + webinars</td>
+          <td colspan="6"><div class="funnel-bar-wrap"><div class="funnel-bar bar-activation">WhatsApp Early Access community · monthly webinars · peer group calls</div></div></td>
+        </tr>
+        <tr class="funnel-row">
+          <td class="funnel-stage-label" style="vertical-align:middle;">REFERRAL</td>
+          <td style="font-size:12px;color:var(--ink-2);white-space:nowrap;padding:4px 12px;">Partner referral</td>
+          <td colspan="2" style="color:var(--ink-4);font-size:12px;padding:4px 12px;text-align:center;">— building base</td>
+          <td colspan="4"><div class="funnel-bar-wrap"><div class="funnel-bar bar-referral">€50 referral programme · partner-led growth · autumn social proof push</div></div></td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+    <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px;flex-wrap:wrap;">
+      <div style="width:12px;height:12px;border-radius:2px;background:var(--gold-pale);border:1px solid var(--gold-light);"></div><span style="font-size:12px;color:var(--ink-3);">Awareness</span>
+      <div style="width:12px;height:12px;border-radius:2px;background:var(--teal-light);border:1px solid #b8ddd9;margin-left:8px;"></div><span style="font-size:12px;color:var(--ink-3);">Performance</span>
+      <div style="width:12px;height:12px;border-radius:2px;background:var(--blue-light);border:1px solid #b8ccef;margin-left:8px;"></div><span style="font-size:12px;color:var(--ink-3);">Tourist pipeline</span>
+      <div style="width:12px;height:12px;border-radius:2px;background:var(--purple-light);border:1px solid #cfc9f0;margin-left:8px;"></div><span style="font-size:12px;color:var(--ink-3);">Brand / conversion</span>
+      <div style="width:12px;height:12px;border-radius:2px;background:#fde8f0;border:1px solid #f5c0d8;margin-left:8px;"></div><span style="font-size:12px;color:var(--ink-3);">Activation</span>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 4: BUDGET -->
+<section class="section" id="budget">
+  <div class="container">
+    <div class="section-label">04 — Budget allocation</div>
+    <h2 class="section-title">€150,000 shaped by Croatian seasonality</h2>
+    <p class="section-intro">Unlike Austria, Croatia's budget split is driven by the tourism calendar rather than a flat intensity curve. The April–May coastal acquisition window consumes a disproportionate share of the first phase — this is intentional and non-negotiable. If the budget is cut, protect this window above all else.</p>
+
+    <div class="budget-grid">
+      <div class="budget-cell">
+        <div class="budget-cell-label">Phase 1 · Apr–Jul · Coastal surge</div>
+        <div class="budget-cell-amount">~€82k</div>
+        <div class="budget-cell-pct">~55% of total budget</div>
+        <div class="budget-cell-desc">OOH coastal cities, B2B influencers, Zagreb launch event, Google + Meta launch, tourist pipeline campaigns, direct outreach. Full funnel from day one.</div>
+      </div>
+      <div class="budget-cell">
+        <div class="budget-cell-label">Phase 2 · Aug–Nov · Sustain + inland</div>
+        <div class="budget-cell-amount">~€45k</div>
+        <div class="budget-cell-pct">~30% of total budget</div>
+        <div class="budget-cell-desc">Always-on Google + Meta, retargeting, webinar series, engagement for registered salons, September reminder wave with summer results as social proof.</div>
+      </div>
+      <div class="budget-cell">
+        <div class="budget-cell-label">Phase 3 · Dec–Mar · Sustain + seed</div>
+        <div class="budget-cell-amount">~€23k</div>
+        <div class="budget-cell-pct">~15% of total budget</div>
+        <div class="budget-cell-desc">Always-on performance channels. Beauty and Hair Expo Zagreb (January). Referral programme amplification. Content production for next summer's coastal push.</div>
+      </div>
+    </div>
+
+    <h3 style="font-weight:600;font-size:16px;margin-bottom:16px;">Channel-level breakdown</h3>
+    <div class="channel-budget-grid">
+      <div class="channel-budget-card">
+        <span class="ch-tag ch-performance">Performance</span>
+        <h5>Google Search + Pmax</h5>
+        <div class="amount">~€28k</div><span class="pct">~19%</span>
+        <p class="desc">Always-on. Clusters: free salon software Croatia, Zoyya alternative, booking app bez naknade. Pmax for broader reach and lead gen.</p>
+      </div>
+      <div class="channel-budget-card">
+        <span class="ch-tag ch-performance">Performance</span>
+        <h5>Meta Ads</h5>
+        <div class="amount">~€25k</div><span class="pct">~17%</span>
+        <p class="desc">Always-on. Zagreb + Split + Dubrovnik geo-target in Phase 1, expand nationally in Phase 2. Income creative angle. Retargeting from M2.</p>
+      </div>
+      <div class="channel-budget-card">
+        <span class="ch-tag ch-tourist">Tourist pipeline</span>
+        <h5>Coastal tourist campaign</h5>
+        <div class="amount">~€15k</div><span class="pct">~10%</span>
+        <p class="desc">Apr–May heavy, sustain at low spend through summer. "German and Austrian tourists can't find your salon" angle. Coastal geo-target. OOH component included.</p>
+      </div>
+      <div class="channel-budget-card">
+        <span class="ch-tag ch-awareness">Awareness</span>
+        <h5>OOH coastal cities</h5>
+        <div class="amount">~€14k</div><span class="pct">~9%</span>
+        <p class="desc">Apr–May only. Split, Dubrovnik, Hvar, Rovinj. Focus on salon-adjacent streets and tourist-facing commercial districts. All with trackable QR.</p>
+      </div>
+      <div class="channel-budget-card">
+        <span class="ch-tag ch-brand">Brand</span>
+        <h5>B2B influencers</h5>
+        <div class="amount">~€18k</div><span class="pct">~12%</span>
+        <p class="desc">Full year. Croatian salon owner creators, coastal beauty professionals, Zagreb-based hair educators. Commission dashboard as hero content.</p>
+      </div>
+      <div class="channel-budget-card">
+        <span class="ch-tag ch-brand">Brand</span>
+        <h5>Zagreb launch event</h5>
+        <div class="amount">~€10k</div><span class="pct">~7%</span>
+        <p class="desc">M1. Invite-only, warm atmosphere. Key Tier 1A and 1C salons. Leverages existing Notino love brand in Zagreb. Produces months of organic content.</p>
+      </div>
+      <div class="channel-budget-card">
+        <span class="ch-tag ch-activation">Activation</span>
+        <h5>Lead magnets + webinars</h5>
+        <div class="amount">~€10k</div><span class="pct">~7%</span>
+        <p class="desc">From M2. Summer Tourist Demand Estimator tool build (~€3k one-off), monthly group calls, revenue quiz hosting and promotion.</p>
+      </div>
+      <div class="channel-budget-card">
+        <span class="ch-tag ch-activation">Activation</span>
+        <h5>Reserve / optimisation</h5>
+        <div class="amount">~€30k</div><span class="pct">~20%</span>
+        <p class="desc">Held for reallocation after M1–2 data. Larger reserve than Austria given greater seasonal volatility. Covers PR agency, Beauty Expo Zagreb stand, and coastal OOH extension if justified.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 5: TOURIST MOAT -->
+<section class="section" id="tourist">
+  <div class="container">
+    <div class="section-label">05 — The tourist moat</div>
+    <h2 class="section-title">The competitive advantage no Croatian platform can copy</h2>
+    <p class="section-intro">90.7% of overnight stays in Croatia are foreign tourists. The majority come from Germany, Austria, and Italy — countries where Notino is an established and trusted consumer brand. These tourists cannot currently book Croatian salons in their language, cannot find them through familiar channels, and cannot pay in ways they trust. Notino's multilingual booking platform solves all three. This is a structural advantage no local competitor can replicate.</p>
+
+    <div class="note-blue"><strong>The tourist pipeline argument in one sentence for salons:</strong> "Every German tourist who wants a haircut in Split has no way to find you today. After joining Notino, they book you directly — in German, through a brand they already trust." This argument closes coastal salons faster than any commission conversation.</div>
+
+    <div class="two-col" style="margin-bottom:32px;">
+      <div>
+        <h5 style="font-size:14px;font-weight:600;margin-bottom:12px;">Why this works for coastal salons</h5>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:10px;">
+          <li style="font-size:13px;color:var(--ink-2);padding-left:16px;border-left:2px solid var(--gold);">German, Austrian, and Italian tourists already use Notino at home — they trust the platform and are familiar with the booking flow</li>
+          <li style="font-size:13px;color:var(--ink-2);padding-left:16px;border-left:2px solid var(--gold);">Tourists arriving for 7–14 days specifically seek beauty services (hair, nails, spa) as part of their holiday experience</li>
+          <li style="font-size:13px;color:var(--ink-2);padding-left:16px;border-left:2px solid var(--gold);">Coastal salons currently turn away tourist demand they cannot capture — this is real lost revenue, easy to quantify with the Summer Tourist Demand Estimator tool</li>
+          <li style="font-size:13px;color:var(--ink-2);padding-left:16px;border-left:2px solid var(--gold);">No Croatian platform (Zoyya, SrediMe, Fresha) offers multilingual booking or has brand recognition with Western EU tourists</li>
+        </ul>
+      </div>
+      <div>
+        <h5 style="font-size:14px;font-weight:600;margin-bottom:12px;">EU funding lever — HBOR/ERDF</h5>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:10px;">
+          <li style="font-size:13px;color:var(--ink-2);padding-left:16px;border-left:2px solid var(--teal);">The €170M Croatian sustainable tourism loan programme (HBOR/ERDF) funds digitalisation investments for tourism-adjacent businesses</li>
+          <li style="font-size:13px;color:var(--ink-2);padding-left:16px;border-left:2px solid var(--teal);">Premium coastal salons already applying for or receiving these funds are actively upgrading their digital infrastructure</li>
+          <li style="font-size:13px;color:var(--ink-2);padding-left:16px;border-left:2px solid var(--teal);">Position Notino Partner as the booking and income layer that completes their digitalisation — complementary to, not competing with, their existing upgrade investments</li>
+          <li style="font-size:13px;color:var(--ink-2);padding-left:16px;border-left:2px solid var(--teal);">This angle is most effective with Tier 2 premium coastal operators. Include in the country manager's direct outreach script for this segment.</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3 style="font-weight:600;font-size:16px;margin-bottom:16px;">Coastal OOH — priority locations</h3>
+    <div class="ooh-grid">
+      <div class="ooh-card">
+        <h5>Split — primary coastal anchor</h5>
+        <p>Largest coastal city, highest salon density, year-round tourist base. Diocletian Palace area and Meštrović Promenade have the highest tourist and local salon concentration. OOH in proximity to marina approaches and main promenades.</p>
+        <div class="copy-block">
+          <p>"Tvoji gosti dolaze iz Njemačke. Sad te mogu pronaći."</p>
+          <div class="copy-sub">"Your guests come from Germany. Now they can find you." QR → notino.hr/partner-split?utm_source=ooh_split. Also run in German for tourist-facing placements: "Ihr Salon in Split — jetzt buchbar auf Notino."</div>
+        </div>
+      </div>
+      <div class="ooh-card">
+        <h5>Dubrovnik — premium tourist volume</h5>
+        <p>Highest-value tourist demographic in Croatia. Premium salons in the Old Town surroundings and Lapad area. Strong candidate for the EU funding angle — many operators in Dubrovnik are investing heavily in digitalisation.</p>
+        <div class="copy-block">
+          <p>"Talijanski turisti žele rezervirati termin. Omogući im to."</p>
+          <div class="copy-sub">"Italian tourists want to book an appointment. Let them." QR → notino.hr/partner-dubrovnik. Complement with Italian-language creative in key tourist zones.</div>
+        </div>
+      </div>
+      <div class="ooh-card">
+        <h5>Hvar &amp; Rovinj — premium island/Istria</h5>
+        <p>High-value boutique tourist destinations. Smaller salon count but premium clientele. OOH investment is lower per unit cost. Use targeted Meta geo-targeting alongside minimal physical OOH.</p>
+        <div class="copy-block">
+          <p>"Notino dovodi goste iz cijele Europe k tebi."</p>
+          <div class="copy-sub">"Notino brings guests from across Europe to you." QR → notino.hr/partner-istra. Meta is more efficient than OOH at this scale for Istrian micro-markets.</div>
+        </div>
+      </div>
+      <div class="ooh-card">
+        <h5>Zagreb — inland anchor</h5>
+        <p>Year-round acquisition market. Focus on salon-dense neighbourhoods: Gornji Grad, Ilica corridor, Maksimir. OOH is secondary to performance media in Zagreb — allocate budget here only after coastal placements are confirmed.</p>
+        <div class="copy-block">
+          <p>"Tvoji klijenti već kupuju na Notinu. Sad i ti zarađuješ."</p>
+          <div class="copy-sub">"Your clients already shop at Notino. Now you earn too." Croatian translation of the master message. QR → notino.hr/partner-zagreb. This is the primary message for the non-tourist inland market.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 6: LEAD MAGNETS -->
+<section class="section">
+  <div class="container">
+    <div class="section-label">06 — Lead magnets</div>
+    <h2 class="section-title">Surface intent through tools, not content</h2>
+    <p class="section-intro">Croatia's community-oriented salon culture means word-of-mouth and peer validation carry more weight than polished brand content. Lead magnets must feel useful and personal, not corporate. Every tool should generate a number that the salon owner wants to share with a colleague — that is how referral begins organically before the formal referral programme launches.</p>
+
+    <div class="lm-grid">
+      <div class="lm-card">
+        <div class="lm-num">01</div>
+        <h4>Summer Tourist Demand Estimator</h4>
+        <p>Mobile-first tool at <strong>notino.hr/partner/tourist-estimator</strong>. Inputs: salon location (city/coast), average monthly clients, services offered, peak season months. Output: estimated number of tourist bookings that flow past the salon annually without being captured, plus projected monthly income if 15% were converted via Notino.</p>
+        <p style="margin-top:8px;font-size:13px;color:var(--ink-2);">For a Split hair salon: "An estimated 340 German and Austrian tourists searched for a hair appointment near you last summer. You captured 0. With Notino Partner, you could earn ~€X from those bookings." CTA: "Otključaj profil besplatno" → self-registration.</p>
+        <p class="lm-cta">Distribution: paid by influencers Apr–May, seeded in Croatian beauty Facebook groups, linked from OOH QR codes.</p>
+      </div>
+      <div class="lm-card">
+        <div class="lm-num">02</div>
+        <h4>Salon Revenue Calculator</h4>
+        <p>Same mechanic as Austria but Croatian-market defaults. At <strong>notino.hr/partner/kalkulator</strong>. Three inputs: monthly clients, product recommendation rate, average product basket value. Output: estimated monthly passive commission income from the Notino 5% programme.</p>
+        <p style="margin-top:8px;font-size:13px;color:var(--ink-2);">Output framing for Croatian market: "Ako 20% tvojih klijenata kupuje na Notinu, tvoj salon zarađuje ~€X mjesečno bez ikakvog dodatnog rada." CTA: "Aktiviraj Notino Partner besplatno." Also used in the WhatsApp community as a weekly prompt: "Koliko si zaradio ovaj tjedan?"</p>
+        <p class="lm-cta">Primary channel: Meta lead ads targeting Croatian salon owner interests. Also promoted in monthly group calls.</p>
+      </div>
+
+      <!-- PLACEHOLDER FOR MAREK'S IDEAS -->
+      <div class="lm-card lm-placeholder">
+        <div class="lm-num" style="color:var(--gold);">03</div>
+        <h4>[ Space reserved for your specific lead magnet ideas ]</h4>
+        <p>This slot is intentionally left open for ideas from the Notino marketing team. The logical framework for any lead magnet added here: it must (1) surface a specific pain or opportunity the salon already feels, (2) produce a personalised output — a number, a score, or a comparison — not generic information, and (3) end with a single CTA to the self-registration page.</p>
+        <p style="margin-top:10px;color:#7a5c1a;">Candidates to consider: a "Zoyya vs Notino income comparison" tool for Tier 1C defectors; a "walk-in vs online capacity planner" that addresses the walk-in fear directly; or a localised "Beauty Business Health Check" quiz that segments leads by their biggest pain point.</p>
+        <p class="lm-cta" style="color:var(--gold);">Add your concept here and the framework applies automatically.</p>
+      </div>
+
+      <div class="lm-card">
+        <div class="lm-num">04</div>
+        <h4>Monthly Group Calls — Croatian format</h4>
+        <p>30-minute Zoom sessions hosted by the Croatian country manager + one featured salon partner. Format: 10 min intro, 10 min live tool demo, 10 min open Q&amp;A. The conversational culture in Croatia means the Q&amp;A regularly runs long — allow for this and treat extended conversation as a sales opportunity, not a schedule problem.</p>
+        <p style="margin-top:8px;font-size:13px;color:var(--ink-2);"><strong>Session titles:</strong> "Kako zaraditi dok spavaš: Notino Partner za HR salone" / "Split, Dubrovnik, Hvar: kako privući turiste iz Njemačke i Austrije ovog ljeta." Registration = lead capture. Sessions also produce clips for Instagram Reels and WhatsApp community content.</p>
+        <p class="lm-cta">Promoted in Croatian beauty Facebook groups and via influencer story shares.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 7: ACTIVATION & WALK-IN OBJECTION -->
+<section class="section" id="activation">
+  <div class="container">
+    <div class="section-label">07 — Activation &amp; the walk-in objection</div>
+    <h2 class="section-title">Convert registration into active use — and answer the fear</h2>
+    <p class="section-intro">Two challenges are unique to Croatia compared to Austria: the walk-in culture objection must be addressed proactively in the onboarding journey, and the gap before B2C booking goes live (September) must be filled with enough value that salons do not disengage. The activation programme handles both.</p>
+
+    <h3 style="font-weight:600;font-size:16px;margin-bottom:12px;">Addressing the walk-in objection — in the funnel, not after</h3>
+    <div class="note"><strong>The objection:</strong> "What if I accept online bookings and then a walk-in client comes and I have no space?" This is the most common reason coastal and Zagreb salons hesitate to adopt any booking platform. It must be addressed in the self-registration landing page, in the onboarding email sequence, and in all group call Q&amp;As — before it becomes a reason to disengage.</div>
+
+    <div class="two-col" style="margin-bottom:32px;">
+      <div>
+        <h5 style="font-size:14px;font-weight:600;margin-bottom:10px;">How to frame it in landing page copy</h5>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:10px;">
+          <li style="font-size:13px;color:var(--ink-2);padding-left:16px;border-left:2px solid var(--gold);">"You decide how many slots to open online. The rest stays walk-in." — make the control explicit and immediate in the registration flow</li>
+          <li style="font-size:13px;color:var(--ink-2);padding-left:16px;border-left:2px solid var(--gold);">"Notino doesn't replace your walk-in clients — it adds the ones who can't find you today" — reframe from replacement to addition</li>
+          <li style="font-size:13px;color:var(--ink-2);padding-left:16px;border-left:2px solid var(--gold);">Show a simple schedule mockup where 3 slots are "online" and 5 slots are blank (walk-in available) — visual proof that the salon retains control</li>
+        </ul>
+      </div>
+      <div>
+        <h5 style="font-size:14px;font-weight:600;margin-bottom:10px;">How to handle it in the onboarding sequence</h5>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:10px;">
+          <li style="font-size:13px;color:var(--ink-2);padding-left:16px;border-left:2px solid var(--teal);">Week 2 email subject: "Kako uskladiti online rezervacije i walk-in klijente" — address the objection as a practical tutorial, not a defence</li>
+          <li style="font-size:13px;color:var(--ink-2);padding-left:16px;border-left:2px solid var(--teal);">Include a real example from a Croatian salon partner who started with 2 online slots per day and expanded gradually — peer validation is the most persuasive format in this market</li>
+          <li style="font-size:13px;color:var(--ink-2);padding-left:16px;border-left:2px solid var(--teal);">Group call Q&amp;A: always have a prepared answer ready for this question — it will come up every session without exception</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3 style="font-weight:600;font-size:16px;margin-bottom:16px;">Post-registration activation timeline</h3>
+    <div class="gap-timeline">
+      <div class="gap-week">
+        <div class="gap-week-label">Week 1</div>
+        <div class="gap-week-content">
+          <h5>Personal contact from the country manager</h5>
+          <p>A phone call — not an email, not automated. Croatian salon owners respond to personal contact. The call covers: profile completeness, photo setup (Notino photographs every salon personally), and a brief demo of what the tourist estimator shows for their specific location. This call is the single most important conversion touchpoint in the entire Croatia funnel.</p>
+        </div>
+      </div>
+      <div class="gap-week">
+        <div class="gap-week-label">Weeks 2–8</div>
+        <div class="gap-week-content">
+          <h5>Weekly email sequence — practical, not promotional</h5>
+          <p>Each email delivers one action: set your availability slots (with walk-in guidance) / link your Notino product profile / set up your referral link / see your commission tracker. Week 4 email for coastal salons specifically: "Ljetna sezona počinje za X tjedana — evo kako privući turiste koji već traže tvoj salon." Creates urgency without pressure.</p>
+        </div>
+      </div>
+      <div class="gap-week">
+        <div class="gap-week-label">M1–ongoing</div>
+        <div class="gap-week-content">
+          <h5>WhatsApp Early Access community — Croatian conversational format</h5>
+          <p>"Notino Partner Hrvatska — Early Access" group. Entry via post-registration page and personal invite from the country manager. Weekly prompt: "Koji je tvoj omiljeni Notino proizvod koji preporučuješ klijentima?" — surfaces product recommendation behaviour that directly drives commission income. Monthly voice note from the country manager answering real questions from the group. The community format fits Croatian communication culture far better than formal email sequences.</p>
+        </div>
+      </div>
+      <div class="gap-week">
+        <div class="gap-week-label">September</div>
+        <div class="gap-week-content">
+          <h5>B2C booking goes live — use summer as social proof</h5>
+          <p>For salons registered before June, September brings real booking data. Use this immediately: "Saloni koji su se pridružili u travnju ostvarili su prosječno X turističkih rezervacija ovog ljeta." This is the most powerful acquisition content for the autumn push and the referral programme launch. Real numbers from real Croatian salons beat any marketing message.</p>
+        </div>
+      </div>
+      <div class="gap-week">
+        <div class="gap-week-label">Month 6</div>
+        <div class="gap-week-content">
+          <h5>Referral programme activation with summer data</h5>
+          <p>Launch the €50 referral programme in September armed with summer results. "Preporuči kolegu i oboje zaradite" is a stronger message when salons can show their own summer booking numbers. Croatian peer networks are tight — one satisfied coastal salon owner will actively recruit colleagues without financial incentive if the experience was good. The programme amplifies what is already happening organically.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="note"><strong>What not to do:</strong> Do not offer financial incentives to drive early registrations. Do not use automated phone outreach or chatbots for the Croatian market — field research confirms this culture responds negatively to impersonal contact. The country manager's personal availability (including evening calls) is a genuine competitive advantage here and should be protected as a resource.</div>
+  </div>
+</section>
+
+<!-- SECTION 8: CREATIVE -->
+<section class="section">
+  <div class="container">
+    <div class="section-label">08 — Creative direction</div>
+    <h2 class="section-title">Income-first. Tourism-proof. Feel-good always.</h2>
+    <p class="section-intro">Croatian creative runs two parallel narratives depending on the segment: income generation (for Zagreb and inland salons) and tourist access (for coastal salons). Both carry the master message at their core. The feel-good guideline applies throughout — no competitor attacks, no pressure tactics.</p>
+
+    <h4 style="font-size:14px;font-weight:600;margin-bottom:12px;">Ad formats and copy direction</h4>
+    <div class="ad-example">
+      <div class="ad-label">Meta video · 15 seconds · Zagreb inland</div>
+      <div class="ad-copy">A Zagreb salon owner opens her phone. Notification: a client bought her recommended hair mask on Notino. A commission counter increments. No voiceover. Caption: "Tvoji klijenti već kupuju na Notinu. Sad i ti zarađuješ." CTA: "Pridruži se besplatno."</div>
+    </div>
+    <div class="ad-example">
+      <div class="ad-label">Meta video · 15 seconds · Coastal tourist angle</div>
+      <div class="ad-copy">A tourist couple walks past a salon in Split, trying to look it up on their phone. Cut to: the same salon's Notino profile in German, with an online booking completing. Salon owner's phone buzzes: a new booking. Caption: "Turistima si nevidljiv. Notino to mijenja." CTA: "Registriraj salon besplatno."</div>
+    </div>
+    <div class="ad-example">
+      <div class="ad-label">Google Search · Zoyya defector cluster</div>
+      <div class="ad-copy">Headline: "Booking sustav koji te plaća | Notino Partner HR". Description: "Nema provizije na postojeće klijente. Plus 5% od svakog online kupovine. Nadopunjuje Zoyyu — ne zamjenjuje je."</div>
+    </div>
+    <div class="ad-example">
+      <div class="ad-label">OOH headline · coastal format</div>
+      <div class="ad-copy">"Tvoji gosti dolaze iz Njemačke. Sad te mogu pronaći." — Croatian primary, with a German sub-line: "Finden Sie Ihren Salon in Split auf Notino." QR to notino.hr/partner with UTM tracking per city.</div>
+    </div>
+    <div class="ad-example">
+      <div class="ad-label">Instagram Reel · organic · country manager format</div>
+      <div class="ad-copy">Country manager visits a Split salon. Asks the owner: "Koliko turista prođe tvoj salon svaki dan a da ne mogu naručiti termin?" Owner: "Puno ih je." Cut to: Tourist Demand Estimator showing 340 missed bookings last summer. Text: "Ovo više ne mora biti slučaj."</div>
+    </div>
+
+    <hr class="divider">
+
+    <h3 style="font-weight:600;font-size:16px;margin-bottom:16px;">Distinctive B2B brand assets</h3>
+    <div class="brand-asset-grid">
+      <div class="brand-asset-card">
+        <h5>Master message — Croatian adaptation</h5>
+        <p>"Tvoji klijenti već kupuju na Notinu. Sad i ti zarađuješ." — direct translation of the master message. Used consistently across all channels. Coastal variant: "Tvoji gosti dolaze iz Njemačke. Sad te mogu pronaći." Both versions appear in the same campaign sets, targeted by location.</p>
+      </div>
+      <div class="brand-asset-card">
+        <h5>Leveraging the love brand</h5>
+        <p>Unlike Austria, Notino already has strong positive associations in Croatia from B2C. B2B creative can lean on this — "Već kupuješ na Notinu. Postani partner." bridges the gap without needing to build brand trust from zero. This shortcut is unique to Croatia and should be used explicitly.</p>
+      </div>
+      <div class="brand-asset-card">
+        <h5>Real summer numbers as creative</h5>
+        <p>From September onwards, the single most powerful creative asset is real data: how many tourist bookings registered salons received, what commission income they generated. Produced as Reels, WhatsApp messages, and email subject lines. No stock imagery competes with a real Croatian salon owner showing their dashboard.</p>
+      </div>
+      <div class="brand-asset-card">
+        <h5>Multilingual trust signal</h5>
+        <p>Show the Notino booking interface in German and Italian in coastal creative — not just Croatian. This is a visual proof that Notino solves the language problem that no local platform addresses. A screenshot of a booking confirmation in German is worth more than any copy claim about "international reach."</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 9: EXECUTION -->
+<section class="section">
+  <div class="container">
+    <div class="section-label">09 — Execution model</div>
+    <h2 class="section-title">The country manager is the Croatia advantage</h2>
+    <p class="section-intro">Croatia's community-oriented culture means the country manager's personal presence — in person in Zagreb, by phone in the evenings for the rest of the country — is a disproportionately high-leverage asset. This is different from Austria, where walking outreach was primarily a multicultural-district play. In Croatia, personal contact is the primary conversion mechanism across all segments.</p>
+
+    <div class="two-col">
+      <div>
+        <h4 style="font-size:14px;font-weight:600;margin-bottom:12px;">Central team (Brno)</h4>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:8px;">
+          <li style="font-size:13px;color:var(--ink-2);padding-left:14px;border-left:2px solid var(--gold);">Google + Meta campaign setup, optimisation, and budget management</li>
+          <li style="font-size:13px;color:var(--ink-2);padding-left:14px;border-left:2px solid var(--gold);">Creative production — both inland income angle and coastal tourist angle</li>
+          <li style="font-size:13px;color:var(--ink-2);padding-left:14px;border-left:2px solid var(--gold);">Email onboarding sequence copy (Croatian language) and automation</li>
+          <li style="font-size:13px;color:var(--ink-2);padding-left:14px;border-left:2px solid var(--gold);">Analytics, tracking, performance reporting</li>
+          <li style="font-size:13px;color:var(--ink-2);padding-left:14px;border-left:2px solid var(--gold);">Summer Tourist Demand Estimator tool build (one-off, M1)</li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="font-size:14px;font-weight:600;margin-bottom:12px;">Croatian country manager</h4>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:8px;">
+          <li style="font-size:13px;color:var(--ink-2);padding-left:14px;border-left:2px solid var(--teal);">Week-1 personal phone call for every new registered salon</li>
+          <li style="font-size:13px;color:var(--ink-2);padding-left:14px;border-left:2px solid var(--teal);">Direct evening outreach to coastal salons during Apr–May window</li>
+          <li style="font-size:13px;color:var(--ink-2);padding-left:14px;border-left:2px solid var(--teal);">Zagreb launch event coordination and in-person presence</li>
+          <li style="font-size:13px;color:var(--ink-2);padding-left:14px;border-left:2px solid var(--teal);">Influencer relationship management and content briefing</li>
+          <li style="font-size:13px;color:var(--ink-2);padding-left:14px;border-left:2px solid var(--teal);">Monthly group call hosting and WhatsApp community management</li>
+          <li style="font-size:13px;color:var(--ink-2);padding-left:14px;border-left:2px solid var(--teal);">Beauty and Hair Expo Zagreb (January) — floor presence for Tier 2 pipeline</li>
+        </ul>
+      </div>
+    </div>
+
+    <div style="margin-top:24px;">
+      <h4 style="font-size:14px;font-weight:600;margin-bottom:12px;">What to outsource</h4>
+      <p style="font-size:13px;color:var(--ink-2);line-height:1.7;margin-bottom:12px;">A single local Zagreb agency ideally covering all three:</p>
+      <div style="display:flex;flex-wrap:wrap;gap:8px;">
+        <span class="tag">Zagreb launch event organisation</span>
+        <span class="tag">Coastal OOH media buying (Split, Dubrovnik, Hvar)</span>
+        <span class="tag">PR outreach to Croatian beauty and tourism trade media</span>
+      </div>
+    </div>
+
+    <div class="note" style="margin-top:24px;"><strong>Sales / marketing split:</strong> 50% of salon acquisition is owned by marketing (self-registrations from digital channels). 50% is owned by direct outreach from the country manager. In Croatia specifically, the country manager's personal contact likely converts at a higher rate than in Austria — budget the time accordingly. Every self-registration receives a personal follow-up call within 48 hours.</div>
+  </div>
+</section>
+
+<!-- 10 — DIGITAL TARGETING -->
+<section class="section">
+  <div class="container">
+    <div class="section-label">10 — Digital targeting</div>
+    <h2 class="section-title">How to reach them in-platform</h2>
+    <p class="section-intro">Concrete audience configurations, keyword clusters, and retargeting rules that translate the funnel strategy into live campaigns. Copy–paste-ready for Meta Business Suite and Google Ads.</p>
+
+    <div class="divider"></div>
+
+    <h3 style="font-size:18px;margin-bottom:16px;">Meta Ads — audience architecture</h3>
+    <div style="overflow-x:auto;">
+      <table class="funnel-table">
+        <thead>
+          <tr>
+            <th>Temperature</th>
+            <th>Audience name</th>
+            <th>Targeting</th>
+            <th>Objective</th>
+            <th>Ad format</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="bar-awareness" style="font-size:12px;padding:2px 8px;border-radius:4px;">Cold</span></td>
+            <td style="font-weight:600;">HR — Salon owners broad</td>
+            <td style="font-size:13px;">Interest: Kozmetički salon, Frizerski salon, Upravljanje salonom · Age 25-55 · Croatia · Croatian language</td>
+            <td style="font-size:13px;">Traffic → landing page</td>
+            <td style="font-size:13px;">Single image / short video testimonial</td>
+          </tr>
+          <tr>
+            <td><span class="bar-awareness" style="font-size:12px;padding:2px 8px;border-radius:4px;">Cold</span></td>
+            <td style="font-weight:600;">HR — Walk-in objection</td>
+            <td style="font-size:13px;">Interest: Kozmetički salon OR Frizerski salon · Geo: Zagreb 25 km radius · Age 28-50</td>
+            <td style="font-size:13px;">Traffic → "walk-in vs. online" landing page</td>
+            <td style="font-size:13px;">Carousel: myth vs. fact</td>
+          </tr>
+          <tr>
+            <td><span class="bar-consideration" style="font-size:12px;padding:2px 8px;border-radius:4px;">Warm</span></td>
+            <td style="font-weight:600;">HR — Lookalike 1%</td>
+            <td style="font-size:13px;">1% LAL of registered salons (seed list from CRM) · Croatia</td>
+            <td style="font-size:13px;">Lead gen → in-app form</td>
+            <td style="font-size:13px;">Lead form with "Besplatna demo" CTA</td>
+          </tr>
+          <tr>
+            <td><span class="bar-conversion" style="font-size:12px;padding:2px 8px;border-radius:4px;">Hot</span></td>
+            <td style="font-weight:600;">HR — Retarget visitors</td>
+            <td style="font-size:13px;">Custom audience: website visitors 30 d, excl. registered</td>
+            <td style="font-size:13px;">Conversions → registration</td>
+            <td style="font-size:13px;">Dynamic creative with social-proof counter</td>
+          </tr>
+          <tr>
+            <td><span class="bar-conversion" style="font-size:12px;padding:2px 8px;border-radius:4px;">Hot</span></td>
+            <td style="font-weight:600;">HR — Retarget leads</td>
+            <td style="font-size:13px;">Custom audience: form-started but not completed · 14 d</td>
+            <td style="font-size:13px;">Conversions → registration</td>
+            <td style="font-size:13px;">Single image reminder + urgency offer</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h4 style="font-size:14px;font-weight:600;margin:24px 0 12px;">Geo-targeting &amp; creative notes</h4>
+    <div class="position-grid">
+      <div class="position-card">
+        <div class="icon icon-gold"><span>📍</span></div>
+        <h4>Zagreb — year-round</h4>
+        <p>Largest salon density. Always-on campaigns targeting salon owners within 25 km of Zagreb centre. Croatian language copy only. Walk-in objection ad set runs here exclusively.</p>
+      </div>
+      <div class="position-card">
+        <div class="icon icon-blue"><span>🏖️</span></div>
+        <h4>Coastal — seasonal Apr–Jul</h4>
+        <p>Split, Dubrovnik, Hvar, Zadar. Activate tourist-season messaging from April. Creative emphasises international tourist bookings and English-language booking page. Pause or reduce spend Nov–Mar.</p>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <h3 style="font-size:18px;margin-bottom:16px;">Google Search — keyword clusters</h3>
+    <div class="tier-grid">
+      <div class="tier-card tier-1a">
+        <span class="badge badge-1a">Cluster A — Direct intent</span>
+        <h4>Booking system for salons</h4>
+        <ul>
+          <li>besplatni sustav za naručivanje salon</li>
+          <li>online booking salon hrvatska</li>
+          <li>aplikacija za naručivanje salon</li>
+          <li>softver za kozmetički salon</li>
+          <li>program za frizerski salon</li>
+        </ul>
+        <p style="margin-top:10px;font-size:12px;color:var(--ink-3);">Bid: aggressive · Match: phrase + exact</p>
+      </div>
+      <div class="tier-card tier-1b">
+        <span class="badge badge-1b">Cluster B — Competitor</span>
+        <h4>Alternative queries</h4>
+        <ul>
+          <li>zoyya alternativa</li>
+          <li>planity hrvatska</li>
+          <li>treatwell za salone</li>
+          <li>fresha vs notino partner</li>
+          <li>najbolji booking sustav salon</li>
+        </ul>
+        <p style="margin-top:10px;font-size:12px;color:var(--ink-3);">Bid: moderate · Match: phrase + broad modified</p>
+      </div>
+      <div class="tier-card tier-1c">
+        <span class="badge badge-1c">Cluster C — Tourist</span>
+        <h4>English-language booking</h4>
+        <ul>
+          <li>booking salon split engleski</li>
+          <li>hair salon dubrovnik online booking</li>
+          <li>beauty salon croatia english</li>
+          <li>tourist salon booking croatia</li>
+          <li>nail salon hvar appointment</li>
+        </ul>
+        <p style="margin-top:10px;font-size:12px;color:var(--ink-3);">Bid: moderate · Match: broad + phrase · Geo: coastal cities · Schedule: Apr–Sep</p>
+      </div>
+      <div class="tier-card tier-2">
+        <span class="badge badge-2">Cluster D — Problem-aware</span>
+        <h4>Pain-point searches</h4>
+        <ul>
+          <li>kako smanjiti no-show salon</li>
+          <li>salon klijenti ne dolaze</li>
+          <li>kako povećati online recenzije salon</li>
+          <li>automatske poruke podsjetnik salon</li>
+          <li>kako dobiti više klijenata salon</li>
+        </ul>
+        <p style="margin-top:10px;font-size:12px;color:var(--ink-3);">Bid: conservative · Match: broad · Neg: DIY, free template</p>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <h3 style="font-size:18px;margin-bottom:16px;">Retargeting — priority matrix</h3>
+    <div style="overflow-x:auto;">
+      <table class="funnel-table">
+        <thead>
+          <tr>
+            <th>Priority</th>
+            <th>Audience</th>
+            <th>Window</th>
+            <th>Channel</th>
+            <th>Frequency cap</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="font-weight:600;color:var(--gold);">P0</td>
+            <td>Form started, not completed</td>
+            <td>0–14 days</td>
+            <td>Meta + Google Display</td>
+            <td>1×/day</td>
+          </tr>
+          <tr>
+            <td style="font-weight:600;color:var(--gold);">P1</td>
+            <td>Pricing page visitors</td>
+            <td>0–30 days</td>
+            <td>Meta + Google Display</td>
+            <td>1×/day</td>
+          </tr>
+          <tr>
+            <td style="font-weight:600;">P2</td>
+            <td>Blog / resource readers</td>
+            <td>0–60 days</td>
+            <td>Meta only</td>
+            <td>3×/week</td>
+          </tr>
+          <tr>
+            <td style="font-weight:600;">P3</td>
+            <td>Homepage bouncers</td>
+            <td>0–30 days</td>
+            <td>Google Display only</td>
+            <td>2×/week</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="note" style="margin-top:20px;"><strong>Frequency guardrail:</strong> Total cross-channel exposure capped at 12 impressions per user per week. Creative rotation every 14 days to combat fatigue.</div>
+
+    <div class="divider"></div>
+
+    <h3 style="font-size:18px;margin-bottom:16px;">Paid media budget split</h3>
+    <div class="budget-grid">
+      <div class="budget-cell">
+        <div class="budget-cell-label">Meta Ads</div>
+        <div class="budget-cell-amount">55%</div>
+        <div class="budget-cell-desc">Primary acquisition engine. Cold + warm + retargeting. Skew toward Zagreb year-round, coastal seasonal surge Apr–Jul.</div>
+      </div>
+      <div class="budget-cell">
+        <div class="budget-cell-label">Google Search</div>
+        <div class="budget-cell-amount">30%</div>
+        <div class="budget-cell-desc">Captures active intent. Clusters A + B always-on; Cluster C coastal-only Apr–Sep; Cluster D broad capture with tight negatives.</div>
+      </div>
+      <div class="budget-cell">
+        <div class="budget-cell-label">Google Display / Retargeting</div>
+        <div class="budget-cell-amount">15%</div>
+        <div class="budget-cell-desc">Retargeting pool across P0–P3 audiences. Creative synced with Meta to reinforce messaging without fatigue.</div>
+      </div>
+    </div>
+
+    <div class="note"><strong>Optimisation cadence:</strong> Weekly spend review, bi-weekly creative refresh, monthly channel rebalance. Shift budget from Display → Search if CPA drops below target on high-intent clusters.</div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<div class="disclaimer">
+  Notino Partner Croatia GTM Strategy 2026 — Internal document. Budget figures are indicative; actual allocation subject to performance optimisation after M1–2 data. Seasonal split reflects Croatian tourism patterns and should be reviewed if the launch date changes from April 2026.
+</div>
+
+</body>
+</html>
