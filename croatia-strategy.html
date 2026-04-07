@@ -233,6 +233,23 @@ body {
 .lm-placeholder h4 { color: var(--gold); }
 .lm-placeholder p { color: #7a5c1a; }
 
+/* INFLUENCERS */
+.influencer-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 12px; margin-bottom: 24px; }
+.influencer-card { background: var(--paper); border: 1px solid var(--paper-3); border-radius: var(--radius); padding: 16px; transition: border-color 0.2s; }
+.influencer-card:hover { border-color: var(--gold); }
+.influencer-tier { font-size: 10px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 8px; display: block; }
+.t1 { color: var(--gold); }
+.t2 { color: var(--teal); }
+.t3 { color: var(--purple); }
+.influencer-card h5 { font-size: 14px; font-weight: 600; margin-bottom: 2px; }
+.influencer-card .handle { font-size: 12px; color: var(--teal); margin-bottom: 6px; }
+.influencer-card .followers { font-size: 12px; font-weight: 500; color: var(--ink-3); margin-bottom: 8px; }
+.influencer-card .role { font-size: 12px; color: var(--ink-2); line-height: 1.5; }
+.fb-group-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 12px; margin-bottom: 24px; }
+.fb-group-card { background: var(--paper-2); border: 1px solid var(--paper-3); border-radius: var(--radius); padding: 16px; }
+.fb-group-card h5 { font-size: 13px; font-weight: 600; margin-bottom: 6px; }
+.fb-group-card p { font-size: 12px; color: var(--ink-2); line-height: 1.5; }
+
 /* GAP TIMELINE */
 .gap-timeline { margin-bottom: 32px; }
 .gap-week { display: grid; grid-template-columns: 120px 1fr; gap: 16px; align-items: start; padding: 16px 0; border-bottom: 1px solid var(--paper-3); }
@@ -572,10 +589,132 @@ body {
   </div>
 </section>
 
-<!-- SECTION 4: BUDGET -->
+<!-- SECTION 4: INFLUENCERS -->
+<section class="section" id="influencers">
+  <div class="container">
+    <div class="section-label">04 — Influencer strategy</div>
+    <h2 class="section-title">Three tiers, one consistent message</h2>
+    <p class="section-intro">The influencer stack is not about reach alone — it is about credibility at each level of the funnel. Tier 1 establishes national authority and co-hosts webinars. Tier 2 creates social proof through real Zagreb salons. Tier 3 drives top-of-funnel reach on TikTok to a younger audience. Facebook communities seed the message into existing professional groups.</p>
+
+    <h4 style="font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:0.07em;color:var(--ink-3);margin-bottom:12px;">Tier 1 — National authority · ToFu, awareness &amp; webinar co-hosting</h4>
+    <div class="influencer-grid">
+      <div class="influencer-card">
+        <span class="influencer-tier t1">Tier 1 · National</span>
+        <h5>Jana Duzanec</h5>
+        <div class="handle">@jananails_official</div>
+        <div class="followers">~943k followers · Nail/beauty authority</div>
+        <p class="role">Normalises the idea that beauty pros build income beyond the chair. Reel: "Kada klijentice kupuju proizvode online – evo kako salon ipak može zaraditi (Notino Partner)." Joint live: how nail salons diversify revenue through services + online commission.</p>
+      </div>
+      <div class="influencer-card">
+        <span class="influencer-tier t1">Tier 1 · National</span>
+        <h5>Mirta Miler</h5>
+        <div class="handle">@mimiermakeup</div>
+        <div class="followers">~2M followers across platforms · Celebrity-level beauty</div>
+        <p class="role">Use sparingly — one hero TikTok/IG video for launch moment only, not ongoing ambassadorship. "Croatian salons on Notino" as a PR asset and reach spike.</p>
+      </div>
+      <div class="influencer-card">
+        <span class="influencer-tier t1">Tier 1 · National</span>
+        <h5>Anita Šimunović</h5>
+        <div class="handle">@anita.simunovic</div>
+        <div class="followers">~39k followers · 3–5%+ engagement · Female 18–44</div>
+        <p class="role">2–3 Reels: "real life of a Croatian woman booking hair/nails and buying beauty online" with her salon earning via Notino Partner. Can front a webinar for salon owners: "što klijentice rade nakon što izađu iz salona" (online repurchase behaviour).</p>
+      </div>
+      <div class="influencer-card">
+        <span class="influencer-tier t1">Tier 1 · Zagreb</span>
+        <h5>Iva Radojević</h5>
+        <div class="handle">Zagreb-based</div>
+        <div class="followers">~35k followers · Beauty &amp; lifestyle</div>
+        <p class="role">Zagreb anchor. Reel: "Što radim kad mi omiljeni salon nije online?" Stories with swipe-up to Notino Partner revenue calculator aimed at salon owners in her audience.</p>
+      </div>
+    </div>
+
+    <h4 style="font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:0.07em;color:var(--ink-3);margin-bottom:12px;margin-top:28px;">Tier 2 — Real Zagreb salons as role-model creators · MoFu, proof</h4>
+    <div class="influencer-grid">
+      <div class="influencer-card">
+        <span class="influencer-tier t2">Tier 2 · Zagreb</span>
+        <h5>Living Room Hair</h5>
+        <div class="handle">@livingroomhair</div>
+        <div class="followers">Zagreb salon</div>
+        <p class="role">Case-study video: owner explains how they earn when clients re-order products online. Before/after Reels with overlay: "Naše klijentice kupuju njegu na Notinu – naš salon zarađuje i nakon posjeta." Flagship early-adopter partner.</p>
+      </div>
+      <div class="influencer-card">
+        <span class="influencer-tier t2">Tier 2 · Zagreb</span>
+        <h5>Salon Sophie</h5>
+        <div class="handle">@salonsophie</div>
+        <div class="followers">Zagreb · ~6k followers</div>
+        <p class="role">Content for urban professionals (25–45): colour, foils, online booking. "Kako smo smanjili pozive za narudžbe, a povećali prosječan račun po klijentici."</p>
+      </div>
+      <div class="influencer-card">
+        <span class="influencer-tier t2">Tier 2 · Zagreb</span>
+        <h5>Salon Lady D</h5>
+        <div class="handle">@salon_lady_d</div>
+        <div class="followers">Zagreb · Ambassador/educator for professional brands</div>
+        <p class="role">Strong B2B testimonial format. "Kao edukatorica znam koliko je bitno da saloni zarađuju i od online kupnje – zato koristim Notino Partner." Ideal for webinars and in-person events with other owners.</p>
+      </div>
+    </div>
+
+    <h4 style="font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:0.07em;color:var(--ink-3);margin-bottom:12px;margin-top:28px;">Tier 3 — TikTok reach engine · ToFu, viral formats</h4>
+    <div class="influencer-grid">
+      <div class="influencer-card">
+        <span class="influencer-tier t3">Tier 3 · TikTok</span>
+        <h5>Barber Čučko</h5>
+        <div class="handle">@barber_cucko (TikTok)</div>
+        <div class="followers">41.9k followers · 1.7M likes · "Barber of National Team"</div>
+        <p class="role">Series: "Koliko stvarno zarađuje jedan barber?" with episode about earning from Notino product commissions. Challenge: "Fade + product routine" with a Notino product bundle.</p>
+      </div>
+      <div class="influencer-card">
+        <span class="influencer-tier t3">Tier 3 · TikTok</span>
+        <h5>Marina Mamić</h5>
+        <div class="handle">TikTok · Transformation MUA</div>
+        <div class="followers">Strong reach</div>
+        <p class="role">Test partner for 5-day hair routine challenge: "5-day routine using products that support your salon via Notino Partner."</p>
+      </div>
+      <div class="influencer-card">
+        <span class="influencer-tier t3">Tier 3 · TikTok</span>
+        <h5>Ana Tolj</h5>
+        <div class="handle">TikTok + Instagram</div>
+        <div class="followers">Pro makeup artist</div>
+        <p class="role">Active on both platforms, beauty authority angle. Pair with coastal salon content for Split/Zadar reach.</p>
+      </div>
+      <div class="influencer-card">
+        <span class="influencer-tier t3">Tier 3 · TikTok</span>
+        <h5>Ivaawho</h5>
+        <div class="handle">TikTok · Beauty &amp; lifestyle</div>
+        <div class="followers">Collaborations with Maybelline/L'Oréal</div>
+        <p class="role">Existing brand collab credibility — makes Notino Partner feel like a natural next partnership. Female 18–34 Croatian audience.</p>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <h4 style="font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:0.07em;color:var(--ink-3);margin-bottom:12px;">Facebook communities to seed</h4>
+    <div class="fb-group-grid">
+      <div class="fb-group-card">
+        <h5>Frizeri i kozmetičari Hrvatske</h5>
+        <p>National group, official media sponsor of Beauty &amp; Hair EXPO Zagreb. Seed the revenue calculator: "Besplatan alat: izračunajte koliko novca ostavljate online trgovinama." Announce group calls.</p>
+      </div>
+      <div class="fb-group-card">
+        <h5>Frizeri Grada Zagreba i okolice</h5>
+        <p>Zagreb-focused professional group. Webinar invites for Zagreb-only sessions. Case-study posts from Living Room and Salon Sophie as early adopters.</p>
+      </div>
+      <div class="fb-group-card">
+        <h5>SVI FRIZERI FACEBOOKA</h5>
+        <p>Wider Balkan hairdresser group. Soft-launch Notino Partner as "još jedan prihod uz online kupnju."</p>
+      </div>
+      <div class="fb-group-card">
+        <h5>Mali poduzetnici — predstavite svoj mali biznis</h5>
+        <p>Small entrepreneurs across the Balkans. Target solo beauticians, lash techs, nail techs for early access and webinars on recurring revenue.</p>
+      </div>
+    </div>
+
+    <div class="note"><strong>Content formats:</strong> All creators use revenue-framed scripts. Track partner registrations per creator via separate referral links (e.g. notino.hr/partner?jana). Feature one Zagreb and one coastal salon together where possible — "Zagreb vs. obala: što znači biti Notino Partner u gradu i na moru?" Geographic pairing reinforces the dual-market strategy.</div>
+  </div>
+</section>
+
+<!-- SECTION 5: BUDGET -->
 <section class="section" id="budget">
   <div class="container">
-    <div class="section-label">04 — Budget allocation</div>
+    <div class="section-label">05 — Budget allocation</div>
     <h2 class="section-title">€150,000 shaped by Croatian seasonality</h2>
     <p class="section-intro">Unlike Austria, Croatia's budget split is driven by the tourism calendar rather than a flat intensity curve. The April–May coastal acquisition window consumes a disproportionate share of the first phase — this is intentional and non-negotiable. If the budget is cut, protect this window above all else.</p>
 
@@ -657,7 +796,7 @@ body {
 <!-- SECTION 5: TOURIST MOAT -->
 <section class="section" id="tourist">
   <div class="container">
-    <div class="section-label">05 — The tourist moat</div>
+    <div class="section-label">06 — The tourist moat</div>
     <h2 class="section-title">The competitive advantage no Croatian platform can copy</h2>
     <p class="section-intro">90.7% of overnight stays in Croatia are foreign tourists. The majority come from Germany, Austria, and Italy — countries where Notino is an established and trusted consumer brand. These tourists cannot currently book Croatian salons in their language, cannot find them through familiar channels, and cannot pay in ways they trust. Notino's multilingual booking platform solves all three. This is a structural advantage no local competitor can replicate.</p>
 
@@ -725,7 +864,7 @@ body {
 <!-- SECTION 6: LEAD MAGNETS -->
 <section class="section">
   <div class="container">
-    <div class="section-label">06 — Lead magnets</div>
+    <div class="section-label">07 — Lead magnets</div>
     <h2 class="section-title">Surface intent through tools, not content</h2>
     <p class="section-intro">Croatia's community-oriented salon culture means word-of-mouth and peer validation carry more weight than polished brand content. Lead magnets must feel useful and personal, not corporate. Every tool should generate a number that the salon owner wants to share with a colleague — that is how referral begins organically before the formal referral programme launches.</p>
 
@@ -768,7 +907,7 @@ body {
 <!-- SECTION 7: ACTIVATION & WALK-IN OBJECTION -->
 <section class="section" id="activation">
   <div class="container">
-    <div class="section-label">07 — Activation &amp; the walk-in objection</div>
+    <div class="section-label">08 — Activation &amp; the walk-in objection</div>
     <h2 class="section-title">Convert registration into active use — and answer the fear</h2>
     <p class="section-intro">Two challenges are unique to Croatia compared to Austria: the walk-in culture objection must be addressed proactively in the onboarding journey, and the gap before B2C booking goes live (September) must be filled with enough value that salons do not disengage. The activation programme handles both.</p>
 
@@ -840,7 +979,7 @@ body {
 <!-- SECTION 8: CREATIVE -->
 <section class="section">
   <div class="container">
-    <div class="section-label">08 — Creative direction</div>
+    <div class="section-label">09 — Creative direction</div>
     <h2 class="section-title">Income-first. Tourism-proof. Feel-good always.</h2>
     <p class="section-intro">Croatian creative runs two parallel narratives depending on the segment: income generation (for Zagreb and inland salons) and tourist access (for coastal salons). Both carry the master message at their core. The feel-good guideline applies throughout — no competitor attacks, no pressure tactics.</p>
 
@@ -893,7 +1032,7 @@ body {
 <!-- SECTION 9: DIGITAL TARGETING -->
 <section class="section">
   <div class="container">
-    <div class="section-label">09 — Digital targeting</div>
+    <div class="section-label">10 — Digital targeting</div>
     <h2 class="section-title">How to reach them in-platform</h2>
     <p class="section-intro">Concrete audience configurations, keyword clusters, and retargeting rules that translate the funnel strategy into live campaigns. Copy–paste-ready for Meta Business Suite and Google Ads.</p>
 
