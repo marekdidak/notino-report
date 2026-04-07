@@ -526,7 +526,7 @@
   <div class="sl">Linguistic &amp; cultural specifics</div>
   <div class="card" style="margin-bottom:20px">
     <div class="card-body">
-      <strong>Salon name cultural analysis (Notino DB, n=13,306):</strong><br>
+      <strong>Salon name cultural analysis (Google Places DB, n=13,306):</strong><br>
       German/Austrian-named: <strong>7,097 (53.3%)</strong><br>
       English/international-branded: <strong>3,369 (25.3%)</strong><br>
       Turkish-origin names: <strong>211 (1.6%)</strong> — concentrated in Vienna (~70%+)<br>
@@ -570,27 +570,50 @@
 <div id="tab-salons" class="tab-pane">
 
   <div class="banner banner-blue">
-    <strong>13,306 beauty-service venues in the Notino DB</strong> (Google Places, deduplicated, Feb 2026). Verified supply: 3,110 salons (SmartScrapers Oct 2025). WKO qualifying estimate: ~8,620 salons. Non-verified commercial datasets suggest a broader long tail of 15,000+ providers.
+    <strong>Two data sources.</strong> Official Statistics: ~27,000 active registrations in Notino-relevant categories (WKÖ, Feb 2026 — Friseure + Kosmetiker + Nagelstudios + Fußpfleger + Visagisten + Permanentmakeup). Google Places DB: 13,306 beauty-service venues with a digital footprint (deduplicated, Feb 2026).
   </div>
 
-  <div class="sl">Verified supply by category (SmartScrapers Oct 2025)</div>
+  <div class="sl">Official Statistics — active registrations by category (WKÖ 2025)</div>
   <div class="summary-wrap">
     <table>
-      <thead><tr><th>Category</th><th>Verified Count</th><th>Vienna Share</th><th>Vienna %</th><th>Single-Owner %</th><th>Growth vs 2023</th></tr></thead>
+      <thead><tr><th>Category (Berufszweig)</th><th>Active Registrations</th><th>% of Relevant Total</th><th>Source</th></tr></thead>
       <tbody>
-        <tr><td><strong>Hair salons</strong></td><td>1,961</td><td>1,015</td><td>52%</td><td>88.07%</td><td>—</td></tr>
-        <tr><td><strong>Nail salons</strong></td><td>791</td><td>447</td><td>57%</td><td>86.98%</td><td>+6.17%</td></tr>
-        <tr><td><strong>Skin care clinics</strong></td><td>205</td><td>133</td><td>65%</td><td>—</td><td>+5.08%</td></tr>
-        <tr><td><strong>Beauticians (studios)</strong></td><td>153</td><td>65</td><td>42%</td><td>96.08%</td><td>+8.45%</td></tr>
-        <tr style="background:var(--bg-secondary);font-weight:600"><td><strong>TOTAL (verified)</strong></td><td><strong>3,110</strong></td><td><strong>~1,660</strong></td><td><strong>53%</strong></td><td></td><td></td></tr>
+        <tr><td><strong>Friseure (hairdressers)</strong></td><td>10,415</td><td>38.7%</td><td>Official Statistics · FV 124</td></tr>
+        <tr><td><strong>Nagelstudio (nail studios)</strong></td><td>4,789</td><td>17.8%</td><td>Official Statistics · FV 120</td></tr>
+        <tr><td><strong>Fußpfleger (foot care)</strong></td><td>4,702</td><td>17.5%</td><td>Official Statistics · FV 120</td></tr>
+        <tr><td><strong>Kosmetiker (beauticians)</strong></td><td>4,666</td><td>17.3%</td><td>Official Statistics · FV 120</td></tr>
+        <tr><td><strong>Visagisten (makeup artists)</strong></td><td>1,510</td><td>5.6%</td><td>Official Statistics · FV 120</td></tr>
+        <tr><td><strong>Permanentmakeup</strong></td><td>839</td><td>3.1%</td><td>Official Statistics · FV 120</td></tr>
+        <tr style="background:var(--bg-secondary);font-weight:600"><td><strong>TOTAL (Notino-relevant)</strong></td><td><strong>~26,921</strong></td><td><strong>100%</strong></td><td></td></tr>
       </tbody>
     </table>
   </div>
+  <div class="note" style="margin-bottom:20px"><strong>Methodology:</strong> Official Statistics covers two WKÖ trade groups — Friseure (FV 124) and Fußpfleger, Kosmetiker und Masseure (FV 120). From FV 120, only Notino-relevant Berufszweige are included; Masseure (~7,984), Heilmasseure (~3,977), Piercer (~370), and Tätowierer (~1,309) are excluded. Registrations may include multi-category memberships. EPU rate: 57% for Friseure, 84% for FV 120. 99%+ of enterprises have fewer than 10 employees.</div>
 
-  <div class="sl">Notino DB — state-level distribution (n=13,306)</div>
+  <div class="sl">Official Statistics — active registrations by state (WKÖ 2025)</div>
   <div class="summary-wrap">
     <table>
-      <thead><tr><th>State / Region</th><th>Notino DB (salons)</th><th>% of Total</th><th>Population (approx.)</th><th>Salons per 1M Pop.</th></tr></thead>
+      <thead><tr><th>State</th><th>Friseure (FV 124)</th><th>Beauty (FV 120)</th><th>Combined</th><th>% of Total</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Wien (Vienna)</strong></td><td>1,884</td><td>4,116</td><td>6,000</td><td>17.4%</td></tr>
+        <tr><td><strong>Niederösterreich (Lower Austria)</strong></td><td>1,931</td><td>4,712</td><td>6,643</td><td>19.3%</td></tr>
+        <tr><td><strong>Oberösterreich (Upper Austria)</strong></td><td>1,700</td><td>4,357</td><td>6,057</td><td>17.6%</td></tr>
+        <tr><td><strong>Steiermark (Styria)</strong></td><td>1,627</td><td>3,586</td><td>5,213</td><td>15.1%</td></tr>
+        <tr><td><strong>Tirol (Tyrol)</strong></td><td>854</td><td>1,982</td><td>2,836</td><td>8.2%</td></tr>
+        <tr><td><strong>Salzburg</strong></td><td>765</td><td>1,814</td><td>2,579</td><td>7.5%</td></tr>
+        <tr><td><strong>Kärnten (Carinthia)</strong></td><td>745</td><td>1,722</td><td>2,467</td><td>7.2%</td></tr>
+        <tr><td><strong>Vorarlberg</strong></td><td>509</td><td>799</td><td>1,308</td><td>3.8%</td></tr>
+        <tr><td>Burgenland</td><td>400</td><td>977</td><td>1,377</td><td>4.0%</td></tr>
+        <tr style="background:var(--bg-secondary);font-weight:600"><td><strong>TOTAL (Austria)</strong></td><td><strong>10,415</strong></td><td><strong>24,065</strong></td><td><strong>34,480</strong></td><td><strong>100%</strong></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="note" style="margin-bottom:20px"><strong>Note:</strong> The combined column includes all FV 120 active memberships (incl. masseurs, piercers, tattooists) because state-level breakdowns by Berufszweig involve cross-membership. The Notino-relevant total of ~27,000 is derived from the national Berufszweig breakdown above.</div>
+
+  <div class="sl">Google Places DB — state-level distribution (n=13,306)</div>
+  <div class="summary-wrap">
+    <table>
+      <thead><tr><th>State / Region</th><th>Google Places DB</th><th>% of Total</th><th>Population (approx.)</th><th>Venues per 1M Pop.</th></tr></thead>
       <tbody>
         <tr><td><strong>Lower Austria</strong></td><td>2,630</td><td>19.8%</td><td>1.72M</td><td>~1,529</td></tr>
         <tr><td><strong>Upper Austria</strong></td><td>2,182</td><td>16.4%</td><td>1.54M</td><td>~1,417</td></tr>
@@ -605,56 +628,23 @@
     </table>
   </div>
 
-  <div class="sl">WKO qualifying salons by state</div>
+  <div class="sl">Google Places DB — top 11 cities by venue count</div>
   <div class="summary-wrap">
     <table>
-      <thead><tr><th>State / Region</th><th>Qualifying Salons (WKO est.)</th><th>% of Qualifying Total</th></tr></thead>
-      <tbody>
-        <tr><td>Niederosterreich (Lower Austria)</td><td>~1,621</td><td>18.8%</td></tr>
-        <tr><td>Oberosterreich (Upper Austria)</td><td>~1,517</td><td>17.6%</td></tr>
-        <tr><td>Wien (Vienna)</td><td>~1,405</td><td>16.3%</td></tr>
-        <tr><td>Steiermark (Styria)</td><td>~1,293</td><td>15.0%</td></tr>
-        <tr><td>Tirol (Tyrol)</td><td>~836</td><td>9.7%</td></tr>
-        <tr><td>Salzburg</td><td>~707</td><td>8.2%</td></tr>
-        <tr><td>Karnten (Carinthia)</td><td>~552</td><td>6.4%</td></tr>
-        <tr><td>Vorarlberg</td><td>~466</td><td>5.4%</td></tr>
-        <tr><td>Burgenland</td><td>~224</td><td>2.6%</td></tr>
-        <tr style="background:var(--bg-secondary);font-weight:600"><td><strong>TOTAL (Austria)</strong></td><td><strong>~8,620</strong></td><td><strong>100%</strong></td></tr>
-      </tbody>
-    </table>
-  </div>
-  <div class="note" style="margin-bottom:20px"><strong>Data reconciliation:</strong> ~33,350 registered beauty businesses; qualifying threshold eliminates ~74% as too small or inactive. The WKO estimate of ~8,620 represents commercially viable salons suitable for B2B partnership.</div>
-
-  <div class="sl">Top 11 cities by salon count (Notino DB)</div>
-  <div class="summary-wrap">
-    <table>
-      <thead><tr><th>#</th><th>City</th><th>Salon Count</th><th>% of Total</th></tr></thead>
+      <thead><tr><th>#</th><th>City</th><th>Venue Count</th><th>% of Total</th></tr></thead>
       <tbody>
         <tr><td>1</td><td><strong>Vienna</strong></td><td>1,611</td><td>12.1%</td></tr>
         <tr><td>2</td><td><strong>Graz</strong></td><td>574</td><td>4.3%</td></tr>
         <tr><td>3</td><td><strong>Linz</strong></td><td>490</td><td>3.7%</td></tr>
         <tr><td>4</td><td><strong>Salzburg</strong></td><td>396</td><td>3.0%</td></tr>
-        <tr><td>5</td><td><strong>Klagenfurt am Worthersee</strong></td><td>316</td><td>2.4%</td></tr>
+        <tr><td>5</td><td><strong>Klagenfurt am Wörthersee</strong></td><td>316</td><td>2.4%</td></tr>
         <tr><td>6</td><td><strong>Innsbruck</strong></td><td>307</td><td>2.3%</td></tr>
         <tr><td>7</td><td>Villach</td><td>226</td><td>1.7%</td></tr>
         <tr><td>8</td><td>Wels</td><td>213</td><td>1.6%</td></tr>
-        <tr><td>9</td><td>St Polten</td><td>200</td><td>1.5%</td></tr>
+        <tr><td>9</td><td>St Pölten</td><td>200</td><td>1.5%</td></tr>
         <tr><td>10</td><td>Wiener Neustadt</td><td>189</td><td>1.4%</td></tr>
         <tr><td>11</td><td>Dornbirn</td><td>182</td><td>1.4%</td></tr>
         <tr style="background:var(--bg-secondary)"><td colspan="2"><strong>Top 11 total</strong></td><td><strong>4,704</strong></td><td><strong>35.4%</strong></td></tr>
-      </tbody>
-    </table>
-  </div>
-
-  <!-- Non-verified sources -->
-  <div class="sl">Non-verified broader supply indicators</div>
-  <div class="summary-wrap">
-    <table>
-      <thead><tr><th>Source</th><th>Count</th><th>Notes</th><th>Status</th></tr></thead>
-      <tbody>
-        <tr class="warn-row"><td><strong>BoldData — "Beauticians in Austria"</strong></td><td>15,643</td><td>EUR 0.10–0.25 per record, min EUR 450. Broad classification — may include non-salon providers.</td><td><span class="warn-badge">&#9888; Non-verified</span></td></tr>
-        <tr class="warn-row"><td><strong>Bancomail — "Beauty centres Austria"</strong></td><td>3,162</td><td>Email addresses of beauty centres. Strong on email verification / GDPR compliance.</td><td><span class="warn-badge">&#9888; Non-verified</span></td></tr>
-        <tr class="warn-row"><td><strong>L'Oreal Professionnel Salon Directory</strong></td><td>1,681</td><td>Pre-2025, partner network only. High-quality professional salons but subset.</td><td><span class="warn-badge">&#9888; Non-verified</span></td></tr>
       </tbody>
     </table>
   </div>
@@ -2081,7 +2071,7 @@
     <div class="gtm-section">
       <div class="gtm-section-label">01 — Strategic core</div>
       <div class="gtm-section-title">Own the undigitised majority</div>
-      <div class="gtm-section-intro">Austria's real opportunity is not in fighting for the 7% of salons already on a booking platform. It is in the 93% that have never adopted one — and who don't yet realise that their existing clients are already active Notino shoppers generating revenue that could be flowing back to them.</div>
+      <div class="gtm-section-intro">Austria has ~27,000 active salon registrations in Notino-relevant categories (Official Statistics, WKÖ 2025). Our Google Places DB identifies 13,306 venues with a digital footprint. Only ~7% are on a booking platform. The real opportunity is the ~93% that have never adopted one — and who don't yet realise that their existing clients are already active Notino shoppers.</div>
 
       <div class="gtm-policy">
         <p>"We are not a booking tool. We are the only platform that pays your salon <em>every time your client buys a product online</em> — from a customer base they already have."</p>
@@ -2113,7 +2103,7 @@
         <div class="gtm-tier gtm-tier-1a">
           <span class="gtm-tier-badge gtm-badge-1a">Tier 1A — Primary</span>
           <h4>Undigitised salons, no competitor exposure</h4>
-          <p>The ~93% majority. No booking software, taking appointments by phone or walk-in. Vienna anchor, then Graz, Linz, Salzburg.</p>
+          <p>The vast majority of ~27,000 registered salons. No booking software, taking appointments by phone or walk-in. Vienna anchor, then Graz, Linz, Salzburg.</p>
           <ul>
             <li>15–20+ appointments per month</li>
             <li>Active on Instagram even without a booking link</li>
@@ -2147,7 +2137,7 @@
         <div class="gtm-comp">
           <h5>Treatwell</h5>
           <span class="threat" style="color:var(--color-strong-pink);">High threat — current leader</span>
-          <p>~7% market share, ~1,750 salons. Strong loyalty but severe pricing pain: 35% commission on first client.</p>
+          <p>~1,750 salons (Google Places DB), roughly 6–7% of total market. Strong loyalty but severe pricing pain: 35% commission on first client.</p>
         </div>
         <div class="gtm-comp">
           <h5>Fresha</h5>
