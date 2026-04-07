@@ -322,6 +322,17 @@
   .gtm-budget-cell .amount{font-size:24px;font-weight:700;color:var(--text-primary);letter-spacing:-.5px}
   .gtm-budget-cell .pct{font-size:12px;color:var(--color-strong-pink);margin-top:2px;font-weight:600}
   .gtm-budget-cell .desc{font-size:12px;color:var(--text-secondary);margin-top:8px;line-height:1.55}
+  .gtm-inf-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;margin-bottom:20px}
+  .gtm-inf{background:var(--bg-primary);border:0.5px solid var(--border-light);border-radius:var(--radius);padding:14px 16px;transition:border-color .15s}
+  .gtm-inf:hover{border-color:var(--color-strong-pink)}
+  .gtm-inf .tier{font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;margin-bottom:6px;display:block}
+  .gtm-inf .t1{color:var(--color-strong-pink)}
+  .gtm-inf .t2{color:var(--color-sky-blue)}
+  .gtm-inf .t3{color:var(--color-nude-600)}
+  .gtm-inf h5{font-size:13px;font-weight:600;margin-bottom:2px}
+  .gtm-inf .handle{font-size:11px;color:var(--color-sky-blue);margin-bottom:4px}
+  .gtm-inf .followers{font-size:11px;font-weight:500;color:var(--text-tertiary);margin-bottom:6px}
+  .gtm-inf .role{font-size:11px;color:var(--text-secondary);line-height:1.55}
   .gtm-channel-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-bottom:20px}
   .gtm-channel{background:var(--bg-primary);border:0.5px solid var(--border-light);border-radius:var(--radius);padding:14px 16px}
   .gtm-ch-tag{display:inline-block;font-size:10px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;padding:2px 8px;border-radius:999px;margin-bottom:8px}
@@ -370,7 +381,7 @@
   .gtm-list li{font-size:12px;color:var(--text-secondary);padding-left:12px;border-left:2px solid var(--color-strong-pink);line-height:1.6}
   .gtm-list-blue li{border-left-color:var(--color-sky-blue)}
   @media(max-width:900px){
-    .gtm-hero-stats,.gtm-pos-grid,.gtm-tier-grid,.gtm-comp-grid,.gtm-season-grid{grid-template-columns:1fr 1fr}
+    .gtm-hero-stats,.gtm-pos-grid,.gtm-tier-grid,.gtm-comp-grid,.gtm-season-grid,.gtm-inf-grid{grid-template-columns:1fr 1fr}
     .gtm-ooh-grid,.gtm-two-col,.gtm-brand-grid,.gtm-lm-grid,.gtm-budget-grid{grid-template-columns:1fr}
   }
 </style>
