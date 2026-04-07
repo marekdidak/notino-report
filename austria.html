@@ -570,7 +570,7 @@
 <div id="tab-salons" class="tab-pane">
 
   <div class="banner banner-blue">
-    <strong>Two data sources.</strong> Official Statistics: ~27,000 active registrations in Notino-relevant categories (WKÖ, Feb 2026 — Friseure + Kosmetiker + Nagelstudios + Fußpfleger + Visagisten + Permanentmakeup). Google Places DB: 13,306 beauty-service venues with a digital footprint (deduplicated, Feb 2026).
+    <strong>Two data sources.</strong> Official Statistics: ~27,000 total registrations in Notino-relevant categories (WKÖ, Feb 2026 — Friseure + Kosmetiker + Nagelstudios + Fußpfleger + Visagisten + Permanentmakeup), with approximately 24,000 estimated active. Google Places DB: 13,306 beauty-service venues with a digital footprint (deduplicated, Feb 2026).
   </div>
 
   <div class="sl">Official Statistics — active registrations by category (WKÖ 2025)</div>
@@ -609,24 +609,6 @@
     </table>
   </div>
   <div class="note" style="margin-bottom:20px"><strong>Note:</strong> The combined column includes all FV 120 active memberships (incl. masseurs, piercers, tattooists) because state-level breakdowns by Berufszweig involve cross-membership. The Notino-relevant total of ~27,000 is derived from the national Berufszweig breakdown above.</div>
-
-  <div class="sl">Google Places DB — state-level distribution (n=13,306)</div>
-  <div class="summary-wrap">
-    <table>
-      <thead><tr><th>State / Region</th><th>Google Places DB</th><th>% of Total</th><th>Population (approx.)</th><th>Venues per 1M Pop.</th></tr></thead>
-      <tbody>
-        <tr><td><strong>Lower Austria</strong></td><td>2,630</td><td>19.8%</td><td>1.72M</td><td>~1,529</td></tr>
-        <tr><td><strong>Upper Austria</strong></td><td>2,182</td><td>16.4%</td><td>1.54M</td><td>~1,417</td></tr>
-        <tr><td><strong>Styria</strong></td><td>1,774</td><td>13.4%</td><td>1.27M</td><td>~1,397</td></tr>
-        <tr><td><strong>Vienna</strong></td><td>1,610</td><td>12.1%</td><td>1.94M</td><td>~830</td></tr>
-        <tr><td><strong>Carinthia</strong></td><td>1,259</td><td>9.5%</td><td>0.57M</td><td>~2,209</td></tr>
-        <tr><td><strong>Tyrol</strong></td><td>1,166</td><td>8.8%</td><td>0.79M</td><td>~1,495</td></tr>
-        <tr><td><strong>Salzburg</strong></td><td>1,141</td><td>8.6%</td><td>0.57M</td><td>~2,002</td></tr>
-        <tr><td><strong>Vorarlberg</strong></td><td>938</td><td>7.1%</td><td>0.40M</td><td>~2,345</td></tr>
-        <tr><td>Burgenland</td><td>146</td><td>1.1%</td><td>0.30M</td><td>~487</td></tr>
-      </tbody>
-    </table>
-  </div>
 
   <div class="sl">Google Places DB — top 11 cities by venue count</div>
   <div class="summary-wrap">
@@ -751,7 +733,7 @@
     <div style="margin-top:10px;font-size:13px">🔗 <a href="https://www.treatwell.at/partners/#" target="_blank" rel="noopener" style="color:var(--green-600)">Treatwell Partner (B2B): treatwell.at/partners</a></div>
 
     <div class="collapsible">
-      <button class="collapsible-toggle" onclick="toggleCollapsible(this)">🎯 Ad Creative Library &amp; Strategic Resources</button>
+      <button class="collapsible-toggle" style="font-size:15px;border-left:4px solid var(--color-strong-pink);padding-left:16px;background:linear-gradient(90deg, var(--color-pink-100), transparent);font-weight:700;" onclick="toggleCollapsible(this)">🎯 Ad Creative Library &amp; Strategic Resources</button>
       <div class="collapsible-content">
 
         <div class="sl">Live Ad Libraries (Facebook)</div>
@@ -1193,7 +1175,7 @@
           <tr><td class="ch-cat">Instagram</td><td>Influencer/UGC partnerships, beauty inspiration, booking CTAs, seasonal content</td><td>Active DACH account</td></tr>
           <tr><td class="ch-cat">TikTok</td><td>@treatwellofficial — beauty trends, behind-the-scenes, short-form video</td><td>~8.7k followers, 80k+ likes</td></tr>
           <tr><td class="ch-cat">YouTube</td><td>DE channel — brand campaigns, salon spotlights, beauty how-tos</td><td>Active DE channel</td></tr>
-          <tr><td class="ch-cat">TV / OOH</td><td>Seven-figure "brighter way to book beauty" campaign — Channel 4, Sky, ITV + OOH + social amplification</td><td>Multi-country, high-budget ATL</td></tr>
+          <tr><td class="ch-cat">TV / OOH</td><td>Seven-figure "brighter way to book beauty" campaign — UK market only (Channel 4, Sky, ITV + OOH). Not active in Austria.</td><td>UK only — not AT-relevant</td></tr>
           <tr><td class="ch-cat">B2B</td><td>Treatwell Pro / Connect pages, email marketing to salon partners, in-app partner comms</td><td>Dedicated B2B onboarding funnel</td></tr>
         </tbody>
       </table>
@@ -2148,32 +2130,89 @@
   </div>
 
   <div class="gtm-hero-stats">
-    <div class="gtm-hero-stat"><div class="val">~25,000</div><div class="lbl">Total salons in Austria</div></div>
-    <div class="gtm-hero-stat"><div class="val">~93%</div><div class="lbl">Undigitised — primary target</div></div>
+    <div class="gtm-hero-stat"><div class="val">~27,000</div><div class="lbl">Registered salons (WKÖ)</div></div>
     <div class="gtm-hero-stat"><div class="val">5%</div><div class="lbl">Commission on Notino e-shop</div></div>
     <div class="gtm-hero-stat"><div class="val">€150k</div><div class="lbl">Annual budget</div></div>
   </div>
 
   <!-- SUBTABS for GTM sections -->
   <div class="subtabs" style="width:100%;flex-wrap:wrap;">
-    <button class="subtab active" onclick="showSubTab('gtm-strategy', this)">Strategy</button>
+    <button class="subtab active" onclick="showSubTab('gtm-overview', this)">Overview</button>
+    <button class="subtab" onclick="showSubTab('gtm-strategy', this)">Strategy</button>
     <button class="subtab" onclick="showSubTab('gtm-funnel', this)">Funnel</button>
     <button class="subtab" onclick="showSubTab('gtm-budget', this)">Budget</button>
     <button class="subtab" onclick="showSubTab('gtm-influencers', this)">Influencers</button>
     <button class="subtab" onclick="showSubTab('gtm-multi', this)">Multicultural</button>
-    <button class="subtab" onclick="showSubTab('gtm-ooh', this)">OOH</button>
     <button class="subtab" onclick="showSubTab('gtm-leads', this)">Lead Magnets</button>
-    <button class="subtab" onclick="showSubTab('gtm-activation', this)">Activation</button>
     <button class="subtab" onclick="showSubTab('gtm-creative', this)">Creative</button>
     <button class="subtab" onclick="showSubTab('gtm-digital', this)">Digital Targeting</button>
   </div>
 
+  <!-- GTM SUB: OVERVIEW -->
+  <div id="subtab-gtm-overview" class="subtab-pane active">
+    <div class="gtm-section">
+      <div class="gtm-section-label">How we win Austria</div>
+      <div class="gtm-section-title">Revenue growth partner, not booking software</div>
+      <div class="gtm-section-intro">This is a market entry strategy for Notino Partner in Austria. The objective is 500–800 active partner salons in year one, acquired through a full-funnel approach with a €150k annual budget launching in June 2026.</div>
+
+      <div class="gtm-policy">
+        <p>"We are not a booking tool. We are the only platform that pays your salon every time your client buys a product online — and those clients are already shopping at Notino."</p>
+      </div>
+
+      <div class="sl">The strategic logic</div>
+      <div class="gtm-pos-grid">
+        <div class="gtm-pos-card">
+          <div class="icon gtm-icon-pink">💰</div>
+          <h4>The 5% weapon</h4>
+          <p>No competitor offers product commission revenue. Treatwell charges 35% on new clients. Fresha broke trust with hidden fees. Notino Partner is free AND pays salons 5% on every product their clients buy on the Notino e-shop. This is the single most differentiated message in the market.</p>
+        </div>
+        <div class="gtm-pos-card">
+          <div class="icon gtm-icon-blue">🏙️</div>
+          <h4>Vienna first, then radiate</h4>
+          <p>Vienna has the highest salon density, the strongest multicultural opportunity, and the most competitor overlap. Prove the model in Vienna in months 1–4, then expand to Graz, Linz, and Salzburg with validated creative and real conversion data.</p>
+        </div>
+        <div class="gtm-pos-card">
+          <div class="icon gtm-icon-nude">🌍</div>
+          <h4>The multicultural lever</h4>
+          <p>46% of Vienna's population has a migration background. Turkish, Balkan, and Middle-Eastern salon owners run a significant share of Vienna's undigitised salons — invisible to every competitor's digital campaigns. Physical outreach in Favoriten, Ottakring, and Rudolfsheim-Fünfhaus is the highest-ROI acquisition channel for this segment.</p>
+        </div>
+      </div>
+
+      <div class="sl">How the funnel works</div>
+      <div class="note">
+        <strong>Awareness</strong> (B2B influencers, Instagram organic, multicultural outreach) creates visibility among salon owners who have never considered a booking platform.<br><br>
+        <strong>Consideration</strong> (Google Search, Meta Ads, lead magnets) captures intent from salon owners actively searching or triggered by awareness. The Revenue Calculator and group calls surface buying intent and collect contacts.<br><br>
+        <strong>Conversion</strong> (self-registration landing page, retargeting, launch event) turns warm leads into registered partners. The country specialist's personal outreach is the highest-converting channel.<br><br>
+        <strong>Activation</strong> (onboarding calls, email sequences, WhatsApp community) keeps registered salons engaged during the pre-B2C gap. B2C booking goes live ~September — salons that registered in June must feel like insiders, not forgotten early adopters.<br><br>
+        <strong>Referral</strong> (€50 partner programme from month 5) turns satisfied early partners into recruiters. Peer trust is the most powerful acquisition mechanism in the salon industry.
+      </div>
+
+      <div class="sl">Key assumptions to validate</div>
+      <div class="gtm-two-col">
+        <div>
+          <ul class="gtm-list">
+            <li>Salon owners will respond to "passive income" messaging more than "free booking software"</li>
+            <li>The 5% product commission is large enough to be meaningful for solo operators</li>
+            <li>Self-registration can work at scale without a dedicated sales team</li>
+          </ul>
+        </div>
+        <div>
+          <ul class="gtm-list gtm-list-blue">
+            <li>Multicultural outreach via physical walking visits converts at a meaningful rate</li>
+            <li>The pre-B2C gap (June–September) can be bridged without losing registrations</li>
+            <li>Vienna proof-of-concept translates to secondary cities</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- GTM SUB: STRATEGY -->
-  <div id="subtab-gtm-strategy" class="subtab-pane active">
+  <div id="subtab-gtm-strategy" class="subtab-pane">
     <div class="gtm-section">
       <div class="gtm-section-label">01 — Strategic core</div>
       <div class="gtm-section-title">Own the undigitised majority</div>
-      <div class="gtm-section-intro">Austria has ~27,000 active salon registrations in Notino-relevant categories (Official Statistics, WKÖ 2025). Our Google Places DB identifies 13,306 venues with a digital footprint. Only ~7% are on a booking platform. The real opportunity is the ~93% that have never adopted one — and who don't yet realise that their existing clients are already active Notino shoppers.</div>
+      <div class="gtm-section-intro">Austria has ~27,000 salon registrations in Notino-relevant categories (Official Statistics, WKÖ 2025), with ~24,000 estimated active. Our Google Places DB identifies 13,306 venues with a digital footprint. The vast majority have never adopted a booking platform — and most don't yet realise that their existing clients are already active Notino shoppers.</div>
 
       <div class="gtm-policy">
         <p>"We are not a booking tool. We are the only platform that pays your salon <em>every time your client buys a product online</em> — from a customer base they already have."</p>
@@ -2433,110 +2472,81 @@
     </div>
   </div>
 
-  <!-- GTM SUB: OOH -->
-  <div id="subtab-gtm-ooh" class="subtab-pane">
-    <div class="gtm-section">
-      <div class="gtm-section-label">06 — Out-of-home</div>
-      <div class="gtm-section-title">Vienna transit — inside the performance funnel</div>
-      <div class="gtm-section-intro">OOH is front-loaded to months 1–4 and treated as a performance channel. Every placement drives to notino.at/partner-wien with UTM parameters. If it doesn't contribute to the self-registration pipeline, it doesn't run.</div>
-
-      <div class="gtm-ooh-grid">
-        <div class="gtm-ooh">
-          <h5>U3 Zieglergasse — Gewista Brand Area</h5>
-          <p>Located beneath Mariahilfer Straße at the boundary of the 6th and 7th districts. Direct access point to the most salon-dense streets in Vienna.</p>
-          <div class="gtm-copy-block">
-            <p>"Ihre Kunden kaufen schon bei Notino. Jetzt verdienen auch Sie daran."</p>
-            <div class="sub">Sub-line: "Jetzt kostenlos Notino Partner werden – ohne Einstiegsgebühr, ohne Erstbuchungs-Provision." QR → notino.at/partner-wien</div>
-          </div>
-        </div>
-        <div class="gtm-ooh">
-          <h5>U3 Neubaugasse — Gewista + Megaboard</h5>
-          <p>Central Mariahilfer Straße node. Megaboard 126m² façade with ~1M contact chances. Hair by Ulli salon is a three-minute walk.</p>
-          <div class="gtm-copy-block">
-            <p>"Ihr Salon. Ihre Kunden. Ihr Verdienst — auch online."</p>
-            <div class="sub">Megaboard format: giant serif type, full-bleed. QR → notino.at/partner-wien. Providers: Megaboard.at, Stadtwerbung.at / Gewista.</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="note"><strong>OOH as content generator:</strong> Every placement is photographed and filmed on installation day. The country specialist and at least one Tier 2 creator visit for a "Look what's happening in Vienna" Reel. The outdoor spend doubles as organic content.</div>
-
-      <div class="note" style="margin-top:12px;"><strong>OOH + walking outreach:</strong> Neubaugasse and Zieglergasse are within 10 minutes of Rudolfsheim-Fünfhaus. Salon owners who see the poster and then get a visit convert at a significantly higher rate than either touchpoint alone.</div>
-    </div>
-  </div>
-
   <!-- GTM SUB: LEAD MAGNETS -->
   <div id="subtab-gtm-leads" class="subtab-pane">
     <div class="gtm-section">
-      <div class="gtm-section-label">07 — Lead magnets</div>
+      <div class="gtm-section-label">06 — Lead magnets</div>
       <div class="gtm-section-title">Surface intent, don't educate</div>
-      <div class="gtm-section-intro">Every lead magnet answers a question the salon is already asking and makes Notino the logical conclusion. The magnet must surface buying intent and collect a contact — not simply inform.</div>
+      <div class="gtm-section-intro">One lead magnet per funnel stage. Each answers a question the salon is already asking and makes Notino the logical conclusion. The magnet must surface buying intent and collect a contact — not simply inform.</div>
 
       <div class="gtm-lm-grid">
         <div class="gtm-lm">
           <div class="num">01</div>
-          <h4>Salon Revenue Calculator</h4>
+          <h4>Salon Revenue Calculator <span style="font-size:11px;color:var(--text-tertiary);font-weight:400;">(ToFu — surfaces intent)</span></h4>
           <p>Mobile-first web tool. Three inputs: monthly clients, product recommendation rate, average basket value. Output: estimated monthly Notino commission in euros.</p>
           <p style="margin-top:8px;font-size:12px;color:var(--text-secondary);">"If 20% of your regulars buy via Notino, your salon earns ~€X extra per month."</p>
           <div class="cta">Distribution: pinned in influencer bios, seeded in Facebook groups, linked in every webinar.</div>
         </div>
         <div class="gtm-lm">
           <div class="num">02</div>
-          <h4>Booking Setup Benchmark Quiz</h4>
-          <p>5-question flow. Questions: how clients currently book, current commission rate, whether they earn from online product purchases, monthly software cost, priority.</p>
-          <p style="margin-top:8px;font-size:12px;color:var(--text-secondary);">Result: "Sie lassen schätzungsweise €X pro Monat liegen."</p>
-          <div class="cta">Primary channel: Meta lead ads targeting salon owner interests.</div>
-        </div>
-        <div class="gtm-lm">
-          <div class="num">03</div>
-          <h4>Monthly 30-Minute Group Calls</h4>
+          <h4>Monthly 30-Minute Group Calls <span style="font-size:11px;color:var(--text-tertiary);font-weight:400;">(MoFu — converts interest to trust)</span></h4>
           <p>Zoom/Meet. Monthly. Hosted by Austrian country specialist + one featured salon partner. 10 min intro, 10 min live demo, 10 min Q&amp;A.</p>
           <p style="margin-top:8px;font-size:12px;color:var(--text-secondary);">"Wie Wiener Salons 2026 mehr verdienen (ohne mehr zu arbeiten)"</p>
           <div class="cta">Promoted in all Facebook groups, cross-posted via creator stories.</div>
+        </div>
+        <div class="gtm-lm">
+          <div class="num">03</div>
+          <h4>Self-Registration Walkthrough <span style="font-size:11px;color:var(--text-tertiary);font-weight:400;">(BoFu — closes the gap)</span></h4>
+          <p>Short personal video from the country specialist showing the actual registration process and first-week experience. Screen-recorded, unscripted, under 5 minutes. Removes the last friction between intent and action.</p>
+          <p style="margin-top:8px;font-size:12px;color:var(--text-secondary);">"So sieht die Registrierung wirklich aus — und so sieht Ihre erste Woche als Notino Partner aus."</p>
+          <div class="cta">Distribution: retargeting ads for visitors who started but didn't complete registration, email nurture sequence, WhatsApp community.</div>
         </div>
       </div>
 
       <div class="gtm-webinar-grid">
         <div class="gtm-webinar"><h5>Ongoing webinar topics (M4+)</h5><p>Social media for salons · Pricing psychology · Client retention without discounting · How to earn more from existing clients · Tax-efficient structures for Austrian solo operators</p></div>
-        <div class="gtm-webinar"><h5>Guest host sourcing</h5><p>Kitti Dalma and Marie Schnoell for hair-niche content. Murat Demir for barbershop audience. Minja Milic for Balkan community session. Tier 2 salon owners for case-study slots.</p></div>
+        <div class="gtm-webinar"><h5>Guest host sourcing</h5><p>Use confirmed campaign influencer roster — see separate influencer briefing document.</p></div>
       </div>
-    </div>
-  </div>
-
-  <!-- GTM SUB: ACTIVATION -->
-  <div id="subtab-gtm-activation" class="subtab-pane">
-    <div class="gtm-section">
-      <div class="gtm-section-label">08 — Activation &amp; the 2-month gap</div>
-      <div class="gtm-section-title">Keep registered salons engaged before B2C goes live</div>
-      <div class="gtm-section-intro">The gap between B2B registration (June) and B2C booking going live (September) is the most dangerous window. Salons that register and see zero booking activity for two months will churn. The activation programme makes them feel like insiders.</div>
-
-      <div class="gtm-timeline">
-        <div class="gtm-week"><div class="gtm-week-label">Week 1</div><div><h5>White-glove onboarding call</h5><p>Personal call from the country specialist — not automated. Focuses on profile completeness, photo quality, and setting expectations for the September launch.</p></div></div>
-        <div class="gtm-week"><div class="gtm-week-label">Weeks 2–8</div><div><h5>Weekly email sequence — one action per email</h5><p>Each email delivers one practical insight and one action: optimise your product page / set up referral link / check commission tracker / invite a peer.</p></div></div>
-        <div class="gtm-week"><div class="gtm-week-label">M1–ongoing</div><div><h5>WhatsApp Early Access community</h5><p>"Notino Partner Österreich Early Access" — entry only via post-registration Danke page and personal invite. Weekly prompt, monthly live voice note. Intentionally diverse community.</p></div></div>
-        <div class="gtm-week"><div class="gtm-week-label">Month 5</div><div><h5>Referral programme activation</h5><p>Launch €50 partner referral only once a base of satisfied early partners exists. By month 5, weekly emails and community engagement create a cohort ready to advocate.</p></div></div>
-        <div class="gtm-week"><div class="gtm-week-label">September</div><div><h5>B2C booking goes live — insider moment</h5><p>Communicate launch to registered partners before it goes public. "As an early partner, your profile is live before the general announcement." First-mover visibility is real.</p></div></div>
-      </div>
-
-      <div class="note"><strong>What not to do:</strong> Do not offer financial incentives (free credits, bonus commissions) to drive early registrations. Buying signups creates a cohort that registered for the incentive, not the product — they churn before launch.</div>
     </div>
   </div>
 
   <!-- GTM SUB: CREATIVE -->
   <div id="subtab-gtm-creative" class="subtab-pane">
     <div class="gtm-section">
-      <div class="gtm-section-label">09 — Creative direction</div>
+      <div class="gtm-section-label">07 — Creative direction</div>
       <div class="gtm-section-title">Revenue-first, feel-good always</div>
       <div class="gtm-section-intro">All creative leads with incremental revenue. The feel-good brand guideline applies throughout — no competitor naming, no aggressive comparisons. Master message: <em>"Your clients already shop at Notino. Now you get paid for it."</em></div>
 
-      <div class="sl">Ad formats and copy direction</div>
-      <div class="gtm-ad"><div class="label">Meta video · 15 seconds</div><div class="copy">A salon owner checks her phone. A notification: a client just bought her recommended shampoo on Notino. A counter ticks up. No voiceover. Caption: "Ihre Kunden kaufen schon bei Notino. Jetzt verdienen auch Sie daran."</div></div>
-      <div class="gtm-ad"><div class="label">Google Display · static</div><div class="copy">Headline: "Ihre Kunden kaufen bei Notino — Sie auch schon verdient?" Simple split layout: left, a Notino shopping bag; right, a salon commission counter. Sub-headline: "Kostenlos. Ohne Überraschungen."</div></div>
-      <div class="gtm-ad"><div class="label">Instagram Reel · organic · non-follower format</div><div class="copy">Country specialist walks into a Vienna barbershop, asks the owner: "Wie viel verdienen Sie, wenn Ihre Kunden online einkaufen?" Owner: "Gar nichts." Cut to: dashboard showing commission total. Text overlay: "Das können wir ändern."</div></div>
-      <div class="gtm-ad"><div class="label">Google Search · Treatwell defector cluster</div><div class="copy">Headline: "Salon-Software ohne Provision | Notino Partner kostenlos". Description: "Keine Erstbuchungsprovision. Keine versteckten Gebühren. Und Ihre Kunden verdienen für Sie weiter."</div></div>
-      <div class="gtm-ad"><div class="label">OOH headline · large format</div><div class="copy">"Ihre Kunden kaufen schon bei Notino. Jetzt verdienen auch Sie daran." — large serif type. QR → notino.at/partner-wien with UTM tracking.</div></div>
+      <div class="sl">Creative insights for idea makers</div>
+      <div class="note" style="margin-bottom:16px;"><strong>These are not briefs.</strong> They are tension points and hypotheses for the creative team to explore. The best ad will come from someone who understands these dynamics — not from a prescribed format.</div>
 
-      <div class="divider"></div>
+      <div class="gtm-lm-grid">
+        <div class="gtm-lm">
+          <div class="num">01</div>
+          <h4>The commission guilt</h4>
+          <p>Salon owners already recommend products to clients every day — verbally, informally, for free. They create demand they never capture. The emotional tension: "I'm already doing this. Why am I not getting paid for it?" This is not about greed — it's about recognition of invisible labour.</p>
+        </div>
+        <div class="gtm-lm">
+          <div class="num">02</div>
+          <h4>Earning while you sleep — what does it actually mean for a solo operator?</h4>
+          <p>A solo salon owner works 10-hour days on their feet. "Passive income" sounds like a fantasy from a different world. The creative challenge: make the 5% commission feel real, tangible, and earned — not like a gimmick. Show the notification on a phone at 11pm. Show the monthly total next to a grocery receipt. Ground it in their actual life.</p>
+        </div>
+        <div class="gtm-lm">
+          <div class="num">03</div>
+          <h4>Paper diary vs. commission dashboard</h4>
+          <p>The visual contrast between old and new. A handwritten appointment book (still used by most Austrian salons) next to a phone showing real commission income. Not mocking the old way — honouring it while showing what's missing. "Your diary tracks appointments. This tracks income you didn't know you had."</p>
+        </div>
+        <div class="gtm-lm">
+          <div class="num">04</div>
+          <h4>The Treatwell scar</h4>
+          <p>Many salon owners have been burned by platforms that promised exposure and delivered commission pain. Treatwell's 35% on first clients, Fresha's bait-and-switch from "free forever." The creative must acknowledge this history without naming names. "We know you've heard 'free' before. Here's why this time is different."</p>
+        </div>
+        <div class="gtm-lm">
+          <div class="num">05</div>
+          <h4>The multicultural identity tension</h4>
+          <p>Turkish and Balkan salon owners in Vienna navigate between their cultural community and the Austrian business environment every day. Creative that reflects this — bilingual content, diverse faces, neighbourhood-specific imagery — signals "we see you" in a market where every other platform's advertising shows only Austrian-coded aesthetics.</p>
+        </div>
+      </div>
 
       <div class="sl">Distinctive B2B brand assets</div>
       <div class="gtm-brand-grid">
@@ -2551,9 +2561,14 @@
   <!-- GTM SUB: DIGITAL TARGETING -->
   <div id="subtab-gtm-digital" class="subtab-pane">
     <div class="gtm-section">
-      <div class="gtm-section-label">10 — Digital targeting</div>
+      <div class="gtm-section-label">08 — Digital targeting</div>
       <div class="gtm-section-title">How to reach them in-platform</div>
       <div class="gtm-section-intro">Concrete audience configurations, keyword clusters, and retargeting rules. Copy–paste-ready for Meta Business Suite and Google Ads.</div>
+
+      <div class="banner banner-amber" style="margin-top:16px;">
+        <strong>⚠ Challenge This Assumption</strong><br>
+        Standard interest-based digital targeting (beauty + business owner) reaches a broad audience but may have low precision for independent salon owners. Before scaling spend, validate whether Meta business page admin targeting, YouTube business content pre-roll, or trade media placements outperform standard interest targeting in the Austrian market. Run a 3-channel split test in Month 1 before committing budget.
+      </div>
 
       <div class="sl">Meta Ads — audience architecture</div>
       <div style="overflow-x:auto;margin-bottom:16px;">
