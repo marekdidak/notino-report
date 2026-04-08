@@ -2263,7 +2263,7 @@
     <button class="subtab" onclick="showSubTab('gtm-budget', this)">Budget</button>
     <button class="subtab" onclick="showSubTab('gtm-influencers', this)">Influencers</button>
     <button class="subtab" onclick="showSubTab('gtm-tourist', this)">Tourist Moat</button>
-    <button class="subtab" onclick="showSubTab('gtm-leads', this)">Lead Magnets</button>
+
     <button class="subtab" onclick="showSubTab('gtm-creative', this)">Creative</button>
     <button class="subtab" onclick="showSubTab('gtm-digital', this)">Digital Targeting</button>
   </div>
@@ -2416,6 +2416,11 @@
         </tbody>
       </table>
       </div>
+      <div style="margin-top:16px;display:flex;flex-direction:column;gap:6px;">
+        <p style="font-size:11px;color:var(--text-tertiary);">→ See Creative tab for asset brief: Salon-Business IQ Test (ToFu)</p>
+        <p style="font-size:11px;color:var(--text-tertiary);">→ See Creative tab for asset brief: "Zarađujte više" Live Webinar (MoFu)</p>
+        <p style="font-size:11px;color:var(--text-tertiary);">→ See Creative tab for asset brief: Kalkulator prihoda salona (BoFu)</p>
+      </div>
     </div>
   </div>
 
@@ -2535,25 +2540,20 @@
     </div>
   </div>
 
-  <!-- GTM SUB: LEAD MAGNETS -->
-  <div id="subtab-gtm-leads" class="subtab-pane">
-    <div class="gtm-section">
-      <div class="gtm-section-label">07 — Lead magnets</div>
-      <div class="gtm-section-title">Surface intent through tools, not content</div>
-      <div class="gtm-section-intro">Croatia's community culture means word-of-mouth and peer validation carry more weight than polished brand content. Every tool should generate a number the salon owner wants to share with a colleague.</div>
-
-      <div class="gtm-lm-grid">
-        <div class="gtm-lm"><div class="num">01</div><h4>Salon-Business IQ Test <span style="font-size:11px;color:var(--text-tertiary);font-weight:400;">(ToFu — Awareness)</span></h4><p>A 5–6 question quiz challenging salon owners on how well they actually run their business. Framed as a knowledge/ego challenge — not a pain-first hook. Questions cover booking habits, no-show rate, retail upsell, peak season prep, and platform costs. Output: one of three result tiers (Početnik / Salon-Profesionalac / Top-Salon) with a 2-line personalised insight in Croatian. Result page bridges naturally to Notino: "Top saloni sada zatvaraju jaz u prihodima s jednim dodatnim izvorom prihoda."</p><p style="margin-top:8px;font-size:12px;color:var(--text-secondary);">CTA on result page: "Započnite besplatno — pogledajte kako."</p><div class="cta">Build: Typeform or Tally. 2 days. Works in Croatian and English with minimal adaptation. Highly shareable in salon Facebook groups and WhatsApp communities.</div><p style="margin-top:8px;font-size:11px;color:var(--text-tertiary);font-style:italic;">Framework note: Hooks on ego and curiosity, not pain. Salon owners want to prove they are good at business. Shareability drives organic ToFu reach beyond paid.</p></div>
-        <div class="gtm-lm"><div class="num">02</div><h4>Salon Revenue Calculator</h4><p>Same mechanic as Austria with Croatian defaults. Three inputs: monthly clients, product recommendation rate, basket value. Output: estimated monthly passive commission.</p><p style="margin-top:8px;font-size:12px;color:var(--text-secondary);">"Ako 20% tvojih klijenata kupuje na Notinu, tvoj salon zarađuje ~€X mjesečno."</p><div class="cta">Primary: Meta lead ads. Also promoted in monthly group calls.</div></div>
-        <div class="gtm-lm"><div class="num">03</div><h4>Monthly Group Calls — Croatian format</h4><p>30-min Zoom. Country manager + featured salon partner. 10 min intro, 10 min demo, 10 min Q&amp;A. The conversational culture means Q&amp;A runs long — allow it.</p><p style="margin-top:8px;font-size:12px;color:var(--text-secondary);">"Kako zaraditi dok spavaš: Notino Partner za HR salone" / "Split, Dubrovnik, Hvar: kako privući turiste ovog ljeta."</p><div class="cta">Promoted in Croatian beauty Facebook groups and via influencer stories.</div></div>
-      </div>
-    </div>
-  </div>
-
   <!-- GTM SUB: CREATIVE -->
   <div id="subtab-gtm-creative" class="subtab-pane">
     <div class="gtm-section">
-      <div class="gtm-section-label">08 — Creative direction</div>
+      <div class="gtm-section-label">07 — Creative direction</div>
+
+      <!-- THE UMBRELLA -->
+      <div style="background:#1a1a1a;color:#fff;border-radius:var(--radius-lg);padding:32px 36px;margin-bottom:28px;">
+        <div style="font-size:20px;font-weight:700;margin-bottom:14px;letter-spacing:-.3px;">One Position. One Message. Everything Aligned.</div>
+        <p style="font-size:13px;line-height:1.7;color:rgba(255,255,255,.85);margin-bottom:12px;"><strong style="color:#fff;">Position:</strong> Revenue Growth Partner — the only booking platform that pays salons, not just serves them.</p>
+        <p style="font-size:13px;line-height:1.7;color:rgba(255,255,255,.85);margin-bottom:12px;"><strong style="color:#fff;">Content lens:</strong> "Earn more from clients you already have."</p>
+        <p style="font-size:12px;line-height:1.7;color:rgba(255,255,255,.65);">Every creative asset, every lead magnet, every influencer brief, every ad must answer one question: <em>how does this show a salon owner earning more from clients they already have?</em> If it doesn't answer that question, it doesn't ship.</p>
+      </div>
+
+      <!-- CREATIVE TESTING INSIGHTS -->
       <div class="gtm-section-title">Income-first. Tourism-proof. Feel-good always.</div>
       <div class="gtm-section-intro">Two parallel narratives: income generation (Zagreb/inland) and tourist access (coastal). Both carry the master message. Feel-good guideline throughout — no competitor attacks.</div>
 
@@ -2564,41 +2564,69 @@
         <div class="gtm-lm">
           <div class="num">01</div>
           <h4>The invisible tourist revenue</h4>
-          <p>A coastal salon owner watches hundreds of German and Austrian tourists walk past every day — tourists who actively want beauty services but have no way to book. The emotional tension: "They're looking for you, and they can't find you." The visual: an empty appointment slot next to a crowded beach. Make the lost revenue feel tangible.</p>
+          <p>90.7% of Croatia's overnight stays are foreign. German, Austrian, Italian tourists have no way to book a local salon. Salon owners in Split and Dubrovnik serve walk-ins who found them by chance — and lose thousands who never found them. "There are 108 million tourist nights a year. How many of those tourists needed a haircut and couldn't find you?"</p>
         </div>
         <div class="gtm-lm">
           <div class="num">02</div>
           <h4>Walk-in culture meets passive income</h4>
-          <p>Croatian salon owners built their business on relationships — regulars who walk in, chat, stay loyal. The fear: "Online booking will kill my walk-in culture." The reframe: "Your walk-ins stay. But their online purchases now earn you money while you sleep." Don't fight the walk-in instinct — add a layer on top of it.</p>
+          <p>Croatian salons run on relationships and walk-ins. The creative must not fight this culture — it must add to it. "You keep every walk-in. You keep every regular. And now — every product they buy at home earns you 5%." The tone is additive, never replacement.</p>
         </div>
         <div class="gtm-lm">
           <div class="num">03</div>
           <h4>The Zoyya ceiling</h4>
-          <p>Many salon owners love Zoyya for scheduling and fiscal compliance. But Zoyya doesn't generate revenue — it manages operations. The creative provocation: "Your salon software helps you run your business. But does it help you grow it?" Position Notino as the revenue layer that complements (not replaces) what they already use.</p>
+          <p>Zoyya has ~1,900 followers and no paid media. SrediMe is Serbia-first. Neither offers product commission. The creative tension: "You're using a booking tool. But are you using a revenue tool?" Avoid naming competitors — frame it as category upgrade, not competitive attack.</p>
         </div>
         <div class="gtm-lm">
           <div class="num">04</div>
           <h4>The love brand bridge</h4>
-          <p>Croatian consumers already love Notino — it's one of the most trusted e-commerce brands in the country. Salon owners are also Notino shoppers. The creative challenge: "You already buy from Notino. Now Notino pays you." This is a trust shortcut no other platform has. Use it. Show the Notino app on their own phone.</p>
+          <p>Croatian consumers already trust Notino from the e-shop. Salon owners see it in their own bathrooms. "Your clients already buy from Notino. Now it's your turn to earn from that relationship." The bridge from B2C love to B2B trust is the shortest path to credibility.</p>
         </div>
         <div class="gtm-lm">
           <div class="num">05</div>
           <h4>Summer proof as September weapon</h4>
-          <p>The most powerful creative asset in Croatia won't exist until after the first summer. Real tourist booking numbers from real Croatian salons — Split, Dubrovnik, Hvar — become the definitive conversion tool for the autumn acquisition wave. Plan now for a "summer results" campaign in September. The creative team should pre-build templates that accommodate real data.</p>
+          <p>Phase 1 (June–August) is the seeding period. But the real story starts in September when summer proof is in hand: "Here's what salons earned from tourists this summer." Real numbers from real partners become the highest-converting creative for Phase 2.</p>
         </div>
         <div class="gtm-lm">
           <div class="num">06</div>
           <h4>The phone notification at 11pm</h4>
-          <p>A solo salon owner closes the shop at 9pm. At 11pm, a notification: a client just bought her recommended face cream on Notino. €2.50 earned while watching TV. It's not life-changing money — but it's money that didn't exist before, from work she already did. Make this moment feel real. Show the tiredness, the couch, the small smile.</p>
+          <p>A salon owner closing up sees a notification: "Your client just bought shampoo on Notino. You earned €2.40." It's not a lot — but it's earned while doing nothing. Show this moment. Make it feel real. The power is in the specificity and the effortlessness.</p>
         </div>
       </div>
 
       <div class="sl">Distinctive B2B brand assets</div>
       <div class="gtm-brand-grid">
-        <div class="gtm-brand-card"><h5>Master message — Croatian</h5><p>"Tvoji klijenti već kupuju na Notinu. Sad i ti zarađuješ." Coastal: "Tvoji gosti dolaze iz Njemačke. Sad te mogu pronaći." Both in same campaign sets, targeted by location.</p></div>
-        <div class="gtm-brand-card"><h5>Leveraging the love brand</h5><p>Unlike Austria, Notino has strong positive associations from B2C in Croatia. "Već kupuješ na Notinu. Postani partner." — this shortcut is unique to Croatia.</p></div>
-        <div class="gtm-brand-card"><h5>Real summer numbers as creative</h5><p>From September: how many tourist bookings, what commission income. Real Croatian salon owner showing dashboard beats any stock imagery.</p></div>
-        <div class="gtm-brand-card"><h5>Multilingual trust signal</h5><p>Show Notino interface in German and Italian in coastal creative. A booking confirmation screenshot in German is worth more than any copy about "international reach."</p></div>
+        <div class="gtm-brand-card"><h5>Master message — all channels</h5><p>"Vaši klijenti već kupuju na Notinu. Sada i vi zarađujete od toga." Used across all digital ads, influencer briefs, landing pages, and event materials. English variant for tourist-facing creative: "Your clients already shop at Notino. Now you get paid for it."</p></div>
+        <div class="gtm-brand-card"><h5>Leveraging the love brand</h5><p>Notino's Croatian e-shop presence is the single strongest trust asset. B2B creative should visually and verbally connect to the consumer brand — same colours, same feel, different audience.</p></div>
+        <div class="gtm-brand-card"><h5>Real summer numbers as creative</h5><p>Phase 2 creative must feature real commission data from Phase 1 partner salons. "This salon in Split earned €X from tourist bookings in July." No stock, no estimates.</p></div>
+        <div class="gtm-brand-card"><h5>Multilingual trust signal</h5><p>Show the Notino Partner interface in Croatian, German, Italian, and English side by side. This is the visual proof of the tourist moat — no competitor can replicate it.</p></div>
+      </div>
+
+      <!-- CONTENT ASSETS -->
+      <div class="sl">Content assets</div>
+      <div class="note" style="margin-bottom:16px;">One asset per funnel stage. Each one lives under the same message umbrella. Brief these as creative executions, not marketing mechanics.</div>
+
+      <div class="gtm-lm-grid">
+        <div class="gtm-lm">
+          <div class="num">01</div>
+          <h4>Salon-Business IQ Test <span style="font-size:11px;color:var(--text-tertiary);font-weight:400;">(ToFu — Awareness)</span></h4>
+          <p>5-6 question quiz challenging salon owners on how well they run their business. Ego and curiosity hook — not pain-first. Questions cover booking habits, no-show rate, retail upsell, peak season prep, platform costs. Three result tiers: Početnik / Salon-Profesionalac / Top-Salon. Result page bridges to Notino: "Top saloni sada zatvaraju jaz u prihodima s jednim dodatnim izvorom prihoda."</p>
+          <div class="cta">Build: Typeform or Tally. 2 days. Adapt for Croatian and English. Shareable in salon Facebook groups and WhatsApp communities.</div>
+          <p style="margin-top:8px;font-size:12px;color:var(--text-secondary);">CTA: "Započnite besplatno — pogledajte kako."</p>
+        </div>
+        <div class="gtm-lm">
+          <div class="num">02</div>
+          <h4>"Zarađujte više" Live Webinar <span style="font-size:11px;color:var(--text-tertiary);font-weight:400;">(MoFu — Consideration)</span></h4>
+          <p>Monthly 45-min session: "5 načina kako hrvatski saloni zarađuju više bez dodatnog rada." Guest: a real Notino partner salon owner — Living Room or salon_lady_d preferred. Conversation format, no pitch deck. Registration captures email and enters nurture sequence.</p>
+          <div class="cta">Build: Zoom or StreamYard. Recurring monthly. Replay gated behind email.</div>
+          <p style="margin-top:8px;font-size:12px;color:var(--text-secondary);">CTA: "Rezervirajte mjesto."</p>
+        </div>
+        <div class="gtm-lm">
+          <div class="num">03</div>
+          <h4>Kalkulator prihoda salona <span style="font-size:11px;color:var(--text-tertiary);font-weight:400;">(BoFu — Conversion)</span></h4>
+          <p>Embedded web tool. Salon owner inputs monthly bookings, average spend per client, current platform fee. Output: "Ostavljate €X mjesečno na stolu. S Notino Partnerom zaradili biste €Y u proviziji od proizvoda i uštedili €Z na naknadama." Instant, personalised, shareable.</p>
+          <div class="cta">Build: Simple JavaScript embed on landing page. 3-4 days. Same codebase as Austria version, Croatian copy only.</div>
+          <p style="margin-top:8px;font-size:12px;color:var(--text-secondary);">CTA: "Izračunajte svoj prihod — i počnite besplatno."</p>
+        </div>
       </div>
     </div>
   </div>
@@ -2606,7 +2634,7 @@
   <!-- GTM SUB: DIGITAL TARGETING -->
   <div id="subtab-gtm-digital" class="subtab-pane">
     <div class="gtm-section">
-      <div class="gtm-section-label">09 — Digital targeting</div>
+      <div class="gtm-section-label">08 — Digital targeting</div>
       <div class="gtm-section-title">How to reach them in-platform</div>
       <div class="gtm-section-intro">Concrete audience configurations, keyword clusters, and retargeting rules. Copy–paste-ready for Meta Business Suite and Google Ads.</div>
 
