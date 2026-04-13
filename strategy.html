@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Notino Partner — Strategy</title>
+<style>
+  :root {
+    --color-strong-pink:#DC0069;--color-sky-blue:#8695CA;--color-black:#000000;--color-nude:#E6BCAA;--color-white:#FFFFFF;
+    --color-pink-100:#f8cce1;--color-pink-700:#84003f;
+    --color-blue-50:#e7eaf4;--color-blue-800:#1d2851;
+    --color-nude-50:#faf2ee;--color-nude-200:#f0d7cc;
+    --color-silver-500:#808080;--color-silver-700:#4d4d4d;--color-silver-900:#1a1a1a;
+    --text-primary:#1a1a1a;--text-secondary:#4d4d4d;--text-tertiary:#808080;
+    --bg-primary:#ffffff;--bg-secondary:#faf2ee;
+    --border-light:rgba(0,0,0,0.08);--border-mid:rgba(0,0,0,0.14);
+    --radius:10px;--radius-lg:14px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#ffffff;color:var(--text-primary);font-size:14px;line-height:1.6}
+  .shell{max-width:1000px;margin:0 auto;padding:32px 24px}
+
+  .header{background:#000000;border-radius:var(--radius-lg);border:none;padding:28px 32px;margin-bottom:28px;display:flex;align-items:flex-start;justify-content:space-between;gap:20px}
+  .header h1{font-size:22px;font-weight:600;letter-spacing:-.3px;color:#ffffff}
+  .header p{font-size:13px;color:#b3b3b3;margin-top:4px;line-height:1.5;max-width:600px}
+  .back-link{font-size:13px;color:#808080;text-decoration:none;transition:color .15s}
+  .back-link:hover{color:var(--color-strong-pink)}
+
+  .section{margin-bottom:28px}
+  .section-label{font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:.12em;color:var(--text-tertiary);margin-bottom:12px;font-family:monospace}
+  .section-card{background:var(--bg-primary);border:0.5px solid var(--border-light);border-radius:var(--radius-lg);padding:24px 28px}
+
+  .quote{font-size:15px;line-height:1.7;color:var(--text-primary);border-left:3px solid var(--color-strong-pink);padding-left:20px;font-style:italic}
+
+  /* Market table */
+  .market-table{width:100%;border-collapse:collapse}
+  .market-table th{font-size:11px;font-weight:600;text-align:left;padding:10px 14px;border-bottom:none;color:#ffffff;text-transform:uppercase;letter-spacing:.06em;background:#1d2851}
+  .market-table td{font-size:12px;padding:10px 14px;border-bottom:0.5px solid var(--border-light);color:var(--text-secondary);vertical-align:top;line-height:1.55}
+  .market-table tr:last-child td{border-bottom:none}
+  .market-table td:first-child{font-weight:600;color:var(--text-primary);white-space:nowrap}
+
+  /* Positioning blocks */
+  .pos-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px}
+  .pos-card{background:var(--bg-primary);border:0.5px solid var(--border-light);border-radius:var(--radius);padding:18px 20px}
+  .pos-card h3{font-size:13px;font-weight:600;margin-bottom:8px;color:var(--text-primary)}
+  .pos-card p{font-size:12px;color:var(--text-secondary);line-height:1.6}
+  .pos-card.refuse{border-top:3px solid var(--color-silver-500)}
+  .pos-card.create{border-top:3px solid var(--color-strong-pink)}
+  .pos-card.defend{border-top:3px solid var(--color-sky-blue)}
+
+  .footer{text-align:center;font-size:11px;color:#808080;background:#000000;margin:48px -24px -32px;padding:20px 24px}
+
+  @media(max-width:700px){
+    .shell{padding:20px 16px}
+    .header{flex-direction:column;align-items:flex-start}
+    .pos-grid{grid-template-columns:1fr}
+    .market-table{font-size:11px}
+    .market-table th,.market-table td{padding:8px 10px}
+    .section-card{padding:18px 16px}
+  }
+</style>
+</head>
+<body>
+<div class="shell">
+
+  <div class="header">
+    <div>
+      <img src="https://brand.notino.com/content/1_logotypes-and-claim/3_logotype-notino-partner/notino-partner-logotype-1.svg" alt="Notino Partner" width="160" style="margin-bottom:12px">
+      <h1>Strategy</h1>
+      <p>Master positioning · Austria · Croatia</p>
+    </div>
+    <a class="back-link" href="index.html">← Back</a>
+  </div>
+
+  <!-- Section 1: Master Strategy -->
+  <div class="section">
+    <div class="section-label">Master Strategy</div>
+    <div class="section-card">
+      <div class="quote">
+        <strong>Notino is the only true growth partner for salons.</strong><div style="height:10px"></div>Every other platform is a service you pay for. Notino is a partnership that benefits from your success — when you grow, Notino grows. For the first time, a platform's incentives are fully aligned with yours.
+      </div>
+    </div>
+  </div>
+
+  <!-- Section 2: Market Application -->
+  <div class="section">
+    <div class="section-label">Market Application</div>
+    <div class="section-card" style="padding:0;overflow:hidden">
+      <table class="market-table">
+        <thead>
+          <tr>
+            <th></th>
+            <th>Austria</th>
+            <th>Croatia</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Enemy</td>
+            <td>Services disguised as partnerships</td>
+            <td>Invisible ceiling disguised as normal</td>
+          </tr>
+          <tr>
+            <td>Entry point</td>
+            <td>You pay them to grow. We grow together.</td>
+            <td>You've been missing clients you didn't know existed</td>
+          </tr>
+          <tr>
+            <td>Promise</td>
+            <td>A partner with aligned incentives</td>
+            <td>Connect. Grow. Together.</td>
+          </tr>
+          <tr>
+            <td>Proof</td>
+            <td>Zero cost + earn from client purchases + loyalty rewards</td>
+            <td>Notino consumer base + zero cost + commission where it fits</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Section 3: Positioning Logic -->
+  <div class="section">
+    <div class="section-label">Positioning Logic</div>
+    <div class="pos-grid">
+      <div class="pos-card refuse">
+        <div style="font-size:24px;margin-bottom:10px">🚫</div>
+        <h3>The category we refuse</h3>
+        <p>Every competitor sells a service. You pay monthly, per booking, per client. Their revenue is your cost. Incentives are opposed.</p>
+      </div>
+      <div class="pos-card create">
+        <div style="font-size:24px;margin-bottom:10px">🤝</div>
+        <h3>The category we create</h3>
+        <p>A growth partnership. Notino earns when your clients buy beauty products. When your salon thrives, Notino thrives. Incentives are aligned.</p>
+      </div>
+      <div class="pos-card defend">
+        <div style="font-size:24px;margin-bottom:10px">🛡️</div>
+        <h3>Why it's defensible</h3>
+        <p>No competitor can replicate this. The product commission, the consumer base, the loyalty ecosystem — these come from Notino's core e-commerce business. A pure booking platform structurally cannot match it.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">Notino Partner · Strategy · March 2026 · out of spacetime</div>
+
+</div>
+</body>
+</html>
