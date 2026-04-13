@@ -208,6 +208,38 @@
     .card-grid-2,.card-grid-3,.ws-grid,.swot{grid-template-columns:1fr}
     .tabs{flex-wrap:wrap}
   }
+  @media(max-width:600px){
+    .shell{padding:16px 10px}
+    .header{flex-direction:column;align-items:flex-start;padding:20px 16px;gap:12px}
+    .back-link{align-self:flex-start;order:-1}
+    .header-left h1{font-size:18px}
+    .header-left p{font-size:12px}
+    .header-badges{gap:4px}
+    .hbadge{font-size:10px;padding:2px 8px}
+    .tabs{gap:2px;padding:4px;border-radius:var(--radius)}
+    .tab{padding:6px 12px;font-size:11px}
+    .subtabs{width:100%;flex-wrap:wrap}
+    .subtab{padding:5px 12px;font-size:11px}
+    .metrics,.season-grid,.pos-grid,.event-meta{grid-template-columns:1fr}
+    .persona-grid,.pillar-grid,.never-grid,.cluster-grid{grid-template-columns:1fr}
+    .card-grid-2,.card-grid-3,.ws-grid,.tone-hook,.swot{grid-template-columns:1fr}
+    .metric{padding:12px 14px}
+    .m-value{font-size:18px}
+    .card{padding:14px 16px}
+    .comp-card{padding:14px 16px}
+    .comp-header{flex-direction:column;gap:6px}
+    .comp-name-block .name{font-size:15px}
+    .event-card{padding:14px 16px}
+    .event-header{flex-direction:column;gap:6px}
+    .event-name{font-size:14px}
+    .chart-wrap{padding:14px 10px}
+    .iframe-wrap iframe{height:350px}
+    table{font-size:11px}
+    th,td{padding:7px 8px}
+    .summary-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch}
+    .banner{padding:12px 14px;font-size:12px}
+    .cta-btn{font-size:13px;padding:10px 20px}
+  }
 
   /* ── Notino brand overrides ── */
   body{background:#ffffff}
@@ -361,6 +393,17 @@
   @media(max-width:900px){
     .gtm-hero-stats,.gtm-pos-grid,.gtm-tier-grid,.gtm-comp-grid,.gtm-district-grid,.gtm-groups-grid{grid-template-columns:1fr 1fr}
     .gtm-ooh-grid,.gtm-two-col,.gtm-brand-grid,.gtm-lm-grid,.gtm-webinar-grid,.gtm-budget-grid{grid-template-columns:1fr}
+  }
+  @media(max-width:600px){
+    .gtm-hero-stats,.gtm-pos-grid,.gtm-tier-grid,.gtm-comp-grid,.gtm-district-grid,.gtm-groups-grid{grid-template-columns:1fr}
+    .gtm-ooh-grid,.gtm-two-col,.gtm-brand-grid,.gtm-lm-grid,.gtm-webinar-grid,.gtm-budget-grid,.gtm-channel-grid,.gtm-inf-grid{grid-template-columns:1fr}
+    .gtm-section-title{font-size:17px}
+    .gtm-budget-cell .amount{font-size:20px}
+    .gtm-channel .ch-amount{font-size:20px}
+    .gtm-hero-stat .val{font-size:20px}
+    .gtm-policy{padding:18px 16px}
+    .gtm-week{grid-template-columns:1fr;gap:4px}
+    .gtm-week-label{padding-bottom:0}
   }
 </style>
 </head>
