@@ -21,6 +21,7 @@
     --purple-50:#e7eaf4;--purple-600:#5a6aa2;--purple-800:#1d2851;
     --teal-50:#e7eaf4;--teal-600:#384679;--teal-800:#1d2851;
     --coral-50:#f5e4dd;--coral-600:#CA5932;--coral-800:#7a3520;
+    --gold-pale:#fdf6e3;--gold-light:#f0dca0;--teal-light:#e0f0ee;--purple-light:#ece8f8;
     --gray-50:#e6e6e6;--gray-200:#b3b3b3;--gray-600:#666666;--gray-800:#333333;
     --text-primary:#1a1a1a;--text-secondary:#4d4d4d;--text-tertiary:#808080;
     --bg-primary:#ffffff;--bg-secondary:#faf2ee;
@@ -290,28 +291,28 @@
   .gtm-budget-cell .amount{font-size:24px;font-weight:700;color:var(--text-primary);letter-spacing:-.5px}
   .gtm-budget-cell .pct{font-size:12px;color:var(--color-strong-pink);margin-top:2px;font-weight:600}
   .gtm-budget-cell .desc{font-size:12px;color:var(--text-secondary);margin-top:8px;line-height:1.55}
-  .gtm-channel-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-bottom:20px}
-  .gtm-channel{background:var(--bg-primary);border:0.5px solid var(--border-light);border-radius:var(--radius);padding:14px 16px}
+  .gtm-channel-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-bottom:20px}
+  .gtm-channel{background:var(--bg-primary);border:1px solid var(--border-light);border-radius:var(--radius-lg);padding:20px;position:relative;overflow:hidden;transition:box-shadow .2s,border-color .2s}
+  .gtm-channel::before{content:'';position:absolute;top:0;left:0;width:4px;height:100%;background:linear-gradient(180deg,var(--color-strong-pink),var(--color-sky-blue))}
+  .gtm-channel:hover{border-color:var(--color-strong-pink);box-shadow:0 4px 16px rgba(220,0,105,.08)}
   .gtm-ch-tag{display:inline-block;font-size:10px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;padding:2px 8px;border-radius:999px;margin-bottom:8px}
   .gtm-ch-perf{background:var(--color-blue-100);color:var(--color-blue-700)}
   .gtm-ch-aware{background:var(--color-pink-100);color:var(--color-pink-700)}
   .gtm-ch-brand{background:var(--color-nude-100);color:var(--color-nude-600)}
   .gtm-ch-act{background:var(--color-blue-100);color:var(--color-blue-800)}
-  .gtm-channel h5{font-size:13px;font-weight:600;margin-bottom:4px}
-  .gtm-channel .ch-amount{font-size:20px;font-weight:700;color:var(--color-strong-pink)}
-  .gtm-channel .ch-pct{font-size:11px;color:var(--text-tertiary)}
-  .gtm-channel .ch-desc{font-size:11px;color:var(--text-secondary);margin-top:6px;line-height:1.55}
-  .gtm-inf-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;margin-bottom:20px}
-  .gtm-inf{background:var(--bg-primary);border:0.5px solid var(--border-light);border-radius:var(--radius);padding:14px 16px;transition:border-color .15s}
-  .gtm-inf:hover{border-color:var(--color-strong-pink)}
-  .gtm-inf .tier{font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;margin-bottom:6px;display:block}
-  .gtm-inf .t1{color:var(--color-strong-pink)}
-  .gtm-inf .t2{color:var(--color-sky-blue)}
-  .gtm-inf .t3{color:var(--color-nude-600)}
-  .gtm-inf h5{font-size:13px;font-weight:600;margin-bottom:2px}
-  .gtm-inf .handle{font-size:11px;color:var(--color-sky-blue);margin-bottom:4px}
-  .gtm-inf .followers{font-size:11px;font-weight:500;color:var(--text-tertiary);margin-bottom:6px}
-  .gtm-inf .role{font-size:11px;color:var(--text-secondary);line-height:1.55}
+  .gtm-channel h5{font-size:15px;font-weight:700;margin-bottom:6px;padding-left:8px;color:var(--color-silver-900)}
+  .gtm-channel .ch-amount{font-size:24px;font-weight:800;color:var(--color-strong-pink);padding-left:8px}
+  .gtm-channel .ch-pct{font-size:11px;font-weight:600;color:var(--text-tertiary);padding-left:8px;display:block;margin-bottom:8px}
+  .gtm-channel .ch-desc{font-size:12px;color:var(--text-secondary);margin-top:8px;line-height:1.6;padding-left:8px;border-top:1px solid var(--border-light);padding-top:10px}
+  .gtm-inf-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px;margin-bottom:20px}
+  .gtm-inf{background:var(--bg-primary);border:1px solid var(--border-light);border-radius:var(--radius-lg);padding:20px;transition:box-shadow .2s,border-color .2s;position:relative;overflow:hidden}
+  .gtm-inf::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--color-strong-pink),var(--color-sky-blue))}
+  .gtm-inf:hover{border-color:var(--color-strong-pink);box-shadow:0 4px 16px rgba(220,0,105,.08)}
+  .gtm-inf .tier{font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin-bottom:10px;display:inline-block;background:var(--color-pink-100);color:var(--color-strong-pink);padding:2px 8px;border-radius:999px}
+  .gtm-inf h5{font-size:15px;font-weight:700;margin-bottom:4px;color:var(--color-silver-900)}
+  .gtm-inf .handle{font-size:12px;margin-bottom:6px}.gtm-inf .handle a{color:var(--color-sky-blue);text-decoration:none}.gtm-inf .handle a:hover{text-decoration:underline}
+  .gtm-inf .followers{font-size:11px;font-weight:600;color:var(--color-strong-pink);margin-bottom:10px;letter-spacing:.02em}
+  .gtm-inf .role{font-size:12px;color:var(--text-secondary);line-height:1.6}
   .gtm-district-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:20px}
   .gtm-district{background:var(--bg-secondary);border:0.5px solid var(--border-light);border-radius:var(--radius);padding:14px 16px}
   .gtm-district .num{font-size:24px;font-weight:700;color:var(--color-strong-pink);line-height:1}
@@ -1766,12 +1767,29 @@
 
   <div id="subtab-gtm-funnel" class="subtab-pane">
     <div class="gtm-section">
-      <div class="gtm-section-label">03 — Full-funnel architecture</div>
+      <!-- section label removed -->
       <div class="gtm-section-title">All layers live from month one</div>
-      <div class="gtm-section-intro">The funnel runs concurrently — not in sequence. Awareness spend creates a pool of salon owners who have seen Notino Partner. Performance channels must be running the same week to capture that pool before inertia sets in.</div>
-
-      <div class="note"><strong>Core principle:</strong> Awareness spend without a running conversion funnel is wasted. Google Search and Meta go live on day one. Retargeting begins at month 2 once the pixel has sufficient data.</div>
-
+      <!-- Visual funnel diagram -->
+      <div style="display:flex;flex-direction:column;align-items:center;gap:0;margin:28px 0 8px;">
+        <div style="width:100%;max-width:720px;background:var(--gold-pale);border:1px solid var(--gold-light);border-radius:8px 8px 0 0;padding:14px 20px;display:flex;justify-content:space-between;align-items:center;gap:12px;">
+          <div style="font-weight:700;font-size:13px;white-space:nowrap;">Top of Funnel</div>
+          <div style="font-size:11px;color:var(--text-secondary);text-align:right;">B2B influencers · Meta Ads (cold) · YouTube B2B Pre-roll · Trade Media · Salon-Business IQ Test</div>
+        </div>
+        <div style="width:90%;max-width:648px;background:var(--teal-light);border:1px solid #b8ddd9;border-top:0;padding:14px 20px;display:flex;justify-content:space-between;align-items:center;gap:12px;">
+          <div style="font-weight:700;font-size:13px;white-space:nowrap;">Middle of Funnel</div>
+          <div style="font-size:11px;color:var(--text-secondary);text-align:right;">Meta Ads (retargeting) · Google Search · Webinar · Launch event</div>
+        </div>
+        <div style="width:80%;max-width:576px;background:var(--purple-light);border:1px solid #cfc9f0;border-top:0;padding:14px 20px;display:flex;justify-content:space-between;align-items:center;gap:12px;">
+          <div style="font-weight:700;font-size:13px;white-space:nowrap;">Bottom of Funnel</div>
+          <div style="font-size:11px;color:var(--text-secondary);text-align:right;">Google Pmax · Google B2B App Install Ads · Revenue Calculator · Self-registration</div>
+        </div>
+        <div style="width:70%;max-width:504px;background:var(--color-pink-100);border:1px solid var(--color-pink-200);border-top:0;border-radius:0 0 8px 8px;padding:14px 20px;display:flex;justify-content:space-between;align-items:center;gap:12px;">
+          <div style="font-weight:700;font-size:13px;white-space:nowrap;">Retention / Activation</div>
+          <div style="font-size:11px;color:var(--text-secondary);text-align:right;">Onboarding sequence · WhatsApp community · €50 referral programme</div>
+        </div>
+      </div>
+      <hr style="border:none;border-top:1px solid var(--color-silver-200);margin:36px 0 28px;">
+      <div class="gtm-section-title" style="margin-bottom:16px;">Timeline</div>
       <div style="overflow-x:auto;margin-bottom:16px;">
       <table>
         <thead>
@@ -1787,18 +1805,26 @@
           </tr>
         </thead>
         <tbody>
-          <tr><td rowspan="3" style="font-weight:600;color:var(--color-strong-pink);">AWARENESS</td><td>OOH Vienna</td><td colspan="2" style="background:var(--color-pink-100);color:var(--color-pink-700);font-size:11px;">OOH — transit stops, salon districts</td><td colspan="4" style="color:var(--text-tertiary);font-size:11px;">— tapers off</td></tr>
-          <tr><td>B2B influencers</td><td colspan="6" style="background:var(--color-pink-100);color:var(--color-pink-700);font-size:11px;">Always-on organic &amp; paid amplification</td></tr>
-          <tr><td>Instagram organic</td><td colspan="6" style="background:var(--color-pink-100);color:var(--color-pink-700);font-size:11px;">Non-follower reels, salon owner content</td></tr>
-          <tr><td rowspan="3" style="font-weight:600;color:var(--color-sky-blue);">CONSIDERATION</td><td>Google Search</td><td colspan="6" style="background:var(--color-blue-100);color:var(--color-blue-700);font-size:11px;">Always-on · free software, Treatwell alt, Terminbuchung</td></tr>
-          <tr><td>Meta Ads</td><td colspan="6" style="background:var(--color-blue-100);color:var(--color-blue-700);font-size:11px;">Always-on · Vienna geo → expand · revenue creative</td></tr>
-          <tr><td>Lead magnets</td><td style="color:var(--text-tertiary);font-size:11px;text-align:center;">—</td><td colspan="5" style="background:var(--color-blue-100);color:var(--color-blue-700);font-size:11px;">Revenue Calculator · quiz · group calls</td></tr>
-          <tr><td rowspan="3" style="font-weight:600;color:var(--color-nude-600);">CONVERSION</td><td>Self-registration</td><td colspan="6" style="background:var(--color-nude-100);color:var(--color-nude-600);font-size:11px;">Landing page · always-on · all channels point here</td></tr>
-          <tr><td>Retargeting</td><td style="color:var(--text-tertiary);font-size:11px;text-align:center;">—</td><td colspan="5" style="background:var(--color-nude-100);color:var(--color-nude-600);font-size:11px;">Visited but not registered · 3-touch sequence</td></tr>
-          <tr><td>Event + outreach</td><td colspan="2" style="background:var(--color-nude-100);color:var(--color-nude-600);font-size:11px;">Vienna launch event + multicultural outreach</td><td colspan="4" style="color:var(--text-tertiary);font-size:11px;">—</td></tr>
-          <tr><td rowspan="2" style="font-weight:600;color:var(--amber-600);">ACTIVATION</td><td>Onboarding sequence</td><td colspan="6" style="background:var(--amber-50);color:var(--amber-800);font-size:11px;">Weekly emails · profile completion · commission education</td></tr>
-          <tr><td>Community + webinars</td><td colspan="6" style="background:var(--amber-50);color:var(--amber-800);font-size:11px;">WhatsApp Early Access · monthly webinars · peer calls</td></tr>
-          <tr><td style="font-weight:600;color:var(--gray-600);">REFERRAL</td><td>Partner referral</td><td colspan="2" style="color:var(--text-tertiary);font-size:11px;text-align:center;">— building base</td><td colspan="4" style="background:var(--bg-secondary);color:var(--text-secondary);font-size:11px;">€50 referral programme · partner-led growth from M5</td></tr>
+          <!-- TOP OF FUNNEL -->
+          <tr><td rowspan="4" style="font-weight:600;color:var(--color-strong-pink);">TOP OF FUNNEL</td><td>B2B Influencers</td><td colspan="6" style="background:var(--color-pink-100);color:var(--color-pink-700);font-size:11px;">M1–12 · always-on</td></tr>
+          <tr><td>Meta Ads (cold)</td><td colspan="6" style="background:var(--color-pink-100);color:var(--color-pink-700);font-size:11px;">M1–12 · always-on</td></tr>
+          <tr><td>YouTube Pre-roll</td><td colspan="2" style="background:var(--color-pink-100);color:var(--color-pink-700);font-size:11px;">M1–4 · launch window</td><td colspan="4" style="color:var(--text-tertiary);font-size:11px;text-align:center;">—</td></tr>
+          <tr><td>Trade Media</td><td style="background:var(--color-pink-100);color:var(--color-pink-700);font-size:11px;">M1–3 · launch window</td><td colspan="5" style="color:var(--text-tertiary);font-size:11px;text-align:center;">—</td></tr>
+          <!-- MIDDLE OF FUNNEL -->
+          <tr><td rowspan="7" style="font-weight:600;color:var(--color-sky-blue);">MIDDLE OF FUNNEL</td><td>Google Search</td><td colspan="6" style="background:var(--color-blue-100);color:var(--color-blue-700);font-size:11px;">M1–12 · always-on</td></tr>
+          <tr><td>Meta Ads (retargeting)</td><td style="color:var(--text-tertiary);font-size:11px;text-align:center;">—</td><td colspan="5" style="background:var(--color-blue-100);color:var(--color-blue-700);font-size:11px;">M2–12</td></tr>
+          <tr><td>Google Pmax</td><td style="color:var(--text-tertiary);font-size:11px;text-align:center;">—</td><td colspan="5" style="background:var(--color-blue-100);color:var(--color-blue-700);font-size:11px;">M3–12</td></tr>
+          <tr><td>Google B2B App Install</td><td style="color:var(--text-tertiary);font-size:11px;text-align:center;">—</td><td colspan="5" style="background:var(--color-blue-100);color:var(--color-blue-700);font-size:11px;">M3–12</td></tr>
+          <tr><td>Salon-Business IQ Test</td><td style="color:var(--text-tertiary);font-size:11px;text-align:center;">—</td><td colspan="5" style="background:var(--color-blue-100);color:var(--color-blue-700);font-size:11px;">M4–12</td></tr>
+          <tr><td>Webinar</td><td style="color:var(--text-tertiary);font-size:11px;text-align:center;">—</td><td colspan="5" style="background:var(--color-blue-100);color:var(--color-blue-700);font-size:11px;">M4–12 · monthly</td></tr>
+          <tr><td>Launch Event</td><td style="color:var(--text-tertiary);font-size:11px;text-align:center;">—</td><td style="background:var(--color-blue-100);color:var(--color-blue-700);font-size:11px;">M4 · one-off</td><td colspan="4" style="color:var(--text-tertiary);font-size:11px;text-align:center;">—</td></tr>
+          <!-- BOTTOM OF FUNNEL -->
+          <tr><td rowspan="2" style="font-weight:600;color:var(--color-nude-600);">BOTTOM OF FUNNEL</td><td>Revenue Calculator</td><td colspan="2" style="color:var(--text-tertiary);font-size:11px;text-align:center;">—</td><td colspan="4" style="background:var(--color-nude-100);color:var(--color-nude-600);font-size:11px;">M6–12</td></tr>
+          <tr><td>Self-registration</td><td colspan="6" style="background:var(--color-nude-100);color:var(--color-nude-600);font-size:11px;">M1–12 · always-on</td></tr>
+          <!-- RETENTION / ACTIVATION -->
+          <tr><td rowspan="3" style="font-weight:600;color:var(--amber-600);">RETENTION / ACTIVATION</td><td>Onboarding sequence</td><td colspan="6" style="background:var(--amber-50);color:var(--amber-800);font-size:11px;">M1–12 · always-on</td></tr>
+          <tr><td>€50 Referral programme</td><td colspan="6" style="background:var(--amber-50);color:var(--amber-800);font-size:11px;">M1–12 · always-on</td></tr>
+          <tr><td>WhatsApp community</td><td style="color:var(--text-tertiary);font-size:11px;text-align:center;">—</td><td colspan="5" style="background:var(--amber-50);color:var(--amber-800);font-size:11px;">M2–12</td></tr>
         </tbody>
       </table>
       </div>
@@ -1888,33 +1914,22 @@
 
   <div id="subtab-gtm-influencers" class="subtab-pane">
     <div class="gtm-section">
-      <div class="gtm-section-label">05 — Influencer strategy</div>
-      <div class="gtm-section-title">Three tiers, one consistent message</div>
-      <div class="gtm-section-intro">The influencer stack is about credibility at each level of the funnel. Tier 1 establishes authority. Tier 2 creates aspiration through peer salon owners. Tier 3 reaches the underserved multicultural segment.</div>
+      <!-- section label removed -->
+      <div class="gtm-section-title">Key voices for the Austrian market</div>
+      <div class="gtm-section-intro">A curated roster of Austrian influencers spanning haircare, beauty, nails and male grooming — each selected for their ability to reach and convert salon professionals.</div>
 
-
-      <div class="sl">Tier 1 — National authority · awareness &amp; webinar co-hosting</div>
       <div class="gtm-inf-grid">
-        <div class="gtm-inf"><span class="tier t1">Tier 1 · National</span><h5>Kitti Dalma</h5><div class="handle">@dalmalaluna</div><div class="followers">~370,000 followers · Hair niche</div><p class="role">Curly-hair creator based in Austria. Authority Reels: "how salons really make money from product retailing." Webinar co-host.</p></div>
-        <div class="gtm-inf"><span class="tier t1">Tier 1 · National</span><h5>Marie Schnoell</h5><div class="handle">@marieschnoell</div><div class="followers">~117,000 followers · Hair niche</div><p class="role">"Curly hair bestie." Strong storytelling format for the 5% commission concept.</p></div>
-      </div>
-
-      <div class="sl">Tier 2 — Vienna salon owners · conversion &amp; trust</div>
-      <div class="gtm-inf-grid">
-        <div class="gtm-inf"><span class="tier t2">Tier 2 · Vienna</span><h5>Hair by Ulli</h5><div class="handle">@hair_by_ulli</div><div class="followers">Salon · Zieglergasse 17, 1070 Wien</div><p class="role">Master of Color Expert, blond specialist. Located in Neubau on the Mariahilfer axis — ideal overlap with OOH placements.</p></div>
-        <div class="gtm-inf"><span class="tier t2">Tier 2 · Vienna</span><h5>Murat Demir</h5><div class="handle">@trendstylebymuratvienna</div><div class="followers">~31,000 followers · Barber</div><p class="role">"Barber hero" for male-grooming messaging. Bridges Tier 2 and Tier 3. Co-host for Favoriten-focused group call.</p></div>
-        <div class="gtm-inf"><span class="tier t2">Tier 2 · Vienna</span><h5>Alexander Izhak</h5><div class="handle">@made_by_alexander</div><div class="followers">~34,000 followers · Hair artist</div><p class="role">High-end hair artist. Premium-angle content targeting Tier 2 multi-location and premium operator segment.</p></div>
-        <div class="gtm-inf"><span class="tier t2">Tier 2 · Vienna</span><h5>Luxury Hair Salon</h5><div class="handle">@luxury1_hair_salon</div><div class="followers">~31,000 followers · Salon</div><p class="role">Content around "how to productise premium services and retail with Notino." Visual aesthetic aligned with Notino brand.</p></div>
-      </div>
-
-      <div class="sl">Tier 3 — Multicultural micro-creators · undigitised districts</div>
-      <div class="gtm-inf-grid">
-        <div class="gtm-inf"><span class="tier t3">Tier 3 · Multicultural</span><h5>Minja Milic</h5><div class="handle">@hairstylebyminja</div><div class="followers">~12,000 followers · Stylist</div><p class="role">Serbian-origin stylist. Balkan-community messaging in German with visible Balkan identity.</p></div>
-        <div class="gtm-inf"><span class="tier t3">Tier 3 · Multicultural</span><h5>Biljana Nikolic</h5><div class="handle">@authentic_hair_b</div><div class="followers">Micro · Albertgasse 21, 1080</div><p class="role">Master of Blond and Color. Small but highly targeted Balkan-roots audience. Micro-ambassador for Early Access WhatsApp.</p></div>
-        <div class="gtm-inf"><span class="tier t3">Tier 3 · Multicultural</span><h5>MAD7 Barberclub</h5><div class="handle">Große Mohrengasse 38, 1020</div><div class="followers">Viral barbershop content · Leopoldstadt</div><p class="role">Active viral-style barber content. Natural partner for Leopoldstadt district stories.</p></div>
-        <div class="gtm-inf"><span class="tier t3">Tier 3 · Multicultural</span><h5>Tsirulnik Barbershop</h5><div class="handle">@tsirulnik.barbershop.wien</div><div class="followers">Barbershop · 1200 Wien</div><p class="role">Posts Reels with #barbervienna and #favoriten hashtags. Strong fit for 20th district outreach.</p></div>
-        <div class="gtm-inf"><span class="tier t3">Tier 3 · Multicultural</span><h5>ALTHAMEEN Barbershop</h5><div class="handle">Active on #wien #favoriten</div><div class="followers">Instagram Reels · Favoriten focus</div><p class="role">Natural partner for Favoriten pilot content. Key for walking outreach in the most salon-dense multicultural district.</p></div>
-        <div class="gtm-inf"><span class="tier t3">Tier 3 · Multicultural</span><h5>Saman Hesadi</h5><div class="handle">@sam_master_64</div><div class="followers">~900 followers · Micro-creator</div><p class="role">Hyper-local Reels: "a day in the life with Notino Partner." Very low cost, very high authenticity.</p></div>
+        <div class="gtm-inf"><h5>Khaled Hamid</h5><div class="handle"><a href="https://www.instagram.com/khaledhamid.care/" target="_blank">@khaledhamid.care</a></div><div class="followers">~300k followers</div><p class="role">German-speaking haircare expert. Strong educational content ideal for professional haircare recommendations and product education.</p></div>
+        <div class="gtm-inf"><h5>RAF Camora</h5><div class="handle"><a href="https://www.instagram.com/raf_camora/" target="_blank">@raf_camora</a></div><div class="followers">~1.5M followers</div><p class="role">Rapper, owner of barbershop and tattoo salon. Cultural relevance and male grooming angle reaches younger urban audience for men's grooming and fragrance.</p></div>
+        <div class="gtm-inf"><h5>Carolina Biehl</h5><div class="handle"><a href="https://www.instagram.com/n.orthcarolina/" target="_blank">@n.orthcarolina</a></div><div class="followers">~500k followers</div><p class="role">Makeup creator with strong cross-platform reach (IG + TikTok + YouTube). Highly relevant for cosmetics launches, tutorials and awareness campaigns.</p></div>
+        <div class="gtm-inf"><h5>Svetlana Frühwald</h5><div class="handle"><a href="https://www.instagram.com/svetlana_fruehwald/" target="_blank">@svetlana_fruehwald</a></div><div class="followers">~50k followers</div><p class="role">Beauty and lifestyle influencer from Salzburg. Strong for regional reach and linking online campaigns with local presence.</p></div>
+        <div class="gtm-inf"><h5>Hair by Ulli</h5><div class="handle"><a href="https://www.instagram.com/hair_by_ulli/" target="_blank">@hair_by_ulli</a></div><div class="followers">~15k followers</div><p class="role">Vienna salon owner and blond/color expert. Strong for professional color stories, before/after content and in-salon activations.</p></div>
+        <div class="gtm-inf"><h5>Alexander</h5><div class="handle"><a href="https://www.instagram.com/made_by_alexander/" target="_blank">@made_by_alexander</a></div><div class="followers">~34k followers</div><p class="role">Vienna-based hair artist and TÜV-certified educator running masterclasses. Strong for B2B education content and co-branded workshops.</p></div>
+        <div class="gtm-inf"><h5>Luxury Hair Salon</h5><div class="handle"><a href="https://www.instagram.com/luxury1_hair_salon/" target="_blank">@luxury1_hair_salon</a></div><div class="followers">~31k followers</div><p class="role">Premium Vienna salon (Kreuzgasse 68, 1180). Flagship partner candidate for in-store activations, events and content.</p></div>
+        <div class="gtm-inf"><h5>Minja</h5><div class="handle"><a href="https://www.instagram.com/hairstylebyminja/" target="_blank">@hairstylebyminja</a></div><div class="followers">~12k followers</div><p class="role">Vienna-based hairdresser with strong TikTok presence. Good for trend-driven transformations and cross-promotion between salon and Notino.</p></div>
+        <div class="gtm-inf"><h5>Danny Vienna</h5><div class="handle"><a href="https://www.instagram.com/hairbydvt/" target="_blank">@hairbydvt</a></div><div class="followers">~50k followers</div><p class="role">Avantgarde Hairdresser of the Year 2024, Vienna and Amsterdam-based educator. Strong for B2B education content, masterclasses and trend partnerships around color, cuts and creative styling.</p></div>
+        <div class="gtm-inf"><h5>Greta</h5><div class="handle"><a href="https://www.instagram.com/couldbeyournails2/" target="_blank">@couldbeyournails2</a></div><div class="followers">~38k followers</div><p class="role">Owner of Vienna's first nail art studio (Ullmannstraße 20, 1150). Ideal for strengthening the nails pillar — gels, tools, nail care — combining trend content with a flagship studio presence.</p></div>
+        <div class="gtm-inf"><h5>Leonita</h5><div class="handle"><a href="https://www.instagram.com/makeupby.leonita/" target="_blank">@makeupby.leonita</a></div><div class="followers">~TBC followers</div><p class="role">Pro MUA, educator and owner of @leocosmetics.lashes with studio at Marc-Aurel-Straße 6/8, 1010 Vienna. Strong for lashes, eye makeup and pro tools — tutorials, masterclasses and in-store events.</p></div>
       </div>
 
     </div>
@@ -2008,15 +2023,8 @@
   <!-- GTM SUB: DIGITAL TARGETING -->
   <div id="subtab-gtm-digital" class="subtab-pane">
     <div class="gtm-section">
-      <div class="gtm-section-label">06 — Digital targeting</div>
+      <!-- section label removed -->
       <div class="gtm-section-title">How to reach them in-platform</div>
-      <div class="gtm-section-intro">Concrete audience configurations, keyword clusters, and retargeting rules. Copy–paste-ready for Meta Business Suite and Google Ads.</div>
-
-      <div class="banner banner-amber" style="margin-top:16px;">
-        <strong>⚠ Challenge This Assumption</strong><br>
-        Standard interest-based digital targeting (beauty + business owner) reaches a broad audience but may have low precision for independent salon owners. Before scaling spend, validate whether Meta business page admin targeting, YouTube business content pre-roll, or trade media placements outperform standard interest targeting in the Austrian market. Run a 3-channel split test in Month 1 before committing budget.
-      </div>
-
       <div class="sl">Meta Ads — audience architecture</div>
       <div style="overflow-x:auto;margin-bottom:16px;">
       <table>
@@ -2149,39 +2157,31 @@
         <div class="gtm-group"><div class="platform">Facebook Group</div><h5>Beauty Österreich</h5><p>Consumer beauty group. Soft-launch "your favourite salons will soon be bookable on Notino."</p></div>
       </div>
 
-      <p style="font-size:12px;color:var(--text-tertiary);">Instagram hashtags to monitor: <span class="pill">#friseurwien</span> <span class="pill">#friseursalonwien</span> <span class="pill">#barbervienna</span> <span class="pill">#wienfriseur</span> <span class="pill">#favoriten</span> <span class="pill">#ottakring</span></p>
     </div>
   </div>
 
-</div>
-
-<div class="footer">Notino Partner · Austria Competitive Intelligence · March 2026 · .out of spacetime</div>
-
-</div>
-
-
   <div id="subtab-gtm-budget" class="subtab-pane">
     <div class="gtm-section">
-      <div class="gtm-section-label">07 — Budget allocation</div>
+      <!-- section label removed -->
       <div class="gtm-section-title">€150,000 across the full year</div>
-      <div class="gtm-section-intro">Budget intensity is heaviest in months 1–4 to establish mental availability while the market is open. If the budget grows, scale proportionally; if it's cut, cut OOH first and protect performance channels.</div>
+      <div class="gtm-section-intro">Budget intensity is heaviest in months 1–4 to establish mental availability while the market is open. If the budget grows, scale proportionally; if it's cut, protect performance channels first.</div>
 
       <div class="gtm-budget-grid">
         <div class="gtm-budget-cell">
           <div class="phase">Phase 1 · M1–4 · Heavy</div>
-          <div class="amount">~€82k</div>
-          <div class="pct">~55% of total budget</div>
-          <div class="desc">OOH Vienna, B2B influencers, trade media, YouTube B2B pre-roll, launch event, Google + Meta launch, multicultural outreach. Full funnel activated from day one.</div>
+          <div class="amount">~€78k</div>
+          <div class="pct">~52% of total budget</div>
+          <div class="desc">B2B influencers, trade media, launch event, Google + Meta launch. Full funnel activated from day one.</div>
         </div>
         <div class="gtm-budget-cell">
           <div class="phase">Phase 2 · M5–8 · Sustain</div>
-          <div class="amount">~€45k</div>
-          <div class="pct">~30% of total budget</div>
+          <div class="amount">~€50k</div>
+          <div class="pct">~33% of total budget</div>
           <div class="desc">Always-on Google + Meta, retargeting, webinar series, engagement campaigns. Expand to Graz, Linz, Salzburg.</div>
         </div>
         <div class="gtm-budget-cell">
           <div class="phase">Phase 3 · M9–12 · Reminder</div>
-          <div class="amount">~€23k</div>
+          <div class="amount">~€22k</div>
           <div class="pct">~15% of total budget</div>
           <div class="desc">Autumn back-to-business push, retargeting lapsed visitors, referral programme amplification, beauty calendar tie-ins.</div>
         </div>
@@ -2189,16 +2189,13 @@
 
       <div class="sl">Channel-level breakdown</div>
       <div class="gtm-channel-grid">
-        <div class="gtm-channel"><span class="gtm-ch-tag gtm-ch-perf">Performance</span><h5>Google Search + Pmax</h5><div class="ch-amount">~€30k</div><span class="ch-pct">~20%</span><p class="ch-desc">Always-on. Three clusters: free salon software, Treatwell alternative, Terminbuchung.</p></div>
-        <div class="gtm-channel"><span class="gtm-ch-tag gtm-ch-perf">Performance</span><h5>Meta Ads</h5><div class="ch-amount">~€28k</div><span class="ch-pct">~19%</span><p class="ch-desc">Always-on. Vienna geo-target M1–4, expand nationally M5+. Revenue creative angle. Retargeting from M2.</p></div>
-        <div class="gtm-channel"><span class="gtm-ch-tag gtm-ch-aware">Awareness</span><h5>OOH Vienna</h5><div class="ch-amount">~€8k</div><span class="ch-pct">~5%</span><p class="ch-desc">M1–4 only. Gewista Brand Area at U3 Zieglergasse + Neubaugasse. Megaboard Mariahilfer Straße.</p></div>
-        <div class="gtm-channel"><span class="gtm-ch-tag gtm-ch-aware">Awareness</span><h5>Trade Media</h5><div class="ch-amount">~€5k</div><span class="ch-pct">~3%</span><p class="ch-desc">Austrian beauty B2B press. Sponsored articles and advertorials in trade publications targeting salon owners.</p></div>
-        <div class="gtm-channel"><span class="gtm-ch-tag gtm-ch-aware">Awareness</span><h5>YouTube B2B Pre-roll</h5><div class="ch-amount">~€6.5k</div><span class="ch-pct">~4%</span><p class="ch-desc">Pre-roll ads on salon business and hairdressing tutorial content. Targeted to Austrian beauty professional audience.</p></div>
-        <div class="gtm-channel"><span class="gtm-ch-tag gtm-ch-brand">Brand</span><h5>B2B influencers</h5><div class="ch-amount">~€22k</div><span class="ch-pct">~15%</span><p class="ch-desc">Full year. Mix of Tier 1 (authority), Tier 2 (Vienna salon owners), Tier 3 (multicultural micro-creators).</p></div>
-        <div class="gtm-channel"><span class="gtm-ch-tag gtm-ch-brand">Brand</span><h5>Vienna launch event</h5><div class="ch-amount">~€12k</div><span class="ch-pct">~8%</span><p class="ch-desc">M2. Invite-only, premium venue. Key Tier 1A and 1B salons. Content for months of organic posts.</p></div>
-        <div class="gtm-channel"><span class="gtm-ch-tag gtm-ch-act">Activation</span><h5>Lead magnets + webinars</h5><div class="ch-amount">~€10k</div><span class="ch-pct">~7%</span><p class="ch-desc">M2 onwards. Revenue Calculator tool build, monthly group calls, quiz hosting.</p></div>
-        <div class="gtm-channel"><span class="gtm-ch-tag gtm-ch-aware">Awareness</span><h5>Multicultural outreach</h5><div class="ch-amount">~€8k</div><span class="ch-pct">~5%</span><p class="ch-desc">M1–6. Walking outreach in Favoriten, Ottakring, Rudolfsheim-Fünfhaus.</p></div>
-        <div class="gtm-channel"><span class="gtm-ch-tag gtm-ch-act">Activation</span><h5>Reserve / optimisation</h5><div class="ch-amount">~€22k</div><span class="ch-pct">~14%</span><p class="ch-desc">Held for reallocation after M1–2 performance data. Move to best-performing channel.</p></div>
+        <div class="gtm-channel"><h5>Google Ads</h5><div class="ch-amount">~€48k</div><span class="ch-pct">~32%</span><p class="ch-desc">Search · Pmax · B2B App Install · YouTube Pre-roll</p></div>
+        <div class="gtm-channel"><h5>Meta Ads</h5><div class="ch-amount">~€30k</div><span class="ch-pct">~20%</span><p class="ch-desc">Feed · Reels · Stories · Lead gen forms</p></div>
+        <div class="gtm-channel"><h5>Trade Media</h5><div class="ch-amount">~€8k</div><span class="ch-pct">~5%</span><p class="ch-desc">Austrian beauty B2B press. Sponsored articles and newsletter placements.</p></div>
+        <div class="gtm-channel"><h5>B2B Influencers</h5><div class="ch-amount">~€25k</div><span class="ch-pct">~17%</span><p class="ch-desc">Full year. Flat list across hair, nails, makeup and barbershop.</p></div>
+        <div class="gtm-channel"><h5>Vienna Launch Event</h5><div class="ch-amount">~€12k</div><span class="ch-pct">~8%</span><p class="ch-desc">Invite-only. Key Tier 1A and 1B salons. Produces months of organic content.</p></div>
+        <div class="gtm-channel"><h5>Lead Magnet Production</h5><div class="ch-amount">~€12k</div><span class="ch-pct">~8%</span><p class="ch-desc">IQ Test build · Revenue Calculator build · Webinar hosting setup. Distribution absorbed into Google and Meta budgets.</p></div>
+        <div class="gtm-channel"><h5>Reserve</h5><div class="ch-amount">~€15k</div><span class="ch-pct">~10%</span><p class="ch-desc">Held for reallocation after M1–2 performance data.</p></div>
       </div>
     </div>
   </div>
