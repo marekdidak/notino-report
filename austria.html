@@ -433,6 +433,7 @@
   <button class="tab" onclick="showTab('competitors', event)">Competitor Analysis</button>
   <button class="tab" onclick="showTab('seo', event)">SEO Roadmap</button>
   <button class="tab" onclick="showTab('events', event)">Events</button>
+  <button class="tab" onclick="showTab('icp', event)">ICP</button>
   <button class="tab" onclick="showTab('gtm', event)">GTM Strategy</button>
 </div>
 
@@ -482,19 +483,19 @@
     <div class="season-grid">
       <div class="season-item s-peak">
         <div class="si-label">Christmas / NYE</div>
-        <div class="si-val">+200–400% demand for beauty, hair, and nails. Peak booking season. Highest revenue concentration.</div>
+        <div class="si-val">Peak demand for beauty, hair, and nails. Peak booking season. Highest revenue concentration.</div>
       </div>
       <div class="season-item s-high">
         <div class="si-label">Wedding season</div>
-        <div class="si-val">+150–250% demand. Bridal, bridesmaids, guests. Peaks late spring through summer.</div>
+        <div class="si-val">Strong demand surge. Bridal, bridesmaids, guests. Peaks late spring through summer.</div>
       </div>
       <div class="season-item s-med">
         <div class="si-label">Back-to-school</div>
-        <div class="si-val">~+180% demand. Hair refresh, grooming. Autumn surge in September–October.</div>
+        <div class="si-val">Significant demand uplift. Hair refresh, grooming. Autumn surge in September–October.</div>
       </div>
       <div class="season-item s-low">
         <div class="si-label">Summer vacation</div>
-        <div class="si-val">+120–150% for nails, waxing, body treatments. Peak months: July (5.7M) and August (6.11M tourists).</div>
+        <div class="si-val">Elevated demand for nails, waxing, body treatments. Peak months: July (5.7M) and August (6.11M tourists).</div>
       </div>
     </div>
     <div class="card-body" style="margin-top:10px"><strong>Booking window:</strong> 2–4 weeks before appointment. Peak event booking: 6–8 weeks ahead. Last-minute share: ~30% of appointments. Early-booking trend: Summer 2026 trips already +16% vs previous year by Nov 2025.</div>
@@ -545,7 +546,7 @@
   <div class="sl">Price sensitivity</div>
   <div class="card" style="margin-bottom:20px">
     <div class="card-body">
-      <strong>61.9%</strong> of consumers prioritize affordability amid economic pressures. <strong>34%</strong> switch brands for lower prices (especially body care). Highly price-sensitive consumers: <strong>45.5%</strong>. Moderately price-sensitive: <strong>36.4%</strong>. Significant negative correlation between price sensitivity and booking frequency (r = -0.45). Typical promotional discounts: 10–20%. However, <strong>35%</strong> of Austrian consumers are willing to pay premium for sustainability. Nail care premium segment captures ~60% of global revenue.
+      <strong>61.9%</strong> of consumers prioritize affordability amid economic pressures. <strong>34%</strong> switch brands for lower prices (especially body care). Highly price-sensitive consumers: <strong>45.5%</strong>. Moderately price-sensitive: <strong>36.4%</strong>. Typical promotional discounts: 10–20%. However, <strong>35%</strong> of Austrian consumers are willing to pay premium for sustainability. Nail care premium segment captures ~60% of global revenue.
     </div>
   </div>
 
@@ -566,7 +567,7 @@
   <div class="sl">Linguistic &amp; cultural specifics</div>
   <div class="card" style="margin-bottom:20px">
     <div class="card-body">
-      <strong>Salon name cultural analysis (Notino DB, n=13,306):</strong><br>
+      <strong>Salon name cultural analysis (Google Places DB, n=13,306):</strong><br>
       German/Austrian-named: <strong>7,097 (53.3%)</strong><br>
       English/international-branded: <strong>3,369 (25.3%)</strong><br>
       Turkish-origin names: <strong>211 (1.6%)</strong> — concentrated in Vienna (~70%+)<br>
@@ -593,7 +594,7 @@
     <div class="persona">
       <span class="ptag pt-b2b">B2B — primary ICP</span>
       <div class="p-name">Independent salon owner</div>
-      <div class="p-body">88% single-owner. Paying €50–109/month to Treatwell/Salonkee. Price-sensitive. Notino's free model + product commission is immediately compelling.</div>
+      <div class="p-body">57–84% sole proprietorships (WKÖ, varies by sub-category). Paying €50–109/month to Treatwell/Salonkee. Price-sensitive. Notino's free model + product commission is immediately compelling.</div>
     </div>
     <div class="persona">
       <span class="ptag pt-b2b">B2B — high-value</span>
@@ -610,91 +611,63 @@
 <div id="tab-salons" class="tab-pane">
 
   <div class="banner banner-blue">
-    <strong>13,306 beauty-service venues in the Notino DB</strong> (Google Places, deduplicated, Feb 2026). Verified supply: 3,110 salons (SmartScrapers Oct 2025). WKO qualifying estimate: ~8,620 salons. Non-verified commercial datasets suggest a broader long tail of 15,000+ providers.
+    <strong>Two data sources.</strong> Official Statistics: ~27,000 total registrations in Notino-relevant categories (WKÖ, Feb 2026 — Friseure + Kosmetiker + Nagelstudios + Fußpfleger + Visagisten + Permanentmakeup), with approximately 24,000 estimated active. Google Places DB: 13,306 beauty-service venues with a digital footprint (deduplicated, Feb 2026).
   </div>
 
-  <div class="sl">Verified supply by category (SmartScrapers Oct 2025)</div>
+  <div class="sl">Official Statistics — active registrations by category (WKÖ 2025)</div>
   <div class="summary-wrap">
     <table>
-      <thead><tr><th>Category</th><th>Verified Count</th><th>Vienna Share</th><th>Vienna %</th><th>Single-Owner %</th><th>Growth vs 2023</th></tr></thead>
+      <thead><tr><th>Category (Berufszweig)</th><th>Active Registrations</th><th>% of Relevant Total</th><th>Source</th></tr></thead>
       <tbody>
-        <tr><td><strong>Hair salons</strong></td><td>1,961</td><td>1,015</td><td>52%</td><td>88.07%</td><td>—</td></tr>
-        <tr><td><strong>Nail salons</strong></td><td>791</td><td>447</td><td>57%</td><td>86.98%</td><td>+6.17%</td></tr>
-        <tr><td><strong>Skin care clinics</strong></td><td>205</td><td>133</td><td>65%</td><td>—</td><td>+5.08%</td></tr>
-        <tr><td><strong>Beauticians (studios)</strong></td><td>153</td><td>65</td><td>42%</td><td>96.08%</td><td>+8.45%</td></tr>
-        <tr style="background:var(--bg-secondary);font-weight:600"><td><strong>TOTAL (verified)</strong></td><td><strong>3,110</strong></td><td><strong>~1,660</strong></td><td><strong>53%</strong></td><td></td><td></td></tr>
+        <tr><td><strong>Friseure (hairdressers)</strong></td><td>10,415</td><td>38.7%</td><td>Official Statistics · FV 124</td></tr>
+        <tr><td><strong>Nagelstudio (nail studios)</strong></td><td>4,789</td><td>17.8%</td><td>Official Statistics · FV 120</td></tr>
+        <tr><td><strong>Fußpfleger (foot care)</strong></td><td>4,702</td><td>17.5%</td><td>Official Statistics · FV 120</td></tr>
+        <tr><td><strong>Kosmetiker (beauticians)</strong></td><td>4,666</td><td>17.3%</td><td>Official Statistics · FV 120</td></tr>
+        <tr><td><strong>Visagisten (makeup artists)</strong></td><td>1,510</td><td>5.6%</td><td>Official Statistics · FV 120</td></tr>
+        <tr><td><strong>Permanentmakeup</strong></td><td>839</td><td>3.1%</td><td>Official Statistics · FV 120</td></tr>
+        <tr style="background:var(--bg-secondary);font-weight:600"><td><strong>TOTAL (Notino-relevant)</strong></td><td><strong>~26,921</strong></td><td><strong>100%</strong></td><td></td></tr>
       </tbody>
     </table>
   </div>
+  <div class="note" style="margin-bottom:20px"><strong>Methodology:</strong> Official Statistics covers two WKÖ trade groups — Friseure (FV 124) and Fußpfleger, Kosmetiker und Masseure (FV 120). From FV 120, only Notino-relevant Berufszweige are included; Masseure (~7,984), Heilmasseure (~3,977), Piercer (~370), and Tätowierer (~1,309) are excluded. Registrations may include multi-category memberships. EPU rate: 57% for Friseure, 84% for FV 120. 99%+ of enterprises have fewer than 10 employees.</div>
 
-  <div class="sl">Notino DB — state-level distribution (n=13,306)</div>
+  <div class="sl">Official Statistics — active registrations by state (WKÖ 2025)</div>
   <div class="summary-wrap">
     <table>
-      <thead><tr><th>State / Region</th><th>Notino DB (salons)</th><th>% of Total</th><th>Population (approx.)</th><th>Salons per 1M Pop.</th></tr></thead>
+      <thead><tr><th>State</th><th>Friseure (FV 124)</th><th>Beauty (FV 120)</th><th>Combined</th><th>% of Total</th></tr></thead>
       <tbody>
-        <tr><td><strong>Lower Austria</strong></td><td>2,630</td><td>19.8%</td><td>1.72M</td><td>~1,529</td></tr>
-        <tr><td><strong>Upper Austria</strong></td><td>2,182</td><td>16.4%</td><td>1.54M</td><td>~1,417</td></tr>
-        <tr><td><strong>Styria</strong></td><td>1,774</td><td>13.4%</td><td>1.27M</td><td>~1,397</td></tr>
-        <tr><td><strong>Vienna</strong></td><td>1,610</td><td>12.1%</td><td>1.94M</td><td>~830</td></tr>
-        <tr><td><strong>Carinthia</strong></td><td>1,259</td><td>9.5%</td><td>0.57M</td><td>~2,209</td></tr>
-        <tr><td><strong>Tyrol</strong></td><td>1,166</td><td>8.8%</td><td>0.79M</td><td>~1,495</td></tr>
-        <tr><td><strong>Salzburg</strong></td><td>1,141</td><td>8.6%</td><td>0.57M</td><td>~2,002</td></tr>
-        <tr><td><strong>Vorarlberg</strong></td><td>938</td><td>7.1%</td><td>0.40M</td><td>~2,345</td></tr>
-        <tr><td>Burgenland</td><td>146</td><td>1.1%</td><td>0.30M</td><td>~487</td></tr>
+        <tr><td><strong>Wien (Vienna)</strong></td><td>1,884</td><td>4,116</td><td>6,000</td><td>17.4%</td></tr>
+        <tr><td><strong>Niederösterreich (Lower Austria)</strong></td><td>1,931</td><td>4,712</td><td>6,643</td><td>19.3%</td></tr>
+        <tr><td><strong>Oberösterreich (Upper Austria)</strong></td><td>1,700</td><td>4,357</td><td>6,057</td><td>17.6%</td></tr>
+        <tr><td><strong>Steiermark (Styria)</strong></td><td>1,627</td><td>3,586</td><td>5,213</td><td>15.1%</td></tr>
+        <tr><td><strong>Tirol (Tyrol)</strong></td><td>854</td><td>1,982</td><td>2,836</td><td>8.2%</td></tr>
+        <tr><td><strong>Salzburg</strong></td><td>765</td><td>1,814</td><td>2,579</td><td>7.5%</td></tr>
+        <tr><td><strong>Kärnten (Carinthia)</strong></td><td>745</td><td>1,722</td><td>2,467</td><td>7.2%</td></tr>
+        <tr><td><strong>Vorarlberg</strong></td><td>509</td><td>799</td><td>1,308</td><td>3.8%</td></tr>
+        <tr><td>Burgenland</td><td>400</td><td>977</td><td>1,377</td><td>4.0%</td></tr>
+        <tr style="background:var(--bg-secondary);font-weight:600"><td><strong>TOTAL (Austria)</strong></td><td><strong>10,415</strong></td><td><strong>24,065</strong></td><td><strong>34,480</strong></td><td><strong>100%</strong></td></tr>
       </tbody>
     </table>
   </div>
+  <div class="note" style="margin-bottom:20px"><strong>Note:</strong> The combined column includes all FV 120 active memberships (incl. masseurs, piercers, tattooists) because state-level breakdowns by Berufszweig involve cross-membership. The Notino-relevant total of ~27,000 is derived from the national Berufszweig breakdown above.</div>
 
-  <div class="sl">WKO qualifying salons by state</div>
+  <div class="sl">Google Places DB — top 11 cities by venue count</div>
   <div class="summary-wrap">
     <table>
-      <thead><tr><th>State / Region</th><th>Qualifying Salons (WKO est.)</th><th>% of Qualifying Total</th></tr></thead>
-      <tbody>
-        <tr><td>Niederosterreich (Lower Austria)</td><td>~1,621</td><td>18.8%</td></tr>
-        <tr><td>Oberosterreich (Upper Austria)</td><td>~1,517</td><td>17.6%</td></tr>
-        <tr><td>Wien (Vienna)</td><td>~1,405</td><td>16.3%</td></tr>
-        <tr><td>Steiermark (Styria)</td><td>~1,293</td><td>15.0%</td></tr>
-        <tr><td>Tirol (Tyrol)</td><td>~836</td><td>9.7%</td></tr>
-        <tr><td>Salzburg</td><td>~707</td><td>8.2%</td></tr>
-        <tr><td>Karnten (Carinthia)</td><td>~552</td><td>6.4%</td></tr>
-        <tr><td>Vorarlberg</td><td>~466</td><td>5.4%</td></tr>
-        <tr><td>Burgenland</td><td>~224</td><td>2.6%</td></tr>
-        <tr style="background:var(--bg-secondary);font-weight:600"><td><strong>TOTAL (Austria)</strong></td><td><strong>~8,620</strong></td><td><strong>100%</strong></td></tr>
-      </tbody>
-    </table>
-  </div>
-  <div class="note" style="margin-bottom:20px"><strong>Data reconciliation:</strong> ~33,350 registered beauty businesses; qualifying threshold eliminates ~74% as too small or inactive. The WKO estimate of ~8,620 represents commercially viable salons suitable for B2B partnership.</div>
-
-  <div class="sl">Top 11 cities by salon count (Notino DB)</div>
-  <div class="summary-wrap">
-    <table>
-      <thead><tr><th>#</th><th>City</th><th>Salon Count</th><th>% of Total</th></tr></thead>
+      <thead><tr><th>#</th><th>City</th><th>Venue Count</th><th>% of Total</th></tr></thead>
       <tbody>
         <tr><td>1</td><td><strong>Vienna</strong></td><td>1,611</td><td>12.1%</td></tr>
         <tr><td>2</td><td><strong>Graz</strong></td><td>574</td><td>4.3%</td></tr>
         <tr><td>3</td><td><strong>Linz</strong></td><td>490</td><td>3.7%</td></tr>
         <tr><td>4</td><td><strong>Salzburg</strong></td><td>396</td><td>3.0%</td></tr>
-        <tr><td>5</td><td><strong>Klagenfurt am Worthersee</strong></td><td>316</td><td>2.4%</td></tr>
+        <tr><td>5</td><td><strong>Klagenfurt am Wörthersee</strong></td><td>316</td><td>2.4%</td></tr>
         <tr><td>6</td><td><strong>Innsbruck</strong></td><td>307</td><td>2.3%</td></tr>
         <tr><td>7</td><td>Villach</td><td>226</td><td>1.7%</td></tr>
         <tr><td>8</td><td>Wels</td><td>213</td><td>1.6%</td></tr>
-        <tr><td>9</td><td>St Polten</td><td>200</td><td>1.5%</td></tr>
+        <tr><td>9</td><td>St Pölten</td><td>200</td><td>1.5%</td></tr>
         <tr><td>10</td><td>Wiener Neustadt</td><td>189</td><td>1.4%</td></tr>
         <tr><td>11</td><td>Dornbirn</td><td>182</td><td>1.4%</td></tr>
         <tr style="background:var(--bg-secondary)"><td colspan="2"><strong>Top 11 total</strong></td><td><strong>4,704</strong></td><td><strong>35.4%</strong></td></tr>
-      </tbody>
-    </table>
-  </div>
-
-  <!-- Non-verified sources -->
-  <div class="sl">Non-verified broader supply indicators</div>
-  <div class="summary-wrap">
-    <table>
-      <thead><tr><th>Source</th><th>Count</th><th>Notes</th><th>Status</th></tr></thead>
-      <tbody>
-        <tr class="warn-row"><td><strong>BoldData — "Beauticians in Austria"</strong></td><td>15,643</td><td>EUR 0.10–0.25 per record, min EUR 450. Broad classification — may include non-salon providers.</td><td><span class="warn-badge">&#9888; Non-verified</span></td></tr>
-        <tr class="warn-row"><td><strong>Bancomail — "Beauty centres Austria"</strong></td><td>3,162</td><td>Email addresses of beauty centres. Strong on email verification / GDPR compliance.</td><td><span class="warn-badge">&#9888; Non-verified</span></td></tr>
-        <tr class="warn-row"><td><strong>L'Oreal Professionnel Salon Directory</strong></td><td>1,681</td><td>Pre-2025, partner network only. High-quality professional salons but subset.</td><td><span class="warn-badge">&#9888; Non-verified</span></td></tr>
       </tbody>
     </table>
   </div>
@@ -741,7 +714,7 @@
         <tr><td><strong>Fresha</strong></td><td>Free–~$19.95/month</td><td>20% new clients; 2.79%+$0.20 txn</td><td><span class="tag-no">None</span></td><td><span class="pri-low">Low hundreds</span></td><td><a href="https://www.fresha.com/" target="_blank" rel="noopener">fresha.com</a></td></tr>
         <tr><td><strong>studiobookr / studiolution</strong></td><td>€23–30/month</td><td><span class="tag-yes">0%</span></td><td><span class="tag-no">None</span></td><td>Low but growing</td><td><a href="https://www.studiobookr.de/" target="_blank" rel="noopener">studiobookr.de</a></td></tr>
         <tr style="background:#fef9e7"><td><strong>Planity</strong></td><td>Free core; premium add-ons</td><td><span class="tag-yes">0%</span></td><td><span class="tag-no">None</span></td><td><span class="pri-high">0 (launching Q3 26–Q1 27)</span></td><td><a href="https://www.planity.com/de-at" target="_blank" rel="noopener">planity.com/de-at</a></td></tr>
-        <tr style="background:var(--green-50)"><td><strong>Notino Partner</strong></td><td><span class="tag-yes">FREE if ≥20 bookings</span></td><td><span class="tag-yes">0%</span></td><td><span class="tag-yes">5% product commission + loyalty</span></td><td>0 (target: 500–800 by 2027)</td><td><a href="https://partner.notino.at/" target="_blank" rel="noopener">partner.notino.at</a></td></tr>
+        <tr style="background:var(--green-50)"><td><strong>Notino Partner</strong></td><td><span class="tag-yes">Always free — no conditions</span></td><td><span class="tag-yes">0%</span></td><td><span class="tag-yes">5% product commission + loyalty</span></td><td>0 (target: 500–800 by 2027)</td><td><a href="https://partner.notino.at/" target="_blank" rel="noopener">partner.notino.at</a></td></tr>
         <tr><td><strong>BookGoodLook</strong></td><td>Free listing; commission on discounted slots</td><td>Commission % on last-minute deals</td><td><span class="tag-no">None</span></td><td><span class="pri-low">Low (niche AT marketplace)</span></td><td><a href="https://bookgoodlook.at/" target="_blank" rel="noopener">bookgoodlook.at</a></td></tr>
         <tr><td><strong>Time Globe</strong></td><td>Low SaaS (~€25/month)</td><td><span class="tag-yes">0%</span></td><td><span class="tag-no">None</span></td><td><span class="pri-low">Very low (DE primary)</span></td><td><a href="https://timeglobe.de/" target="_blank" rel="noopener">timeglobe.de</a></td></tr>
       </tbody>
@@ -799,6 +772,56 @@
     </div>
     <div class="attack"><strong>Attack angle:</strong> "Treatwell takes 35% of every new client and charges you €50–80/month. Notino: €0 if you're active, 0% commissions, and we pay you 5% on every product your clients buy. You keep your clients, your data, and your margins."</div>
     <div style="margin-top:10px;font-size:13px">🔗 <a href="https://www.treatwell.at/partners/#" target="_blank" rel="noopener" style="color:var(--green-600)">Treatwell Partner (B2B): treatwell.at/partners</a></div>
+
+    <div class="collapsible">
+      <button class="collapsible-toggle" style="font-size:15px;border-left:4px solid var(--color-strong-pink);padding-left:16px;background:linear-gradient(90deg, var(--color-pink-100), transparent);font-weight:700;" onclick="toggleCollapsible(this)">🎯 Ad Creative Library &amp; Strategic Resources</button>
+      <div class="collapsible-content">
+
+        <div class="sl">Live Ad Libraries (Facebook)</div>
+        <div class="card-grid-2">
+          <div class="card">
+            <div class="card-title">B2B Ads — Salon Partner Acquisition (AT)</div>
+            <div class="card-body">Active Facebook/Instagram ads targeting salon owners in Austria. Sorted by total impressions.</div>
+            <a class="cta-btn" style="font-size:12px;padding:8px 16px;display:inline-flex;margin-top:8px" href="https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=AT&is_targeted_country=false&media_type=all&search_type=page&sort_data[mode]=total_impressions&sort_data[direction]=desc&view_all_page_id=100213322267494" target="_blank" rel="noopener">→ Open Treatwell B2B Ad Library</a>
+          </div>
+          <div class="card">
+            <div class="card-title">B2C Ads — Consumer Booking (AT)</div>
+            <div class="card-body">Active consumer-facing Facebook/Instagram ads in Austria. Sorted by total impressions.</div>
+            <a class="cta-btn" style="font-size:12px;padding:8px 16px;display:inline-flex;margin-top:8px" href="https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=AT&is_targeted_country=false&media_type=all&search_type=page&sort_data[direction]=desc&sort_data[mode]=total_impressions&view_all_page_id=23996790840" target="_blank" rel="noopener">→ Open Treatwell B2C Ad Library</a>
+          </div>
+        </div>
+
+        <div class="sl">YouTube Ad Examples (B2B)</div>
+        <div class="card-grid-2">
+          <div class="card">
+            <div class="card-title">B2B Ad — Example 1</div>
+            <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:var(--radius);margin-top:8px">
+              <iframe style="position:absolute;top:0;left:0;width:100%;height:100%" src="https://www.youtube.com/embed/JhrYLzdQdcg" title="B2B Ad — Example 1" frameborder="0" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture" allowfullscreen loading="lazy"></iframe>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-title">B2B Ad — Example 2</div>
+            <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:var(--radius);margin-top:8px">
+              <iframe style="position:absolute;top:0;left:0;width:100%;height:100%" src="https://www.youtube.com/embed/DRIMb8Pu9Hw" title="B2B Ad — Example 2" frameborder="0" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture" allowfullscreen loading="lazy"></iframe>
+            </div>
+          </div>
+        </div>
+
+        <div class="sl">Brand &amp; Strategy Resources</div>
+        <div class="card">
+          <div class="card-title">Further Reading</div>
+          <div class="card-body">
+            <strong><a href="https://cosmeticsbusiness.com/treatwell-unveils-spirited-ad-campaign-following-rebrand--118131" target="_blank" rel="noopener">Treatwell Rebranding Campaign — 'Treat Everyone Well' (B2C)</a></strong><br>
+            Details of the 2024 brand refresh, visual identity shift, and consumer-facing campaign positioning.<br><br>
+            <strong><a href="https://www.marketingweek.com/treatwell-most-effective-spend/" target="_blank" rel="noopener">Treatwell Marketing Strategy — Most Effective Spend Analysis</a></strong><br>
+            Marketing Week analysis of where Treatwell allocates budget and what drives the best return.<br><br>
+            <strong><a href="https://businessmodelcanvastemplate.com/blogs/marketing-strategy/treatwell-marketing-strategy" target="_blank" rel="noopener">Treatwell Business Model &amp; Marketing Strategy Deep Dive</a></strong><br>
+            Full breakdown of Treatwell's go-to-market, channel mix, and positioning strategy.
+          </div>
+        </div>
+
+      </div>
+    </div>
   </div>
 
   <!-- Salonkee -->
@@ -842,6 +865,7 @@
       </ul></div>
     </div>
     <div class="attack"><strong>Attack angle:</strong> "Salonkee is a great tool — but €49–109/month adds up to €600–1,300/year. Notino gives you the essential booking, calendar, and client tools for free if you're active. Plus 5% product commission that Salonkee doesn't offer."</div>
+    <div style="margin-top:10px;font-size:13px">🔗 <a href="https://salonkee.com/pro/de-AT/software-friseur-kosmetikstudio/" target="_blank" rel="noopener" style="color:var(--green-600)">salonkee.com/pro/de-AT</a></div>
   </div>
 
   <!-- Fresha -->
@@ -886,6 +910,7 @@
       </ul></div>
     </div>
     <div class="attack"><strong>Attack angle:</strong> "Fresha charges 2.79% on every single payment — even on the 'free' plan. Plus 20% on every new marketplace client. With Notino: 0% commissions, 0% payment fees, and 5% revenue back on products. The more you grow, the more you save."</div>
+    <div style="margin-top:10px;font-size:13px">🔗 <a href="https://www.fresha.com/lp/en/at-wien" target="_blank" rel="noopener" style="color:var(--green-600)">fresha.com/lp/en/at-wien</a></div>
   </div>
 
   <!-- studiobookr -->
@@ -907,6 +932,7 @@
       <strong>Model:</strong> German online booking system for salons, studios &amp; practices. ~€23–30/month per location, 0% booking commission. Features: 24/7 online booking, calendar sync, automated reminders, customer database, staff management, Google/Facebook integrations. Low but growing presence in Austria through salon websites using studiobookr widgets. Strong DACH localisation and GDPR compliance.
     </div>
     <div class="attack"><strong>Attack angle:</strong> "studiobookr is a clean tool, but it's still €23–30/month with no consumer marketplace and no product revenue share. Notino: free if active, plus marketplace visibility and 5% product commission."</div>
+    <div style="margin-top:10px;font-size:13px">🔗 <a href="https://www.studiobookr.com/" target="_blank" rel="noopener" style="color:var(--green-600)">studiobookr.com</a></div>
   </div>
 
   <!-- Time Globe -->
@@ -975,6 +1001,7 @@
       </ul></div>
     </div>
     <div class="attack"><strong>Attack angle:</strong> "Planity will give you 0% commissions. Notino gives you 0% commissions PLUS 5% revenue share on every product your clients buy. We're not just booking — we're revenue growth. And we're already here."</div>
+    <div style="margin-top:10px;font-size:13px">🔗 <a href="https://www.planity.com/de-DE" target="_blank" rel="noopener" style="color:var(--green-600)">planity.com/de-DE</a> <span style="font-size:10px;color:var(--text-tertiary)">(DE only — no AT site yet)</span></div>
   </div>
 
   <!-- BookGoodLook note -->
@@ -1175,6 +1202,7 @@
       <div class="comp-name-block">
         <div class="name">Treatwell</div>
         <div class="sub">Multi-channel leader — the only competitor running full-funnel ATL + digital in Austria</div>
+        <div class="sub" style="margin-top:3px">🔗 <a href="https://www.treatwell.at/partners/#" target="_blank" rel="noopener" style="color:var(--green-600)">treatwell.at/partners</a></div>
       </div>
       <span class="threat-badge t-high">Threat: high</span>
     </div>
@@ -1188,7 +1216,7 @@
           <tr><td class="ch-cat">Instagram</td><td>Influencer/UGC partnerships, beauty inspiration, booking CTAs, seasonal content</td><td>Active DACH account</td></tr>
           <tr><td class="ch-cat">TikTok</td><td>@treatwellofficial — beauty trends, behind-the-scenes, short-form video</td><td>~8.7k followers, 80k+ likes</td></tr>
           <tr><td class="ch-cat">YouTube</td><td>DE channel — brand campaigns, salon spotlights, beauty how-tos</td><td>Active DE channel</td></tr>
-          <tr><td class="ch-cat">TV / OOH</td><td>Seven-figure "brighter way to book beauty" campaign — Channel 4, Sky, ITV + OOH + social amplification</td><td>Multi-country, high-budget ATL</td></tr>
+          <tr><td class="ch-cat">TV / OOH</td><td>Seven-figure "brighter way to book beauty" campaign — UK market only (Channel 4, Sky, ITV + OOH). Not active in Austria.</td><td>UK only — not AT-relevant</td></tr>
           <tr><td class="ch-cat">B2B</td><td>Treatwell Pro / Connect pages, email marketing to salon partners, in-app partner comms</td><td>Dedicated B2B onboarding funnel</td></tr>
         </tbody>
       </table>
@@ -1202,6 +1230,7 @@
       <div class="comp-name-block">
         <div class="name">Salonkee</div>
         <div class="sub">DACH B2B SaaS — digital-first with emerging social</div>
+        <div class="sub" style="margin-top:3px">🔗 <a href="https://salonkee.com/pro/de-AT/software-friseur-kosmetikstudio/" target="_blank" rel="noopener" style="color:var(--green-600)">salonkee.com/pro/de-AT</a></div>
       </div>
       <span class="threat-badge t-med">Threat: medium</span>
     </div>
@@ -1228,6 +1257,7 @@
       <div class="comp-name-block">
         <div class="name">Fresha</div>
         <div class="sub">Global platform — strong website/app, weak AT-specific presence</div>
+        <div class="sub" style="margin-top:3px">🔗 <a href="https://www.fresha.com/lp/en/at-wien" target="_blank" rel="noopener" style="color:var(--green-600)">fresha.com/lp/en/at-wien</a></div>
       </div>
       <span class="threat-badge t-med">Threat: medium</span>
     </div>
@@ -1254,6 +1284,7 @@
       <div class="comp-name-block">
         <div class="name">studiobookr / studiolution</div>
         <div class="sub">German-speaking SaaS — indirect social via salon enablement</div>
+        <div class="sub" style="margin-top:3px">🔗 <a href="https://www.studiobookr.com/" target="_blank" rel="noopener" style="color:var(--green-600)">studiobookr.com</a></div>
       </div>
       <span class="threat-badge t-low">Threat: low</span>
     </div>
@@ -1280,6 +1311,7 @@
       <div class="comp-name-block">
         <div class="name">Planity</div>
         <div class="sub">French powerhouse — heavy multi-channel in FR, pre-seeding DACH</div>
+        <div class="sub" style="margin-top:3px">🔗 <a href="https://www.planity.com/de-DE" target="_blank" rel="noopener" style="color:var(--green-600)">planity.com/de-DE</a> <span style="font-size:10px;color:var(--text-tertiary)">(DE only — no AT site yet)</span></div>
       </div>
       <span class="threat-badge t-high">Threat: HIGH &amp; IMMINENT</span>
     </div>
@@ -1307,6 +1339,7 @@
       <div class="comp-name-block">
         <div class="name">TimeGlobe</div>
         <div class="sub">DACH salon software — "die smarte Salon-Software" · Founded 2010, Bonn</div>
+        <div class="sub" style="margin-top:3px">🔗 <a href="https://timeglobe.de/" target="_blank" rel="noopener" style="color:var(--green-600)">timeglobe.de</a></div>
       </div>
       <span class="threat-badge t-low">Threat: low</span>
     </div>
@@ -1411,59 +1444,145 @@
     <button class="collapsible-toggle" onclick="toggleCollapsible(this)">Cluster 1: Booking &amp; Salonsoftware</button>
     <div class="collapsible-content">
       <div class="kw-list">
-        <span class="kw">salonsoftware mit online-terminbuchung fur friseursalon</span>
-        <span class="kw">online buchungssystem friseur salon osterreich</span>
-        <span class="kw">barber shop software fur online-termine</span>
-        <span class="kw">terminbuchungssoftware fur nagelstudio</span>
+        <span class="kw">terminbuchung salon</span>
+        <span class="kw">online terminbuchung friseur</span>
+        <span class="kw">buchungssystem kosmetikstudio</span>
+        <span class="kw">terminsoftware nagelstudio</span>
+        <span class="kw">salon software österreich</span>
+        <span class="kw">salonsoftware mit online-terminbuchung für friseursalon</span>
+        <span class="kw">online buchungssystem friseur salon österreich</span>
+        <span class="kw">terminbuchungssoftware für nagelstudio</span>
+        <span class="kw">friseursalon terminverwaltung software</span>
+        <span class="kw">online-terminbuchung für kosmetikstudio einrichten</span>
+        <span class="kw">barber shop software für online-termine</span>
+        <span class="kw">terminverwaltung friseur</span>
+        <span class="kw">online kalender salon</span>
+        <span class="kw">kundenmanagement salon software</span>
+        <span class="kw">beste salon software österreich</span>
+        <span class="kw">kosmetikstudio software vergleich</span>
+        <span class="kw">nagelstudio terminplaner</span>
+        <span class="kw">friseur kassensystem mit terminbuchung</span>
+        <span class="kw">all in one salon software</span>
+        <span class="kw">cloud software friseur salon</span>
+        <span class="kw">salon software mit online buchung</span>
         <span class="kw">friseursoftware mit kasse und online-terminbuchung</span>
-        <span class="kw">friseur software anbieter wechsel ohne datenverlust</span>
-        <span class="kw">online terminplaner fur friseursalon mit app</span>
+        <span class="kw">online terminplaner für friseursalon mit app</span>
+        <span class="kw">salonverwaltungssoftware für friseure und beauty studios</span>
+        <span class="kw">kundendatenbank kosmetikstudio software</span>
+        <span class="kw">mitarbeiterplanung friseursalon software</span>
+        <span class="kw">kassensystem friseursalon mit online-terminbuchung</span>
+        <span class="kw">salonstatistiken umsatz und auslastung friseursoftware</span>
       </div>
       <div class="attack" style="margin-top:8px"><strong>Quick content action:</strong> Vertical landing pages per salon type (Friseur, Barber, Nagelstudio, Beauty) with screenshots + CTA</div>
     </div>
   </div>
 
   <div class="collapsible">
-    <button class="collapsible-toggle" onclick="toggleCollapsible(this)">Cluster 2: Free / Low-Cost Tools</button>
-    <div class="collapsible-content">
-      <div class="kw-list">
-        <span class="kw">kostenlose salonsoftware mit online-terminbuchung</span>
-        <span class="kw">friseursoftware kostenlos ohne monatsgebuhr</span>
-        <span class="kw">online-buchungstool friseursalon kostenlos testen</span>
-        <span class="kw">gunstige salonsoftware fur kleine studios</span>
-        <span class="kw">salonsoftware kostenlos testen ohne vertragsbindung</span>
-        <span class="kw">gunstige friseursoftware fur ein-mann-salon</span>
-      </div>
-      <div class="attack" style="margin-top:8px"><strong>Quick content action:</strong> Hero homepage claim "0 EUR — Keine Monatsgebuhr"; add dedicated "Why free?" page</div>
-    </div>
-  </div>
-
-  <div class="collapsible">
-    <button class="collapsible-toggle" onclick="toggleCollapsible(this)">Cluster 3: New Clients &amp; Marketing</button>
+    <button class="collapsible-toggle" onclick="toggleCollapsible(this)">Cluster 2: New Clients &amp; Growth</button>
     <div class="collapsible-content">
       <div class="kw-list">
         <span class="kw">mehr neukunden friseursalon durch online-buchung</span>
-        <span class="kw">friseursalon online sichtbarkeit erhohen</span>
-        <span class="kw">terminbuchungsplattform beauty salon kundengewinnung</span>
-        <span class="kw">friseur bewertungen sammeln software</span>
+        <span class="kw">wie bekomme ich mehr kunden im friseursalon</span>
+        <span class="kw">wie bekomme ich mehr kunden in meinem nagelstudio</span>
+        <span class="kw">neue kunden gewinnen friseur</span>
+        <span class="kw">mehr kunden kosmetikstudio</span>
+        <span class="kw">kundenbuchungen erhöhen salon</span>
+        <span class="kw">online buchungen steigern friseur</span>
+        <span class="kw">salon auslastung erhöhen</span>
+        <span class="kw">leere termine vermeiden salon</span>
+        <span class="kw">friseursalon online sichtbarkeit erhöhen</span>
+        <span class="kw">salon marketing ideen für kleine beauty studios</span>
+        <span class="kw">terminbuchungsplattform für beauty salon zur kundengewinnung</span>
         <span class="kw">friseursalon mehr online-bewertungen und stammkunden</span>
+        <span class="kw">friseur bewertungen sammeln und anzeigen software</span>
+        <span class="kw">marketing für friseursalon österreich</span>
       </div>
-      <div class="attack" style="margin-top:8px"><strong>Quick content action:</strong> Blog/hub page: "Mehr Kunden fur Ihren Salon — Schritt fur Schritt" with Notino Partner CTA</div>
+      <div class="attack" style="margin-top:8px"><strong>Quick content action:</strong> Blog/hub page: "Mehr Kunden für Ihren Salon — Schritt für Schritt" with Notino Partner CTA</div>
     </div>
   </div>
 
   <div class="collapsible">
-    <button class="collapsible-toggle" onclick="toggleCollapsible(this)">Cluster 4: Salon Management</button>
+    <button class="collapsible-toggle" onclick="toggleCollapsible(this)">Cluster 3: Salon Management, Automation &amp; Efficiency</button>
     <div class="collapsible-content">
       <div class="kw-list">
-        <span class="kw">salonverwaltungssoftware fur friseure und beauty studios</span>
-        <span class="kw">kundendatenbank kosmetikstudio software</span>
-        <span class="kw">salonstatistiken umsatz und auslastung</span>
-        <span class="kw">mitarbeiterplanung friseursalon software</span>
+        <span class="kw">online kalender salon</span>
         <span class="kw">digitaler friseursalon kalender mit sms-erinnerung</span>
-        <span class="kw">friseur salon digitalisieren online-auftritt und buchung</span>
+        <span class="kw">automatische terminbuchung salon</span>
+        <span class="kw">24/7 terminbuchung friseur</span>
+        <span class="kw">online kalender mit erinnerung salon</span>
+        <span class="kw">terminplanung software kosmetikstudio</span>
+        <span class="kw">no show reduzieren friseur</span>
+        <span class="kw">termin erinnerung system salon</span>
+        <span class="kw">friseursalon digitalisieren online-auftritt und buchung</span>
       </div>
-      <div class="attack" style="margin-top:8px"><strong>Quick content action:</strong> Feature page "Alles in einer App": calendar, client records, staff planning, analytics</div>
+      <div class="attack" style="margin-top:8px"><strong>Quick content action:</strong> Feature page "Alles in einer App": calendar, client records, staff planning, analytics, SMS reminders</div>
+    </div>
+  </div>
+
+  <div class="collapsible">
+    <button class="collapsible-toggle" onclick="toggleCollapsible(this)">Cluster 4: Free &amp; Low-Cost Tools</button>
+    <div class="collapsible-content">
+      <div class="kw-list">
+        <span class="kw">kostenlose salonsoftware mit online-terminbuchung</span>
+        <span class="kw">terminsoftware friseur kostenlos</span>
+        <span class="kw">kostenlose terminsoftware friseur</span>
+        <span class="kw">friseursoftware kostenlos ohne monatsgebühr</span>
+        <span class="kw">kostenloses terminbuchungssystem für nagelstudio</span>
+        <span class="kw">salonsoftware kostenlos testen ohne vertragsbindung</span>
+        <span class="kw">salon software kostenlos österreich</span>
+        <span class="kw">online buchung kostenlos salon</span>
+        <span class="kw">friseur software ohne monatliche kosten</span>
+        <span class="kw">günstige salonsoftware für kleine studios</span>
+        <span class="kw">günstige friseursoftware für einzelunternehmen</span>
+        <span class="kw">online-buchungstool friseursalon kostenlos testen</span>
+      </div>
+      <div class="attack" style="margin-top:8px"><strong>Quick content action:</strong> Hero homepage claim "0 EUR — Keine Monatsgebühr"; add dedicated "Why free?" page</div>
+    </div>
+  </div>
+
+  <div class="collapsible">
+    <button class="collapsible-toggle" onclick="toggleCollapsible(this)">Cluster 5: Competitor &amp; Comparison</button>
+    <div class="collapsible-content">
+      <div class="kw-list">
+        <span class="kw">treatwell alternative österreich</span>
+        <span class="kw">alternative zu treatwell für salons</span>
+        <span class="kw">fresha alternative salon</span>
+        <span class="kw">booksy alternative kostenlos</span>
+        <span class="kw">salon software vergleich österreich</span>
+        <span class="kw">beste terminbuchung software friseur</span>
+        <span class="kw">friseur software anbieter wechsel ohne datenverlust</span>
+      </div>
+      <div class="attack" style="margin-top:8px"><strong>Quick content action:</strong> Comparison landing pages: "Notino vs. Treatwell", "Notino vs. Fresha" — transparent side-by-side feature and cost breakdowns</div>
+    </div>
+  </div>
+
+  <div class="collapsible">
+    <button class="collapsible-toggle" onclick="toggleCollapsible(this)">Cluster 6: Local B2B Austria</button>
+    <div class="collapsible-content">
+      <div class="kw-list">
+        <span class="kw">salon software österreich</span>
+        <span class="kw">friseur software wien</span>
+        <span class="kw">kosmetikstudio terminsoftware graz</span>
+        <span class="kw">nagelstudio software linz</span>
+        <span class="kw">terminbuchung salon salzburg</span>
+        <span class="kw">salon software für kleine studios österreich</span>
+      </div>
+      <div class="attack" style="margin-top:8px"><strong>Quick content action:</strong> City-specific landing pages (Wien, Graz, Linz, Salzburg) with local salon testimonials and city salon counts</div>
+    </div>
+  </div>
+
+  <div class="collapsible">
+    <button class="collapsible-toggle" onclick="toggleCollapsible(this)">Cluster 7: Long-Tail High-Conversion</button>
+    <div class="collapsible-content">
+      <div class="kw-list">
+        <span class="kw">wie bekomme ich mehr kunden im friseursalon</span>
+        <span class="kw">wie bekomme ich mehr kunden in meinem nagelstudio</span>
+        <span class="kw">beste kostenlose terminsoftware für kosmetikstudio</span>
+        <span class="kw">wie online buchungen für salon einführen</span>
+        <span class="kw">friseur terminbuchung system ohne provision</span>
+        <span class="kw">salon software für kleine studios österreich</span>
+      </div>
+      <div class="attack" style="margin-top:8px"><strong>Quick content action:</strong> FAQ-style blog posts targeting question keywords; each post ends with Notino Partner registration CTA</div>
     </div>
   </div>
 
@@ -1493,9 +1612,9 @@
     <table>
       <thead><tr><th>Page</th><th>Suggested Title (≤60 ch)</th><th>Suggested Description (≤155 ch)</th></tr></thead>
       <tbody>
-        <tr><td><strong>Home (Landing)</strong></td><td>Notino Partner: Kostenlose Salonsoftware &amp; Online-Buchung</td><td>Digitalisieren Sie Ihren Salon kostenlos. Online-Terminbuchung, Kalender &amp; mehr Neukunden durch Osterreichs grosstes Beauty-Netzwerk. Jetzt gratis starten!</td></tr>
-        <tr><td><strong>How it Works (Features)</strong></td><td>Online-Terminbuchung fur Salons — So funktioniert Notino</td><td>In 3 Schritten zu mehr Auslastung: Profil erstellen, Kalender nutzen &amp; 24/7 Buchungen empfangen. Integriert in die Notino App.</td></tr>
-        <tr><td><strong>Registration (Conversion)</strong></td><td>Kostenlos registrieren — Notino Partner Osterreich</td><td>Melden Sie Ihren Friseursalon oder Ihr Beauty-Studio kostenlos an. Keine Fixkosten, einfache Online-Buchung &amp; sofort neue Kunden finden.</td></tr>
+        <tr><td><strong>Home (Landing)</strong></td><td>Notino Partner: Kostenlose Salonsoftware &amp; Online-Buchung</td><td>Mehr Umsatz fur Ihren Salon — kostenlose Online-Terminbuchung, Kalender &amp; 5% Provision auf Produktverkaufe. Powered by Europas grosster Beauty-Plattform. Jetzt gratis starten!</td></tr>
+        <tr><td><strong>How it Works (Features)</strong></td><td>Online-Terminbuchung fur Salons — So funktioniert Notino</td><td>In 3 Schritten zu mehr Auslastung: Profil erstellen, Kalender nutzen &amp; 24/7 Buchungen. Integriert in die Notino App.</td></tr>
+        <tr><td><strong>Registration (Conversion)</strong></td><td>Kostenlos registrieren — Notino Partner Osterreich</td><td>Melden Sie Ihren Friseursalon oder Ihr Beauty-Studio kostenlos an. Keine Fixkosten, einfache Online-Buchung &amp; sofort neue Kunden.</td></tr>
       </tbody>
     </table>
   </div>
@@ -1517,7 +1636,7 @@
           <td><strong>Salonkee</strong></td>
           <td>All-in-one management messaging; clean feature breakdown; .at local trust</td>
           <td>SaaS monthly fee; rigid pricing tiers</td>
-          <td>Same feature depth at €0 base cost</td>
+          <td>Core booking and calendar tools at €0 base cost</td>
           <td>Build feature parity page showing calendar + CRM + stats</td>
         </tr>
         <tr>
@@ -1584,32 +1703,6 @@
   </div>
 
   <!-- Event 2 -->
-  <div class="event-card" style="border-top:3px solid var(--green-600)">
-    <div class="event-header">
-      <div class="event-name">Trends of Beauty Graz</div>
-      <div class="event-date">April 2026 (TBC) / April 2027 (TBC)</div>
-    </div>
-    <div class="event-meta">
-      <div class="event-meta-item">
-        <div class="em-label">City / Venue</div>
-        <div class="em-value">Graz — Messecongress Graz</div>
-      </div>
-      <div class="event-meta-item">
-        <div class="em-label">Core Focus</div>
-        <div class="em-value">National beauty trade fair (cosmetics, foot care, massage, PMU, tattoo, piercing)</div>
-      </div>
-      <div class="event-meta-item">
-        <div class="em-label">Primary Audience</div>
-        <div class="em-value">Beauticians, chiropodists, nail techs, salon owners, distributors</div>
-      </div>
-      <div class="event-meta-item">
-        <div class="em-label">Duration</div>
-        <div class="em-value">Multi-day (TBC)</div>
-      </div>
-    </div>
-    <div class="attack"><strong>Notino Partner strategy:</strong> Graz is Austria's second-largest city with 574 salons in the DB. This national trade fair covers a wide spectrum including PMU/tattoo/piercing — focus Notino's booth on hair, nails, and beauty studios. Bring case studies from Vienna early adopters. Target: 60+ qualified leads from Styria region. If 2026 dates are missed, prioritise 2027 edition.</div>
-  </div>
-
   <!-- Event 3 -->
   <div class="event-card" style="border-top:3px solid var(--blue-600)">
     <div class="event-header">
@@ -1634,7 +1727,7 @@
         <div class="em-value">3 days</div>
       </div>
     </div>
-    <div class="attack"><strong>Notino Partner strategy:</strong> Carinthia has 1,259 salons (9.5% of total DB) with the highest per-capita density (~2,209/1M). The mix of pro and consumer attendees allows dual-purpose presence: B2B salon onboarding plus B2C brand awareness. Klagenfurt (316 salons) is a key secondary city. Target: 30+ qualified salon leads.</div>
+    <div class="attack"><strong>Notino Partner strategy:</strong> Carinthia has 1,259 salons (9.5% of total DB) with the second-highest per-capita density (~2,209/1M). The mix of pro and consumer attendees allows dual-purpose presence: B2B salon onboarding plus B2C brand awareness. Klagenfurt (316 salons) is a key secondary city. Target: 30+ qualified salon leads.</div>
   </div>
 
   <!-- Event 4 -->
@@ -1718,10 +1811,358 @@
     <div class="attack"><strong>Notino Partner strategy:</strong> Second Dornbirn event within 2 months — leverage the Herbstmesse contacts for follow-up conversations here. The 4-country scope (AT/CH/DE/LI) means cross-border wellness operators attend. Good for testing messaging with Swiss and German salon owners before wider DACH expansion. Target: 15+ qualified leads plus Swiss market intelligence.</div>
   </div>
 
+  <!-- Event 7: Beauty Lounge (2027) -->
+  <div class="event-card" style="border-top:3px solid var(--green-600)">
+    <div class="event-header">
+      <div class="event-name">Beauty Lounge</div>
+      <div class="event-date">17 Apr 2027</div>
+    </div>
+    <div class="event-meta">
+      <div class="event-meta-item">
+        <div class="em-label">City / Venue</div>
+        <div class="em-value">Graz — Messecongress Graz</div>
+      </div>
+      <div class="event-meta-item">
+        <div class="em-label">Core Focus</div>
+        <div class="em-value">National beauty trade fair (cosmetics, foot care, massage, PMU, tattoo, piercing)</div>
+      </div>
+      <div class="event-meta-item">
+        <div class="em-label">Primary Audience</div>
+        <div class="em-value">Beauticians, chiropodists, nail techs, salon owners, distributors</div>
+      </div>
+      <div class="event-meta-item">
+        <div class="em-label">Duration</div>
+        <div class="em-value">Multi-day (TBC)</div>
+      </div>
+    </div>
+    <div class="attack"><strong>Notino Partner strategy:</strong> Graz is Austria's second-largest city with 574 salons in the DB. This national trade fair covers a wide spectrum including PMU/tattoo/piercing — focus Notino's booth on hair, nails, and beauty studios. Bring case studies from Vienna early adopters. Target: 60+ qualified leads from Styria region.</div>
+  </div>
+
 </div>
 
 <!-- ============================================================ -->
-<!-- TAB 6: GTM STRATEGY -->
+<!-- TAB 6: ICP -->
+<!-- ============================================================ -->
+<div id="tab-icp" class="tab-pane">
+
+  <div class="sl">Notino Partner Austria — B2B ICP</div>
+  <div class="banner banner-purple">
+    <strong>B2B only · Updated March 2026.</strong> Ideal Customer Profile for Notino Partner salon acquisition in Austria. Six target profiles across three tiers, ranked by conversion likelihood and strategic value.
+  </div>
+
+  <!-- TIER 1A -->
+  <div class="sl" style="margin-bottom:6px">Tier 1A — Primary ICP</div>
+  <div style="margin-bottom:14px"><span class="ptag" style="background:var(--purple-50);color:var(--purple-600)">TIER 1A · HIGHEST PRIORITY</span></div>
+
+  <div class="comp-card" style="border-top:3px solid var(--purple-600)">
+    <div class="comp-header">
+      <div class="comp-name-block">
+        <div class="name">Undigitised independent salon — mainstream</div>
+        <div class="sub">Single-owner salon taking bookings by phone, WhatsApp, or walk-in only</div>
+      </div>
+    </div>
+    <div class="bt">
+      Single-owner salon taking bookings by phone, WhatsApp, or walk-in only. No booking platform. Commercially active (20+ appointments/month) but invisible online. Notino is their first booking tool — zero switching friction, zero competitor loyalty.
+    </div>
+    <div class="event-meta">
+      <div class="event-meta-item">
+        <div class="em-label">Business type</div>
+        <div class="em-value">Hair, nail, beauty studio</div>
+      </div>
+      <div class="event-meta-item">
+        <div class="em-label">Team size</div>
+        <div class="em-value">1–3 staff</div>
+      </div>
+      <div class="event-meta-item">
+        <div class="em-label">Current tool</div>
+        <div class="em-value">Phone / WhatsApp / walk-in</div>
+      </div>
+      <div class="event-meta-item">
+        <div class="em-label">Monthly cost</div>
+        <div class="em-value">€0 (no platform today)</div>
+      </div>
+    </div>
+    <div class="attack"><strong>Pitch:</strong> "40% of bookings happen outside business hours — you're missing them right now. Notino gives you 24/7 online booking, your own calendar, and access to Notino's Austrian shoppers. Free, no commissions, and we pay you 5% on products your clients buy."</div>
+    <div class="note" style="margin-top:10px"><strong>Qualification note:</strong> Always free — no booking threshold. Focus on salons with regular client flow to maximise activation and product commission revenue.</div>
+    <div class="pills" style="margin-top:12px">
+      <span class="pill">Google Business Profile, no booking button</span>
+      <span class="pill">Instagram with 'DM to book'</span>
+      <span class="pill">Not listed on Treatwell/Fresha</span>
+      <span class="pill">4+ years trading</span>
+      <span class="pill">20+ Google reviews</span>
+    </div>
+  </div>
+
+  <div class="comp-card" style="border-top:3px solid var(--purple-600)">
+    <div class="comp-header">
+      <div class="comp-name-block">
+        <div class="name">Undigitised multicultural salon — Vienna</div>
+        <div class="sub">Turkish, Slavic, Arabic, or Asian-owned salon running on phone or community referral</div>
+      </div>
+    </div>
+    <div class="bt">
+      Turkish, Slavic, Arabic, or Asian-owned salon in Vienna, running on phone or community referral. No platform has approached them in their language. 211 Turkish-named + 255 Slavic-named salons in the Notino DB, concentrated in Vienna. Zero competitor coverage.
+    </div>
+    <div class="event-meta">
+      <div class="event-meta-item">
+        <div class="em-label">Location</div>
+        <div class="em-value">Vienna (concentrated)</div>
+      </div>
+      <div class="event-meta-item">
+        <div class="em-label">Languages</div>
+        <div class="em-value">Turkish, Bosnian, Serbian, Arabic</div>
+      </div>
+      <div class="event-meta-item">
+        <div class="em-label">Current tool</div>
+        <div class="em-value">Phone / community referral</div>
+      </div>
+      <div class="event-meta-item">
+        <div class="em-label">Unlock</div>
+        <div class="em-value">Native-language outreach</div>
+      </div>
+    </div>
+    <div class="attack" style="border-left-color:var(--purple-600);background:var(--purple-50);color:var(--purple-800)"><strong>Competitive moat:</strong> "No competitor offers Turkish or Slavic-language B2B onboarding. First-mover here builds loyalty that is structurally hard to dislodge — even when Planity arrives with budget."</div>
+    <div class="pills" style="margin-top:12px">
+      <span class="pill">Turkish/Slavic name in Notino DB</span>
+      <span class="pill">Vienna 10th–16th district</span>
+      <span class="pill">No Treatwell/Fresha listing</span>
+      <span class="pill">Facebook page in native language</span>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- TIER 1B -->
+  <div class="sl" style="margin-bottom:6px">Tier 1B — High switching intent</div>
+  <div style="margin-bottom:14px"><span class="ptag" style="background:var(--teal-50);color:var(--teal-600)">TIER 1B · HIGH SWITCHING INTENT</span></div>
+
+  <div class="comp-card" style="border-top:3px solid var(--teal-600)">
+    <div class="comp-header">
+      <div class="comp-name-block">
+        <div class="name">Treatwell defector</div>
+        <div class="sub">Paying €49–80/month + 35% new-client commission — clear margin pain</div>
+      </div>
+    </div>
+    <div class="bt">
+      Paying €49–80/month + 35% new-client commission. Clear margin pain, already understands online booking. Fastest switch because the category is sold — just the platform needs to change.
+    </div>
+    <div class="event-meta">
+      <div class="event-meta-item">
+        <div class="em-label">Current tool</div>
+        <div class="em-value">Treatwell</div>
+      </div>
+      <div class="event-meta-item">
+        <div class="em-label">Monthly cost</div>
+        <div class="em-value">€500–2,000+ all-in</div>
+      </div>
+      <div class="event-meta-item">
+        <div class="em-label">Pain point</div>
+        <div class="em-value">35% commission + monthly fee</div>
+      </div>
+      <div class="event-meta-item">
+        <div class="em-label">Switch barrier</div>
+        <div class="em-value">Fear of losing marketplace traffic</div>
+      </div>
+    </div>
+    <div class="attack"><strong>Pitch:</strong> "Treatwell takes 35% of every new client and charges €50–80/month on top. Notino: always free, no conditions, 0% commissions, 5% back on products. You keep your clients, your data, your margins."</div>
+    <div class="pills" style="margin-top:12px">
+      <span class="pill">Listed on Treatwell.at</span>
+      <span class="pill">Salon forum commission complaints</span>
+      <span class="pill">Instagram booking link active</span>
+    </div>
+  </div>
+
+  <div class="comp-card" style="border-top:3px solid var(--teal-600)">
+    <div class="comp-header">
+      <div class="comp-name-block">
+        <div class="name">Fresha refugee</div>
+        <div class="sub">On Fresha's "free" plan — now paying 20% marketplace + 2.79% per transaction</div>
+      </div>
+    </div>
+    <div class="bt">
+      On Fresha's "free" plan, now paying 20% marketplace commission + 2.79% per transaction. Actively searching for alternatives. High switching intent, low switching cost.
+    </div>
+    <div class="event-meta">
+      <div class="event-meta-item">
+        <div class="em-label">Current tool</div>
+        <div class="em-value">Fresha</div>
+      </div>
+      <div class="event-meta-item">
+        <div class="em-label">Pain point</div>
+        <div class="em-value">Hidden fees after "free forever"</div>
+      </div>
+      <div class="event-meta-item">
+        <div class="em-label">Business type</div>
+        <div class="em-value">Nail, lashes, small studios</div>
+      </div>
+      <div class="event-meta-item">
+        <div class="em-label">Switch barrier</div>
+        <div class="em-value">Low — already disillusioned</div>
+      </div>
+    </div>
+    <div class="attack"><strong>Pitch:</strong> "Fresha charges 2.79% on every payment even on the free plan, plus 20% on marketplace clients. Notino: 0% commissions, 0% payment fees, 5% back on products."</div>
+    <div class="pills" style="margin-top:12px">
+      <span class="pill">Listed on Fresha</span>
+      <span class="pill">Searching 'Fresha alternative Austria'</span>
+      <span class="pill">Complaints in salon Facebook groups</span>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- TIER 2 -->
+  <div class="sl" style="margin-bottom:6px">Tier 2 — Secondary ICP</div>
+  <div style="margin-bottom:14px"><span class="ptag" style="background:var(--amber-50);color:var(--amber-600)">TIER 2 · SECONDARY</span></div>
+
+  <div class="comp-card" style="border-top:3px solid var(--amber-600)">
+    <div class="comp-header">
+      <div class="comp-name-block">
+        <div class="name">Multi-location or premium salon — Salonkee/studiobookr user</div>
+        <div class="sub">2–5 locations, paying €100–400+/month in SaaS fees</div>
+      </div>
+    </div>
+    <div class="bt">
+      2–5 locations, paying €100–400+/month in SaaS fees. Longer sales cycle but higher LTV. Wants integrated marketing, loyalty, and product upsell — not just booking management.
+    </div>
+    <div class="event-meta">
+      <div class="event-meta-item">
+        <div class="em-label">Current tool</div>
+        <div class="em-value">Salonkee / studiobookr</div>
+      </div>
+      <div class="event-meta-item">
+        <div class="em-label">Locations</div>
+        <div class="em-value">2–5 sites</div>
+      </div>
+      <div class="event-meta-item">
+        <div class="em-label">Decision maker</div>
+        <div class="em-value">Owner or ops manager</div>
+      </div>
+      <div class="event-meta-item">
+        <div class="em-label">Monthly cost</div>
+        <div class="em-value">€100–400+</div>
+      </div>
+    </div>
+    <div class="attack"><strong>Pitch:</strong> "Salonkee costs €600–1,300/year with no revenue upside. Notino gives you booking, calendar, and client tools free if active — plus 5% product commission and access to 3M+ Austrian shoppers."</div>
+  </div>
+
+  <div class="comp-card" style="border-top:3px solid var(--amber-600)">
+    <div class="comp-header">
+      <div class="comp-name-block">
+        <div class="name">Tourism-adjacent salon — wellness/spa operator</div>
+        <div class="sub">Salons in high-tourism areas serving international guests</div>
+      </div>
+    </div>
+    <div class="bt">
+      Salons in high-tourism areas serving international guests. 46.7M visitors in 2024, ~2.3M in wellness tourism. English-language booking required. Higher ticket sizes, seasonal demand spikes.
+    </div>
+    <div class="event-meta">
+      <div class="event-meta-item">
+        <div class="em-label">Location</div>
+        <div class="em-value">Vienna, Salzburg, Innsbruck</div>
+      </div>
+      <div class="event-meta-item">
+        <div class="em-label">Client mix</div>
+        <div class="em-value">50%+ international guests</div>
+      </div>
+      <div class="event-meta-item">
+        <div class="em-label">Booking need</div>
+        <div class="em-value">English-language required</div>
+      </div>
+      <div class="event-meta-item">
+        <div class="em-label">Peak</div>
+        <div class="em-value">Christmas, summer, wedding season</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- GEOGRAPHIC PRIORITY -->
+  <div class="sl">Geographic priority</div>
+  <div class="summary-wrap">
+    <table>
+      <thead><tr><th>City</th><th>Salons in DB</th><th>% of Total</th><th>Priority</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Vienna</strong></td><td>1,611</td><td>12.1%</td><td><span class="pri-high">Primary</span></td></tr>
+        <tr><td><strong>Graz</strong></td><td>574</td><td>4.3%</td><td><span class="pri-high">Primary</span></td></tr>
+        <tr><td><strong>Linz</strong></td><td>490</td><td>3.7%</td><td><span class="pri-high">Primary</span></td></tr>
+        <tr><td><strong>Salzburg</strong></td><td>396</td><td>3.0%</td><td><span class="pri-med">Secondary</span></td></tr>
+        <tr><td><strong>Klagenfurt</strong></td><td>316</td><td>2.4%</td><td><span class="pri-med">Secondary</span></td></tr>
+        <tr><td><strong>Innsbruck</strong></td><td>307</td><td>2.3%</td><td><span class="pri-med">Secondary</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- EXCLUSION CRITERIA -->
+  <div class="sl">Exclusion criteria — who is not a fit</div>
+  <div class="note">
+    <ul style="list-style:none;padding:0;margin:0">
+      <li style="padding:4px 0">&#10007; Home-based or informal providers with no regular client base — low activation likelihood</li>
+      <li style="padding:4px 0">&#10007; Discount-model operators (BookGoodLook-type) — erodes pricing power</li>
+      <li style="padding:4px 0">&#10007; Home-based or informal providers — WKO non-qualifying</li>
+      <li style="padding:4px 0">&#10007; Salons signing with Planity post-DACH launch — contractual lock-in risk</li>
+      <li style="padding:4px 0">&#10007; Purely medical aesthetics clinics — different regulatory context</li>
+    </ul>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- MULTICULTURAL SALON SEGMENT -->
+  <div class="sl">Multicultural salon segment — targeting strategy</div>
+  <p>Austria's multicultural salon ecosystem (Turkish, Balkan, Middle-Eastern, African-origin operators) represents a large, underdigitized segment with high Notino fit: cash-heavy, walk-in dependent, zero current SaaS adoption, and strong community trust networks.</p>
+
+  <div class="banner banner-green">
+    <strong>Why this segment matters:</strong> These salons are often invisible to conventional digital prospecting. They rarely appear in Google Maps with complete profiles, don't use booking software, and operate primarily through word-of-mouth and community referrals. But they represent a significant share of Austria's ~27,000 beauty businesses — and they're the most likely to adopt a <em>free</em> tool that brings new clients without disrupting their workflow.
+  </div>
+
+  <div class="card-grid-2">
+    <div class="card">
+      <div class="card-title">Meta / Instagram signals</div>
+      <div class="card-body">
+        <ul>
+          <li><strong>Interest stacking:</strong> "Friseur" OR "Barber" + Turkish/Balkan/Arabic language content consumption</li>
+          <li><strong>Lookalike audiences:</strong> seed from early multicultural salon sign-ups</li>
+          <li><strong>Geographic micro-targeting:</strong> Vienna 10th, 15th, 16th, 20th districts; Graz Lend/Gries; Linz Bulgariplatz area</li>
+          <li><strong>Community group targeting:</strong> Turkish business owner groups, Balkan diaspora community pages</li>
+          <li><strong>Creative language:</strong> Bilingual ads (German + Turkish/BCS) outperform German-only by 2–3× in engagement for this segment</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Google Search signals</div>
+      <div class="card-body">
+        <ul>
+          <li><strong>Long-tail keywords:</strong> "türkischer friseur Wien", "balkan friseursalon", "arabischer barbershop"</li>
+          <li><strong>Maps-based prospecting:</strong> Search for barber/salon in high-density districts, filter by reviews in non-German languages</li>
+          <li><strong>Google Business Profile gaps:</strong> Salons with no website, no booking link, limited hours info = highest conversion potential</li>
+          <li><strong>Review language analysis:</strong> Salons with 50%+ reviews in Turkish/BCS/Arabic = confirmed multicultural clientele</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="note" style="margin-top:1rem">
+    <strong>🔍 Field research note:</strong> Street-level canvassing in Vienna's 10th and 15th districts (Favoriten, Rudolfsheim-Fünfhaus) will yield the highest density of multicultural salons. Many operate without a Google Maps presence. Country manager should budget 2–3 days of physical door-to-door outreach in these areas during the first month.
+  </div>
+
+  <div class="card" style="margin-top:1rem">
+    <div class="card-title">Creative recommendations for this segment</div>
+    <div class="card-body">
+      <ul>
+        <li><strong>Language:</strong> Lead with German, include Turkish/BCS subtitle or tagline — signals cultural awareness without alienating</li>
+        <li><strong>Proof points:</strong> Emphasize "no monthly fee" and "more walk-in clients" over tech features — cost and client volume are the primary decision drivers</li>
+        <li><strong>Trust signals:</strong> Feature a multicultural salon owner testimonial early (even a pilot user). Community trust > brand awareness in this segment</li>
+        <li><strong>Channel:</strong> WhatsApp and Instagram DMs outperform email for initial outreach. Many operators don't check business email regularly</li>
+      </ul>
+    </div>
+  </div>
+
+</div>
+
+<!-- ============================================================ -->
+<!-- TAB 7: GTM STRATEGY -->
 <!-- ============================================================ -->
 <div id="tab-gtm" class="tab-pane">
 
