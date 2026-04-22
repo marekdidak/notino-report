@@ -433,6 +433,7 @@
   <button class="tab" onclick="showTab('competitors', event)">Competitor Analysis</button>
   <button class="tab" onclick="showTab('seo', event)">SEO Roadmap</button>
   <button class="tab" onclick="showTab('events', event)">Events</button>
+  <button class="tab" onclick="showTab('fieldresearch', event)">Field Research</button>
   <button class="tab" onclick="showTab('icp', event)">ICP</button>
   <button class="tab" onclick="showTab('gtm', event)">GTM Strategy</button>
 </div>
@@ -1826,7 +1827,345 @@
 </div>
 
 <!-- ============================================================ -->
-<!-- TAB 6: ICP -->
+<!-- TAB 6: Field Research -->
+<!-- ============================================================ -->
+<div id="tab-fieldresearch" class="tab-pane">
+
+  <!-- TITLE BLOCK -->
+  <div style="margin-bottom:20px">
+    <div style="font-size:20px;font-weight:600;color:var(--text-primary);letter-spacing:-.3px;margin-bottom:4px">Notino Salon Research — Austria</div>
+    <div style="font-size:14px;color:var(--text-secondary);margin-bottom:14px">Key Findings &amp; Industry Insights (B2B — Salons)</div>
+    <div style="background:var(--blue-50);border:0.5px solid var(--blue-100);border-radius:var(--radius);padding:12px 16px;font-size:12px;color:var(--blue-800);line-height:1.6">
+      <strong>ℹ Sample note:</strong> 56 salons scouted across Vienna, Lower Austria, Linz, Graz and Salzburg. Salon types: hair, cosmetic / beauty, nail, barbershop, medical spa, and wellness / hotel spa. Employee counts range from solo operators to 40. All numbers below refer to this sample of 56 salons (n = 56), unless stated otherwise.
+    </div>
+  </div>
+
+  <!-- FINDING 1 -->
+  <div style="margin-bottom:24px">
+    <div style="background:var(--amber-50);border:0.5px solid var(--amber-600);border-radius:var(--radius-lg);padding:20px 22px;margin-bottom:10px">
+      <div style="font-size:13px;font-weight:600;color:var(--text-primary);margin-bottom:10px">1. Notino Brand Awareness Is Already High</div>
+      <div style="font-size:12px;color:var(--text-secondary);line-height:1.6;margin-bottom:12px">
+        33 of 56 salons (59%) explicitly know Notino. Only 17 (30%) clearly do not (15 "no" + 2 "probably not"). Several are already direct customers — Beauty Arts Linz, for example, reports purchasing EUR 2–3k per month in products from Notino.
+      </div>
+      <div class="summary-wrap" style="margin:0 0 12px">
+        <table>
+          <thead><tr><th><strong>Notino brand awareness</strong></th><th><strong>Salons (n = 56)</strong></th></tr></thead>
+          <tbody>
+            <tr><td>Yes — know the brand</td><td>33 (59%)</td></tr>
+            <tr><td>No / probably not</td><td>17 (30%)</td></tr>
+            <tr><td>Vague / unknown</td><td>5 (9%)</td></tr>
+            <tr><td>Not answered</td><td>1 (2%)</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="attack">
+        <strong>Implication</strong><br>
+        Prioritise cosmetic salons, nail studios and beauty professionals — they show the highest alignment with Notino and include salons already buying from the platform.
+      </div>
+    </div>
+  </div>
+
+  <!-- FINDING 2 -->
+  <div style="margin-bottom:24px">
+    <div style="background:var(--amber-50);border:0.5px solid var(--amber-600);border-radius:var(--radius-lg);padding:20px 22px;margin-bottom:10px">
+      <div style="font-size:13px;font-weight:600;color:var(--text-primary);margin-bottom:10px">2. Treatwell Dominance Creates a Major Opening</div>
+      <div style="font-size:12px;color:var(--text-secondary);line-height:1.6;margin-bottom:12px">
+        27 of 56 salons (48%) mention Treatwell — as current system, past system, or the benchmark they compare everything to. It is by far the most referenced platform in the sample.<br><br>
+        Sentiment is polarised and skewed negative on cost:
+        <ul style="padding-left:18px;margin:6px 0">
+          <li>3 salons (5%) explicitly called out the 35% commission as excessive</li>
+          <li>5 salons called Treatwell "expensive" or "too expensive"</li>
+          <li>11 salons (20%) spontaneously named ~5% as a fair commission target</li>
+          <li>Schimarik Wien rated Treatwell 3/10 and is actively leaving; FRISEUR CLASSIC (6/10) also said he wants to leave</li>
+        </ul>
+        Recurring complaints: commission charged on returning clients, system lag, failing promotions, and inability to enforce no-show fees. Many stay despite frustration because Treatwell brings booking volume — a classic "trapped customer" situation.
+      </div>
+      <div class="attack">
+        <strong>Implication</strong><br>
+        Position Notino as a Treatwell alternative: lower commission, simpler interface, marketing benefits without marketplace lock-in.
+      </div>
+    </div>
+  </div>
+
+  <!-- FINDING 3 -->
+  <div style="margin-bottom:24px">
+    <div style="background:var(--amber-50);border:0.5px solid var(--amber-600);border-radius:var(--radius-lg);padding:20px 22px;margin-bottom:10px">
+      <div style="font-size:13px;font-weight:600;color:var(--text-primary);margin-bottom:10px">3. Hair Salons: Harder, but Segmented</div>
+      <div style="font-size:12px;color:var(--text-secondary);line-height:1.6;margin-bottom:12px">
+        Hair salons are structurally harder to onboard:
+        <ul style="padding-left:18px;margin:6px 0">
+          <li>6 salons (11%) still use a paper book; several actively prefer it after bad digital experiences (SCHNITTIG!, ZEITGEIST, Friseur VOGUE, Hairchampion)</li>
+          <li>54 of 56 (96%) rely on phone bookings; 8 (14%) on walk-ins</li>
+          <li>Several sell premium brands in-house — Maria Galland (3), Reviderm (2), Dr. Grandel (2), Pandhy's (2), Kérastase, Davines, Babor, La Biosthetique, Redken, Wella, Schwarzkopf Professional — and treat external product commissions as competition</li>
+          <li>Larger salons resist migration due to client-data transfer effort (HAIR BAR Linz; Kollerbeauty on Latido; TARQUINI Salzburg explicitly refuses to "upload client data to a foreign platform")</li>
+          <li>Some long-standing owners are "completely analog" (Friseur VOGUE, Otto Höber Haarkunst — 50 yrs, Hairchampion — walk-in only, 10/10)</li>
+        </ul>
+        There is a clear receptive sub-segment: hair salons already on Treatwell and unhappy with its commission. These are warm leads.
+      </div>
+      <div class="attack">
+        <strong>Implication</strong><br>
+        Phase 1 hair: Treatwell-unhappy and premium/boutique salons. Phase 2: paper-book and walk-in-first salons.
+      </div>
+    </div>
+  </div>
+
+  <!-- FINDING 4 -->
+  <div style="margin-bottom:24px">
+    <div style="background:var(--amber-50);border:0.5px solid var(--amber-600);border-radius:var(--radius-lg);padding:20px 22px;margin-bottom:10px">
+      <div style="font-size:13px;font-weight:600;color:var(--text-primary);margin-bottom:10px">4. Salon Profile</div>
+      <div style="font-size:12px;color:var(--text-secondary);line-height:1.6;margin-bottom:12px">
+        56 salons across Graz (15, 27%), Linz (10, 18%), Vienna districts (~21, 38%), Klosterneuburg (3), Salzburg (2) and Groß Enzersdorf (1). Employee counts captured for 45:
+      </div>
+      <div class="summary-wrap" style="margin:0 0 12px">
+        <table>
+          <thead><tr><th><strong>Salon size</strong></th><th><strong>Salons (of 45 with data)</strong></th></tr></thead>
+          <tbody>
+            <tr><td>Small (1–4 employees)</td><td>24 (53%)</td></tr>
+            <tr><td>Mid (5–10 employees)</td><td>13 (29%)</td></tr>
+            <tr><td>Large (11+ employees)</td><td>8 (18%)</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div style="font-size:12px;color:var(--text-secondary);line-height:1.6">
+        <ul style="padding-left:18px;margin:0">
+          <li>7 salons are solo operators (1 employee)</li>
+          <li>Largest: OSSIG (35), Lepschi&amp;Lepschi (19), Schimarik (19), Hairchampion (19), EDINGER.salon (26), Kollerbeauty (40, medical spa)</li>
+          <li>Service mix: hair, cosmetics / facials, nails, makeup, barbershop, body treatments, hair removal, aesthetic / medical treatments, wellness / spa</li>
+          <li>Many 20–50+ years in business (Otto Höber — 50 yrs; EDINGER — 25 yrs; Frisiersalon Schubhart — 30 yrs)</li>
+          <li>Strong multilingual client base, especially in Vienna and Linz: German, English, Turkish, Russian, Ukrainian, Hungarian, Polish, Serbian, Albanian, Arabic</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- FINDING 5 -->
+  <div style="margin-bottom:24px">
+    <div style="background:var(--amber-50);border:0.5px solid var(--amber-600);border-radius:var(--radius-lg);padding:20px 22px;margin-bottom:10px">
+      <div style="font-size:13px;font-weight:600;color:var(--text-primary);margin-bottom:10px">5. Booking Systems &amp; Tools</div>
+      <div style="font-size:12px;color:var(--text-secondary);line-height:1.6;margin-bottom:12px">
+        The stack is fragmented. A salon can appear in multiple rows:
+      </div>
+      <div class="summary-wrap" style="margin:0 0 12px">
+        <table>
+          <thead><tr><th><strong>Channel / platform</strong></th><th><strong>Salons (n = 56)</strong></th></tr></thead>
+          <tbody>
+            <tr><td>Phone</td><td>54 (96%)</td></tr>
+            <tr><td>Treatwell (any mention)</td><td>27 (48%)</td></tr>
+            <tr><td>Walk-ins</td><td>8 (14%)</td></tr>
+            <tr><td>Paper book</td><td>6 (11%)</td></tr>
+            <tr><td>Phorest</td><td>3 (5%)</td></tr>
+            <tr><td>Shore</td><td>3 (5%)</td></tr>
+            <tr><td>Lime</td><td>2 (4%)</td></tr>
+            <tr><td>Get Timely</td><td>1 (2%)</td></tr>
+            <tr><td>Latido (medical)</td><td>1 (2%)</td></tr>
+            <tr><td>simplybook.me</td><td>1 (2%)</td></tr>
+            <tr><td>Time Globe</td><td>1 (2%)</td></tr>
+            <tr><td>TAC (spa / hotel)</td><td>1 (2%)</td></tr>
+            <tr><td>Custom / own system</td><td>3 (5%)</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div style="font-size:12px;color:var(--text-secondary);line-height:1.6">
+        <ul style="padding-left:18px;margin:0">
+          <li>Treatwell is the dominant marketplace; no other comes close</li>
+          <li>Dedicated salon software is niche and fragmented (Phorest 3, Shore 3, Lime 2, others 1 each)</li>
+          <li>Several larger salons have invested in their own custom-built booking system (OSSIG, Young Style, TARQUINI) — they are highly satisfied and unlikely to switch</li>
+          <li>Analog channels remain widespread: 96% phone, 14% walk-ins, 11% paper book</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- FINDING 6 -->
+  <div style="margin-bottom:24px">
+    <div style="background:var(--amber-50);border:0.5px solid var(--amber-600);border-radius:var(--radius-lg);padding:20px 22px;margin-bottom:10px">
+      <div style="font-size:13px;font-weight:600;color:var(--text-primary);margin-bottom:10px">6. Satisfaction with Current Systems</div>
+      <div style="font-size:12px;color:var(--text-secondary);line-height:1.6;margin-bottom:12px">
+        28 salons gave a numeric x/10 score. Average 8.3/10, range 3–10 (one respondent said "11/10"). Distribution is clearly weighted toward "satisfied", but with a meaningful dissatisfied tail:
+      </div>
+      <div class="summary-wrap" style="margin:0 0 12px">
+        <table>
+          <thead><tr><th><strong>Satisfaction band</strong></th><th><strong>Salons (of 28)</strong></th></tr></thead>
+          <tbody>
+            <tr><td>Low (3–5/10)</td><td>3 (11%)</td></tr>
+            <tr><td>Mid (6–7/10)</td><td>3 (11%)</td></tr>
+            <tr><td>High (8–9/10)</td><td>17 (61%)</td></tr>
+            <tr><td>Very high (10/10+)</td><td>5 (18%)</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div style="font-size:12px;color:var(--text-secondary);line-height:1.6;margin-bottom:12px">
+        <ul style="padding-left:18px;margin:0">
+          <li>Salons on dedicated salon software (Phorest, Shore, Get Timely, Latido, Time Globe, TAC) and on custom-built systems score 8–10/10</li>
+          <li>Salons on Treatwell score 3–9/10: "it works and brings clients, but it is expensive / unfair on returning clients"</li>
+          <li>Salons on paper book often self-report 10/10 — but this masks other operational pain (see next section)</li>
+        </ul>
+      </div>
+      <div class="attack">
+        <strong>Implication</strong><br>
+        A pure "replace the booking system" pitch will not win. The real lever is economics (commission, transparency) plus added value (marketing, visibility, passive income from product sales).
+      </div>
+    </div>
+  </div>
+
+  <!-- FINDING 7 -->
+  <div style="margin-bottom:24px">
+    <div style="background:var(--amber-50);border:0.5px solid var(--amber-600);border-radius:var(--radius-lg);padding:20px 22px;margin-bottom:10px">
+      <div style="font-size:13px;font-weight:600;color:var(--text-primary);margin-bottom:10px">7. Operational Challenges</div>
+      <div style="font-size:12px;color:var(--text-secondary);line-height:1.6">
+        <ul style="padding-left:18px;margin:0">
+          <li style="margin-bottom:6px">No-shows / late cancellations — 20 salons (36%) explicitly named them a pain point; common countermeasures: 24h / 12h / same-day cancellation policies and prepayment (mandatory for all clients at some; mandatory for repeat no-shows at others)</li>
+          <li style="margin-bottom:6px">High external-platform commissions — mostly Treatwell (5 salons "expensive", 3 cite 35% specifically, 11 name 5% as a fair target)</li>
+          <li style="margin-bottom:6px">New client acquisition — the single most frequent strategic concern across cosmetic and hair salons (frisur SIGISCHMID, Brigitta Kiss Lukacs Nail Studio, Pure Beauty &amp; PANDHY'S, Glamour, Pure Care, Die Pflegerei, FRISEUR CLASSIC)</li>
+          <li style="margin-bottom:6px">Staff shortages / overbooking — Butcher's Barbershop is fully booked 6 weeks ahead, rejects ~10 walk-ins/day; Carina Kollinsky and Young Style cite finding quality staff as their biggest problem</li>
+          <li style="margin-bottom:6px">Double-bookings from parallel systems — Studio 24 forgets to reconcile Treatwell with the paper book</li>
+          <li style="margin-bottom:6px">Client-data migration fear — explicit blocker for HAIR BAR Linz, Kollerbeauty, TARQUINI</li>
+          <li>Distrust after bad digital experiences — ZEITGEIST (lost client data 7 yrs ago), ClassMen (Treatwell failed twice), SCHNITTIG!, Carina Kollinsky (Treatwell 1–2 months)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- FINDING 8 -->
+  <div style="margin-bottom:24px">
+    <div style="background:var(--amber-50);border:0.5px solid var(--amber-600);border-radius:var(--radius-lg);padding:20px 22px;margin-bottom:10px">
+      <div style="font-size:13px;font-weight:600;color:var(--text-primary);margin-bottom:10px">8. Openness to New Solutions</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px">
+        <div class="summary-wrap" style="margin:0">
+          <table>
+            <thead><tr><th><strong>Contact back?</strong></th><th><strong>Salons (n = 56)</strong></th></tr></thead>
+            <tbody>
+              <tr><td>Yes</td><td>28 (50%)</td></tr>
+              <tr><td>Maybe</td><td>12 (21%)</td></tr>
+              <tr><td>No / probably not</td><td>15 (27%)</td></tr>
+              <tr><td>Not answered</td><td>1 (2%)</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="summary-wrap" style="margin:0">
+          <table>
+            <thead><tr><th><strong>Open to a new platform?</strong></th><th><strong>Salons (n = 56)</strong></th></tr></thead>
+            <tbody>
+              <tr><td>Yes</td><td>12 (21%)</td></tr>
+              <tr><td>Maybe</td><td>10 (18%)</td></tr>
+              <tr><td>No / probably not</td><td>21 (38%)</td></tr>
+              <tr><td>Unknown / other</td><td>11 (20%)</td></tr>
+              <tr><td>Not answered</td><td>2 (4%)</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div style="font-size:12px;color:var(--text-secondary);line-height:1.6">
+        <ul style="padding-left:18px;margin:0">
+          <li style="margin-bottom:4px">36 salons (64%) accepted a voucher and shared a contact email — a warm follow-up pipeline</li>
+          <li style="margin-bottom:4px">4 salons (7%) spontaneously raised interest in a "passive income" angle from Notino product sales (HAAR CREATIV, H2 HaarQuadrat, ClassMen, Beauty Arts Linz)</li>
+          <li style="margin-bottom:4px">11 salons (20%) explicitly asked for marketing / visibility tools</li>
+          <li>Firm "no" cluster: paper-book loyalists, solo operators with full books, salons on specialised or custom-built software, and salons that already tried Treatwell and churned</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- FINDING 9 -->
+  <div style="margin-bottom:24px">
+    <div style="background:var(--amber-50);border:0.5px solid var(--amber-600);border-radius:var(--radius-lg);padding:20px 22px;margin-bottom:10px">
+      <div style="font-size:13px;font-weight:600;color:var(--text-primary);margin-bottom:10px">9. Key Expectations from a New Solution</div>
+      <div style="font-size:12px;color:var(--text-secondary);line-height:1.6">
+        <ul style="padding-left:18px;margin:0">
+          <li style="margin-bottom:6px">Lower commission — 11 salons (20%) spontaneously named ~5% as a target (vs. Treatwell's 35%)</li>
+          <li style="margin-bottom:6px">Simplicity — 53% of sized salons are 1–4 employees; owners run the salon themselves and need a no-training interface</li>
+          <li style="margin-bottom:6px">Marketing / visibility tools — 11 salons (20%) explicitly asked for them; Google Maps visibility called out by FRISEUR CLASSIC</li>
+          <li style="margin-bottom:6px">All-in-one view — one calendar combining phone, walk-in and online; no parallel systems to reconcile</li>
+          <li style="margin-bottom:6px">Passive income from product sales — 4 salons (7%) raised this spontaneously</li>
+          <li style="margin-bottom:6px">Client controls — waitlist, term clusters, prepayment, late-cancellation fees, SMS reminders, vouchers / discounts</li>
+          <li>Mobile access and good support — called out explicitly after bad experiences with current providers</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONCLUSION -->
+  <div class="sl">Conclusion &amp; Strategic Recommendations</div>
+
+  <div class="summary-wrap" style="margin-bottom:20px">
+    <table>
+      <thead><tr><th><strong>Indicator</strong></th><th><strong>Salons</strong></th></tr></thead>
+      <tbody>
+        <tr><td>Aware of Notino brand</td><td>33 / 56 (59%)</td></tr>
+        <tr><td>Mention Treatwell (current or past)</td><td>27 / 56 (48%)</td></tr>
+        <tr><td>"Yes" to being contacted again</td><td>28 / 56 (50%)</td></tr>
+        <tr><td>Accepted a voucher</td><td>36 / 56 (64%)</td></tr>
+        <tr><td>Yes or Maybe to a new platform</td><td>22 / 56 (39%)</td></tr>
+        <tr><td>Explicitly asked for 5% commission</td><td>11 / 56 (20%)</td></tr>
+        <tr><td>Explicitly asked for marketing tools</td><td>11 / 56 (20%)</td></tr>
+        <tr><td>Named no-shows as a pain point</td><td>20 / 56 (36%)</td></tr>
+        <tr><td>Average satisfaction with current system</td><td>8.3 / 10 (n = 28)</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div style="background:var(--amber-50);border:0.5px solid var(--amber-600);border-radius:var(--radius-lg);padding:20px 22px;margin-bottom:20px">
+    <div style="font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:.1em;color:var(--amber-600);margin-bottom:14px">Strategic Recommendations</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
+      <div style="background:var(--bg-primary);border-radius:var(--radius);padding:14px 16px">
+        <div style="font-size:12px;font-weight:600;color:var(--text-primary);margin-bottom:5px">#1 · Phase 1 Focus</div>
+        <div style="font-size:12px;color:var(--text-secondary);line-height:1.6">
+          <ul style="padding-left:16px;margin:0">
+            <li>Cosmetic salons, nail studios, makeup and beauty professionals — highest Notino alignment; some already buy directly</li>
+            <li>Treatwell-unhappy salons (hair and cosmetics) — warm leads (~48% of the sample is Treatwell-exposed)</li>
+            <li>Premium / boutique salons selling professional cosmetics in-house — fit for the product-commission angle</li>
+          </ul>
+        </div>
+      </div>
+      <div style="background:var(--bg-primary);border-radius:var(--radius);padding:14px 16px">
+        <div style="font-size:12px;font-weight:600;color:var(--text-primary);margin-bottom:5px">#2 · Phase 2 Expansion</div>
+        <div style="font-size:12px;color:var(--text-secondary);line-height:1.6">
+          <ul style="padding-left:16px;margin:0">
+            <li>Mid-to-large hair salons on dedicated software (Shore, Phorest, Time Globe) — approach once proof points exist</li>
+            <li>Analog / paper-book salons (11%) and walk-in-first barbershops (14%) — low readiness</li>
+            <li>Medical spas, wellness / hotel spas, franchises and salons on custom-built software — deprioritise</li>
+          </ul>
+        </div>
+      </div>
+      <div style="background:var(--bg-primary);border-radius:var(--radius);padding:14px 16px">
+        <div style="font-size:12px;font-weight:600;color:var(--text-primary);margin-bottom:5px">#3 · Product Strategy</div>
+        <div style="font-size:12px;color:var(--text-secondary);line-height:1.6">
+          <ul style="padding-left:16px;margin:0">
+            <li>Lead with economics: lower, transparent commission (5% is already in 20% of salons' heads)</li>
+            <li>Simplicity first: 53% of sized salons have 1–4 employees</li>
+            <li>Bundle marketing / visibility with booking — not just a calendar (20% explicitly demand it)</li>
+            <li>Passive-income narrative from the start: earn from Notino product sales, not only services</li>
+            <li>Address migration fear directly: client-data import, onboarding support, parallel-run period</li>
+          </ul>
+        </div>
+      </div>
+      <div style="background:var(--bg-primary);border-radius:var(--radius);padding:14px 16px">
+        <div style="font-size:12px;font-weight:600;color:var(--text-primary);margin-bottom:5px">#4 · Sales Approach</div>
+        <div style="font-size:12px;color:var(--text-secondary);line-height:1.6">
+          <ul style="padding-left:16px;margin:0">
+            <li>Position Notino as a growth and exposure tool, not just a booking replacement</li>
+            <li>Use the organic behaviour as a wedge: "your clients (and you) are already buying from us — let's turn that into revenue for your salon"</li>
+            <li>Target Treatwell dissatisfaction explicitly: lower commission, no punishing returning clients, better support</li>
+            <li>For hair salons: lead with passive income, not booking replacement</li>
+            <li>Prioritise the warm pipeline: 28 "yes" contacts and 36 vouchered salons out of the 56 interviewed</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA Button -->
+  <div style="text-align:center;margin:28px 0 20px">
+    <a class="cta-btn" href="https://docs.google.com/spreadsheets/d/1llS6_qPT3sYdD2cNR2uB_Y5t9QL9CHXZ7VsjlL3DXww/edit?usp=drive_link" target="_blank" rel="noopener">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+      Open Full Field Research Data
+    </a>
+  </div>
+
+</div>
+
+<!-- ============================================================ -->
+<!-- TAB 7: ICP -->
 <!-- ============================================================ -->
 <div id="tab-icp" class="tab-pane">
 
